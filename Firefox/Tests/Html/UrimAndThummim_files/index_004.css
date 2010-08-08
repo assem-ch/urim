@@ -1,0 +1,12 @@
+body.ns-0 .navbox, body.ns-0 .NavFrame, body.ns-0 .metadata,  .dablink,  #catlinks {display: none}
+.toccolours {border: 1px solid #aaa}
+.collapse-refs-p { display: none }
+.reflist, .reflist1, .reflist2, .reflist3, .reflist4, .references-scroll {
+  height: auto !important;
+  max-height: none !important; 
+  overflow: visible !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.printonly {display:inline}

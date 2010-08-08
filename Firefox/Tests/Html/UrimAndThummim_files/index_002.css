@@ -1,0 +1,61 @@
+/* pull-down menu over top icons */
+div.vectorMenu div { z-index: 2 }
+
+body.page-Заглавная_страница #siteSub,
+body.page-Заглавная_страница #contentSub,
+body.page-Заглавная_страница h1.firstHeading
+{display:none !important}
+
+
+/*Top icons*/
+
+#coordinates {  
+ position: absolute;
+ top: -2em;
+ right: 2em;
+ float: right;
+ margin: 0.0em;
+ padding: 0.0em;
+ line-height: 1.5em;
+ text-align: right;
+ text-indent: 0;
+ font-size: 85%;
+ text-transform: none;
+ white-space: nowrap;
+}
+
+/* {Right-uppermost image} */
+.floating_object {
+ position: absolute;
+ right: 0px !important;
+ top: -31px !important;
+ z-index: 100;
+ overflow: hidden;
+}
+
+body.ns-0 .floating_object { top: -20px !important }
+
+
+#siteSub { display: inline; font-size: 92%; font-weight: normal }
+
+/* {Link FA} */
+.portal li.GA {
+    background: url('http://upload.wikimedia.org/wikipedia/commons/6/6f/QS_blue_star_small.png') right top no-repeat;
+    margin-right: 10px !important;
+}
+.portal li.FA {
+    background: url('http://upload.wikimedia.org/wikipedia/commons/3/33/Small_skew_star.gif') right top no-repeat;
+    margin-right: 10px !important;
+}
+.portal li.FL {
+    background: url('http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Purple_star_unboxed.svg/11px-Purple_star_unboxed.svg.png') right top no-repeat;
+    margin-right: 10px !important;
+}
+
+
+/* temporary: [[bugzilla:19567]] */
+#siteNotice div { margin: 0; }
+#siteNotice div.expanded table.siteNoticeUser { margin-bottom: 1em; }
+
+/* special:search */
+.searchresults-hint { position: absolute; top: -8px !important; right: 4px !important }
