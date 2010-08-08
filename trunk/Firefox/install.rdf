@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:name>Urim</em:name>
+		<em:version>0.1</em:version>
+		<em:developer>Oleg Mazko</em:developer>
+		<em:creator>Oleg Mazko</em:creator>
+		<em:id>o.mazko@mail.ru</em:id>
+		<em:iconURL>chrome://urim/skin/png/ispice_32.png</em:iconURL>
+		<em:description>Make your text shorter!</em:description>
+		<em:homepageURL>https://code.google.com/p/urim/</em:homepageURL>
+
+		<em:localized>
+			<Description>
+				<em:locale>en-US</em:locale>
+				<em:name>Urim</em:name>
+				<em:description>Make your text shorter!</em:description>
+				<em:developer>Oleg Mazko</em:developer>
+				<em:creator>Oleg Mazko</em:creator>
+				<em:homepageURL>https://code.google.com/p/urim/</em:homepageURL>
+			</Description>
+		</em:localized>
+
+		<em:localized>
+			<Description>
+				<em:locale>ru</em:locale>
+				<em:name>Урим</em:name>
+				<em:description>Сделайте Ваш текст короче!</em:description>
+				<em:developer>Олег Мазко</em:developer>
+				<em:creator>Олег Мазко</em:creator>
+				<em:homepageURL>https://code.google.com/p/urim/</em:homepageURL>
+			</Description>
+		</em:localized>
+
+		<em:targetApplication>
+			<!-- Firefox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.0</em:minVersion>
+				<em:maxVersion>4.0b3pre</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+</RDF>

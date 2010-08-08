@@ -1,0 +1,6 @@
+<!ENTITY urimsidebar.title "Урим 0.1 beta4">
+<!ENTITY urimmenu.label "Урим">
+<!ENTITY urimbutton.tooltip "Свернуть/Развернуть Урим">
+
+<!ENTITY openUrimSidebar.commandkey "u">
+<!ENTITY openUrimSidebar.modifiersKey "accel shift">
