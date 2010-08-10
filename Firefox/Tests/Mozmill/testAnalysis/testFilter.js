@@ -178,116 +178,142 @@ var testShingleStopFilter = function() {
 
 	/* first, simple non stop test */
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([])),
-			[]);
+	for (var i = 1; i < 75; i += 22 / 3) {
 
-	assertTokenStreamContents(
-			new ShingleStopFilter(new TestTokenStream(["Urim"])), ["Urim"],
-			[[0]], [[4]], [1]);
+		var j = i;
+		i = Math.floor(i);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-					"Urim", "Thummim"])), ["Urim", "Urim Thummim", "Thummim"],
-			[[0], [0, 4], [4]], [[4], [4, 11], [11]], [1, 1, 1]);
+		assertTokenStreamContents(new ShingleStopFilter(
+						new TestTokenStream([]), 2, i), []);
 
-	assertTokenStreamContents(
-			new ShingleStopFilter(new TestTokenStream(["please", "divide",
-							"thisNonStop", "sentence"]), 2), ["please",
-					"please divide", "divide", "divide thisNonStop",
-					"thisNonStop", "thisNonStop sentence", "sentence"]);
+		assertTokenStreamContents(new ShingleStopFilter(
+						new TestTokenStream(["Urim"]), 2, i), ["Urim"], [[0]],
+				[[4]], [1]);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-							"please", "divide", "thisNonStop", "sentence",
-							"intoNonStop", "shingles"]), 3), ["please",
-					"please divide", "please divide thisNonStop", "divide",
-					"divide thisNonStop", "divide thisNonStop sentence",
-					"thisNonStop", "thisNonStop sentence",
-					"thisNonStop sentence intoNonStop", "sentence",
-					"sentence intoNonStop", "sentence intoNonStop shingles",
-					"intoNonStop", "intoNonStop shingles", "shingles"]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"Urim", "Thummim"]), 2, i), ["Urim",
+						"Urim Thummim", "Thummim"], [[0], [0, 4], [4]], [[4],
+						[4, 11], [11]], [1, 1, 1]);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-							"please", "divide", "thisNonStop", "sentence",
-							"intoNonStop", "shingles"]), 4), ["please",
-					"please divide", "please divide thisNonStop",
-					"please divide thisNonStop sentence", "divide",
-					"divide thisNonStop", "divide thisNonStop sentence",
-					"divide thisNonStop sentence intoNonStop", "thisNonStop",
-					"thisNonStop sentence", "thisNonStop sentence intoNonStop",
-					"thisNonStop sentence intoNonStop shingles", "sentence",
-					"sentence intoNonStop", "sentence intoNonStop shingles",
-					"intoNonStop", "intoNonStop shingles", "shingles"]);
+		assertTokenStreamContents(new ShingleStopFilter(
+						new TestTokenStream(["please", "divide", "thisNonStop",
+								"sentence"]), 2, i), ["please",
+						"please divide", "divide", "divide thisNonStop",
+						"thisNonStop", "thisNonStop sentence", "sentence"]);
+
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"please", "divide", "thisNonStop", "sentence",
+								"intoNonStop", "shingles"]), 3, i), ["please",
+						"please divide", "please divide thisNonStop", "divide",
+						"divide thisNonStop", "divide thisNonStop sentence",
+						"thisNonStop", "thisNonStop sentence",
+						"thisNonStop sentence intoNonStop", "sentence",
+						"sentence intoNonStop",
+						"sentence intoNonStop shingles", "intoNonStop",
+						"intoNonStop shingles", "shingles"]);
+
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"please", "divide", "thisNonStop", "sentence",
+								"intoNonStop", "shingles"]), 4, i), ["please",
+						"please divide", "please divide thisNonStop",
+						"please divide thisNonStop sentence", "divide",
+						"divide thisNonStop", "divide thisNonStop sentence",
+						"divide thisNonStop sentence intoNonStop",
+						"thisNonStop", "thisNonStop sentence",
+						"thisNonStop sentence intoNonStop",
+						"thisNonStop sentence intoNonStop shingles",
+						"sentence", "sentence intoNonStop",
+						"sentence intoNonStop shingles", "intoNonStop",
+						"intoNonStop shingles", "shingles"]);
+
+		i = j;
+	}
 
 	/* and more complex with stopwords */
 
-	assertTokenStreamContents(
-			new ShingleStopFilter(new TestTokenStream(["and"])), []);
+	for (var i = 1; i < 75; i += 22 / 3) {
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream(["and",
-					"the"])), []);
+		var j = i;
+		i = Math.floor(i);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-					"Urim", "and"])), ["Urim", "Urim and"], [[0], [0, 4]], [
-					[4], [4, 7]], [1, 1 / 2]);
+		assertTokenStreamContents(new ShingleStopFilter(
+						new TestTokenStream(["and"]), 2, i), []);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream(["the",
-					"Urim"])), ["the Urim", "Urim"], [[0, 3], [3]], [[3, 7],
-					[7]], [1 / 2, 1]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"and", "the"]), 2, i), []);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-					"Urim", "and", "Thummim"])), ["Urim", "Urim and",
-					"and Thummim", "Thummim"], [[0], [0, 4], [4, 7], [7]], [
-					[4], [4, 7], [7, 14], [14]], [1, 1 / 2, 1 / 2, 1]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"Urim", "and"]), 2, i), ["Urim", "Urim and"], [
+						[0], [0, 4]], [[4], [4, 7]], [1, 1 / 2]);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-							"Urim", "and", "Thummim"]), 3), ["Urim",
-					"Urim and", "Urim and Thummim", "and Thummim", "Thummim"],
-			[[0], [0, 4], [0, 4, 7], [4, 7], [7]], [[4], [4, 7], [4, 7, 14],
-					[7, 14], [14]], [1, 1 / 2, 1, 1 / 2, 1]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"the", "Urim"]), 2, i), ["the Urim", "Urim"], [
+						[0, 3], [3]], [[3, 7], [7]], [1 / 2, 1]);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-					"Urim", "and", "not", "Thummim"])), ["Urim", "Urim and",
-					"not Thummim", "Thummim"], [[0], [0, 4], [7, 10], [10]], [
-					[4], [4, 7], [10, 17], [17]], [1, 1 / 2, 1 / 2, 1]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"Urim", "and", "Thummim"]), 2, i), ["Urim",
+						"Urim and", "and Thummim", "Thummim"], [[0], [0, 4],
+						[4, 7], [7]], [[4], [4, 7], [7, 14], [14]], [1, 1 / 2,
+						1 / 2, 1]);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-							"Urim", "and", "not", "Thummim"]), 3), ["Urim",
-					"Urim and", "Urim and not", "and not Thummim",
-					"not Thummim", "Thummim"], [[0], [0, 4], [0, 4, 7],
-					[4, 7, 10], [7, 10], [10]], [[4], [4, 7], [4, 7, 10],
-					[7, 10, 17], [10, 17], [17]], [1, 1 / 2, 1 - 2 / 3,
-					1 - 2 / 3, 1 / 2, 1]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"Urim", "and", "Thummim"]), 3, i), ["Urim",
+						"Urim and", "Urim and Thummim", "and Thummim",
+						"Thummim"], [[0], [0, 4], [0, 4, 7], [4, 7], [7]], [
+						[4], [4, 7], [4, 7, 14], [7, 14], [14]], [1, 1 / 2, 1,
+						1 / 2, 1]);
 
-	assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
-							"Urim", "and", "not", "Thummim"]), 4), ["Urim",
-					"Urim and", "Urim and not", "Urim and not Thummim",
-					"and not Thummim", "not Thummim", "Thummim"], [[0], [0, 4],
-					[0, 4, 7], [0, 4, 7, 10], [4, 7, 10], [7, 10], [10]], [[4],
-					[4, 7], [4, 7, 10], [4, 7, 10, 17], [7, 10, 17], [10, 17],
-					[17]], [1, 1 / 2, 1 - 2 / 3, 1, 1 - 2 / 3, 1 / 2, 1]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"Urim", "and", "not", "Thummim"]), 2, i), [
+						"Urim", "Urim and", "not Thummim", "Thummim"], [[0],
+						[0, 4], [7, 10], [10]], [[4], [4, 7], [10, 17], [17]],
+				[1, 1 / 2, 1 / 2, 1]);
 
-	assertTokenStreamContents(
-			new ShingleStopFilter(new TestTokenStream(["please", "divide",
-							"thisNonStop", "sentence"]), 2), ["please",
-					"please divide", "divide", "divide thisNonStop",
-					"thisNonStop", "thisNonStop sentence", "sentence"]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"Urim", "and", "not", "Thummim"]), 3, i), [
+						"Urim", "Urim and", "Urim and not", "and not Thummim",
+						"not Thummim", "Thummim"], [[0], [0, 4], [0, 4, 7],
+						[4, 7, 10], [7, 10], [10]], [[4], [4, 7], [4, 7, 10],
+						[7, 10, 17], [10, 17], [17]], [1, 1 / 2, 1 - 2 / 3,
+						1 - 2 / 3, 1 / 2, 1]);
 
-	assertTokenStreamContents(new ShingleStopFilter(
-					new TestTokenStream(["please", "divide", "this",
-							"sentence", "into", "shingles"]), 3), ["please",
-					"please divide", "please divide this", "divide",
-					"divide this", "divide this sentence", "this sentence",
-					"this sentence into", "sentence", "sentence into",
-					"sentence into shingles", "into shingles", "shingles"]);
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"Urim", "and", "not", "Thummim"]), 4, i), [
+						"Urim", "Urim and", "Urim and not",
+						"Urim and not Thummim", "and not Thummim",
+						"not Thummim", "Thummim"], [[0], [0, 4], [0, 4, 7],
+						[0, 4, 7, 10], [4, 7, 10], [7, 10], [10]], [[4],
+						[4, 7], [4, 7, 10], [4, 7, 10, 17], [7, 10, 17],
+						[10, 17], [17]], [1, 1 / 2, 1 - 2 / 3, 1, 1 - 2 / 3,
+						1 / 2, 1]);
 
-	assertTokenStreamContents(new ShingleStopFilter(
-					new TestTokenStream(["please", "divide", "this",
-							"sentence", "into", "shingles"]), 4), ["please",
-					"please divide", "please divide this",
-					"please divide this sentence", "divide", "divide this",
-					"divide this sentence", "divide this sentence into",
-					"this sentence", "this sentence into",
-					"this sentence into shingles", "sentence", "sentence into",
-					"sentence into shingles", "into shingles", "shingles"]);
+		assertTokenStreamContents(new ShingleStopFilter(
+						new TestTokenStream(["please", "divide", "thisNonStop",
+								"sentence"]), 2, i), ["please",
+						"please divide", "divide", "divide thisNonStop",
+						"thisNonStop", "thisNonStop sentence", "sentence"]);
+
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"please", "divide", "this", "sentence", "into",
+								"shingles"]), 3, i), ["please",
+						"please divide", "please divide this", "divide",
+						"divide this", "divide this sentence", "this sentence",
+						"this sentence into", "sentence", "sentence into",
+						"sentence into shingles", "into shingles", "shingles"]);
+
+		assertTokenStreamContents(new ShingleStopFilter(new TestTokenStream([
+								"please", "divide", "this", "sentence", "into",
+								"shingles"]), 4, i), ["please",
+						"please divide", "please divide this",
+						"please divide this sentence", "divide", "divide this",
+						"divide this sentence", "divide this sentence into",
+						"this sentence", "this sentence into",
+						"this sentence into shingles", "sentence",
+						"sentence into", "sentence into shingles",
+						"into shingles", "shingles"]);
+
+		i = j;
+	}
 }
 
 var testTrimFilter = function() {

@@ -37,113 +37,110 @@
 
 const EXPORTED_SYMBOLS = ['ShingleStopFilter'];
 
-function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
+function ShingleStopFilter(input, newMaxShingleSz, newMaxSzShinglesFIFO,
+		newTokenSeparator) {
 
 	var iIncToken = input.incrementToken;
 
-	var maxShingleSize = newMaxShingleSize ? newMaxShingleSize : 2;
+	var maxShingleSz = newMaxShingleSz ? newMaxShingleSz : 2;
 	var tokenSeparator = newTokenSeparator ? newTokenSeparator : " ";
+	var maxSzShinglesFIFO = newMaxSzShinglesFIFO ? newMaxSzShinglesFIFO : 25;
 
-	if (maxShingleSize < 2)
-		throw "Max shingle size must be >= 2, current: " + maxShingleSize;
+	if (maxShingleSz < 2)
+		throw "Max shingle size must be >= 2, current: " + maxShingleSz;
 
-	var shingleBuf = [], shingles;
+	var shingleBuf = [], shingles = [];
 
 	function fillShingleBuffer() {
 		do {
-			var sbLength = shingleBuf.length;
-
-			if (sbLength) {
-				shingleBuf.shift();
+			if (shingleBuf.length) {
+				shingleBuf.pop();
 				var token = iIncToken();
 				if (token)
-					shingleBuf.push(token);
+					shingleBuf.unshift(token);
 			} else {
-				var i = maxShingleSize;
-				while (i--) {
+				do {
 					var token = iIncToken();
 					if (!token)
 						break;
-					shingleBuf.push(token);
-				}
+					shingleBuf.unshift(token);
+				} while (shingleBuf.length < maxShingleSz);
 			}
 
-			sbLength = shingleBuf.length;
+			var sb = shingleBuf.length;
 
-			if (!sbLength)
-				return;
+			if (!sb)
+				return shingles.length;
 
-			var allShingles = new Array(sbLength);
+			var allShingles = new Array(sb--);
 
-			for (var i = 0; i < sbLength; i++) {
-				var token = shingleBuf[i], tokenTerm = token.term, isStopToken = isStopWord(tokenTerm);
+			var token = shingleBuf[sb], is = isStop(token.term), c = is ? 1 : 0;
+			allShingles[sb] = makeItem(token, is, c);
 
-				for (var j = i; j < sbLength; j++) {
-					var item = allShingles[j];
-					if (item) {
-						var itemToken = item.token;
+			var i = sb;
+			if (i--) {
+				var j = i, aToken = shingleBuf[i], tokenTerm = aToken.term, ais = isStop(tokenTerm);
+				do {
+					var item = makeItem(token.clone(), is, c), itemToken = item.token;
+					allShingles[j] = item;
+					itemToken.term += tokenSeparator + tokenTerm;
+					item.isStopEnd = ais;
+					if (ais)
+						item.stopCount++;
+					itemToken.offset = itemToken.offset.concat(aToken.offset);
+				} while (j--);
+				while (i--) {
+					var j = i, aToken = shingleBuf[i], tokenTerm = aToken.term, ais = isStop(tokenTerm);
+					do {
+						var item = allShingles[j], itemToken = item.token;
 						itemToken.term += tokenSeparator + tokenTerm;
-						item.isStopEnd = isStopToken;
-						if (isStopToken)
+						item.isStopEnd = ais;
+						if (ais)
 							item.stopCount++;
 						itemToken.offset = itemToken.offset
-								.concat(token.offset);
-					} else
-						allShingles[j] = {
-							"token" : token.clone(),
-							"isStopStart" : isStopToken,
-							"isStopEnd" : isStopToken,
-							"stopCount" : isStopToken ? 1 : 0
-						};
+								.concat(aToken.offset);
+					} while (j--);
 				}
 			}
-
-			shingles = [];
 
 			/*
 			 * Boost shingle tokens, witch don't start or end with a stop
 			 * word(s), skip shingle tokens with all just stop word(s)
 			 */
 
-			for (var i = 0; i < sbLength; i++) {
-				var item = allShingles[i], itemToken = item.token, itemTOL = itemToken.offset.length, itemSC = item.stopCount;
+			do {
+				var item = allShingles[sb], itemToken = item.token, itol = itemToken.offset.length, isc = item.stopCount;
 
-				if (itemTOL == itemSC)
+				if (itol == isc)
 					continue;
 
 				if (item.isStopStart || item.isStopEnd)
-					itemToken.boost *= 1 - itemSC / itemTOL;
+					itemToken.boost *= 1 - isc / itol;
 
 				shingles.push(itemToken);
-			}
+			} while (sb--);
 
-		} while (!shingles.length);
+		} while (shingles.length < maxSzShinglesFIFO);
 
 		return true;
 	}
 
-	var shinglesPosition = 0;
+	function makeItem(token, isStop, stopCount) {
+		return {
+			"token" : token,
+			"isStopStart" : isStop,
+			"isStopEnd" : isStop,
+			"stopCount" : stopCount
+		};
+	}
 
 	this.incrementToken = function() {
-		if (!shingles) {
+		if (!shingles.length) {
 			if (!fillShingleBuffer())
 				return;
 		}
 
-		var shinglesLength = shingles.length;
-
-		if (shinglesPosition < shinglesLength) {
-			var token = shingles[shinglesPosition++];
-
-			if (shinglesPosition == shinglesLength) {
-				shingles = null;
-				shinglesPosition = 0;
-			}
-
-			return token;
-		}
-
-		return null;
+		return shingles.shift();
 	}
 
 	var stopList = {
@@ -253,6 +250,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"keita" : null,
 		"jag" : null,
 		"\u0449\u043e" : null,
+		"it\u2019" : null,
 		"vaan" : null,
 		"kein\u00e4" : null,
 		"femte" : null,
@@ -265,6 +263,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"tanto" : null,
 		"uusint" : null,
 		"jopa" : null,
+		"how\u2019s" : null,
 		"\u043b\u0438\u0448\u044c" : null,
 		"tuonn" : null,
 		"sinulle" : null,
@@ -280,17 +279,17 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"tapauksess" : null,
 		"pieni" : null,
 		"fuer" : null,
-		"yourselv" : null,
 		"l\u00e4hell" : null,
+		"yourselv" : null,
 		"piene" : null,
 		"somente" : null,
-		"mein" : null,
 		"ensimm\u00e4iset" : null,
+		"mein" : null,
 		"kumpikin" : null,
 		"\u043d\u0438\u0447\u0435\u0433\u043e" : null,
+		"ensimm\u00e4isen" : null,
 		"entist" : null,
 		"meil" : null,
-		"ensimm\u00e4isen" : null,
 		"neder" : null,
 		"tuolt" : null,
 		"f\u00f6re" : null,
@@ -324,13 +323,14 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"joiks" : null,
 		"vidare" : null,
 		"aikaisemmin" : null,
-		"niist\u00e4" : null,
 		"muiden" : null,
+		"niist\u00e4" : null,
 		"nostro" : null,
 		"helt" : null,
 		"itsensa" : null,
 		"hels" : null,
 		"meny" : null,
+		"when\u2019s" : null,
 		"overst" : null,
 		"kumpikaan" : null,
 		"toistais" : null,
@@ -402,6 +402,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"helst" : null,
 		"niita" : null,
 		"uusien" : null,
+		"isn\u2019" : null,
 		"mest" : null,
 		"f\u00e5t" : null,
 		"f\u00e5r" : null,
@@ -417,8 +418,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0431\u0443\u0432" : null,
 		"niista" : null,
 		"\u0432\u043e\u043a\u0440\u0443\u0433" : null,
-		"itsens\u00e4" : null,
 		"nelj\u00e4\u00e4" : null,
+		"itsens\u00e4" : null,
+		"haven\u2019" : null,
 		"vaik" : null,
 		"hers" : null,
 		"\u0442\u043e" : null,
@@ -452,8 +454,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0434\u0432\u0430\u0434\u0446\u0430\u0442\u044c" : null,
 		"meid\u00e4" : null,
 		"\u0443\u0436" : null,
-		"sowi" : null,
 		"while" : null,
+		"sowi" : null,
 		"\u0443\u0432" : null,
 		"\u043d\u0435\u043f\u0440\u0435\u0440\u044b\u0432\u043d\u043e" : null,
 		"\u0442\u044b" : null,
@@ -463,6 +465,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0442\u0443" : null,
 		"asiast" : null,
 		"ensimm\u00e4isi\u00e4" : null,
+		"he\u2019ll" : null,
 		"alltid" : null,
 		"kumpainen" : null,
 		"kaikill" : null,
@@ -478,6 +481,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"tois" : null,
 		"\u0457\u0445\u043d\u0456\u0445" : null,
 		"tavoitteena" : null,
+		"aren\u2019" : null,
 		"kannalta" : null,
 		"mojligtvis" : null,
 		"\u0432\u0441\u0456" : null,
@@ -526,8 +530,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"mihin" : null,
 		"aivan" : null,
 		"suuret" : null,
-		"eteen" : null,
 		"kahden" : null,
+		"eteen" : null,
 		"kahdel" : null,
 		"\u043d\u0443\u0436\u043d" : null,
 		"suuren" : null,
@@ -660,8 +664,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"somo" : null,
 		"aloittamatt" : null,
 		"\u00e5ttiond" : null,
-		"kaikkialta" : null,
 		"some" : null,
+		"kaikkialta" : null,
 		"\u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435" : null,
 		"kauemmas" : null,
 		"sois" : null,
@@ -677,6 +681,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"fuim" : null,
 		"f\u00dbr" : null,
 		"autre" : null,
+		"mustn\u2019" : null,
 		"yhdeks" : null,
 		"kahten" : null,
 		"tills" : null,
@@ -824,8 +829,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"thos" : null,
 		"per\u00e4ti" : null,
 		"sit" : null,
-		"\u043a" : null,
 		"kahteen" : null,
+		"\u043a" : null,
 		"sis" : null,
 		"\u0438" : null,
 		"\u043e" : null,
@@ -872,8 +877,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"bakom" : null,
 		"n\u00e4sta" : null,
 		"my\u00f6hem" : null,
-		"\u043c\u043d\u043e\u0433\u043e\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b\u0435" : null,
 		"h\u00e4ness\u00e4" : null,
+		"\u043c\u043d\u043e\u0433\u043e\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b\u0435" : null,
 		"sex" : null,
 		"ultim" : null,
 		"ser" : null,
@@ -893,8 +898,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"verdadero" : null,
 		"fr\u00e5n" : null,
 		"joutum" : null,
-		"runsaasti" : null,
 		"lis\u00e4\u00e4" : null,
+		"runsaasti" : null,
 		"joutua" : null,
 		"verdadera" : null,
 		"nito" : null,
@@ -923,6 +928,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"they" : null,
 		"ther" : null,
 		"uudell" : null,
+		"weren\u2019t" : null,
 		"thes" : null,
 		"sext" : null,
 		"joissa" : null,
@@ -936,8 +942,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"erit" : null,
 		"sol" : null,
 		"ensimm\u00e4isiks" : null,
-		"\u043c\u043d\u043e\u0433\u043e\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0435" : null,
 		"som" : null,
+		"\u043c\u043d\u043e\u0433\u043e\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0435" : null,
 		"son" : null,
 		"sop" : null,
 		"menev\u00e4" : null,
@@ -949,13 +955,17 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"hattet" : null,
 		"hattes" : null,
 		"l\u00e4hes" : null,
+		"weren\u2019" : null,
 		"hatten" : null,
 		"sob" : null,
+		"he\u2019d" : null,
 		"kov" : null,
 		"usein" : null,
 		"kos" : null,
 		"en\u00e4\u00e4" : null,
 		"useit" : null,
+		"he\u2019l" : null,
+		"he\u2019s" : null,
 		"where's" : null,
 		"kom" : null,
 		"kol" : null,
@@ -980,6 +990,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"mainten" : null,
 		"sli" : null,
 		"stess" : null,
+		"we\u2019ll" : null,
 		"\u0434\u0430\u043b\u044c\u0448" : null,
 		"second" : null,
 		"voitt" : null,
@@ -997,6 +1008,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"sett" : null,
 		"viis" : null,
 		"\u00fcber" : null,
+		"how\u2019" : null,
 		"niin" : null,
 		"seul" : null,
 		"such" : null,
@@ -1020,6 +1032,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"avuksi" : null,
 		"this" : null,
 		"josta" : null,
+		"who\u2019s" : null,
 		"fueron" : null,
 		"\u043d\u0430\u043c\u0438" : null,
 		"aikoin" : null,
@@ -1053,6 +1066,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"t\u00e4ytyy" : null,
 		"\u0448\u0435\u0441\u0442" : null,
 		"r\u00e4tt" : null,
+		"we\u2019re" : null,
 		"debaixo" : null,
 		"eram" : null,
 		"eran" : null,
@@ -1099,6 +1113,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"haluam" : null,
 		"n\u00e6sten" : null,
 		"both" : null,
+		"we\u2019ve" : null,
 		"\u043e\u0447\u0435\u043d" : null,
 		"\u0437\u0432\u0456\u0434\u0442\u0438" : null,
 		"after" : null,
@@ -1184,6 +1199,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u043a\u0440\u043e\u043c\u0435" : null,
 		"wann" : null,
 		"tulevat" : null,
+		"what\u2019" : null,
 		"\u0441\u0432\u043e\u0435\u0433\u043e" : null,
 		"edes" : null,
 		"edel" : null,
@@ -1219,6 +1235,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"rett" : null,
 		"tillsammans" : null,
 		"halunnut" : null,
+		"they\u2019" : null,
 		"wird" : null,
 		"femtiond" : null,
 		"\u0431\u0443\u0434\u0435\u0442\u0435" : null,
@@ -1232,8 +1249,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u043f\u043e\u0442\u043e\u043c" : null,
 		"estivemo" : null,
 		"indietro" : null,
-		"kanssann" : null,
 		"l\u00e4hemm\u00e4" : null,
+		"kanssann" : null,
 		"kanssani" : null,
 		"voida" : null,
 		"\u00e5ttond" : null,
@@ -1289,8 +1306,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"hanell" : null,
 		"\u0434\u0430\u0440" : null,
 		"\u0441\u043a\u0430\u0437\u0430\u0442\u044c" : null,
-		"consiguen" : null,
 		"these" : null,
+		"consiguen" : null,
 		"v\u00e4l" : null,
 		"viide" : null,
 		"kahdella" : null,
@@ -1331,7 +1348,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u043d\u0438\u043c\u0438" : null,
 		"kanns" : null,
 		"huomen" : null,
+		"hadn\u2019" : null,
 		"huolimatt" : null,
+		"they\u2019re" : null,
 		"tjugotv\u00e5" : null,
 		"alkon" : null,
 		"nosotros" : null,
@@ -1390,6 +1409,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u043d\u0435\u0442" : null,
 		"hag" : null,
 		"had" : null,
+		"they\u2019ll" : null,
 		"hac" : null,
 		"\u0442\u0435\u043a\u0443\u0449\u0438\u0439" : null,
 		"eramo" : null,
@@ -1408,8 +1428,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"toisel" : null,
 		"paremmin" : null,
 		"vastaan" : null,
-		"\u00e9t\u00e9" : null,
 		"entisen" : null,
+		"\u00e9t\u00e9" : null,
 		"shan't" : null,
 		"hundraen" : null,
 		"\u043d\u0435\u043d\u0430\u0447\u0435" : null,
@@ -1483,6 +1503,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"mikin" : null,
 		"kohti" : null,
 		"\u043a\u0430\u0436\u0434\u043e\u0435" : null,
+		"why\u2019s" : null,
 		"aloitettu" : null,
 		"hvorf" : null,
 		"hvord" : null,
@@ -1506,6 +1527,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"voim" : null,
 		"edella" : null,
 		"voin" : null,
+		"she\u2019ll" : null,
 		"ello" : null,
 		"tjugotre" : null,
 		"edelle" : null,
@@ -1556,6 +1578,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"musst" : null,
 		"muuall" : null,
 		"eraat" : null,
+		"where\u2019s" : null,
 		"kump" : null,
 		"v\u00e4r" : null,
 		"aikaj" : null,
@@ -1568,6 +1591,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0442\u0440\u0435\u0442" : null,
 		"useimmiten" : null,
 		"j\u00e4lk" : null,
+		"they\u2019ve" : null,
 		"omissa" : null,
 		"ofta" : null,
 		"aikan" : null,
@@ -1643,6 +1667,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0442\u0435\u0431" : null,
 		"n\u00e4iss\u00e4lt\u00e4" : null,
 		"sita" : null,
+		"there\u2019s" : null,
 		"jokain" : null,
 		"they'v" : null,
 		"ellemme" : null,
@@ -1691,6 +1716,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0432\u0440\u0435\u043c\u044f" : null,
 		"\u043e\u0442\u0441\u044e\u0434\u0430" : null,
 		"sit\u00e4" : null,
+		"he\u2019" : null,
 		"you" : null,
 		"v\u00e4hemm\u00e4n" : null,
 		"enquant" : null,
@@ -1756,6 +1782,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0442\u043e\u0433" : null,
 		"sm\u00e5t" : null,
 		"\u0442\u043e\u0431" : null,
+		"don\u2019" : null,
 		"just" : null,
 		"yleensa" : null,
 		"ettusen" : null,
@@ -1795,6 +1822,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"st\u00f6rs" : null,
 		"estes" : null,
 		"ketka" : null,
+		"you\u2019ve" : null,
+		"\u043c\u043b\u043d" : null,
 		"buono" : null,
 		"\u0442\u0440\u0438" : null,
 		"agor" : null,
@@ -1825,6 +1854,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"mista" : null,
 		"\u0434\u043b\u044f" : null,
 		"kansk" : null,
+		"let\u2019" : null,
 		"\u043c\u043d\u0435" : null,
 		"\u043a\u0430\u0436\u0434\u0430\u044f" : null,
 		"hyva" : null,
@@ -1851,8 +1881,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u043c\u043e\u0440" : null,
 		"moni" : null,
 		"\u0439\u043e\u0433\u043e" : null,
-		"store" : null,
 		"mone" : null,
+		"store" : null,
 		"i'" : null,
 		"shal" : null,
 		"storr" : null,
@@ -1861,6 +1891,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"stort" : null,
 		"fi" : null,
 		"mikali" : null,
+		"can\u2019" : null,
 		"fu" : null,
 		"fo" : null,
 		"toistaiseks" : null,
@@ -1946,6 +1977,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"suoran" : null,
 		"doch" : null,
 		"bu" : null,
+		"that\u2019s" : null,
 		"dock" : null,
 		"perusteella" : null,
 		"asian" : null,
@@ -1972,6 +2004,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"ani" : null,
 		"kuiten" : null,
 		"tjugoen" : null,
+		"what\u2019s" : null,
 		"warum" : null,
 		"cu" : null,
 		"anc" : null,
@@ -2094,6 +2127,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"m\u00c5" : null,
 		"comment" : null,
 		"pi" : null,
+		"it\u2019s" : null,
 		"\u043e\u0442\u0436\u0435" : null,
 		"lo" : null,
 		"ige" : null,
@@ -2110,6 +2144,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"n\u00e4it\u00e4" : null,
 		"ma" : null,
 		"vastakkain" : null,
+		"\u0442\u044b\u0441" : null,
 		"me" : null,
 		"fyrti" : null,
 		"trettiond" : null,
@@ -2152,8 +2187,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"leur" : null,
 		"ind" : null,
 		"we'd" : null,
-		"kauemma" : null,
 		"kuuden" : null,
+		"kauemma" : null,
 		"ogs\u00c5" : null,
 		"f\u00f6" : null,
 		"inn" : null,
@@ -2206,11 +2241,12 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"if" : null,
 		"m\u00eam" : null,
 		"ir" : null,
-		"is" : null,
 		"those" : null,
+		"is" : null,
 		"it" : null,
 		"lesz" : null,
 		"loro" : null,
+		"hasn\u2019" : null,
 		"ilm" : null,
 		"ik" : null,
 		"il" : null,
@@ -2275,6 +2311,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"s\u00c5" : null,
 		"dello" : null,
 		"vi" : null,
+		"i\u2019" : null,
 		"t\u00e4h\u00e4n" : null,
 		"nostr" : null,
 		"kuitenk" : null,
@@ -2284,14 +2321,17 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"kylla" : null,
 		"punk" : null,
 		"vo" : null,
+		"they\u2019l" : null,
 		"infor" : null,
 		"when's" : null,
 		"ve" : null,
 		"r\u00e1" : null,
 		"r\u00e0" : null,
+		"they\u2019d" : null,
 		"va" : null,
 		"nedre" : null,
 		"h\u00e4neen" : null,
+		"she\u2019" : null,
 		"estamos" : null,
 		"adesso" : null,
 		"\u0437\u043d\u0430\u0447" : null,
@@ -2300,8 +2340,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"us" : null,
 		"\u0441\u043a\u0430\u0437\u0430" : null,
 		"ut" : null,
-		"um" : null,
+		"they\u2019r" : null,
 		"parc" : null,
+		"um" : null,
 		"senare" : null,
 		"\u0434\u0435\u0432\u044f\u0442" : null,
 		"tripl" : null,
@@ -2312,6 +2353,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"gjorde" : null,
 		"yht\u00e4\u00e4ll\u00e4" : null,
 		"up" : null,
+		"they\u2019v" : null,
 		"dess" : null,
 		"secondo" : null,
 		"isn'" : null,
@@ -2334,11 +2376,13 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"mahdollisimm" : null,
 		"traba" : null,
 		"t\u00eam" : null,
+		"here\u2019s" : null,
 		"te" : null,
 		"etei" : null,
 		"olisin" : null,
 		"olisim" : null,
 		"joide" : null,
+		"doesn\u2019t" : null,
 		"ti" : null,
 		"p\u00e5" : null,
 		"o\u00f9" : null,
@@ -2350,6 +2394,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"depu" : null,
 		"su" : null,
 		"langr" : null,
+		"hasn\u2019t" : null,
 		"conhec" : null,
 		"myota" : null,
 		"yht\u00e4\u00e4lle" : null,
@@ -2372,9 +2417,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"sa" : null,
 		"consegu" : null,
 		"n\u00f3" : null,
+		"h\u00e4nell" : null,
 		"\u043e\u0442" : null,
 		"senast" : null,
-		"h\u00e4nell" : null,
 		"hans" : null,
 		"\u043e\u043a" : null,
 		"\u043e\u043d" : null,
@@ -2475,10 +2520,11 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"forra" : null,
 		"pait" : null,
 		"aou" : null,
+		"won\u2019t" : null,
 		"qu\u00ea" : null,
 		"uber" : null,
-		"\u0432\u043e\u043d\u0438" : null,
 		"eniten" : null,
+		"\u0432\u043e\u043d\u0438" : null,
 		"mu\u00dft" : null,
 		"allts\u00e5" : null,
 		"novo" : null,
@@ -2705,8 +2751,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"conhecido" : null,
 		"fjard" : null,
 		"makt" : null,
-		"konn" : null,
 		"eilen" : null,
+		"konn" : null,
 		"fai" : null,
 		"\u0432\u043f\u0440\u043e\u0447\u0435\u043c" : null,
 		"lahekkain" : null,
@@ -2759,12 +2805,13 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"yhdeks\u00e4" : null,
 		"inut" : null,
 		"tenho" : null,
+		"you\u2019" : null,
 		"t\u00e4l\u00f6" : null,
 		"olimm" : null,
 		"mientr" : null,
 		"ensimm\u00e4iseks" : null,
-		"betwen" : null,
 		"my\u00f6" : null,
+		"betwen" : null,
 		"devrai" : null,
 		"\u0447\u0435\u0442\u044b\u0440\u043d\u0430\u0434\u0446\u0430\u0442\u044c" : null,
 		"alusta" : null,
@@ -2853,9 +2900,12 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"nome" : null,
 		"estara" : null,
 		"\u0434\u0435\u0441\u044f\u0442" : null,
+		"i\u2019d" : null,
 		"aquelas" : null,
 		"n\u00e6st" : null,
 		"\u0434\u0440\u0443\u0433\u043e\u0439" : null,
+		"i\u2019m" : null,
+		"i\u2019l" : null,
 		"\u0434\u0440\u0443\u0433\u043e\u0435" : null,
 		"\u043f\u0440\u043e\u0442" : null,
 		"ough" : null,
@@ -2864,12 +2914,13 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"ratt" : null,
 		"inte" : null,
 		"kokon" : null,
-		"g\u00e4ller" : null,
 		"jokainen" : null,
+		"g\u00e4ller" : null,
 		"l\u00e4ng" : null,
 		"into" : null,
 		"hint" : null,
 		"mye" : null,
+		"i\u2019v" : null,
 		"aloitit" : null,
 		"ent\u00e3" : null,
 		"ensimm\u00e4isen\u00e4" : null,
@@ -2945,6 +2996,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"toisens" : null,
 		"tilbake" : null,
 		"num" : null,
+		"shouldn\u2019" : null,
 		"nun" : null,
 		"\u0437\u0430\u0434\u043b\u044f" : null,
 		"inom" : null,
@@ -2952,6 +3004,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"didn'" : null,
 		"nuo" : null,
 		"couldn'" : null,
+		"let\u2019s" : null,
 		"\u00e5tminstone" : null,
 		"mit\u00e4\u00e4" : null,
 		"yhteensa" : null,
@@ -2999,14 +3052,15 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"nro" : null,
 		"olle" : null,
 		"werde" : null,
-		"olli" : null,
 		"edelleen" : null,
+		"olli" : null,
 		"\u00faltimo" : null,
 		"yours" : null,
 		"\u0434\u0443\u0436\u0435" : null,
 		"\u043e\u043d\u0438" : null,
 		"verk" : null,
 		"yhteyten" : null,
+		"haven\u2019t" : null,
 		"ollu" : null,
 		"\u0442\u043e\u0433\u0434\u0430" : null,
 		"puolest" : null,
@@ -3093,6 +3147,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"enn" : null,
 		"koko" : null,
 		"enl" : null,
+		"you\u2019d" : null,
 		"quindi" : null,
 		"mint" : null,
 		"tidig" : null,
@@ -3103,11 +3158,14 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"ent" : null,
 		"pi\u00e8c" : null,
 		"jonne" : null,
+		"you\u2019v" : null,
 		"samallass" : null,
+		"you\u2019r" : null,
 		"\u0438\u043d\u043e\u0433\u0434" : null,
 		"parole" : null,
 		"vostr" : null,
 		"mik\u00e4" : null,
+		"you\u2019l" : null,
 		"tente" : null,
 		"\u043b\u0443\u0447\u0448\u0435" : null,
 		"sisakkain" : null,
@@ -3155,6 +3213,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"por que" : null,
 		"stati" : null,
 		"vuod" : null,
+		"here\u2019" : null,
 		"let's" : null,
 		"because" : null,
 		"t\u00e4ys" : null,
@@ -3172,7 +3231,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"woh" : null,
 		"muual" : null,
 		"muuan" : null,
+		"can\u2019t" : null,
 		"\u0430\u0434\u0436\u0435" : null,
+		"shouldn\u2019t" : null,
 		"szet" : null,
 		"\u00f9ltim" : null,
 		"\u0447\u0435\u043c\u0443" : null,
@@ -3238,6 +3299,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"wen" : null,
 		"kuutta" : null,
 		"empl" : null,
+		"wasn\u2019" : null,
 		"arbe" : null,
 		"hanesta" : null,
 		"tassa" : null,
@@ -3249,9 +3311,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"fire" : null,
 		"sant" : null,
 		"kunna" : null,
+		"keiden" : null,
 		"enquanto" : null,
 		"\u0437\u0430\u043d\u044f\u0442\u0430" : null,
-		"keiden" : null,
 		"sans" : null,
 		"kunne" : null,
 		"\u0442\u0440\u0438\u043d\u0430\u0434\u0446\u0430\u0442\u044c" : null,
@@ -3262,8 +3324,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"n\u00e4iss\u00e4ll" : null,
 		"s\u00e4g" : null,
 		"sama" : null,
-		"tasta" : null,
 		"whi" : null,
+		"tasta" : null,
 		"same" : null,
 		"\u0447\u0435\u0442\u044b\u0440" : null,
 		"pakosti" : null,
@@ -3275,6 +3337,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"uuten" : null,
 		"\u043d\u0435\u043c\u0443" : null,
 		"samr" : null,
+		"you\u2019ll" : null,
 		"samo" : null,
 		"\u043d\u0435\u043c\u043d" : null,
 		"comprid" : null,
@@ -3282,25 +3345,33 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"rispetto" : null,
 		"vasta" : null,
 		"aikana" : null,
+		"won\u2019" : null,
 		"i'v" : null,
 		"hundrae" : null,
 		"s\u00e3o" : null,
+		"couldn\u2019" : null,
 		"lahes" : null,
 		"emme" : null,
 		"i'd" : null,
+		"we\u2019d" : null,
 		"tulitt" : null,
 		"i'm" : null,
 		"i'l" : null,
 		"j\u00e4lkeen" : null,
 		"oda" : null,
+		"we\u2019v" : null,
+		"there\u2019" : null,
 		"promess" : null,
 		"uutt" : null,
+		"couldn\u2019t" : null,
 		"direita" : null,
 		"ultimo" : null,
 		"promeso" : null,
 		"betwe" : null,
+		"we\u2019l" : null,
 		"l\u00e5ngsammar" : null,
 		"l\u00e5ngsammas" : null,
+		"we\u2019r" : null,
 		"\u0441\u0435\u043c\u043d\u0430\u0434\u0446\u0430\u0442" : null,
 		"heill" : null,
 		"siden" : null,
@@ -3363,8 +3434,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"sujet" : null,
 		"sembrav" : null,
 		"abov" : null,
-		"f\u00f6rsta" : null,
 		"joudutt" : null,
+		"f\u00f6rsta" : null,
 		"sextionde" : null,
 		"\u0432\u0440\u0435\u043c" : null,
 		"lisaa" : null,
@@ -3430,6 +3501,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"was" : null,
 		"maior" : null,
 		"quelle" : null,
+		"you\u2019re" : null,
 		"estiver" : null,
 		"ensimm\u00e4inen" : null,
 		"quello" : null,
@@ -3438,9 +3510,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0441\u0430\u043c\u043e\u0433\u043e" : null,
 		"intent" : null,
 		"podr" : null,
+		"entisten" : null,
 		"yhdess\u00e4" : null,
 		"alg\u00fan" : null,
-		"entisten" : null,
 		"pode" : null,
 		"avere" : null,
 		"yksittain" : null,
@@ -3514,6 +3586,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u043d\u0438\u043a\u0443\u0434\u0430" : null,
 		"\u043a\u0440\u043e\u043c" : null,
 		"lung" : null,
+		"we\u2019" : null,
 		"weit" : null,
 		"ellemm" : null,
 		"varf\u00f6r" : null,
@@ -3648,6 +3721,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"beh\u00f6vt" : null,
 		"varken" : null,
 		"why's" : null,
+		"that\u2019" : null,
 		"er\u00e4\u00e4" : null,
 		"p\u00e4\u00e4l" : null,
 		"st\u00f6rst" : null,
@@ -3720,6 +3794,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"fann" : null,
 		"alemma" : null,
 		"silla" : null,
+		"when\u2019" : null,
 		"b\u00e5d" : null,
 		"fic" : null,
 		"t\u00e4nne" : null,
@@ -3754,6 +3829,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"tambien" : null,
 		"tietysti" : null,
 		"oma" : null,
+		"mustn\u2019t" : null,
 		"\u0431\u043b\u0438\u0437\u043a\u043e" : null,
 		"voy" : null,
 		"omi" : null,
@@ -3787,12 +3863,13 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"komma" : null,
 		"\u043e\u0442\u043e\u0432\u0441\u044e\u0434" : null,
 		"tienen" : null,
-		"bist" : null,
 		"kyse" : null,
+		"bist" : null,
 		"\u044d\u0442\u043e\u043c" : null,
 		"\u044d\u0442\u043e\u0439" : null,
 		"\u044d\u0442\u043e\u0442" : null,
 		"joiden" : null,
+		"isn\u2019t" : null,
 		"blivi" : null,
 		"unser" : null,
 		"herself" : null,
@@ -3833,6 +3910,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u044f\u043a\u0430" : null,
 		"vars\u00e5god" : null,
 		"antamatta" : null,
+		"i\u2019ll" : null,
 		"\u0432\u0441\u0435\u0433\u0434" : null,
 		"jotta" : null,
 		"algunas" : null,
@@ -3934,12 +4012,13 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"t\u00e4ten" : null,
 		"nopeasti" : null,
 		"will" : null,
-		"ainakaan" : null,
 		"ought" : null,
+		"ainakaan" : null,
 		"pessoas" : null,
 		"kiito" : null,
 		"\u044f\u043a\u0449\u043e" : null,
 		"ensimmaista" : null,
+		"wasn\u2019t" : null,
 		"sjatt" : null,
 		"toisaalt" : null,
 		"\u0447\u0435\u0442\u0432\u0435\u0440\u0442\u044b\u0439" : null,
@@ -3983,8 +4062,10 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0441\u0430\u043c\u043e\u0439" : null,
 		"hogy" : null,
 		"podia" : null,
+		"i\u2019ve" : null,
 		"\u043e\u0431\u044b\u0447\u043d" : null,
 		"aloit" : null,
+		"hadn\u2019t" : null,
 		"\u0431\u0443\u0434\u0435\u0448\u044c" : null,
 		"g\u00f6r" : null,
 		"durch" : null,
@@ -4062,12 +4143,12 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"seda" : null,
 		"uso" : null,
 		"comm" : null,
+		"aiott" : null,
 		"sembra" : null,
 		"primero" : null,
-		"aiott" : null,
 		"quas" : null,
-		"como" : null,
 		"joten" : null,
+		"como" : null,
 		"quan" : null,
 		"alkuis" : null,
 		"nittond" : null,
@@ -4172,8 +4253,8 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"likst\u00e4lld" : null,
 		"ces" : null,
 		"menoss" : null,
-		"\u043c\u043e\u0433\u0443\u0442" : null,
 		"aloitettevaksi" : null,
+		"\u043c\u043e\u0433\u0443\u0442" : null,
 		"\u043a\u043e\u043d\u0435\u0447\u043d\u043e" : null,
 		"cel" : null,
 		"\u043f\u043e\u0441\u0440\u0435\u0434" : null,
@@ -4216,6 +4297,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"\u0437\u0430\u0434\u043b" : null,
 		"senz" : null,
 		"kaiken" : null,
+		"she\u2019d" : null,
 		"why'" : null,
 		"avan" : null,
 		"parhaiten" : null,
@@ -4225,9 +4307,11 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"sek\u00e4" : null,
 		"v\u00e4nstra" : null,
 		"\u043d\u0438\u043a\u043e\u0433\u0434" : null,
+		"she\u2019s" : null,
 		"godare" : null,
 		"\u0442\u043e\u0431\u043e\u0439" : null,
 		"we've" : null,
+		"she\u2019l" : null,
 		"tamb\u00e8m" : null,
 		"tras" : null,
 		"che" : null,
@@ -4272,6 +4356,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"ainakin" : null,
 		"asioita" : null,
 		"\u0440\u0430\u043d" : null,
+		"who\u2019" : null,
 		"until" : null,
 		"omiss" : null,
 		"ollut" : null,
@@ -4330,6 +4415,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"mukaan" : null,
 		"ensimmaisena" : null,
 		"\u043b\u0443\u0447\u0448" : null,
+		"where\u2019" : null,
 		"\u0432\u0441\u044e\u0434" : null,
 		"nuovo" : null,
 		"would" : null,
@@ -4424,12 +4510,15 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"suuntan" : null,
 		"kaikkialt" : null,
 		"omiin" : null,
+		"don\u2019t" : null,
 		"toist" : null,
 		"\u043a\u043e\u043d\u0435\u0447\u043d" : null,
 		"juste" : null,
 		"hanella" : null,
 		"toise" : null,
 		"v\u00e4hint\u00e4\u00e4" : null,
+		"why\u2019" : null,
+		"shan\u2019" : null,
 		"\u00e9n" : null,
 		"\u00e9s" : null,
 		"\u00e9t" : null,
@@ -4440,6 +4529,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"guen" : null,
 		"olet" : null,
 		"godar" : null,
+		"wouldn\u2019" : null,
 		"olen" : null,
 		"olem" : null,
 		"vilka" : null,
@@ -4464,6 +4554,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"tuy" : null,
 		"unter" : null,
 		"latt" : null,
+		"didn\u2019" : null,
 		"\u00e7a" : null,
 		"tus" : null,
 		"ainoat" : null,
@@ -4514,12 +4605,14 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"poder\u00e1" : null,
 		"talloin" : null,
 		"dow" : null,
+		"shan\u2019t" : null,
 		"dos" : null,
 		"vahemman" : null,
 		"cela" : null,
 		"efters" : null,
 		"\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e" : null,
 		"\u043f\u0440\u0438" : null,
+		"wouldn\u2019t" : null,
 		"\u043f\u0440\u043e" : null,
 		"skulle" : null,
 		"\u043f\u043e\u0440" : null,
@@ -4546,11 +4639,13 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"ylemm\u00e4" : null,
 		"annettav" : null,
 		"lage" : null,
+		"didn\u2019t" : null,
 		"pero" : null,
 		"eritt\u00e4in" : null,
 		"\u043f\u043e\u0440\u0430" : null,
 		"\u043f\u043e\u0434" : null,
 		"toiseksi" : null,
+		"aren\u2019t" : null,
 		"\u043f\u043e\u043a" : null,
 		"l\u00e4ngr" : null,
 		"beslut" : null,
@@ -4680,9 +4775,9 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"taas" : null,
 		"den" : null,
 		"dem" : null,
-		"auch" : null,
-		"min" : null,
 		"kahdeksannen" : null,
+		"min" : null,
+		"auch" : null,
 		"mio" : null,
 		"hvil" : null,
 		"mis" : null,
@@ -4711,6 +4806,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"podera" : null,
 		"\u00f6v" : null,
 		"vuoden" : null,
+		"doesn\u2019" : null,
 		"halutessa" : null,
 		"tack" : null,
 		"yhtan" : null,
@@ -4778,7 +4874,7 @@ function ShingleStopFilter(input, newMaxShingleSize, newTokenSeparator) {
 		"tretton" : null
 	};
 
-	function isStopWord(word) {
+	function isStop(word) {
 		return stopList.hasOwnProperty(word);
 	}
 }
