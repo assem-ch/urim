@@ -136,7 +136,7 @@ LanguageIdentifier.prototype = (function() {
 			var count = 0;
 
 			for (var i = 0; i < strText.length; i++) {
-				var c = strText.charAt(i).toLowerCase();
+				var c = strText[i].toLowerCase();
 				if (stringUtils.isUnicodeLetter(c)) {
 					word += c;
 					count += addWord(word);

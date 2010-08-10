@@ -74,7 +74,7 @@ const firefoxOverlay = {
 
 		/* Fatal, Error, Warn, Info, Config, Debug, Trace, All */
 
-		root.level = Log4Moz.Level.Warn;
+		root.level = Log4Moz.Level.Debug;
 
 		var capp = new Log4Moz.ConsoleAppender(formatter);
 		capp.level = Log4Moz.Level.All;
