@@ -132,13 +132,13 @@ function UrimCore() {
 
 			/* http://www.fileformat.info/info/unicode/block/general_punctuation/list.htm */
 
-			var list = "\u00c4\u001a\u001d\u001b\u0024\u003c\u003e\u003d\u007e\u2010\u2011\u2012\u2013\u2014\u2015\u2030\u2031\u2039\u203A\u2043\u2053\u204C\u204D\u05BE\uFE63\uFF0D\u301C:-";
+			var list = ":-^!#$%&*+=/<>@~\u00cd\u00c4\u005e\u001d\u001b\u001a\u0015\u0011\u0010\u000F\u000E\u000D\u000C\u000B\u0006\u0005\u0004\u0003\u0002\u0001\u2010\u2011\u2012\u2013\u2014\u2015\u2030\u2031\u2039\u203A\u2043\u2053\u204C\u204D\u05BE\uFE63\uFF0D\u301C";
 
 			var markup = [];
 			var fragment;
 
 			for (var i = 0; i < space.length; i++) {
-				var character = space.charAt(i);
+				var character = space[i];
 
 				if (list.indexOf(character) > -1) {
 					if (fragment)
