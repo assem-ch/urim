@@ -193,4 +193,46 @@ var testGetEntry = function() {
 	jumlib.assertEquals(_urimCore.getEntry(result[1][0], text),
 			"Hello -::- world");
 	jumlib.assertEquals(_urimCore.getEntry(result[2][0], text), "world");
+	
+	text = "Hello *= world";
+	result = _urimCore.build(text, 50).array;
+	jumlib.assertEquals(_urimCore.getEntry(result[0][0], text), "Hello");
+	jumlib.assertEquals(_urimCore.getEntry(result[1][0], text),
+			"Hello *= world");
+	jumlib.assertEquals(_urimCore.getEntry(result[2][0], text), "world");
+	
+	text = "Hello >     = world";
+	result = _urimCore.build(text, 50).array;
+	jumlib.assertEquals(_urimCore.getEntry(result[0][0], text), "Hello");
+	jumlib.assertEquals(_urimCore.getEntry(result[1][0], text),
+			"Hello > = world");
+	jumlib.assertEquals(_urimCore.getEntry(result[2][0], text), "world");
+	
+	text = "Hello >=world";
+	result = _urimCore.build(text, 50).array;
+	jumlib.assertEquals(_urimCore.getEntry(result[0][0], text), "Hello");
+	jumlib.assertEquals(_urimCore.getEntry(result[1][0], text),
+			"Hello >= world");
+	jumlib.assertEquals(_urimCore.getEntry(result[2][0], text), "world");
+	
+	text = "Hello>= world";
+	result = _urimCore.build(text, 50).array;
+	jumlib.assertEquals(_urimCore.getEntry(result[0][0], text), "Hello");
+	jumlib.assertEquals(_urimCore.getEntry(result[1][0], text),
+			"Hello >= world");
+	jumlib.assertEquals(_urimCore.getEntry(result[2][0], text), "world");
+	
+	text = "Hello <=world";
+	result = _urimCore.build(text, 50).array;
+	jumlib.assertEquals(_urimCore.getEntry(result[0][0], text), "Hello");
+	jumlib.assertEquals(_urimCore.getEntry(result[1][0], text),
+			"Hello <= world");
+	jumlib.assertEquals(_urimCore.getEntry(result[2][0], text), "world");
+	
+	text = "Hello<= world";
+	result = _urimCore.build(text, 50).array;
+	jumlib.assertEquals(_urimCore.getEntry(result[0][0], text), "Hello");
+	jumlib.assertEquals(_urimCore.getEntry(result[1][0], text),
+			"Hello <= world");
+	jumlib.assertEquals(_urimCore.getEntry(result[2][0], text), "world");
 }
