@@ -104,6 +104,11 @@ function UrimCore() {
 		return res;
 	}
 
+	/*
+	 * This all is very sad. Need refactoring this (may be with regex) with
+	 * TrimFilter in feauture
+	 */
+
 	this.getEntry = function(offsetArray, text) {
 		var entry, lastEnd;
 
@@ -111,19 +116,40 @@ function UrimCore() {
 			if (entry) {
 				var markup = findMarkup(text.substring(lastEnd,
 						offsetArray[i].start));
-
-				if (markup)
-					entry += markup[0] == ":" ? markup : " " + markup;
-
-				entry += " "
-						+ text.substring(offsetArray[i].start,
-								offsetArray[i].end);
+				entry += markup;
+				entry += text.substring(offsetArray[i].start,
+						offsetArray[i].end);
 			} else {
 				entry = text
 						.substring(offsetArray[i].start, offsetArray[i].end);
 			}
 
 			lastEnd = offsetArray[i].end;
+		}
+
+		var baseEntry = this.getBaseEntry(offsetArray, text);
+
+		var front = offsetArray[0].start;
+		if (front) {
+			var prevChar = text[front - 1];
+			if (prevChar == "<" && baseEntry.indexOf(">") > -1)
+				entry = prevChar + entry;
+		}
+
+		var end = offsetArray[offsetArray.length - 1].end + 1;
+		if (end < text.length) {
+			var firstChar = text[end - 1], secondChar = text[end];
+			if (firstChar == ")" && baseEntry.indexOf("(") > -1
+					&& secondChar == ";")
+				entry += ");";
+		}
+
+		var end = offsetArray[offsetArray.length - 1].end + 2;
+		if (end < text.length) {
+			var firstChar = text[end - 2], secondChar = text[end - 1], thirdChar = text[end];
+			if (secondChar == ")" && baseEntry.indexOf("(") > -1
+					&& thirdChar == ";")
+				entry += firstChar + ");";
 		}
 
 		return entry;
@@ -135,12 +161,13 @@ function UrimCore() {
 			var list = ":-^!#$%&*+=/<>@~\u00cd\u00c4\u005e\u001d\u001b\u001a\u0015\u0011\u0010\u000F\u000E\u000D\u000C\u000B\u0006\u0005\u0004\u0003\u0002\u0001\u2010\u2011\u2012\u2013\u2014\u2015\u2030\u2031\u2039\u203A\u2043\u2053\u204C\u204D\u05BE\uFE63\uFF0D\u301C";
 
 			var markup = [];
-			var fragment;
+			var fragment, needWhiteSpace = true;
 
 			for (var i = 0; i < space.length; i++) {
 				var character = space[i];
 
 				if (list.indexOf(character) > -1) {
+					needWhiteSpace = true;
 					if (fragment)
 						fragment += character;
 					else
@@ -148,14 +175,18 @@ function UrimCore() {
 				} else if (fragment) {
 					markup.push(fragment);
 					fragment = null;
+					markup.push(" ");
+					needWhiteSpace = false;
+				} else if (needWhiteSpace) {
+					markup.push(" ");
+					needWhiteSpace = false;
 				}
 			}
 
 			if (fragment)
 				markup.push(fragment);
 
-			if (markup.length)
-				return markup.join(" ");
+			return markup.join("");
 		}
 	}
 
