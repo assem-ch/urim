@@ -36,28 +36,88 @@
  * ***** END LICENSE BLOCK ***** */
 
 const gUrimPageHighlighter = (function() {
-	var lastTermsFindArray, lastTermsFindRoundArray, lastTermsHighlightArray, bIgnoreBackRes, findStart;
+	var lastTermsFindArray, lastTermsFindRoundArray, lastTermsHighlightArray, findStart, bIgnoreNextBackWrap;
 
 	function areArraysEquals(array1, array2) {
 		return array1.join() == array2.join();
 	}
 
+	function findResultToHumanStr(result) {
+		switch (result) {
+			case Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND :
+				return "FIND_NOTFOUND";
+			case Components.interfaces.nsITypeAheadFind.FIND_FOUND :
+				return "FIND_FOUND";
+			case Components.interfaces.nsITypeAheadFind.FIND_WRAPPED :
+				return "FIND_WRAPPED";
+		}
+	}
+
+	/*
+	 * Reuse the find bar mechanisms in Firefox. Most of this function's code
+	 * came from the Google toolbar
+	 */
+
+	function findInPage(term, e, mainWindow) {
+		var findBar = mainWindow.document.defaultView.gFindBar;
+		var shiftKey = e.shiftKey;
+		var findObj;
+		var cachedFindTerm;
+
+		if ("_find" in findBar) {
+			findObj = {
+				find : function(t) {
+					return findBar._find(t);
+				},
+				findNext : function() {
+					return findBar._findAgain(false);
+				},
+				findPrevious : function() {
+					return findBar._findAgain(true);
+				}
+			};
+
+			cachedFindTerm = mainWindow.getBrowser().fastFind.searchString;
+		} else {
+			findObj = findBar;
+			cachedFindTerm = mainWindow.getBrowser().findString;
+		}
+
+		var res;
+
+		if (cachedFindTerm == term) {
+			if (shiftKey)
+				res = findObj.findPrevious();
+			else
+				res = findObj.findNext();
+		} else {
+			res = findObj.find(term);
+			if (shiftKey)
+				res = findObj.findPrevious();
+		}
+
+		return res;
+	}
+
 	return {
-		HighlightArrayInPage : function(termsArray, mainWindow) {
+		HighlightArrayInPage : function(termsArray, mainWindow, log) {
 			if (lastTermsHighlightArray
 					&& areArraysEquals(lastTermsHighlightArray, termsArray)) {
 				highlight(termsArray, false);
 				lastTermsHighlightArray = null;
-				return 0;
+				if (log)
+					log("Clear highlighting");
 			} else if (!lastTermsHighlightArray) {
 				highlight(termsArray, true);
 				lastTermsHighlightArray = termsArray;
-				return 1;
+				if (log)
+					log("Highlight array");
 			} else {
 				highlight(lastTermsHighlightArray, false);
 				highlight(termsArray, true);
 				lastTermsHighlightArray = termsArray;
-				return 2;
+				if (log)
+					log("Clear old highlighting, highlight new array");
 			}
 
 			function highlight(termsArray, aHighlight) {
@@ -75,100 +135,70 @@ const gUrimPageHighlighter = (function() {
 			}
 		},
 
-		/*
-		 * Reuse the find bar mechanisms in Firefox. Most of this function's
-		 * code came from the Google toolbar
-		 */
-
-		FindInPage : function(term, e, mainWindow) {
-			var findBar = mainWindow.document.defaultView.gFindBar;
-			var shiftKey = e.shiftKey;
-			var findObj;
-			var cachedFindTerm;
-
-			if ("_find" in findBar) {
-				findObj = {
-					find : function(t) {
-						return findBar._find(t);
-					},
-					findNext : function() {
-						return findBar._findAgain(false);
-					},
-					findPrevious : function() {
-						return findBar._findAgain(true);
-					}
-				};
-
-				cachedFindTerm = mainWindow.getBrowser().fastFind.searchString;
-			} else {
-				findObj = findBar;
-				cachedFindTerm = mainWindow.getBrowser().findString;
-			}
-
-			var res;
-
-			if (cachedFindTerm == term) {
-				if (shiftKey)
-					res = findObj.findPrevious();
-				else
-					res = findObj.findNext();
-			} else {
-				res = findObj.find(term);
-				if (shiftKey)
-					res = findObj.findPrevious();
-			}
-
-			return res;
-		},
-
-		FindArrayInPage : function(termsArray, e, mainWindow) {
+		FindArrayInPage : function(termsArray, e, mainWindow, log) {
 			if (!lastTermsFindArray
 					|| !areArraysEquals(lastTermsFindArray, termsArray)) {
+				if (log)
+					log("Re(Set) find arrays");
 				lastTermsFindArray = termsArray;
 				lastTermsFindRoundArray = new Array(termsArray.length);
 				for (var i = 0; i < termsArray.length; i++)
 					lastTermsFindRoundArray[i] = termsArray[i];
 				findStart = e.shiftKey ? lastTermsFindRoundArray.length - 1 : 0;
-				bIgnoreBackRes = e.shiftKey;
+				bIgnoreNextBackWrap = true;
 			}
 
-			var term = lastTermsFindRoundArray[findStart];
-			var res = this.FindInPage(term, e, mainWindow);
+			return findArray(e.shiftKey ? function() {
+				lastTermsFindRoundArray.unshift(lastTermsFindRoundArray.pop());
+			} : function() {
+				lastTermsFindRoundArray.push(lastTermsFindRoundArray.shift());
+			});
 
-			/* If e.shiftKey == false, ignore bIgnoreBackRes */
+			function findArray(callback) {
+				var term = lastTermsFindRoundArray[findStart];
+				var res = findInPage(term, e, mainWindow);
 
-			bIgnoreBackRes = bIgnoreBackRes && e.shiftKey;
+				/* Ignore backward search FIND_WRAPPED - do not change find term */
 
-			if (res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND
-					|| (!bIgnoreBackRes && res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED)) {
+				if (res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED
+						&& e.shiftKey && bIgnoreNextBackWrap) {
+					if (log)
+						log("Ignore wrap '" + term + "' : "
+								+ findResultToHumanStr(res));
+					bIgnoreNextBackWrap = false;
 
-				if (e.shiftKey)
-					lastTermsFindRoundArray.unshift(lastTermsFindRoundArray
-							.pop());
-				else
-					lastTermsFindRoundArray.push(lastTermsFindRoundArray
-							.shift());
-
-				if (res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED) {
-
-					mainWindow.gBrowser.contentWindow.getSelection()
-							.removeAllRanges();
-
-					/*
-					 * When we do 'removeAllRanges()', find cursor is on the
-					 * page start, so first backward find operation result in
-					 * this case is always FIND_WRAPPED and we have a recursion
-					 * dead lock. To prevent this bIgnoreBackRes variable added.
-					 */
-
-					bIgnoreBackRes = e.shiftKey;
-
-					return this.FindArrayInPage(termsArray, e, mainWindow);
+					return term;
 				}
-			} else
-				bIgnoreBackRes = false;
 
-			return term;
+				if (log)
+					log("'" + term + "' : " + findResultToHumanStr(res));
+
+				if (res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND
+						|| res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED) {
+
+					callback();
+
+					if (res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED) {
+						mainWindow.gBrowser.contentWindow.getSelection()
+								.removeAllRanges();
+
+						/*
+						 * When we do 'removeAllRanges()', find cursor is on the
+						 * page start, so first backward find operation result
+						 * in this case is always FIND_WRAPPED and we have a
+						 * recursion dead lock. To prevent this
+						 * bIgnoreNextBackWrap variable added.
+						 */
+
+						bIgnoreNextBackWrap = true;
+
+						return findArray(callback);
+					}
+				} else
+					bIgnoreNextBackWrap = false;
+
+				return term;
+			}
 		}
-	}
+	};
 })();

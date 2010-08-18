@@ -297,15 +297,17 @@ const urimSidebar = (function() {
 
 			switch (e.button) {
 				case 0 :
-					_logger.info("Find: \""
-							+ gUrimPageHighlighter.FindArrayInPage(
-									tagCharCodesArray, e, getMainWindow())
-							+ "\"");
+					gUrimPageHighlighter.FindArrayInPage(tagCharCodesArray, e,
+							getMainWindow(), function(logText) {
+								_logger.info(logText);
+							});
 					break;
 				case 2 :
-					_logger.info("Highlight result: \""
-							+ gUrimPageHighlighter.HighlightArrayInPage(
-									tagCharCodesArray, getMainWindow()) + "\"");
+					gUrimPageHighlighter.HighlightArrayInPage(
+							tagCharCodesArray, getMainWindow(), function(
+									logText) {
+								_logger.info(logText);
+							});
 					break;
 				default :
 					_logger.warn("Fired mouse button: '" + e.button
