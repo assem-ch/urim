@@ -36,7 +36,7 @@
  * ***** END LICENSE BLOCK ***** */
 
 const gUrimPageHighlighter = (function() {
-	var lastTermsFindArray, lastTermsFindRoundArray, lastTermsHighlightArray, findStart, bIgnoreNextBackWrap;
+	var lastTermsFindArray, lastTermsFindRoundArray, lastTermsHighlightArray, findStart, bIgnoreNextBackWrap, isLastResultNotFound, isLastShift;
 
 	function areArraysEquals(array1, array2) {
 		return array1.join() == array2.join();
@@ -167,6 +167,9 @@ const gUrimPageHighlighter = (function() {
 								+ findResultToHumanStr(res));
 					bIgnoreNextBackWrap = false;
 
+					isLastResultNotFound = false;
+					isLastShift = true;
+
 					return term;
 				}
 
@@ -175,6 +178,25 @@ const gUrimPageHighlighter = (function() {
 
 				if (res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND
 						|| res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED) {
+
+					/*
+					 * This is special case situation. If item not found, it
+					 * will be replaced by next. Now if we try search backward,
+					 * we search this next item first and if can't find it, we
+					 * can skip previous item, because we know that it was not
+					 * found too.
+					 */
+
+					if (isLastResultNotFound
+							&& isLastShift != e.shiftKey
+							&& res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND) {
+						if (log)
+							log("'" + term + "' : Special case - skip");
+						callback();
+					}
+
+					isLastResultNotFound = res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND;
+					isLastShift = e.shiftKey;
 
 					callback();
 
@@ -196,6 +218,9 @@ const gUrimPageHighlighter = (function() {
 					}
 				} else
 					bIgnoreNextBackWrap = false;
+
+				isLastResultNotFound = res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND;
+				isLastShift = e.shiftKey;
 
 				return term;
 			}
