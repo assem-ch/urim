@@ -1,3 +1,3 @@
-java StemmerStopBuilder
+java StemmerStopBuilder ../../../../modules/analysis/filter/ShingleStopFilter.js
 
 @pause
