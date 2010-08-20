@@ -137,7 +137,8 @@ const urimSidebar = (function() {
 					_logger.info("HTML tags build time: "
 							+ _urimCore.elapsed(htmlBuildStart));
 			} else
-				_logger.warn("Urim result array is empty. Input text: " + text);
+				_logger.warn("Urim result array is empty. Input text - '"
+						+ text + "'");
 		} catch (ex) {
 			_logger.error(ex);
 		}
