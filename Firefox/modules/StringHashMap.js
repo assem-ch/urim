@@ -46,6 +46,8 @@ StringHashMap.prototype = {
 		return this.hash.hasOwnProperty(key)
 	},
 
+	/* https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in */
+
 	getKeys : function() {
 		var asKeys = new Array();
 		for (var sKey in this.hash)
