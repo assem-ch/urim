@@ -1,4 +1,3 @@
-<<<<<<< .mine
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
@@ -8263,6 +8262,7 @@ function ShingleStopFilter(input, newMaxShingleSz, newMaxSzShinglesFIFO,
 		"verri" : null,
 		"huszad" : null,
 		"olisin" : null,
+		"\u0432\u0441\u0435-\u0442\u0430\u043a\u0438" : null,
 		"olisim" : null,
 		"joide" : null,
 		"olisiv" : null,
@@ -9165,6 +9165,7 @@ function ShingleStopFilter(input, newMaxShingleSz, newMaxSzShinglesFIFO,
 		"nie" : null,
 		"\u0432\u043e\u0442-\u0432\u043e\u0442" : null,
 		"ebenfall" : null,
+		"\u0432\u0441\u0435-\u0442\u0430\u043a" : null,
 		"beside" : null,
 		"mism" : null,
 		"\u0432\u043e\u0442\u0432\u043e\u0442" : null,
@@ -10984,5 +10985,4 @@ function ShingleStopFilter(input, newMaxShingleSz, newMaxSzShinglesFIFO,
 	function isStop(word) {
 		return stopList.hasOwnProperty(word);
 	}
-}=======
->>>>>>> .r20
+}
