@@ -10,6 +10,9 @@
 
  * *[http://code.google.com/p/urim/wiki/FAQ#I_want_to_see_Urim_logs Logs]*
 
+ * *[http://code.google.com/p/urim/wiki/FAQ?#How_this_works_? How this works ?]*
+
+
 = After installation nothing happens - i even don't see the add-on icon on toolbar =
 Try reboot your computer.
 
