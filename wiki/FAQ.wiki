@@ -25,8 +25,8 @@ This usually is called *Stop Words*. For example, "the", "on", "usually" and oth
 
 = I am a programmer or very smart user ;-). I want to run all tests myself =
 *Urim* uses *[https://addons.mozilla.org/en-US/firefox/addon/9018/ MozMill]* framework to test code logic.
- #  Install *[https://addons.mozilla.org/en-US/firefox/addon/200751/ Urim]*
- #  Install *[https://addons.mozilla.org/en-US/firefox/addon/9018/ MozMill]*
+ #  Install *[https://addons.mozilla.org/en-US/firefox/addon/200751/ Urim]*.
+ #  Install *[https://addons.mozilla.org/en-US/firefox/addon/9018/ MozMill]*.
  #  Launch *MozMill*. In "*Editor*" tab go *Actions->Run Directory* and select *SomeFolder\Tests\Mozmill*, where *SomeFolder* is *Urim* [http://urim.googlecode.com/svn/trunk/ sources] directory, then press *OK*.
  #  Wait.
 Here is some tests time measures: 
