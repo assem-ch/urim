@@ -1,6 +1,6 @@
 #summary Firefox Frequently Asked Question(s).
 
- * *[WikiSyntax#After_installation_nothing_happens_-_i_even_don%27t_see_the_a]*
+ * *[https://code.google.com/p/urim/w/edit.do#After_installation_nothing_happens_-_i_even_don%27t_see_the_a]*
 
  * *[https://code.google.com/p/urim/w/edit.do#I_launch_Urim_,_left_sidebar_appears_but_there_are_no_tag-cloud Sidebar appears but there are no tag-cloud]*
 
