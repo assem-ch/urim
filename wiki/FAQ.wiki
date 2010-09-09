@@ -18,7 +18,7 @@ Ensure, that page you are working with loading is finished (page loading progres
 
 = Some words on my own language appears too frequently =
 This usually is called *Stop Words*. For example, "the", "on", "usually" and others are English stop words. They appear on each text more frequently, then other words, so we need to consider this. If you find some such words, please contact me or build add-on from sources yourself. To do this [http://java.com/en/download/index.jsp JRE] and [http://ant.apache.org/bindownload.cgi Ant] need to be installed on working machine: 
- # Download *Urim* sources from [http://urim.googlecode.com/svn/trunk/ here] to *SomeFolder*.
+ # Download *Urim* [http://urim.googlecode.com/svn/trunk/ sources] to *SomeFolder*.
  # Edit your language stop words file in *SomeFolder*\Utils\Java\StopGenerator\StopGeneratorBin\stop directory. Notice, that all stop words files uses *UTF-8* encoding.
  # To compile stop words, enter in directory *SomeFolder*\Utils\Java\StopGenerator\StopGeneratorBin and type *java StemmerStopBuilder ../../../../modules/analysis/filter/ShingleStopFilter.js* or just execute *run.bat* in Windows.
  # Almost finished - we need to make *Urim* add-on. Enter in *SomeFolder* directory and type *ant*. If success, enter in *SomeFolder*\dist and take fresh *urim.xpi*. Drag it on Firefox for offline installation.
