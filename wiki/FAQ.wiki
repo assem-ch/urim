@@ -35,3 +35,11 @@ Here are some tests time measures:
 
 = I want to see Urim logs =
 Add-on uses *[https://wiki.mozilla.org/Labs/JS_Modules#Logging log4moz]* logging system. On Windows XP log is here: _*%appdata%\Mozilla\Firefox\Profiles\80gg64am.default\urim\logs\verbose-log.txt*_, where _*80gg64am.default*_ is your profile name.
+
+= How this works ? =
+ * If user selected some text to analyze, add-on just call JavaScript _*[https://developer.mozilla.org/en/window.getSelection window.getSelection]*_ method to extract text data. In other hand for a given page and each of it's frames add-on extracts *html* source and convert it to text with [http://doxygen.db48x.net/mozilla/html/interfacensIFormatConverter.html nsIFormatConverter]. To produce one single string all text fragments are concatenating by adding "_*.\n*_" sequence in the end. This is very simple solution and in place of frames splice we have nonexistent word phrases - one word(s) from one frame and other from other. But frequency of such phrases is very small, and it does not matter in normal pages.
+ * Identify text language.
+ * Tokenize (split) extracted text into words. Very simple whitespace tokenizer mechanism used. As the result difficult text, programming sources for example, give not pretty words on result tag-cloud. Planning to change this peace of code in feature.
+ * Remove the commoner morphological and inflexional endings from words by [http://snowball.tartarus.org/ Snowball] algorithm.
+ * Make word phrases with [http://en.wikipedia.org/wiki/N-gram n-gram] (shingles) algorithm and add them to words list. Calculate each word item boost value, considering whether it contains [http://code.google.com/p/urim/wiki/FAQ#Some_words_on_my_own_language_appears_too_frequently Stop Words] or not.
+ * Sort word items, considering boosting and frequency and show result as the tag-cloud.
