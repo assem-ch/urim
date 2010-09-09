@@ -1,5 +1,15 @@
 #summary Firefox Frequently Asked Question(s).
 
+ * *[https://code.google.com/p/urim/w/edit.do#After_installation_nothing_happens_-_i_even_don%27t_see_the_a I don't see the add-on icon on toolbar]*
+
+ * *[https://code.google.com/p/urim/w/edit.do#I_launch_Urim_,_left_sidebar_appears_but_there_are_no_tag-cloud Sidebar appears but there are no tag-cloud]*
+
+ * *[https://code.google.com/p/urim/w/edit.do#Some_words_on_my_own_language_appears_too_frequently Stop Words]*
+
+ * *[https://code.google.com/p/urim/w/edit.do#I_am_a_programmer_or_very_smart_user_;-)._I_want_to_run_all_test I want to run all tests myself]*
+
+ * *[https://code.google.com/p/urim/w/edit.do#I_want_to_see_Urim_logs Logs]*
+
 = After installation nothing happens - i even don't see the add-on icon on toolbar =
 Try reboot your computer.
 
