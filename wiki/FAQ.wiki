@@ -34,4 +34,4 @@ Here are some tests time measures:
  * _WinXP + Pentium3 667 MHz + 384 Mb memory_ testing time is about one night )))
 
 = I want to see Urim logs =
-Add-on uses *[https://wiki.mozilla.org/Labs/JS_Modules#Logging log4moz]* logging system. On windows log is here: _*%appdata%\Mozilla\Firefox\Profiles\80gg64am.default\urim\logs\verbose-log.txt*_, where _*80gg64am.default*_ is your profile name.
+Add-on uses *[https://wiki.mozilla.org/Labs/JS_Modules#Logging log4moz]* logging system. On Windows XP log is here: _*%appdata%\Mozilla\Firefox\Profiles\80gg64am.default\urim\logs\verbose-log.txt*_, where _*80gg64am.default*_ is your profile name.
