@@ -1,0 +1,27 @@
+#summary Firefox Frequently Asked Question(s).
+
+= After installation nothing happens - i even don't see the add-on icon on toolbar =
+Try reboot your computer.
+
+= I launch *Urim*, left sidebar appears but there are no tag-cloud =
+Ensure, that page you are working with loading is finished (page loading progress bar is absent). If it is not, *Urim* will wait for page load is completed and just after that produce a tag-cloud. You can stop loading each page any time by pressing *Esc* key on your keyboard.
+
+= Some words on my own language appears too frequently =
+This usually is called *Stop Words*. For example, "the", "on", "usually" and others are English stop words. They appear on each text more frequently, then other words, so we need to consider this. If you find some such words, please contact me or build add-on from sources yourself. To do this [http://java.com/en/download/index.jsp JRE] and [http://ant.apache.org/bindownload.cgi Ant] need to be installed on working machine: 
+ # Download *Urim* sources from [http://urim.googlecode.com/svn/trunk/ here] to *SomeFolder*.
+ # Edit your language stop words file in *SomeFolder*\Utils\Java\StopGenerator\StopGeneratorBin\stop directory. Notice, that all stop words files uses *UTF-8* encoding.
+ # To compile stop words, enter in directory *SomeFolder*\Utils\Java\StopGenerator\StopGeneratorBin and type *java StemmerStopBuilder ../../../../modules/analysis/filter/ShingleStopFilter.js* or just execute *run.bat* in Windows.
+ # Almost finished - we need to make *Urim* add-on. Enter in *SomeFolder* directory and type *ant*. If success, enter in *SomeFolder*\dist and take fresh *urim.xpi*. Drag it on Firefox for offline installation.
+
+= I am a programmer or very smart user ;-). I want to run all tests myself =
+*Urim* uses *[https://addons.mozilla.org/en-US/firefox/addon/9018/ MozMill]* framework to test code logic.
+ #  Install *[https://addons.mozilla.org/en-US/firefox/addon/200751/ Urim]*
+ #  Install *[https://addons.mozilla.org/en-US/firefox/addon/9018/ MozMill]*
+ #  Launch *MozMill*. In "*Editor*" tab go *Actions->Run Directory* and select *SomeFolder\Tests\Mozmill*, where *SomeFolder* is *Urim* [http://urim.googlecode.com/svn/trunk/ sources] directory, then press *OK*.
+ #  Wait.
+Here is some tests time measures: 
+ * Ubuntu + Corei3 2.13 GHz + 3Gb memory is about 45 minutes
+ * WinXP + Pentium3 667 MHz + 384 Mb memory is about one night )))
+
+= I want to see Urim logs =
+Add-on uses *[https://wiki.mozilla.org/Labs/JS_Modules#Logging log4moz]* logging system. On windows log is here: *%appdata%\Mozilla\Firefox\Profiles\80gg64am.default\urim\logs\verbose-log.txt*, where *80gg64am.default* is your profile name.
