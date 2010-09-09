@@ -29,9 +29,9 @@ This usually is called *Stop Words*. For example, "_the_", "_on_", "_usually_" a
  #  Install *MozMill*.
  #  Launch *MozMill*. In "*Editor*" tab go *Actions->Run Directory* and select _*SomeFolder\Tests\Mozmill*_, where _*SomeFolder*_ is *Urim* [http://urim.googlecode.com/svn/trunk/ sources] directory, then press *OK*.
  #  Wait.
-Here is some tests time measures: 
- * Ubuntu + Corei3 2.13 GHz + 3Gb memory is about 45 minutes
- * WinXP + Pentium3 667 MHz + 384 Mb memory is about one night )))
+Here are some tests time measures: 
+ * _Ubuntu + Corei3 2.13 GHz + 3Gb memory_ all tests completed in about 45 minutes
+ * _WinXP + Pentium3 667 MHz + 384 Mb memory_ testing time is about one night )))
 
 = I want to see Urim logs =
 Add-on uses *[https://wiki.mozilla.org/Labs/JS_Modules#Logging log4moz]* logging system. On windows log is here: _*%appdata%\Mozilla\Firefox\Profiles\80gg64am.default\urim\logs\verbose-log.txt*_, where _*80gg64am.default*_ is your profile name.
