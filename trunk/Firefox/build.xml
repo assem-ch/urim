@@ -23,6 +23,7 @@
 				<include name="skin/**" />
 				<exclude name="**/.*" />
 				<exclude name="**/CVS/**" />
+				<exclude name="**/Thumbs.db" />
 			</fileset>
 		</zip>
 	</target>
