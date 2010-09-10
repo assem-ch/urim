@@ -11,7 +11,7 @@
 		<em:id>o.mazko@mail.ru</em:id>
 		<em:iconURL>chrome://urim/skin/png/ispice_32.png</em:iconURL>
 		<em:description>Make your text shorter!</em:description>
-		<em:homepageURL>https://code.google.com/p/urim/</em:homepageURL>
+		<em:homepageURL>http://code.google.com/p/urim/</em:homepageURL>
 
 		<em:localized>
 			<Description>
@@ -20,7 +20,7 @@
 				<em:description>Make your text shorter!</em:description>
 				<em:developer>Oleg Mazko</em:developer>
 				<em:creator>Oleg Mazko</em:creator>
-				<em:homepageURL>https://code.google.com/p/urim/</em:homepageURL>
+				<em:homepageURL>http://code.google.com/p/urim/</em:homepageURL>
 			</Description>
 		</em:localized>
 
@@ -31,7 +31,7 @@
 				<em:description>Сделайте Ваш текст короче!</em:description>
 				<em:developer>Олег Мазко</em:developer>
 				<em:creator>Олег Мазко</em:creator>
-				<em:homepageURL>https://code.google.com/p/urim/</em:homepageURL>
+				<em:homepageURL>http://code.google.com/p/urim/</em:homepageURL>
 			</Description>
 		</em:localized>
 
