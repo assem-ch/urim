@@ -10,7 +10,7 @@
 
  * *[http://code.google.com/p/urim/wiki/FAQ#I_want_to_see_Urim_logs Logs]*
 
- * *[http://code.google.com/p/urim/wiki/FAQ?#How_this_works_? How this works ?]*
+ * *[http://code.google.com/p/urim/wiki/FAQ?#How_does_this_work_? How does this work ?]*
 
 
 = After installation nothing happens - i even don't see the add-on icon on toolbar =
@@ -39,7 +39,7 @@ Here are some tests time measures:
 = I want to see Urim logs =
 Add-on uses *[https://wiki.mozilla.org/Labs/JS_Modules#Logging log4moz]* logging system. On Windows XP log is here: _*%appdata%\Mozilla\Firefox\Profiles\80gg64am.default\urim\logs\verbose-log.txt*_, where _*80gg64am.default*_ is your profile name.
 
-= How this works ? =
+= How does this work ? =
  * If user selected some text to analyze, add-on just call JavaScript _*[https://developer.mozilla.org/en/window.getSelection window.getSelection]*_ method to extract text data. In other case for a given page and each of it's frames add-on extracts *html* source and convert it to text with special Firefox [http://doxygen.db48x.net/mozilla/html/interfacensIFormatConverter.html nsIFormatConverter] interface. To produce one single string all text fragments are concatenating by adding "_*.\n*_" sequence in the end of each. This is very simple solution and in place of frames splice we have nonexistent word phrases - one word(s) from one frame and other from another. But frequency of such phrases is very low, and it does not matter in normal pages.
  * Identify text language.
  * Tokenize (split) extracted text into words. Very simple whitespace tokenizer mechanism used. As the result difficult text, programming sources for example, gives not pretty words on result tag-cloud. Planning to change this peace of code in feature.
