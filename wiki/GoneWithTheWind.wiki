@@ -178,4 +178,4 @@
 
 ----
 
-[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim_small.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim_small.png]
