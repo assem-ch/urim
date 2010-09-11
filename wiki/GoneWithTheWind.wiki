@@ -1,3 +1,5 @@
+#summary Gone With Wind example.
+
 = КЛАРК ГЕЙБЛ. РЕТТ БАТЛЕР НА ВСЕ ВРЕМЕНА =
 
 [http://urim.googlecode.com/svn/wiki/images/GonneWithWind/RettWithScarlett2.jpg]
