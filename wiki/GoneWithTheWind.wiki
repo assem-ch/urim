@@ -177,5 +177,5 @@
 16 ноября 1960 года уставшее сердце Кларка Гейбла перестало биться. Газеты вышли с коротким заголовком «Король умер». Все поняли, о ком идет речь. Кларка Гейбла похоронили рядом с Кэрол Ломбард, а через четыре месяца на свет появился его единственный сын.
 
 ----
-
+=[http://code.google.com/p/urim/ Urim]=
 [http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim_small.png]
