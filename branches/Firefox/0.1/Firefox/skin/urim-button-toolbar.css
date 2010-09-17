@@ -1,9 +1,0 @@
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-#urim-button-toolbar {
-	list-style-image: url("chrome://urim/skin/png/toolbar/ispice_24.png");
-}
-
-toolbar[iconsize="small"] #urim-button-toolbar {
-	list-style-image: url("chrome://urim/skin/png/toolbar/ispice_16.png");
-}
