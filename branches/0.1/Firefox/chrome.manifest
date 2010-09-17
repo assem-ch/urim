@@ -1,0 +1,10 @@
+content urim jar:chrome/urim.jar!/content/
+
+resource urim modules/
+
+locale	urim	en-US		jar:chrome/urim.jar!/locale/en-US/
+locale  urim 	ru 			jar:chrome/urim.jar!/locale/ru/
+
+skin	urim	classic/1.0	jar:chrome/urim.jar!/skin/
+overlay	chrome://browser/content/browser.xul	chrome://urim/content/firefoxOverlay.xul
+style	chrome://browser/content/browser.xul	chrome://urim/skin/urim-button-toolbar.css
