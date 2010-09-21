@@ -32458,7 +32458,7 @@ var testportuguese128 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32476,7 +32476,7 @@ var testportuguese127 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32494,7 +32494,7 @@ var testportuguese126 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32512,7 +32512,7 @@ var testportuguese125 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32530,7 +32530,7 @@ var testportuguese124 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32548,7 +32548,7 @@ var testportuguese123 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32566,7 +32566,7 @@ var testportuguese122 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32584,7 +32584,7 @@ var testportuguese121 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32602,7 +32602,7 @@ var testportuguese120 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32620,7 +32620,7 @@ var testportuguese119 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32638,7 +32638,7 @@ var testportuguese118 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32656,7 +32656,7 @@ var testportuguese117 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32674,7 +32674,7 @@ var testportuguese116 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32692,7 +32692,7 @@ var testportuguese115 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32710,7 +32710,7 @@ var testportuguese114 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32728,7 +32728,7 @@ var testportuguese113 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32746,7 +32746,7 @@ var testportuguese112 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32764,7 +32764,7 @@ var testportuguese111 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32782,7 +32782,7 @@ var testportuguese110 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32800,7 +32800,7 @@ var testportuguese109 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32818,7 +32818,7 @@ var testportuguese108 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32836,7 +32836,7 @@ var testportuguese107 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32854,7 +32854,7 @@ var testportuguese106 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32872,7 +32872,7 @@ var testportuguese105 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32890,7 +32890,7 @@ var testportuguese104 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32908,7 +32908,7 @@ var testportuguese103 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32926,7 +32926,7 @@ var testportuguese102 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32944,7 +32944,7 @@ var testportuguese101 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32962,7 +32962,7 @@ var testportuguese100 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32980,7 +32980,7 @@ var testportuguese99 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32998,7 +32998,7 @@ var testportuguese98 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33016,7 +33016,7 @@ var testportuguese97 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33034,7 +33034,7 @@ var testportuguese96 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33052,7 +33052,7 @@ var testportuguese95 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33070,7 +33070,7 @@ var testportuguese94 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33088,7 +33088,7 @@ var testportuguese93 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33106,7 +33106,7 @@ var testportuguese92 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33124,7 +33124,7 @@ var testportuguese91 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33142,7 +33142,7 @@ var testportuguese90 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33160,7 +33160,7 @@ var testportuguese89 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33178,7 +33178,7 @@ var testportuguese88 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33196,7 +33196,7 @@ var testportuguese87 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33214,7 +33214,7 @@ var testportuguese86 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33232,7 +33232,7 @@ var testportuguese85 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33250,7 +33250,7 @@ var testportuguese84 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33268,7 +33268,7 @@ var testportuguese83 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33286,7 +33286,7 @@ var testportuguese82 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33304,7 +33304,7 @@ var testportuguese81 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33322,7 +33322,7 @@ var testportuguese80 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33340,7 +33340,7 @@ var testportuguese79 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33358,7 +33358,7 @@ var testportuguese78 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33376,7 +33376,7 @@ var testportuguese77 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33394,7 +33394,7 @@ var testportuguese76 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33412,7 +33412,7 @@ var testportuguese75 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33430,7 +33430,7 @@ var testportuguese74 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33448,7 +33448,7 @@ var testportuguese73 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33466,7 +33466,7 @@ var testportuguese72 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33484,7 +33484,7 @@ var testportuguese71 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33502,7 +33502,7 @@ var testportuguese70 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33520,7 +33520,7 @@ var testportuguese69 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33538,7 +33538,7 @@ var testportuguese68 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33556,7 +33556,7 @@ var testportuguese67 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33574,7 +33574,7 @@ var testportuguese66 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33592,7 +33592,7 @@ var testportuguese65 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33610,7 +33610,7 @@ var testportuguese64 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33628,7 +33628,7 @@ var testportuguese63 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33646,7 +33646,7 @@ var testportuguese62 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33664,7 +33664,7 @@ var testportuguese61 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33682,7 +33682,7 @@ var testportuguese60 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33700,7 +33700,7 @@ var testportuguese59 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33718,7 +33718,7 @@ var testportuguese58 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33736,7 +33736,7 @@ var testportuguese57 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33754,7 +33754,7 @@ var testportuguese56 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33772,7 +33772,7 @@ var testportuguese55 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33790,7 +33790,7 @@ var testportuguese54 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33808,7 +33808,7 @@ var testportuguese53 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33826,7 +33826,7 @@ var testportuguese52 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33844,7 +33844,7 @@ var testportuguese51 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33862,7 +33862,7 @@ var testportuguese50 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33880,7 +33880,7 @@ var testportuguese49 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33898,7 +33898,7 @@ var testportuguese48 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33916,7 +33916,7 @@ var testportuguese47 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33934,7 +33934,7 @@ var testportuguese46 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33952,7 +33952,7 @@ var testportuguese45 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33970,7 +33970,7 @@ var testportuguese44 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33988,7 +33988,7 @@ var testportuguese43 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34006,7 +34006,7 @@ var testportuguese42 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34024,7 +34024,7 @@ var testportuguese41 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34042,7 +34042,7 @@ var testportuguese40 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34060,7 +34060,7 @@ var testportuguese39 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34078,7 +34078,7 @@ var testportuguese38 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34096,7 +34096,7 @@ var testportuguese37 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34114,7 +34114,7 @@ var testportuguese36 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34132,7 +34132,7 @@ var testportuguese35 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34150,7 +34150,7 @@ var testportuguese34 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34168,7 +34168,7 @@ var testportuguese33 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34186,7 +34186,7 @@ var testportuguese32 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34204,7 +34204,7 @@ var testportuguese31 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34222,7 +34222,7 @@ var testportuguese30 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34240,7 +34240,7 @@ var testportuguese29 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34258,7 +34258,7 @@ var testportuguese28 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34276,7 +34276,7 @@ var testportuguese27 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34294,7 +34294,7 @@ var testportuguese26 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34312,7 +34312,7 @@ var testportuguese25 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34330,7 +34330,7 @@ var testportuguese24 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34348,7 +34348,7 @@ var testportuguese23 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34366,7 +34366,7 @@ var testportuguese22 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34384,7 +34384,7 @@ var testportuguese21 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34402,7 +34402,7 @@ var testportuguese20 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34420,7 +34420,7 @@ var testportuguese19 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34438,7 +34438,7 @@ var testportuguese18 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34456,7 +34456,7 @@ var testportuguese17 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34474,7 +34474,7 @@ var testportuguese16 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34492,7 +34492,7 @@ var testportuguese15 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34510,7 +34510,7 @@ var testportuguese14 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34528,7 +34528,7 @@ var testportuguese13 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34546,7 +34546,7 @@ var testportuguese12 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34564,7 +34564,7 @@ var testportuguese11 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34582,7 +34582,7 @@ var testportuguese10 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34600,7 +34600,7 @@ var testportuguese9 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34618,7 +34618,7 @@ var testportuguese8 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34636,7 +34636,7 @@ var testportuguese7 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34654,7 +34654,7 @@ var testportuguese6 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34672,7 +34672,7 @@ var testportuguese5 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34690,7 +34690,7 @@ var testportuguese4 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34708,7 +34708,7 @@ var testportuguese3 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34726,7 +34726,7 @@ var testportuguese2 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34744,7 +34744,7 @@ var testportuguese1 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -34762,7 +34762,7 @@ var testportuguese0 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
