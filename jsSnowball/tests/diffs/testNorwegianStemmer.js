@@ -20932,7 +20932,7 @@ var testnorwegian82 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -20950,7 +20950,7 @@ var testnorwegian81 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -20968,7 +20968,7 @@ var testnorwegian80 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -20986,7 +20986,7 @@ var testnorwegian79 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21004,7 +21004,7 @@ var testnorwegian78 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21022,7 +21022,7 @@ var testnorwegian77 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21040,7 +21040,7 @@ var testnorwegian76 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21058,7 +21058,7 @@ var testnorwegian75 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21076,7 +21076,7 @@ var testnorwegian74 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21094,7 +21094,7 @@ var testnorwegian73 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21112,7 +21112,7 @@ var testnorwegian72 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21130,7 +21130,7 @@ var testnorwegian71 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21148,7 +21148,7 @@ var testnorwegian70 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21166,7 +21166,7 @@ var testnorwegian69 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21184,7 +21184,7 @@ var testnorwegian68 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21202,7 +21202,7 @@ var testnorwegian67 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21220,7 +21220,7 @@ var testnorwegian66 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21238,7 +21238,7 @@ var testnorwegian65 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21256,7 +21256,7 @@ var testnorwegian64 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21274,7 +21274,7 @@ var testnorwegian63 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21292,7 +21292,7 @@ var testnorwegian62 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21310,7 +21310,7 @@ var testnorwegian61 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21328,7 +21328,7 @@ var testnorwegian60 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21346,7 +21346,7 @@ var testnorwegian59 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21364,7 +21364,7 @@ var testnorwegian58 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21382,7 +21382,7 @@ var testnorwegian57 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21400,7 +21400,7 @@ var testnorwegian56 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21418,7 +21418,7 @@ var testnorwegian55 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21436,7 +21436,7 @@ var testnorwegian54 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21454,7 +21454,7 @@ var testnorwegian53 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21472,7 +21472,7 @@ var testnorwegian52 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21490,7 +21490,7 @@ var testnorwegian51 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21508,7 +21508,7 @@ var testnorwegian50 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21526,7 +21526,7 @@ var testnorwegian49 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21544,7 +21544,7 @@ var testnorwegian48 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21562,7 +21562,7 @@ var testnorwegian47 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21580,7 +21580,7 @@ var testnorwegian46 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21598,7 +21598,7 @@ var testnorwegian45 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21616,7 +21616,7 @@ var testnorwegian44 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21634,7 +21634,7 @@ var testnorwegian43 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21652,7 +21652,7 @@ var testnorwegian42 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21670,7 +21670,7 @@ var testnorwegian41 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21688,7 +21688,7 @@ var testnorwegian40 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21706,7 +21706,7 @@ var testnorwegian39 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21724,7 +21724,7 @@ var testnorwegian38 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21742,7 +21742,7 @@ var testnorwegian37 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21760,7 +21760,7 @@ var testnorwegian36 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21778,7 +21778,7 @@ var testnorwegian35 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21796,7 +21796,7 @@ var testnorwegian34 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21814,7 +21814,7 @@ var testnorwegian33 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21832,7 +21832,7 @@ var testnorwegian32 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21850,7 +21850,7 @@ var testnorwegian31 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21868,7 +21868,7 @@ var testnorwegian30 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21886,7 +21886,7 @@ var testnorwegian29 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21904,7 +21904,7 @@ var testnorwegian28 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21922,7 +21922,7 @@ var testnorwegian27 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21940,7 +21940,7 @@ var testnorwegian26 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21958,7 +21958,7 @@ var testnorwegian25 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21976,7 +21976,7 @@ var testnorwegian24 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -21994,7 +21994,7 @@ var testnorwegian23 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22012,7 +22012,7 @@ var testnorwegian22 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22030,7 +22030,7 @@ var testnorwegian21 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22048,7 +22048,7 @@ var testnorwegian20 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22066,7 +22066,7 @@ var testnorwegian19 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22084,7 +22084,7 @@ var testnorwegian18 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22102,7 +22102,7 @@ var testnorwegian17 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22120,7 +22120,7 @@ var testnorwegian16 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22138,7 +22138,7 @@ var testnorwegian15 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22156,7 +22156,7 @@ var testnorwegian14 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22174,7 +22174,7 @@ var testnorwegian13 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22192,7 +22192,7 @@ var testnorwegian12 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22210,7 +22210,7 @@ var testnorwegian11 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22228,7 +22228,7 @@ var testnorwegian10 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22246,7 +22246,7 @@ var testnorwegian9 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22264,7 +22264,7 @@ var testnorwegian8 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22282,7 +22282,7 @@ var testnorwegian7 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22300,7 +22300,7 @@ var testnorwegian6 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22318,7 +22318,7 @@ var testnorwegian5 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22336,7 +22336,7 @@ var testnorwegian4 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22354,7 +22354,7 @@ var testnorwegian3 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22372,7 +22372,7 @@ var testnorwegian2 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22390,7 +22390,7 @@ var testnorwegian1 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -22408,7 +22408,7 @@ var testnorwegian0 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}

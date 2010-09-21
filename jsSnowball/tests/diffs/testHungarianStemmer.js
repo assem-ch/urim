@@ -30419,7 +30419,7 @@ var testhungarian120 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30437,7 +30437,7 @@ var testhungarian119 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30455,7 +30455,7 @@ var testhungarian118 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30473,7 +30473,7 @@ var testhungarian117 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30491,7 +30491,7 @@ var testhungarian116 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30509,7 +30509,7 @@ var testhungarian115 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30527,7 +30527,7 @@ var testhungarian114 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30545,7 +30545,7 @@ var testhungarian113 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30563,7 +30563,7 @@ var testhungarian112 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30581,7 +30581,7 @@ var testhungarian111 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30599,7 +30599,7 @@ var testhungarian110 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30617,7 +30617,7 @@ var testhungarian109 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30635,7 +30635,7 @@ var testhungarian108 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30653,7 +30653,7 @@ var testhungarian107 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30671,7 +30671,7 @@ var testhungarian106 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30689,7 +30689,7 @@ var testhungarian105 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30707,7 +30707,7 @@ var testhungarian104 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30725,7 +30725,7 @@ var testhungarian103 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30743,7 +30743,7 @@ var testhungarian102 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30761,7 +30761,7 @@ var testhungarian101 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30779,7 +30779,7 @@ var testhungarian100 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30797,7 +30797,7 @@ var testhungarian99 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30815,7 +30815,7 @@ var testhungarian98 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30833,7 +30833,7 @@ var testhungarian97 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30851,7 +30851,7 @@ var testhungarian96 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30869,7 +30869,7 @@ var testhungarian95 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30887,7 +30887,7 @@ var testhungarian94 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30905,7 +30905,7 @@ var testhungarian93 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30923,7 +30923,7 @@ var testhungarian92 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30941,7 +30941,7 @@ var testhungarian91 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30959,7 +30959,7 @@ var testhungarian90 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30977,7 +30977,7 @@ var testhungarian89 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -30995,7 +30995,7 @@ var testhungarian88 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31013,7 +31013,7 @@ var testhungarian87 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31031,7 +31031,7 @@ var testhungarian86 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31049,7 +31049,7 @@ var testhungarian85 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31067,7 +31067,7 @@ var testhungarian84 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31085,7 +31085,7 @@ var testhungarian83 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31103,7 +31103,7 @@ var testhungarian82 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31121,7 +31121,7 @@ var testhungarian81 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31139,7 +31139,7 @@ var testhungarian80 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31157,7 +31157,7 @@ var testhungarian79 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31175,7 +31175,7 @@ var testhungarian78 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31193,7 +31193,7 @@ var testhungarian77 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31211,7 +31211,7 @@ var testhungarian76 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31229,7 +31229,7 @@ var testhungarian75 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31247,7 +31247,7 @@ var testhungarian74 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31265,7 +31265,7 @@ var testhungarian73 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31283,7 +31283,7 @@ var testhungarian72 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31301,7 +31301,7 @@ var testhungarian71 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31319,7 +31319,7 @@ var testhungarian70 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31337,7 +31337,7 @@ var testhungarian69 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31355,7 +31355,7 @@ var testhungarian68 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31373,7 +31373,7 @@ var testhungarian67 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31391,7 +31391,7 @@ var testhungarian66 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31409,7 +31409,7 @@ var testhungarian65 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31427,7 +31427,7 @@ var testhungarian64 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31445,7 +31445,7 @@ var testhungarian63 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31463,7 +31463,7 @@ var testhungarian62 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31481,7 +31481,7 @@ var testhungarian61 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31499,7 +31499,7 @@ var testhungarian60 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31517,7 +31517,7 @@ var testhungarian59 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31535,7 +31535,7 @@ var testhungarian58 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31553,7 +31553,7 @@ var testhungarian57 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31571,7 +31571,7 @@ var testhungarian56 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31589,7 +31589,7 @@ var testhungarian55 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31607,7 +31607,7 @@ var testhungarian54 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31625,7 +31625,7 @@ var testhungarian53 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31643,7 +31643,7 @@ var testhungarian52 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31661,7 +31661,7 @@ var testhungarian51 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31679,7 +31679,7 @@ var testhungarian50 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31697,7 +31697,7 @@ var testhungarian49 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31715,7 +31715,7 @@ var testhungarian48 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31733,7 +31733,7 @@ var testhungarian47 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31751,7 +31751,7 @@ var testhungarian46 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31769,7 +31769,7 @@ var testhungarian45 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31787,7 +31787,7 @@ var testhungarian44 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31805,7 +31805,7 @@ var testhungarian43 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31823,7 +31823,7 @@ var testhungarian42 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31841,7 +31841,7 @@ var testhungarian41 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31859,7 +31859,7 @@ var testhungarian40 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31877,7 +31877,7 @@ var testhungarian39 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31895,7 +31895,7 @@ var testhungarian38 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31913,7 +31913,7 @@ var testhungarian37 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31931,7 +31931,7 @@ var testhungarian36 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31949,7 +31949,7 @@ var testhungarian35 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31967,7 +31967,7 @@ var testhungarian34 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31985,7 +31985,7 @@ var testhungarian33 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32003,7 +32003,7 @@ var testhungarian32 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32021,7 +32021,7 @@ var testhungarian31 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32039,7 +32039,7 @@ var testhungarian30 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32057,7 +32057,7 @@ var testhungarian29 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32075,7 +32075,7 @@ var testhungarian28 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32093,7 +32093,7 @@ var testhungarian27 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32111,7 +32111,7 @@ var testhungarian26 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32129,7 +32129,7 @@ var testhungarian25 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32147,7 +32147,7 @@ var testhungarian24 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32165,7 +32165,7 @@ var testhungarian23 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32183,7 +32183,7 @@ var testhungarian22 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32201,7 +32201,7 @@ var testhungarian21 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32219,7 +32219,7 @@ var testhungarian20 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32237,7 +32237,7 @@ var testhungarian19 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32255,7 +32255,7 @@ var testhungarian18 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32273,7 +32273,7 @@ var testhungarian17 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32291,7 +32291,7 @@ var testhungarian16 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32309,7 +32309,7 @@ var testhungarian15 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32327,7 +32327,7 @@ var testhungarian14 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32345,7 +32345,7 @@ var testhungarian13 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32363,7 +32363,7 @@ var testhungarian12 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32381,7 +32381,7 @@ var testhungarian11 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32399,7 +32399,7 @@ var testhungarian10 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32417,7 +32417,7 @@ var testhungarian9 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32435,7 +32435,7 @@ var testhungarian8 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32453,7 +32453,7 @@ var testhungarian7 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32471,7 +32471,7 @@ var testhungarian6 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32489,7 +32489,7 @@ var testhungarian5 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32507,7 +32507,7 @@ var testhungarian4 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32525,7 +32525,7 @@ var testhungarian3 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32543,7 +32543,7 @@ var testhungarian2 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32561,7 +32561,7 @@ var testhungarian1 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32579,7 +32579,7 @@ var testhungarian0 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}

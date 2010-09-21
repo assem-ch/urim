@@ -31047,7 +31047,7 @@ var testswedish122 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31065,7 +31065,7 @@ var testswedish121 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31083,7 +31083,7 @@ var testswedish120 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31101,7 +31101,7 @@ var testswedish119 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31119,7 +31119,7 @@ var testswedish118 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31137,7 +31137,7 @@ var testswedish117 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31155,7 +31155,7 @@ var testswedish116 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31173,7 +31173,7 @@ var testswedish115 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31191,7 +31191,7 @@ var testswedish114 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31209,7 +31209,7 @@ var testswedish113 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31227,7 +31227,7 @@ var testswedish112 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31245,7 +31245,7 @@ var testswedish111 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31263,7 +31263,7 @@ var testswedish110 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31281,7 +31281,7 @@ var testswedish109 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31299,7 +31299,7 @@ var testswedish108 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31317,7 +31317,7 @@ var testswedish107 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31335,7 +31335,7 @@ var testswedish106 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31353,7 +31353,7 @@ var testswedish105 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31371,7 +31371,7 @@ var testswedish104 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31389,7 +31389,7 @@ var testswedish103 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31407,7 +31407,7 @@ var testswedish102 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31425,7 +31425,7 @@ var testswedish101 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31443,7 +31443,7 @@ var testswedish100 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31461,7 +31461,7 @@ var testswedish99 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31479,7 +31479,7 @@ var testswedish98 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31497,7 +31497,7 @@ var testswedish97 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31515,7 +31515,7 @@ var testswedish96 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31533,7 +31533,7 @@ var testswedish95 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31551,7 +31551,7 @@ var testswedish94 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31569,7 +31569,7 @@ var testswedish93 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31587,7 +31587,7 @@ var testswedish92 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31605,7 +31605,7 @@ var testswedish91 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31623,7 +31623,7 @@ var testswedish90 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31641,7 +31641,7 @@ var testswedish89 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31659,7 +31659,7 @@ var testswedish88 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31677,7 +31677,7 @@ var testswedish87 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31695,7 +31695,7 @@ var testswedish86 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31713,7 +31713,7 @@ var testswedish85 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31731,7 +31731,7 @@ var testswedish84 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31749,7 +31749,7 @@ var testswedish83 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31767,7 +31767,7 @@ var testswedish82 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31785,7 +31785,7 @@ var testswedish81 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31803,7 +31803,7 @@ var testswedish80 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31821,7 +31821,7 @@ var testswedish79 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31839,7 +31839,7 @@ var testswedish78 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31857,7 +31857,7 @@ var testswedish77 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31875,7 +31875,7 @@ var testswedish76 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31893,7 +31893,7 @@ var testswedish75 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31911,7 +31911,7 @@ var testswedish74 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31929,7 +31929,7 @@ var testswedish73 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31947,7 +31947,7 @@ var testswedish72 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31965,7 +31965,7 @@ var testswedish71 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -31983,7 +31983,7 @@ var testswedish70 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32001,7 +32001,7 @@ var testswedish69 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32019,7 +32019,7 @@ var testswedish68 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32037,7 +32037,7 @@ var testswedish67 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32055,7 +32055,7 @@ var testswedish66 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32073,7 +32073,7 @@ var testswedish65 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32091,7 +32091,7 @@ var testswedish64 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32109,7 +32109,7 @@ var testswedish63 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32127,7 +32127,7 @@ var testswedish62 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32145,7 +32145,7 @@ var testswedish61 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32163,7 +32163,7 @@ var testswedish60 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32181,7 +32181,7 @@ var testswedish59 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32199,7 +32199,7 @@ var testswedish58 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32217,7 +32217,7 @@ var testswedish57 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32235,7 +32235,7 @@ var testswedish56 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32253,7 +32253,7 @@ var testswedish55 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32271,7 +32271,7 @@ var testswedish54 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32289,7 +32289,7 @@ var testswedish53 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32307,7 +32307,7 @@ var testswedish52 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32325,7 +32325,7 @@ var testswedish51 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32343,7 +32343,7 @@ var testswedish50 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32361,7 +32361,7 @@ var testswedish49 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32379,7 +32379,7 @@ var testswedish48 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32397,7 +32397,7 @@ var testswedish47 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32415,7 +32415,7 @@ var testswedish46 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32433,7 +32433,7 @@ var testswedish45 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32451,7 +32451,7 @@ var testswedish44 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32469,7 +32469,7 @@ var testswedish43 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32487,7 +32487,7 @@ var testswedish42 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32505,7 +32505,7 @@ var testswedish41 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32523,7 +32523,7 @@ var testswedish40 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32541,7 +32541,7 @@ var testswedish39 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32559,7 +32559,7 @@ var testswedish38 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32577,7 +32577,7 @@ var testswedish37 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32595,7 +32595,7 @@ var testswedish36 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32613,7 +32613,7 @@ var testswedish35 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32631,7 +32631,7 @@ var testswedish34 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32649,7 +32649,7 @@ var testswedish33 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32667,7 +32667,7 @@ var testswedish32 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32685,7 +32685,7 @@ var testswedish31 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32703,7 +32703,7 @@ var testswedish30 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32721,7 +32721,7 @@ var testswedish29 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32739,7 +32739,7 @@ var testswedish28 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32757,7 +32757,7 @@ var testswedish27 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32775,7 +32775,7 @@ var testswedish26 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32793,7 +32793,7 @@ var testswedish25 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32811,7 +32811,7 @@ var testswedish24 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32829,7 +32829,7 @@ var testswedish23 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32847,7 +32847,7 @@ var testswedish22 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32865,7 +32865,7 @@ var testswedish21 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32883,7 +32883,7 @@ var testswedish20 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32901,7 +32901,7 @@ var testswedish19 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32919,7 +32919,7 @@ var testswedish18 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32937,7 +32937,7 @@ var testswedish17 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32955,7 +32955,7 @@ var testswedish16 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32973,7 +32973,7 @@ var testswedish15 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -32991,7 +32991,7 @@ var testswedish14 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33009,7 +33009,7 @@ var testswedish13 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33027,7 +33027,7 @@ var testswedish12 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33045,7 +33045,7 @@ var testswedish11 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33063,7 +33063,7 @@ var testswedish10 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33081,7 +33081,7 @@ var testswedish9 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33099,7 +33099,7 @@ var testswedish8 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33117,7 +33117,7 @@ var testswedish7 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33135,7 +33135,7 @@ var testswedish6 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33153,7 +33153,7 @@ var testswedish5 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33171,7 +33171,7 @@ var testswedish4 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33189,7 +33189,7 @@ var testswedish3 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33207,7 +33207,7 @@ var testswedish2 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33225,7 +33225,7 @@ var testswedish1 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
@@ -33243,7 +33243,7 @@ var testswedish0 = function() {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-			} else
+		} else
 				buffer = sVoc + " --> " + base + " | " + stem;
 		}
 	}
