@@ -106,8 +106,7 @@ function NorwegianStemmer() {
 				lab0 : do {
 					v_3 = sbp.limit - sbp.cursor;
 					lab1 : do {
-						if (!(snowballProgram
-								.in_grouping_b(g_s_ending, 98, 122))) {
+						if (!(sbp.in_grouping_b(g_s_ending, 98, 122))) {
 							break lab1;
 						}
 						break lab0;

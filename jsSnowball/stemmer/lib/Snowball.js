@@ -593,7 +593,7 @@ golab5:while(true){lab6:do{if(!(sbp.in_grouping(g_v,97,249))){break lab6;}
 break golab5;}while(false);if(sbp.cursor>=sbp.limit){break lab4;}
 sbp.cursor++;}
 break lab3;}while(false);sbp.cursor=v_3;if(!(sbp.in_grouping(g_v,97,249))){break lab2;}
-golab7:while(true){lab8:do{if(!(snowballProgram.out_grouping(g_v,97,249))){break lab8;}
+golab7:while(true){lab8:do{if(!(sbp.out_grouping(g_v,97,249))){break lab8;}
 break golab7;}while(false);if(sbp.cursor>=sbp.limit){break lab2;}
 sbp.cursor++;}}while(false);break lab1;}while(false);sbp.cursor=v_2;if(!(sbp.out_grouping(g_v,97,249))){break lab0;}
 lab9:do{v_6=sbp.cursor;lab10:do{if(!(sbp.out_grouping(g_v,97,249))){break lab10;}
@@ -679,7 +679,7 @@ I_p1=sbp.cursor;lab4:do{if(!(I_p1<I_x)){break lab4;}
 I_p1=I_x;}while(false);return true;}
 function r_main_suffix(){var among_var,v_1,v_2,v_3;v_1=sbp.limit-sbp.cursor;if(sbp.cursor<I_p1){return false;}
 sbp.cursor=I_p1;v_2=sbp.limit_backward;sbp.limit_backward=sbp.cursor;sbp.cursor=sbp.limit-v_1;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_0,29);if(among_var==0){sbp.limit_backward=v_2;return false;}
-sbp.bra=sbp.cursor;sbp.limit_backward=v_2;switch(among_var){case 0:return false;case 1:sbp.slice_del();break;case 2:lab0:do{v_3=sbp.limit-sbp.cursor;lab1:do{if(!(snowballProgram.in_grouping_b(g_s_ending,98,122))){break lab1;}
+sbp.bra=sbp.cursor;sbp.limit_backward=v_2;switch(among_var){case 0:return false;case 1:sbp.slice_del();break;case 2:lab0:do{v_3=sbp.limit-sbp.cursor;lab1:do{if(!(sbp.in_grouping_b(g_s_ending,98,122))){break lab1;}
 break lab0;}while(false);sbp.cursor=sbp.limit-v_3;if(!(sbp.eq_s_b(1,"k"))){return false;}
 if(!(sbp.out_grouping_b(g_v,97,248))){return false;}}while(false);sbp.slice_del();break;case 3:sbp.slice_from("er");break;}
 return true;}
@@ -702,7 +702,7 @@ golab5:while(true){lab6:do{if(!(sbp.in_grouping(g_v,97,250))){break lab6;}
 break golab5;}while(false);if(sbp.cursor>=sbp.limit){break lab4;}
 sbp.cursor++;}
 break lab3;}while(false);sbp.cursor=v_3;if(!(sbp.in_grouping(g_v,97,250))){break lab2;}
-golab7:while(true){lab8:do{if(!(snowballProgram.out_grouping(g_v,97,250))){break lab8;}
+golab7:while(true){lab8:do{if(!(sbp.out_grouping(g_v,97,250))){break lab8;}
 break golab7;}while(false);if(sbp.cursor>=sbp.limit){break lab2;}
 sbp.cursor++;}}while(false);break lab1;}while(false);sbp.cursor=v_2;if(!(sbp.out_grouping(g_v,97,250))){break lab0;}
 lab9:do{v_6=sbp.cursor;lab10:do{if(!(sbp.out_grouping(g_v,97,250))){break lab10;}
@@ -911,7 +911,7 @@ golab5:while(true){lab6:do{if(!(sbp.in_grouping(g_v,97,252))){break lab6;}
 break golab5;}while(false);if(sbp.cursor>=sbp.limit){break lab4;}
 sbp.cursor++;}
 break lab3;}while(false);sbp.cursor=v_3;if(!(sbp.in_grouping(g_v,97,252))){break lab2;}
-golab7:while(true){lab8:do{if(!(snowballProgram.out_grouping(g_v,97,252))){break lab8;}
+golab7:while(true){lab8:do{if(!(sbp.out_grouping(g_v,97,252))){break lab8;}
 break golab7;}while(false);if(sbp.cursor>=sbp.limit){break lab2;}
 sbp.cursor++;}}while(false);break lab1;}while(false);sbp.cursor=v_2;if(!(sbp.out_grouping(g_v,97,252))){break lab0;}
 lab9:do{v_6=sbp.cursor;lab10:do{if(!(sbp.out_grouping(g_v,97,252))){break lab10;}

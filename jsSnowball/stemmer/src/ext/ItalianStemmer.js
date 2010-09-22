@@ -246,7 +246,7 @@ function ItalianStemmer() {
 						}
 						golab7 : while (true) {
 							lab8 : do {
-								if (!(snowballProgram
+								if (!(sbp
 										.out_grouping(g_v, 97, 249))) {
 									break lab8;
 								}

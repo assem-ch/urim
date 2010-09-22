@@ -180,8 +180,7 @@ function PortugueseStemmer() {
 						}
 						golab7 : while (true) {
 							lab8 : do {
-								if (!(snowballProgram
-										.out_grouping(g_v, 97, 250))) {
+								if (!(sbp.out_grouping(g_v, 97, 250))) {
 									break lab8;
 								}
 								break golab7;
