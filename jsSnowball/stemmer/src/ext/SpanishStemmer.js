@@ -109,7 +109,7 @@ function SpanishStemmer() {
 		sbp.setCurrent(word);
 	};
 	this.getCurrent = function() {
-		return sbp.getCurrent()
+		return sbp.getCurrent();
 	};
 	function r_mark_regions() {
 		var v_1, v_2, v_3, v_6, v_8;
@@ -132,8 +132,7 @@ function SpanishStemmer() {
 							}
 							golab5 : while (true) {
 								lab6 : do {
-									if (!(sbp.in_grouping(g_v, 97,
-											252))) {
+									if (!(sbp.in_grouping(g_v, 97, 252))) {
 										break lab6;
 									}
 									break golab5;
@@ -444,20 +443,17 @@ function SpanishStemmer() {
 					sbp.slice_del();
 					switch (among_var) {
 						case 0 :
-							sbp.cursor = sbp.limit
-									- v_2;
+							sbp.cursor = sbp.limit - v_2;
 							break lab1;
 						case 1 :
 							sbp.ket = sbp.cursor;
 							if (!(sbp.eq_s_b(2, "at"))) {
-								sbp.cursor = sbp.limit
-										- v_2;
+								sbp.cursor = sbp.limit - v_2;
 								break lab1;
 							}
 							sbp.bra = sbp.cursor;
 							if (!r_R2()) {
-								sbp.cursor = sbp.limit
-										- v_2;
+								sbp.cursor = sbp.limit - v_2;
 								break lab1;
 							}
 							sbp.slice_del();
@@ -481,13 +477,11 @@ function SpanishStemmer() {
 					sbp.bra = sbp.cursor;
 					switch (among_var) {
 						case 0 :
-							sbp.cursor = sbp.limit
-									- v_3;
+							sbp.cursor = sbp.limit - v_3;
 							break lab2;
 						case 1 :
 							if (!r_R2()) {
-								sbp.cursor = sbp.limit
-										- v_3;
+								sbp.cursor = sbp.limit - v_3;
 								break lab2;
 							}
 							sbp.slice_del();
@@ -511,13 +505,11 @@ function SpanishStemmer() {
 					sbp.bra = sbp.cursor;
 					switch (among_var) {
 						case 0 :
-							sbp.cursor = sbp.limit
-									- v_4;
+							sbp.cursor = sbp.limit - v_4;
 							break lab3;
 						case 1 :
 							if (!r_R2()) {
-								sbp.cursor = sbp.limit
-										- v_4;
+								sbp.cursor = sbp.limit - v_4;
 								break lab3;
 							}
 							sbp.slice_del();

@@ -52,33 +52,33 @@ function FinnishStemmer() {
 	var B_ending_removed, S_x, I_p2, I_p1;
 	var sbp = new SnowballProgram();
 	this.setCurrent = function(word) {
-		setCurrent(word);
+		sbp.setCurrent(word);
 	};
 	this.getCurrent = function() {
-		return getCurrent()
+		return sbp.getCurrent();
 	};
 	function r_mark_regions() {
 		var v_1, v_3;
-		I_p1 = limit;
-		I_p2 = limit;
+		I_p1 = sbp.limit;
+		I_p2 = sbp.limit;
 		golab0 : while (true) {
-			v_1 = cursor;
+			v_1 = sbp.cursor;
 			lab1 : do {
-				if (!(in_grouping(g_V1, 97, 246))) {
+				if (!(sbp.in_grouping(g_V1, 97, 246))) {
 					break lab1;
 				}
-				cursor = v_1;
+				sbp.cursor = v_1;
 				break golab0;
 			} while (false);
-			cursor = v_1;
-			if (cursor >= limit) {
+			sbp.cursor = v_1;
+			if (sbp.cursor >= sbp.limit) {
 				return false;
 			}
-			cursor++;
+			sbp.cursor++;
 		}
 		golab2 : while (true) {
 			lab3 : do {
-				if (!(out_grouping(g_V1, 97, 246))) {
+				if (!(sbp.out_grouping(g_V1, 97, 246))) {
 					break lab3;
 				}
 				break golab2;

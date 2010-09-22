@@ -2,7 +2,7 @@ jsSnowball is a JavaScript port of http://snowball.tartarus.org/ stemmers,
 	web site is at: https://code.google.com/p/urim/.
 
 
-*.js Library files were compressed with http://jscompress.com/
+Snowball.js library files was compressed with http://jscompress.com/
 
 
 Due porting each stemmer could be validated by Regex:

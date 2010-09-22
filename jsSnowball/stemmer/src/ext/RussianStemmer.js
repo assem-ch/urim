@@ -103,7 +103,7 @@ function RussianStemmer() {
 		sbp.setCurrent(word);
 	};
 	this.getCurrent = function() {
-		return sbp.getCurrent()
+		return sbp.getCurrent();
 	};
 	function r_mark_regions() {
 		var v_1;
@@ -253,8 +253,7 @@ function RussianStemmer() {
 						} while (false);
 						sbp.cursor = sbp.limit - v_2;
 						if (!(sbp.eq_s_b(1, "\u044F"))) {
-							sbp.cursor = sbp.limit
-									- v_1;
+							sbp.cursor = sbp.limit - v_1;
 							break lab0;
 						}
 					} while (false);

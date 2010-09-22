@@ -99,7 +99,7 @@ function HungarianStemmer() {
 		sbp.setCurrent(word);
 	};
 	this.getCurrent = function() {
-		return sbp.getCurrent()
+		return sbp.getCurrent();
 	};
 	function r_mark_regions() {
 		var v_1, v_2, v_3;

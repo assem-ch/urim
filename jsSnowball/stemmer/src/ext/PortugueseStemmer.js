@@ -105,7 +105,7 @@ function PortugueseStemmer() {
 		sbp.setCurrent(word);
 	};
 	this.getCurrent = function() {
-		return sbp.getCurrent()
+		return sbp.getCurrent();
 	};
 	function r_prelude() {
 		var among_var, v_1;

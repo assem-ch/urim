@@ -125,7 +125,7 @@ function RomanianStemmer() {
 		sbp.setCurrent(word);
 	};
 	this.getCurrent = function() {
-		return sbp.getCurrent()
+		return sbp.getCurrent();
 	};
 	var g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 32, 0, 0,
 			4];
