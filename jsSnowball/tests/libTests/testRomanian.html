@@ -1,13 +1,11 @@
 <html>
   <head>
     <script language="JavaScript" src="../jsunit/app/jsUnitCore.js"></script>
-    <script language="JavaScript" src="../../stemmer/src/Among.js"></script>
-    <script language="JavaScript" src="../../stemmer/src/SnowballProgram.js"></script>
-    <script language="JavaScript" src="../../stemmer/src/ext/RomanianStemmer.js"></script>
+    <script language="JavaScript" src="../../stemmer/lib/Snowball.js"></script>
     <script language="JavaScript" src="../../testsGenerator/testRomanianStemmer.js"></script>
     <script type="text/javascript">
       var stemmer = (function() {
-        var testStemmer = new RomanianStemmer();
+        var testStemmer = new Snowball("Romanian");
         return function(word) {
 	  testStemmer.setCurrent(word);
           testStemmer.stem();
