@@ -35,15 +35,6 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-var stemmer = (function() {
-		var testStemmer = new SwedishStemmer();
-		return function(word) {
-			testStemmer.setCurrent(word);
-			testStemmer.stem();
-			return testStemmer.getCurrent();
-		}
-})();
-
 var swedishTestDiffs0 = {
 	"a" : "a",
 	"aaele" : "aael",

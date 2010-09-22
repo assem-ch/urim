@@ -35,15 +35,6 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-var stemmer = (function() {
-		var testStemmer = new NorwegianStemmer();
-		return function(word) {
-			testStemmer.setCurrent(word);
-			testStemmer.stem();
-			return testStemmer.getCurrent();
-		}
-})();
-
 var norwegianTestDiffs0 = {
 	"a" : "a",
 	"aabakken" : "aabakk",

@@ -35,15 +35,6 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-var stemmer = (function() {
-		var testStemmer = new FrenchStemmer();
-		return function(word) {
-			testStemmer.setCurrent(word);
-			testStemmer.stem();
-			return testStemmer.getCurrent();
-		}
-})();
-
 var frenchTestDiffs0 = {
 	"a" : "a",
 	"\u00e0" : "\u00e0",

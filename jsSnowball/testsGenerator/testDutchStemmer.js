@@ -35,15 +35,6 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-var stemmer = (function() {
-		var testStemmer = new DutchStemmer();
-		return function(word) {
-			testStemmer.setCurrent(word);
-			testStemmer.stem();
-			return testStemmer.getCurrent();
-		}
-})();
-
 var dutchTestDiffs0 = {
 	"a" : "a",
 	"\u00e1" : "a",

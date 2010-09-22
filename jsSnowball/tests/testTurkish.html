@@ -5,6 +5,16 @@
     <script language="JavaScript" src="../stemmer/src/SnowballProgram.js"></script>
     <script language="JavaScript" src="../stemmer/src/ext/TurkishStemmer.js"></script>
     <script language="JavaScript" src="../testsGenerator/testTurkishStemmer.js"></script>
+    <script type="text/javascript">
+      var stemmer = (function() {
+        var testStemmer = new TurkishStemmer();
+        return function(word) {
+	  testStemmer.setCurrent(word);
+          testStemmer.stem();
+          return testStemmer.getCurrent();
+	}
+    })();
+    </script>
   </head>
   <body>
     This is a Snowball Test Page for Turkish.

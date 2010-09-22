@@ -5,6 +5,16 @@
     <script language="JavaScript" src="../stemmer/src/SnowballProgram.js"></script>
     <script language="JavaScript" src="../stemmer/src/ext/DanishStemmer.js"></script>
     <script language="JavaScript" src="../testsGenerator/testDanishStemmer.js"></script>
+    <script type="text/javascript">
+      var stemmer = (function() {
+        var testStemmer = new DanishStemmer();
+        return function(word) {
+	  testStemmer.setCurrent(word);
+          testStemmer.stem();
+          return testStemmer.getCurrent();
+	}
+    })();
+    </script>
   </head>
   <body>
     This is a Snowball Test Page for Danish.

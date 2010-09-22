@@ -87,19 +87,8 @@ public class StemmerTestBuilder {
 
 				File file = new File("test" + algoritmToHuman(algoritm) + "Stemmer.js");
 				FileOutputStream fos = new FileOutputStream(file);
-
 				fos.write(readLicense());
-
-				fos.write(("var stemmer = (function() {\n"+
-					"\t\tvar testStemmer = new " + algoritmToHuman(algoritm) + "Stemmer();\n" +
-					"\t\treturn function(word) {\n" +
-					"\t\t\ttestStemmer.setCurrent(word);\n" +
-					"\t\t\ttestStemmer.stem();\n" +
-					"\t\t\treturn testStemmer.getCurrent();\n" +
-					"\t\t}\n})();\n\n").getBytes("UTF-8"));
-
 				fos.write(gBuffer.toString().getBytes("UTF-8"));
-
 				fos.flush();
 				fos.close();
 			}
