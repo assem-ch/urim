@@ -28,9 +28,7 @@ return false;this.cursor-=s_size;return true;},find_among:function(v,v_size){var
 diff=current.charCodeAt(c+common)-w.s[i2];if(diff!=0)
 break;common++;}
 if(diff<0){j=k;common_j=common;}else{i=k;common_i=common;}
-if(j-i<=1){if(i>0)
-break;if(j==i)
-break;if(first_key_inspected)
+if(j-i<=1){if(i>0||j==i||first_key_inspected)
 break;first_key_inspected=true;}}
 while(true){var w=v[i];if(common_i>=w.s_size){this.cursor=c+w.s_size;if(!w.method)
 return w.result;var res=w.method();this.cursor=c+w.s_size;if(res)
@@ -40,9 +38,7 @@ return 0;}},find_among_b:function(v,v_size){var i=0,j=v_size,c=this.cursor,lb=th
 diff=current.charCodeAt(c-1-common)-w.s[i2];if(diff!=0)
 break;common++;}
 if(diff<0){j=k;common_j=common;}else{i=k;common_i=common;}
-if(j-i<=1){if(i>0)
-break;if(j==i)
-break;if(first_key_inspected)
+if(j-i<=1){if(i>0||j==i||first_key_inspected)
 break;first_key_inspected=true;}}
 while(true){var w=v[i];if(common_i>=w.s_size){this.cursor=c-w.s_size;if(!w.method)
 return w.result;var res=w.method();this.cursor=c-w.s_size;if(res)

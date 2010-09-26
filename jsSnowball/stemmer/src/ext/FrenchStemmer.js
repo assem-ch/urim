@@ -96,39 +96,33 @@ function FrenchStemmer() {
 						lab4 : do {
 							v_3 = sbp.cursor;
 							lab5 : do {
-								if (!(sbp.in_grouping(g_v, 97, 251))) {
+								if (!(sbp.in_grouping(g_v, 97, 251)))
 									break lab5;
-								}
 								sbp.bra = sbp.cursor;
 								lab6 : do {
 									v_4 = sbp.cursor;
 									lab7 : do {
-										if (!(sbp.eq_s(1, "u"))) {
+										if (!(sbp.eq_s(1, "u")))
 											break lab7;
-										}
 										sbp.ket = sbp.cursor;
-										if (!(sbp.in_grouping(g_v, 97, 251))) {
+										if (!(sbp.in_grouping(g_v, 97, 251)))
 											break lab7;
-										}
 										sbp.slice_from("U");
 										break lab6;
 									} while (false);
 									sbp.cursor = v_4;
 									lab8 : do {
-										if (!(sbp.eq_s(1, "i"))) {
+										if (!(sbp.eq_s(1, "i")))
 											break lab8;
-										}
 										sbp.ket = sbp.cursor;
-										if (!(sbp.in_grouping(g_v, 97, 251))) {
+										if (!(sbp.in_grouping(g_v, 97, 251)))
 											break lab8;
-										}
 										sbp.slice_from("I");
 										break lab6;
 									} while (false);
 									sbp.cursor = v_4;
-									if (!(sbp.eq_s(1, "y"))) {
+									if (!(sbp.eq_s(1, "y")))
 										break lab5;
-									}
 									sbp.ket = sbp.cursor;
 									sbp.slice_from("Y");
 								} while (false);
@@ -137,24 +131,20 @@ function FrenchStemmer() {
 							sbp.cursor = v_3;
 							lab9 : do {
 								sbp.bra = sbp.cursor;
-								if (!(sbp.eq_s(1, "y"))) {
+								if (!(sbp.eq_s(1, "y")))
 									break lab9;
-								}
 								sbp.ket = sbp.cursor;
-								if (!(sbp.in_grouping(g_v, 97, 251))) {
+								if (!(sbp.in_grouping(g_v, 97, 251)))
 									break lab9;
-								}
 								sbp.slice_from("Y");
 								break lab4;
 							} while (false);
 							sbp.cursor = v_3;
-							if (!(sbp.eq_s(1, "q"))) {
+							if (!(sbp.eq_s(1, "q")))
 								break lab3;
-							}
 							sbp.bra = sbp.cursor;
-							if (!(sbp.eq_s(1, "u"))) {
+							if (!(sbp.eq_s(1, "u")))
 								break lab3;
-							}
 							sbp.ket = sbp.cursor;
 							sbp.slice_from("U");
 						} while (false);
@@ -162,9 +152,8 @@ function FrenchStemmer() {
 						break golab2;
 					} while (false);
 					sbp.cursor = v_2;
-					if (sbp.cursor >= sbp.limit) {
+					if (sbp.cursor >= sbp.limit)
 						break lab1;
-					}
 					sbp.cursor++;
 				}
 				continue replab0;
@@ -175,109 +164,93 @@ function FrenchStemmer() {
 		return true;
 	}
 	function r_mark_regions() {
-		var v_1, v_2, v_4;
+		var v_1, v_2;
 		I_pV = sbp.limit;
-		I_p1 = sbp.limit;
-		I_p2 = sbp.limit;
+		I_p1 = I_pV;
+		I_p2 = I_pV;
 		v_1 = sbp.cursor;
 		lab0 : do {
 			lab1 : do {
 				v_2 = sbp.cursor;
 				lab2 : do {
-					if (!(sbp.in_grouping(g_v, 97, 251))) {
+					if (!(sbp.in_grouping(g_v, 97, 251)))
 						break lab2;
-					}
-					if (!(sbp.in_grouping(g_v, 97, 251))) {
+					if (!(sbp.in_grouping(g_v, 97, 251)))
 						break lab2;
-					}
-					if (sbp.cursor >= sbp.limit) {
+					if (sbp.cursor >= sbp.limit)
 						break lab2;
-					}
 					sbp.cursor++;
 					break lab1;
 				} while (false);
 				sbp.cursor = v_2;
 				lab3 : do {
-					if (sbp.find_among(a_0, 3) == 0) {
+					if (sbp.find_among(a_0, 3) == 0)
 						break lab3;
-					}
 					break lab1;
 				} while (false);
 				sbp.cursor = v_2;
-				if (sbp.cursor >= sbp.limit) {
+				if (sbp.cursor >= sbp.limit)
 					break lab0;
-				}
 				sbp.cursor++;
 				golab4 : while (true) {
 					lab5 : do {
-						if (!(sbp.in_grouping(g_v, 97, 251))) {
+						if (!(sbp.in_grouping(g_v, 97, 251)))
 							break lab5;
-						}
 						break golab4;
 					} while (false);
-					if (sbp.cursor >= sbp.limit) {
+					if (sbp.cursor >= sbp.limit)
 						break lab0;
-					}
 					sbp.cursor++;
 				}
 			} while (false);
 			I_pV = sbp.cursor;
 		} while (false);
 		sbp.cursor = v_1;
-		v_4 = sbp.cursor;
 		lab6 : do {
 			golab7 : while (true) {
 				lab8 : do {
-					if (!(sbp.in_grouping(g_v, 97, 251))) {
+					if (!(sbp.in_grouping(g_v, 97, 251)))
 						break lab8;
-					}
 					break golab7;
 				} while (false);
-				if (sbp.cursor >= sbp.limit) {
+				if (sbp.cursor >= sbp.limit)
 					break lab6;
-				}
 				sbp.cursor++;
 			}
 			golab9 : while (true) {
 				lab10 : do {
-					if (!(sbp.out_grouping(g_v, 97, 251))) {
+					if (!(sbp.out_grouping(g_v, 97, 251)))
 						break lab10;
-					}
 					break golab9;
 				} while (false);
-				if (sbp.cursor >= sbp.limit) {
+				if (sbp.cursor >= sbp.limit)
 					break lab6;
-				}
 				sbp.cursor++;
 			}
 			I_p1 = sbp.cursor;
 			golab11 : while (true) {
 				lab12 : do {
-					if (!(sbp.in_grouping(g_v, 97, 251))) {
+					if (!(sbp.in_grouping(g_v, 97, 251)))
 						break lab12;
-					}
 					break golab11;
 				} while (false);
-				if (sbp.cursor >= sbp.limit) {
+				if (sbp.cursor >= sbp.limit)
 					break lab6;
-				}
 				sbp.cursor++;
 			}
 			golab13 : while (true) {
 				lab14 : do {
-					if (!(sbp.out_grouping(g_v, 97, 251))) {
+					if (!(sbp.out_grouping(g_v, 97, 251)))
 						break lab14;
-					}
 					break golab13;
 				} while (false);
-				if (sbp.cursor >= sbp.limit) {
+				if (sbp.cursor >= sbp.limit)
 					break lab6;
-				}
 				sbp.cursor++;
 			}
 			I_p2 = sbp.cursor;
 		} while (false);
-		sbp.cursor = v_4;
+		sbp.cursor = v_1;
 		return true;
 	}
 	function r_postlude() {
@@ -287,9 +260,8 @@ function FrenchStemmer() {
 			lab1 : do {
 				sbp.bra = sbp.cursor;
 				among_var = sbp.find_among(a_1, 4);
-				if (among_var == 0) {
+				if (among_var == 0)
 					break lab1;
-				}
 				sbp.ket = sbp.cursor;
 				switch (among_var) {
 					case 0 :
@@ -304,9 +276,8 @@ function FrenchStemmer() {
 						sbp.slice_from("y");
 						break;
 					case 4 :
-						if (sbp.cursor >= sbp.limit) {
+						if (sbp.cursor >= sbp.limit)
 							break lab1;
-						}
 						sbp.cursor++;
 						break;
 				}
@@ -318,44 +289,41 @@ function FrenchStemmer() {
 		return true;
 	}
 	function r_RV() {
-		if (!(I_pV <= sbp.cursor)) {
+		if (!(I_pV <= sbp.cursor))
 			return false;
-		}
+
 		return true;
 	}
 	function r_R1() {
-		if (!(I_p1 <= sbp.cursor)) {
+		if (!(I_p1 <= sbp.cursor))
 			return false;
-		}
+
 		return true;
 	}
 	function r_R2() {
-		if (!(I_p2 <= sbp.cursor)) {
+		if (!(I_p2 <= sbp.cursor))
 			return false;
-		}
+
 		return true;
 	}
 	function r_standard_suffix() {
 		var among_var, v_1, v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_10, v_11;
 		sbp.ket = sbp.cursor;
 		among_var = sbp.find_among_b(a_4, 43);
-		if (among_var == 0) {
+		if (among_var == 0)
 			return false;
-		}
 		sbp.bra = sbp.cursor;
 		switch (among_var) {
 			case 0 :
 				return false;
 			case 1 :
-				if (!r_R2()) {
+				if (!r_R2())
 					return false;
-				}
 				sbp.slice_del();
 				break;
 			case 2 :
-				if (!r_R2()) {
+				if (!r_R2())
 					return false;
-				}
 				sbp.slice_del();
 				v_1 = sbp.limit - sbp.cursor;
 				lab0 : do {
@@ -368,9 +336,8 @@ function FrenchStemmer() {
 					lab1 : do {
 						v_2 = sbp.limit - sbp.cursor;
 						lab2 : do {
-							if (!r_R2()) {
+							if (!r_R2())
 								break lab2;
-							}
 							sbp.slice_del();
 							break lab1;
 						} while (false);
@@ -380,27 +347,23 @@ function FrenchStemmer() {
 				} while (false);
 				break;
 			case 3 :
-				if (!r_R2()) {
+				if (!r_R2())
 					return false;
-				}
 				sbp.slice_from("log");
 				break;
 			case 4 :
-				if (!r_R2()) {
+				if (!r_R2())
 					return false;
-				}
 				sbp.slice_from("u");
 				break;
 			case 5 :
-				if (!r_R2()) {
+				if (!r_R2())
 					return false;
-				}
 				sbp.slice_from("ent");
 				break;
 			case 6 :
-				if (!r_RV()) {
+				if (!r_RV())
 					return false;
-				}
 				sbp.slice_del();
 				v_3 = sbp.limit - sbp.cursor;
 				lab3 : do {
@@ -437,9 +400,8 @@ function FrenchStemmer() {
 							lab4 : do {
 								v_4 = sbp.limit - sbp.cursor;
 								lab5 : do {
-									if (!r_R2()) {
+									if (!r_R2())
 										break lab5;
-									}
 									sbp.slice_del();
 									break lab4;
 								} while (false);
@@ -469,9 +431,8 @@ function FrenchStemmer() {
 				} while (false);
 				break;
 			case 7 :
-				if (!r_R2()) {
+				if (!r_R2())
 					return false;
-				}
 				sbp.slice_del();
 				v_5 = sbp.limit - sbp.cursor;
 				lab6 : do {
@@ -490,9 +451,8 @@ function FrenchStemmer() {
 							lab7 : do {
 								v_6 = sbp.limit - sbp.cursor;
 								lab8 : do {
-									if (!r_R2()) {
+									if (!r_R2())
 										break lab8;
-									}
 									sbp.slice_del();
 									break lab7;
 								} while (false);
@@ -504,9 +464,8 @@ function FrenchStemmer() {
 							lab9 : do {
 								v_7 = sbp.limit - sbp.cursor;
 								lab10 : do {
-									if (!r_R2()) {
+									if (!r_R2())
 										break lab10;
-									}
 									sbp.slice_del();
 									break lab9;
 								} while (false);
@@ -525,9 +484,8 @@ function FrenchStemmer() {
 				} while (false);
 				break;
 			case 8 :
-				if (!r_R2()) {
+				if (!r_R2())
 					return false;
-				}
 				sbp.slice_del();
 				v_8 = sbp.limit - sbp.cursor;
 				lab11 : do {
@@ -551,9 +509,8 @@ function FrenchStemmer() {
 					lab12 : do {
 						v_9 = sbp.limit - sbp.cursor;
 						lab13 : do {
-							if (!r_R2()) {
+							if (!r_R2())
 								break lab13;
-							}
 							sbp.slice_del();
 							break lab12;
 						} while (false);
@@ -566,57 +523,48 @@ function FrenchStemmer() {
 				sbp.slice_from("eau");
 				break;
 			case 10 :
-				if (!r_R1()) {
+				if (!r_R1())
 					return false;
-				}
 				sbp.slice_from("al");
 				break;
 			case 11 :
 				lab14 : do {
 					v_10 = sbp.limit - sbp.cursor;
 					lab15 : do {
-						if (!r_R2()) {
+						if (!r_R2())
 							break lab15;
-						}
 						sbp.slice_del();
 						break lab14;
 					} while (false);
 					sbp.cursor = sbp.limit - v_10;
-					if (!r_R1()) {
+					if (!r_R1())
 						return false;
-					}
 					sbp.slice_from("eux");
 				} while (false);
 				break;
 			case 12 :
-				if (!r_R1()) {
+				if (!r_R1())
 					return false;
-				}
-				if (!(sbp.out_grouping_b(g_v, 97, 251))) {
+				if (!(sbp.out_grouping_b(g_v, 97, 251)))
 					return false;
-				}
 				sbp.slice_del();
 				break;
 			case 13 :
-				if (!r_RV()) {
+				if (!r_RV())
 					return false;
-				}
 				sbp.slice_from("ant");
 				return false;
 			case 14 :
-				if (!r_RV()) {
+				if (!r_RV())
 					return false;
-				}
 				sbp.slice_from("ent");
 				return false;
 			case 15 :
 				v_11 = sbp.limit - sbp.cursor;
-				if (!(sbp.in_grouping_b(g_v, 97, 251))) {
+				if (!(sbp.in_grouping_b(g_v, 97, 251)))
 					return false;
-				}
-				if (!r_RV()) {
+				if (!r_RV())
 					return false;
-				}
 				sbp.cursor = sbp.limit - v_11;
 				sbp.slice_del();
 				return false;
@@ -626,9 +574,8 @@ function FrenchStemmer() {
 	function r_i_verb_suffix() {
 		var among_var, v_1, v_2;
 		v_1 = sbp.limit - sbp.cursor;
-		if (sbp.cursor < I_pV) {
+		if (sbp.cursor < I_pV)
 			return false;
-		}
 		sbp.cursor = I_pV;
 		v_2 = sbp.limit_backward;
 		sbp.limit_backward = sbp.cursor;
@@ -658,9 +605,8 @@ function FrenchStemmer() {
 	function r_verb_suffix() {
 		var among_var, v_1, v_2, v_3;
 		v_1 = sbp.limit - sbp.cursor;
-		if (sbp.cursor < I_pV) {
+		if (sbp.cursor < I_pV)
 			return false;
-		}
 		sbp.cursor = I_pV;
 		v_2 = sbp.limit_backward;
 		sbp.limit_backward = sbp.cursor;
@@ -722,9 +668,8 @@ function FrenchStemmer() {
 			sbp.slice_del();
 		} while (false);
 		v_3 = sbp.limit - sbp.cursor;
-		if (sbp.cursor < I_pV) {
+		if (sbp.cursor < I_pV)
 			return false;
-		}
 		sbp.cursor = I_pV;
 		v_4 = sbp.limit_backward;
 		sbp.limit_backward = sbp.cursor;
@@ -748,9 +693,8 @@ function FrenchStemmer() {
 				lab1 : do {
 					v_5 = sbp.limit - sbp.cursor;
 					lab2 : do {
-						if (!(sbp.eq_s_b(1, "s"))) {
+						if (!(sbp.eq_s_b(1, "s")))
 							break lab2;
-						}
 						break lab1;
 					} while (false);
 					sbp.cursor = sbp.limit - v_5;
@@ -781,14 +725,12 @@ function FrenchStemmer() {
 	function r_un_double() {
 		var v_1;
 		v_1 = sbp.limit - sbp.cursor;
-		if (sbp.find_among_b(a_8, 5) == 0) {
+		if (sbp.find_among_b(a_8, 5) == 0)
 			return false;
-		}
 		sbp.cursor = sbp.limit - v_1;
 		sbp.ket = sbp.cursor;
-		if (sbp.cursor <= sbp.limit_backward) {
+		if (sbp.cursor <= sbp.limit_backward)
 			return false;
-		}
 		sbp.cursor--;
 		sbp.bra = sbp.cursor;
 		sbp.slice_del();
@@ -799,9 +741,8 @@ function FrenchStemmer() {
 		var v_1 = 1;
 		replab0 : while (true) {
 			lab1 : do {
-				if (!(sbp.out_grouping_b(g_v, 97, 251))) {
+				if (!(sbp.out_grouping_b(g_v, 97, 251)))
 					break lab1;
-				}
 				v_1--;
 				continue replab0;
 			} while (false);
@@ -814,34 +755,30 @@ function FrenchStemmer() {
 		lab2 : do {
 			v_3 = sbp.limit - sbp.cursor;
 			lab3 : do {
-				if (!(sbp.eq_s_b(1, "\u00E9"))) {
+				if (!(sbp.eq_s_b(1, "\u00E9")))
 					break lab3;
-				}
 				break lab2;
 			} while (false);
 			sbp.cursor = sbp.limit - v_3;
-			if (!(sbp.eq_s_b(1, "\u00E8"))) {
+			if (!(sbp.eq_s_b(1, "\u00E8")))
 				return false;
-			}
 		} while (false);
 		sbp.bra = sbp.cursor;
 		sbp.slice_from("e");
 		return true;
 	}
 	this.stem = function() {
-		var v_1, v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_10, v_11;
+		var v_1, v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9;
 		v_1 = sbp.cursor;
 		lab0 : do {
-			if (!r_prelude()) {
+			if (!r_prelude())
 				break lab0;
-			}
 		} while (false);
 		sbp.cursor = v_1;
 		v_2 = sbp.cursor;
 		lab1 : do {
-			if (!r_mark_regions()) {
+			if (!r_mark_regions())
 				break lab1;
-			}
 		} while (false);
 		sbp.cursor = v_2;
 		sbp.limit_backward = sbp.cursor;
@@ -855,22 +792,19 @@ function FrenchStemmer() {
 					lab5 : do {
 						v_6 = sbp.limit - sbp.cursor;
 						lab6 : do {
-							if (!r_standard_suffix()) {
+							if (!r_standard_suffix())
 								break lab6;
-							}
 							break lab5;
 						} while (false);
 						sbp.cursor = sbp.limit - v_6;
 						lab7 : do {
-							if (!r_i_verb_suffix()) {
+							if (!r_i_verb_suffix())
 								break lab7;
-							}
 							break lab5;
 						} while (false);
 						sbp.cursor = sbp.limit - v_6;
-						if (!r_verb_suffix()) {
+						if (!r_verb_suffix())
 							break lab4;
-						}
 					} while (false);
 					sbp.cursor = sbp.limit - v_5;
 					v_7 = sbp.limit - sbp.cursor;
@@ -879,9 +813,8 @@ function FrenchStemmer() {
 						lab9 : do {
 							v_8 = sbp.limit - sbp.cursor;
 							lab10 : do {
-								if (!(sbp.eq_s_b(1, "Y"))) {
+								if (!(sbp.eq_s_b(1, "Y")))
 									break lab10;
-								}
 								sbp.bra = sbp.cursor;
 								sbp.slice_from("i");
 								break lab9;
@@ -898,34 +831,26 @@ function FrenchStemmer() {
 					break lab3;
 				} while (false);
 				sbp.cursor = sbp.limit - v_4;
-				if (!r_residual_suffix()) {
+				if (!r_residual_suffix())
 					break lab2;
-				}
 			} while (false);
 		} while (false);
 		sbp.cursor = sbp.limit - v_3;
 		v_9 = sbp.limit - sbp.cursor;
-		lab11 : do {
-			if (!r_un_double()) {
+		lab11 : do
+			if (!r_un_double())
 				break lab11;
-			}
-		} while (false);
+		while (false);
 		sbp.cursor = sbp.limit - v_9;
-		v_10 = sbp.limit - sbp.cursor;
-		lab12 : do {
-			if (!r_un_accent()) {
+		lab12 : do
+			if (!r_un_accent())
 				break lab12;
-			}
-		} while (false);
-		sbp.cursor = sbp.limit - v_10;
+		while (false);
 		sbp.cursor = sbp.limit_backward;
-		v_11 = sbp.cursor;
-		lab13 : do {
-			if (!r_postlude()) {
+		lab13 : do
+			if (!r_postlude())
 				break lab13;
-			}
-		} while (false);
-		sbp.cursor = v_11;
+		while (false);
 		return true;
 	}
 }
