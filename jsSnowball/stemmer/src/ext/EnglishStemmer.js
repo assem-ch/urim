@@ -2,7 +2,7 @@ function EnglishStemmer(){var a_0=[new Among("arsen",-1,-1),new Among("commun",-
 return true;sbp.cursor=v_1;var c=sbp.cursor+3;if(0>c||c>sbp.limit)
 return true;sbp.cursor=v_1;r_prelude();sbp.cursor=v_1;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_Step_1a();sbp.cursor=sbp.limit;if(!r_exception2())
 for(var i=0;i<habr.length;i++){sbp.cursor=sbp.limit;habr[i]();}
-v_2=sbp.limit_backward;sbp.cursor=v_2;r_postlude();sbp.cursor=v_2;return true;}
+v_2=sbp.limit_backward;sbp.cursor=v_2;r_postlude();return true;}
 function r_prelude(){var v_1,v_2;B_Y_found=false;v_1=sbp.cursor;sbp.bra=sbp.cursor;if(sbp.eq_s(1,"'")){sbp.ket=sbp.cursor;sbp.slice_del();}
 sbp.cursor=v_1;sbp.bra=v_1;if(sbp.eq_s(1,"y")){sbp.ket=sbp.cursor;sbp.slice_from("Y");B_Y_found=true;}
 sbp.cursor=v_1;while(true){v_2=sbp.cursor;if(sbp.in_grouping(g_v,97,121)){sbp.bra=sbp.cursor;if(sbp.eq_s(1,"y")){sbp.ket=sbp.cursor;sbp.cursor=v_2;sbp.slice_from("Y");B_Y_found=true;continue;}}
