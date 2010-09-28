@@ -7,18 +7,18 @@ return;sbp.cursor++;}
 I_p1=sbp.cursor;if(I_p1<I_x)
 I_p1=I_x;return true;}
 function r_main_suffix(){var among_var,v_1;if(sbp.cursor<I_p1)
-return;v_1=sbp.limit_backward;sbp.limit_backward=I_p1;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_0,32);sbp.limit_backward=v_1;if(among_var==0)
+return;v_1=sbp.limit_backward;sbp.limit_backward=I_p1;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_0,32);sbp.limit_backward=v_1;if(!among_var)
 return;sbp.bra=sbp.cursor;switch(among_var){case 1:sbp.slice_del();break;case 2:if(!sbp.in_grouping_b(g_s_ending,97,229))
 return;sbp.slice_del();break;}
 return true;}
 function r_consonant_pair(){var v_1,v_2;v_1=sbp.limit-sbp.cursor;if(sbp.cursor<I_p1)
-return;v_2=sbp.limit_backward;sbp.limit_backward=I_p1;sbp.ket=sbp.cursor;if(sbp.find_among_b(a_1,4)==0){sbp.limit_backward=v_2;return;}
+return;v_2=sbp.limit_backward;sbp.limit_backward=I_p1;sbp.ket=sbp.cursor;if(!sbp.find_among_b(a_1,4)){sbp.limit_backward=v_2;return;}
 sbp.bra=sbp.cursor;sbp.limit_backward=v_2;sbp.cursor=sbp.limit-v_1;if(sbp.cursor<=sbp.limit_backward)
 return;sbp.cursor--;sbp.bra=sbp.cursor;sbp.slice_del();return true;}
 function r_other_suffix(){var among_var,v_1,v_2,v_3;v_1=sbp.limit-sbp.cursor;sbp.ket=sbp.cursor;if(sbp.eq_s_b(2,"st")){sbp.bra=sbp.cursor;if(sbp.eq_s_b(2,"ig"))
 sbp.slice_del();}
 sbp.cursor=sbp.limit-v_1;if(sbp.cursor<I_p1)
-return;v_2=sbp.limit_backward;sbp.limit_backward=I_p1;sbp.cursor=sbp.limit-v_1;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_2,5);sbp.limit_backward=v_2;if(among_var==0)
+return;v_2=sbp.limit_backward;sbp.limit_backward=I_p1;sbp.cursor=sbp.limit-v_1;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_2,5);sbp.limit_backward=v_2;if(!among_var)
 return;sbp.bra=sbp.cursor;switch(among_var){case 1:sbp.slice_del();v_3=sbp.limit-sbp.cursor;r_consonant_pair();sbp.cursor=sbp.limit-v_3;break;case 2:sbp.slice_from("l\u00F8s");break;}
 return true;}
 function r_undouble(){var v_1;if(sbp.cursor<I_p1)
