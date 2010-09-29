@@ -501,7 +501,7 @@ function PortugueseStemmer() {
 		return true;
 	}
 	function r_verb_suffix() {
-		var among_va, v_1, v_2;
+		var among_var, v_1, v_2;
 		v_1 = sbp.limit - sbp.cursor;
 		if (sbp.cursor < I_pV) {
 			return false;

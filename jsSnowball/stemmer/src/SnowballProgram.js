@@ -1,31 +1,21 @@
-function SnowballProgram(){var current;return{bra:0,ket:0,limit:0,cursor:0,limit_backward:0,setCurrent:function(word){current=word;this.cursor=0;this.limit=word.length;this.limit_backward=0;this.bra=this.cursor;this.ket=this.limit;},getCurrent:function(){var result=current;current=null;return result;},in_grouping:function(s,min,max){if(this.cursor>=this.limit)
-return false;var ch=current.charCodeAt(this.cursor);if(ch>max||ch<min)
-return false;ch-=min;if((s[ch>>3]&(0X1<<(ch&0X7)))==0)
-return false;this.cursor++;return true;},in_grouping_b:function(s,min,max){if(this.cursor<=this.limit_backward)
-return false;var ch=current.charCodeAt(this.cursor-1);if(ch>max||ch<min)
-return false;ch-=min;if((s[ch>>3]&(0X1<<(ch&0X7)))==0)
-return false;this.cursor--;return true;},out_grouping:function(s,min,max){if(this.cursor>=this.limit)
-return false;var ch=current.charCodeAt(this.cursor);if(ch>max||ch<min){this.cursor++;return true;}
-ch-=min;if((s[ch>>3]&(0X1<<(ch&0X7)))==0){this.cursor++;return true;}
-return false;},out_grouping_b:function(s,min,max){if(this.cursor<=this.limit_backward)
-return false;var ch=current.charCodeAt(this.cursor-1);if(ch>max||ch<min){this.cursor--;return true;}
-ch-=min;if((s[ch>>3]&(0X1<<(ch&0X7)))==0){this.cursor--;return true;}
-return false;},in_range:function(min,max){if(this.cursor>=this.limit)
-return false;var ch=current.charCodeAt(this.cursor);if(ch>max||ch<min)
-return false;this.cursor++;return true;},in_range_b:function(min,max){if(this.cursor<=this.limit_backward)
-return false;var ch=current.charCodeAt(this.cursor-1);if(ch>max||ch<min)
-return false;this.cursor--;return true;},out_range:function(min,max){if(this.cursor>=this.limit)
-return false;var ch=current.charCodeAt(this.cursor);if(!(ch>max||ch<min))
-return false;this.cursor++;return true;},out_range_b:function(min,max){if(this.cursor<=this.limit_backward)
-return false;var ch=current.charCodeAt(this.cursor-1);if(!(ch>max||ch<min))
-return false;this.cursor--;return true;},eq_s:function(s_size,s){if(this.limit-this.cursor<s_size)
-return false;for(var i=0;i!=s_size;i++)
+function SnowballProgram(){var current;return{bra:0,ket:0,limit:0,cursor:0,limit_backward:0,setCurrent:function(word){current=word;this.cursor=0;this.limit=word.length;this.limit_backward=0;this.bra=this.cursor;this.ket=this.limit;},getCurrent:function(){var result=current;current=null;return result;},in_grouping:function(s,min,max){if(this.cursor<this.limit){var ch=current.charCodeAt(this.cursor);if(ch<=max&&ch>=min){ch-=min;if(s[ch>>3]&(0X1<<(ch&0X7))){this.cursor++;return true;}}}
+return false;},in_grouping_b:function(s,min,max){if(this.cursor>this.limit_backward){var ch=current.charCodeAt(this.cursor-1);if(ch<=max&&ch>=min){ch-=min;if(s[ch>>3]&(0X1<<(ch&0X7))){this.cursor--;return true;}}}
+return false;},out_grouping:function(s,min,max){if(this.cursor<this.limit){var ch=current.charCodeAt(this.cursor);if(ch>max||ch<min){this.cursor++;return true;}
+ch-=min;if(!(s[ch>>3]&(0X1<<(ch&0X7)))){this.cursor++;return true;}}
+return false;},out_grouping_b:function(s,min,max){if(this.cursor>this.limit_backward){var ch=current.charCodeAt(this.cursor-1);if(ch>max||ch<min){this.cursor--;return true;}
+ch-=min;if(!(s[ch>>3]&(0X1<<(ch&0X7)))){this.cursor--;return true;}}
+return false;},in_range:function(min,max){if(this.cursor<this.limit){var ch=current.charCodeAt(this.cursor);if(ch<=max&&ch>=min){this.cursor++;return true;}}
+return false;},in_range_b:function(min,max){if(this.cursor>this.limit_backward){var ch=current.charCodeAt(this.cursor-1);if(ch<=max&&ch>=min){this.cursor--;return true;}}
+return false;},out_range:function(min,max){if(this.cursor<this.limit){var ch=current.charCodeAt(this.cursor);if(ch>max||ch<min){this.cursor++;return true;}}
+return false;},out_range_b:function(min,max){if(this.cursor>this.limit_backward){var ch=current.charCodeAt(this.cursor-1);if(ch>max||ch<min){this.cursor--;return true;}}
+return false;},eq_s:function(s_size,s){if(this.limit-this.cursor<s_size)
+return false;for(var i=0;i<s_size;i++)
 if(current.charCodeAt(this.cursor+i)!=s.charCodeAt(i))
 return false;this.cursor+=s_size;return true;},eq_s_b:function(s_size,s){if(this.cursor-this.limit_backward<s_size)
-return false;for(var i=0;i!=s_size;i++)
+return false;for(var i=0;i<s_size;i++)
 if(current.charCodeAt(this.cursor-s_size+i)!=s.charCodeAt(i))
 return false;this.cursor-=s_size;return true;},find_among:function(v,v_size){var i=0,j=v_size,c=this.cursor,l=this.limit,common_i=0,common_j=0,first_key_inspected=false;while(true){var k=i+((j-i)>>1),diff=0,common=common_i<common_j?common_i:common_j,w=v[k];for(var i2=common;i2<w.s_size;i2++){if(c+common==l){diff=-1;break;}
-diff=current.charCodeAt(c+common)-w.s[i2];if(diff!=0)
+diff=current.charCodeAt(c+common)-w.s[i2];if(diff)
 break;common++;}
 if(diff<0){j=k;common_j=common;}else{i=k;common_i=common;}
 if(j-i<=1){if(i>0||j==i||first_key_inspected)
@@ -35,7 +25,7 @@ return w.result;var res=w.method();this.cursor=c+w.s_size;if(res)
 return w.result;}
 i=w.substring_i;if(i<0)
 return 0;}},find_among_b:function(v,v_size){var i=0,j=v_size,c=this.cursor,lb=this.limit_backward,common_i=0,common_j=0,first_key_inspected=false;while(true){var k=i+((j-i)>>1),diff=0,common=common_i<common_j?common_i:common_j,w=v[k];for(var i2=w.s_size-1-common;i2>=0;i2--){if(c-common==lb){diff=-1;break;}
-diff=current.charCodeAt(c-1-common)-w.s[i2];if(diff!=0)
+diff=current.charCodeAt(c-1-common)-w.s[i2];if(diff)
 break;common++;}
 if(diff<0){j=k;common_j=common;}else{i=k;common_i=common;}
 if(j-i<=1){if(i>0||j==i||first_key_inspected)
