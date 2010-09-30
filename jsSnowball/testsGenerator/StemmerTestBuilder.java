@@ -1,11 +1,5 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.BufferedInputStream;
-import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
 
 public class StemmerTestBuilder {
 
@@ -119,7 +113,7 @@ public class StemmerTestBuilder {
 		BufferedReader out = new BufferedReader(new InputStreamReader(
 				new FileInputStream("data/" + algoritm + "/output.txt"), "UTF-8"));
 
-		ArrayList<String> stemList = new ArrayList<String>();
+		Map<String, String> stemMap = new HashMap<String, String>();
 
 		String line = null, lineOut = null;
 		while ((line = voc.readLine()) != null) {
@@ -136,16 +130,21 @@ public class StemmerTestBuilder {
 				System.out.println("WARN: not enougth data in \"data/" + algoritm + "/output.txt\" !!!");
 				break;
 			}
-
-			String word = javaStringLiteral(line);
-			String stem = javaStringLiteral(lineOut);
-			String pair = word + " : " + stem;
-			stemList.add(pair);
+			stemMap.put(line, lineOut);
 			lineOut = null;
 		}
 
 		voc.close();
 		out.close();
+
+		/* remove duplicates */
+
+		ArrayList<String> keys = new ArrayList<String>(stemMap.keySet());
+		Collections.sort(keys);
+		ArrayList<String> stemList = new ArrayList<String>();
+		for (String key : keys) {
+			stemList.add(javaStringLiteral(key) + " : " + javaStringLiteral(stemMap.get(key)));
+		}
 
 		return stemList;
 	}
