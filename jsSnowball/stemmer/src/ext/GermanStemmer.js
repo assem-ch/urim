@@ -15,9 +15,9 @@ return false;}
 function r_mark_regions(){I_p1=sbp.limit;I_p2=I_p1;var c=sbp.cursor+3;if(0<=c&&c<=sbp.limit){I_x=c;if(!habr2()){I_p1=sbp.cursor;if(I_p1<I_x)
 I_p1=I_x;if(!habr2())
 I_p2=sbp.cursor;}}}
-function r_postlude(){var among_var,v_1;while(true){v_1=sbp.cursor;sbp.bra=v_1;among_var=sbp.find_among(a_0,6);if(!among_var){sbp.cursor=v_1;return;}
-sbp.ket=sbp.cursor;switch(among_var){case 1:sbp.slice_from("y");break;case 2:case 5:sbp.slice_from("u");break;case 3:sbp.slice_from("a");break;case 4:sbp.slice_from("o");break;case 6:if(sbp.cursor>=sbp.limit){sbp.cursor=v_1;return;}
-sbp.cursor++;break;}}}
+function r_postlude(){var among_var,v_1;while(true){v_1=sbp.cursor;sbp.bra=v_1;among_var=sbp.find_among(a_0,6);if(!among_var)
+return;sbp.ket=sbp.cursor;switch(among_var){case 1:sbp.slice_from("y");break;case 2:case 5:sbp.slice_from("u");break;case 3:sbp.slice_from("a");break;case 4:sbp.slice_from("o");break;case 6:if(sbp.cursor>=sbp.limit)
+return;sbp.cursor++;break;}}}
 function r_R1(){return I_p1<=sbp.cursor;}
 function r_R2(){return I_p2<=sbp.cursor;}
 function r_standard_suffix(){var among_var,v_1=sbp.limit-sbp.cursor,v_2,v_3,v_4;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_1,7);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:sbp.slice_del();break;case 2:sbp.slice_del();sbp.ket=sbp.cursor;if(sbp.eq_s_b(1,"s")){sbp.bra=sbp.cursor;if(sbp.eq_s_b(3,"nis"))
@@ -34,6 +34,5 @@ break;}
 sbp.bra=sbp.cursor;if(r_R1())
 sbp.slice_del();break;case 4:sbp.slice_del();sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_3,2);if(among_var){sbp.bra=sbp.cursor;if(r_R2()&&among_var==1)
 sbp.slice_del();}
-break;}}}
-sbp.cursor=sbp.limit-v_1;}
+break;}}}}
 this.stem=function(){var v_1,v_2;v_1=sbp.cursor;r_prelude();sbp.cursor=v_1;v_2=sbp.cursor;r_mark_regions();sbp.limit_backward=v_2;sbp.cursor=sbp.limit;r_standard_suffix();sbp.cursor=sbp.limit_backward;r_postlude();return true;}}

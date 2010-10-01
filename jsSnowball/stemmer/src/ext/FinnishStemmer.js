@@ -41,9 +41,7 @@ function r_i_plural(){var v_1;if(sbp.cursor>=I_p1){v_1=sbp.limit_backward;sbp.li
 sbp.limit_backward=v_1;}}
 function r_t_plural(){var among_var,v_1,v_2,v_3,v_4,v_5;if(sbp.cursor>=I_p1){v_1=sbp.limit_backward;sbp.limit_backward=I_p1;sbp.ket=sbp.cursor;if(sbp.eq_s_b(1,"t")){sbp.bra=sbp.cursor;v_2=sbp.limit-sbp.cursor;if(sbp.in_grouping_b(g_V1,97,246)){sbp.cursor=sbp.limit-v_2;sbp.slice_del();sbp.limit_backward=v_1;v_3=sbp.limit-sbp.cursor;if(sbp.cursor>=I_p2){sbp.cursor=I_p2;v_4=sbp.limit_backward;sbp.limit_backward=sbp.cursor;sbp.cursor=sbp.limit-v_3;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_9,2);if(among_var){sbp.bra=sbp.cursor;sbp.limit_backward=v_4;if(among_var==1){v_5=sbp.limit-sbp.cursor;if(sbp.eq_s_b(2,"po"))
 return;sbp.cursor=sbp.limit-v_5;}
-sbp.slice_del();}else
-sbp.limit_backward=v_4;}}else
-sbp.limit_backward=v_1;}else
+sbp.slice_del();return;}}}}
 sbp.limit_backward=v_1;}}
 function r_tidy(){var v_1,v_2,v_3,v_4;if(sbp.cursor>=I_p1){v_1=sbp.limit_backward;sbp.limit_backward=I_p1;v_2=sbp.limit-sbp.cursor;if(r_LONG()){sbp.cursor=sbp.limit-v_2;sbp.ket=sbp.cursor;if(sbp.cursor>sbp.limit_backward){sbp.cursor--;sbp.bra=sbp.cursor;sbp.slice_del();}}
 sbp.cursor=sbp.limit-v_2;sbp.ket=sbp.cursor;if(sbp.in_grouping_b(g_AEI,97,228)){sbp.bra=sbp.cursor;if(sbp.out_grouping_b(g_V1,97,246))
@@ -58,5 +56,5 @@ sbp.cursor=sbp.limit-v_4;if(sbp.cursor<=sbp.limit_backward)
 return;sbp.cursor--;}
 sbp.ket=sbp.cursor;if(sbp.cursor>sbp.limit_backward){sbp.cursor--;sbp.bra=sbp.cursor;S_x=sbp.slice_to();if(sbp.eq_v_b(S_x))
 sbp.slice_del();}}}
-this.stem=function(){var v_1,v_2;v_1=sbp.cursor;r_mark_regions();B_ending_removed=false;sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_particle_etc();sbp.cursor=sbp.limit;r_possessive();sbp.cursor=sbp.limit;r_case_ending();sbp.cursor=sbp.limit;r_other_endings();sbp.cursor=sbp.limit;v_2=sbp.limit-sbp.cursor;if(B_ending_removed){r_i_plural();sbp.cursor=sbp.limit-v_2;}else{sbp.cursor=sbp.limit-v_2;r_t_plural();sbp.cursor=sbp.limit-v_2;}
+this.stem=function(){var v_1;v_1=sbp.cursor;r_mark_regions();B_ending_removed=false;sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_particle_etc();sbp.cursor=sbp.limit;r_possessive();sbp.cursor=sbp.limit;r_case_ending();sbp.cursor=sbp.limit;r_other_endings();sbp.cursor=sbp.limit;if(B_ending_removed){r_i_plural();sbp.cursor=sbp.limit;}else{sbp.cursor=sbp.limit;r_t_plural();sbp.cursor=sbp.limit;}
 r_tidy();return true;}}
