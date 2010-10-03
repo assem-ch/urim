@@ -8,7 +8,7 @@ return;sbp.cursor++;}
 I_p1=sbp.cursor;}}
 function r_R1(){return I_p1<=sbp.cursor;}
 function r_v_ending(){var among_var;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_1,2);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:sbp.slice_from("a");break;case 2:sbp.slice_from("e");break;}}}}
-function r_double(){var v_1;v_1=sbp.limit-sbp.cursor;if(!sbp.find_among_b(a_2,23))
+function r_double(){var v_1=sbp.limit-sbp.cursor;if(!sbp.find_among_b(a_2,23))
 return false;sbp.cursor=sbp.limit-v_1;return true;}
 function r_undouble(){if(sbp.cursor>sbp.limit_backward){sbp.cursor--;sbp.ket=sbp.cursor;var c=sbp.cursor-1;if(sbp.limit_backward<=c&&c<=sbp.limit){sbp.cursor=c;sbp.bra=c;sbp.slice_del();}}}
 function r_instrum(){var among_var;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_3,2);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){if(among_var==1||among_var==2)
@@ -24,4 +24,4 @@ function r_plural(){var among_var;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(
 function r_owned(){var among_var;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_9,12);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:case 4:case 7:case 9:sbp.slice_del();break;case 2:case 5:case 8:sbp.slice_from("e");break;case 3:case 6:sbp.slice_from("a");break;}}}}
 function r_sing_owner(){var among_var;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_10,31);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:case 4:case 7:case 8:case 9:case 12:case 13:case 16:case 17:case 18:sbp.slice_del();break;case 2:case 5:case 10:case 14:case 19:sbp.slice_from("a");break;case 3:case 6:case 11:case 15:case 20:sbp.slice_from("e");break;}}}}
 function r_plur_owner(){var among_var;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_11,42);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:case 4:case 5:case 6:case 9:case 10:case 11:case 14:case 15:case 16:case 17:case 20:case 21:case 24:case 25:case 26:case 29:sbp.slice_del();break;case 2:case 7:case 12:case 18:case 22:case 27:sbp.slice_from("a");break;case 3:case 8:case 13:case 19:case 23:case 28:sbp.slice_from("e");break;}}}}
-this.stem=function(){var v_1;v_1=sbp.cursor;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_instrum();sbp.cursor=sbp.limit;r_case();sbp.cursor=sbp.limit;r_case_special();sbp.cursor=sbp.limit;r_case_other();sbp.cursor=sbp.limit;r_factive();sbp.cursor=sbp.limit;r_owned();sbp.cursor=sbp.limit;r_sing_owner();sbp.cursor=sbp.limit;r_plur_owner();sbp.cursor=sbp.limit;r_plural();return true;}}
+this.stem=function(){var v_1=sbp.cursor;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_instrum();sbp.cursor=sbp.limit;r_case();sbp.cursor=sbp.limit;r_case_special();sbp.cursor=sbp.limit;r_case_other();sbp.cursor=sbp.limit;r_factive();sbp.cursor=sbp.limit;r_owned();sbp.cursor=sbp.limit;r_sing_owner();sbp.cursor=sbp.limit;r_plur_owner();sbp.cursor=sbp.limit;r_plural();return true;}}

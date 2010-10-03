@@ -75,7 +75,7 @@ sbp.bra=sbp.cursor;switch(among_var){case 1:if(!r_R2()){sbp.limit_backward=v_2;r
 sbp.slice_del();break;case 2:sbp.slice_del();break;case 3:sbp.slice_del();v_3=sbp.limit-sbp.cursor;sbp.ket=sbp.cursor;if(sbp.eq_s_b(1,"e")){sbp.bra=sbp.cursor;sbp.slice_del();}else
 sbp.cursor=sbp.limit-v_3;break;}
 sbp.limit_backward=v_2;return true;}
-function r_residual_suffix(){var among_var,v_1,v_2,v_4,v_5;v_1=sbp.limit-sbp.cursor;sbp.ket=sbp.cursor;if(sbp.eq_s_b(1,"s")){sbp.bra=sbp.cursor;v_2=sbp.limit-sbp.cursor;if(sbp.out_grouping_b(g_keep_with_s,97,232)){sbp.cursor=sbp.limit-v_2;sbp.slice_del();}else
+function r_residual_suffix(){var among_var,v_1=sbp.limit-sbp.cursor,v_2,v_4,v_5;sbp.ket=sbp.cursor;if(sbp.eq_s_b(1,"s")){sbp.bra=sbp.cursor;v_2=sbp.limit-sbp.cursor;if(sbp.out_grouping_b(g_keep_with_s,97,232)){sbp.cursor=sbp.limit-v_2;sbp.slice_del();}else
 sbp.cursor=sbp.limit-v_1;}else
 sbp.cursor=sbp.limit-v_1;if(sbp.cursor>=I_pV){v_4=sbp.limit_backward;sbp.limit_backward=I_pV;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_7,7);if(among_var){sbp.bra=sbp.cursor;switch(among_var){case 1:if(r_R2()){v_5=sbp.limit-sbp.cursor;if(!sbp.eq_s_b(1,"s")){sbp.cursor=sbp.limit-v_5;if(!sbp.eq_s_b(1,"t"))
 break;}
@@ -83,7 +83,7 @@ sbp.slice_del();}
 break;case 2:sbp.slice_from("i");break;case 3:sbp.slice_del();break;case 4:if(sbp.eq_s_b(2,"gu"))
 sbp.slice_del();break;}}
 sbp.limit_backward=v_4;}}
-function r_un_double(){var v_1;v_1=sbp.limit-sbp.cursor;if(sbp.find_among_b(a_8,5)){sbp.cursor=sbp.limit-v_1;sbp.ket=sbp.cursor;if(sbp.cursor>sbp.limit_backward){sbp.cursor--;sbp.bra=sbp.cursor;sbp.slice_del();}}}
+function r_un_double(){var v_1=sbp.limit-sbp.cursor;if(sbp.find_among_b(a_8,5)){sbp.cursor=sbp.limit-v_1;sbp.ket=sbp.cursor;if(sbp.cursor>sbp.limit_backward){sbp.cursor--;sbp.bra=sbp.cursor;sbp.slice_del();}}}
 function r_un_accent(){var v_1,v_2=1;while(sbp.out_grouping_b(g_v,97,251))
 v_2--;if(v_2<=0){sbp.ket=sbp.cursor;v_1=sbp.limit-sbp.cursor;if(!sbp.eq_s_b(1,"\u00E9")){sbp.cursor=sbp.limit-v_1;if(!sbp.eq_s_b(1,"\u00E8"))
 return;}

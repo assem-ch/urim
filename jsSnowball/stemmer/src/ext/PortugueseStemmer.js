@@ -65,4 +65,4 @@ break;case 2:sbp.slice_from("c");break;}}}
 function habr1(){if(!r_standard_suffix()){sbp.cursor=sbp.limit;if(!r_verb_suffix()){sbp.cursor=sbp.limit;r_residual_suffix();return;}}
 sbp.cursor=sbp.limit;sbp.ket=sbp.cursor;if(sbp.eq_s_b(1,"i")){sbp.bra=sbp.cursor;if(sbp.eq_s_b(1,"c")){sbp.cursor=sbp.limit;if(r_RV())
 sbp.slice_del();}}}
-this.stem=function(){var v_1;v_1=sbp.cursor;r_prelude();sbp.cursor=v_1;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;habr1();sbp.cursor=sbp.limit;r_residual_form();sbp.cursor=sbp.limit_backward;r_postlude();return true;}}
+this.stem=function(){var v_1=sbp.cursor;r_prelude();sbp.cursor=v_1;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;habr1();sbp.cursor=sbp.limit;r_residual_form();sbp.cursor=sbp.limit_backward;r_postlude();return true;}}

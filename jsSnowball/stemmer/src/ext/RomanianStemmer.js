@@ -29,7 +29,7 @@ function r_R1(){return I_p1<=sbp.cursor;}
 function r_R2(){return I_p2<=sbp.cursor;}
 function r_step_0(){var among_var,v_1;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_1,16);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:sbp.slice_del();break;case 2:sbp.slice_from("a");break;case 3:sbp.slice_from("e");break;case 4:sbp.slice_from("i");break;case 5:v_1=sbp.limit-sbp.cursor;if(!sbp.eq_s_b(2,"ab")){sbp.cursor=sbp.limit-v_1;sbp.slice_from("i");}
 break;case 6:sbp.slice_from("at");break;case 7:sbp.slice_from("a\u0163i");break;}}}}
-function r_combo_suffix(){var among_var,v_1;v_1=sbp.limit-sbp.cursor;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_2,46);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:sbp.slice_from("abil");break;case 2:sbp.slice_from("ibil");break;case 3:sbp.slice_from("iv");break;case 4:sbp.slice_from("ic");break;case 5:sbp.slice_from("at");break;case 6:sbp.slice_from("it");break;}
+function r_combo_suffix(){var among_var,v_1=sbp.limit-sbp.cursor;sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_2,46);if(among_var){sbp.bra=sbp.cursor;if(r_R1()){switch(among_var){case 1:sbp.slice_from("abil");break;case 2:sbp.slice_from("ibil");break;case 3:sbp.slice_from("iv");break;case 4:sbp.slice_from("ic");break;case 5:sbp.slice_from("at");break;case 6:sbp.slice_from("it");break;}
 B_standard_suffix_removed=true;sbp.cursor=sbp.limit-v_1;return true;}}
 return false;}
 function r_standard_suffix(){var among_var,v_1;B_standard_suffix_removed=false;while(true){v_1=sbp.limit-sbp.cursor;if(!r_combo_suffix()){sbp.cursor=sbp.limit-v_1;break;}}

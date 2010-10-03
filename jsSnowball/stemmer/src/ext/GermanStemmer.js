@@ -35,4 +35,4 @@ sbp.bra=sbp.cursor;if(r_R1())
 sbp.slice_del();break;case 4:sbp.slice_del();sbp.ket=sbp.cursor;among_var=sbp.find_among_b(a_3,2);if(among_var){sbp.bra=sbp.cursor;if(r_R2()&&among_var==1)
 sbp.slice_del();}
 break;}}}}
-this.stem=function(){var v_1,v_2;v_1=sbp.cursor;r_prelude();sbp.cursor=v_1;v_2=sbp.cursor;r_mark_regions();sbp.limit_backward=v_2;sbp.cursor=sbp.limit;r_standard_suffix();sbp.cursor=sbp.limit_backward;r_postlude();return true;}}
+this.stem=function(){var v_1=sbp.cursor;r_prelude();sbp.cursor=v_1;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_standard_suffix();sbp.cursor=sbp.limit_backward;r_postlude();return true;}}
