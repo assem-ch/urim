@@ -41,7 +41,6 @@ Components.utils.import("resource://urim/analysis/stemmer/Among.js");
 Components.utils.import("resource://urim/analysis/stemmer/SnowballProgram.js");
 
 function DanishStemmer() {
-
 	var a_0 = [new Among("hed", -1, 1), new Among("ethed", 0, 1),
 			new Among("ered", -1, 1), new Among("e", -1, 1),
 			new Among("erede", 3, 1), new Among("ende", 3, 1),
@@ -58,268 +57,242 @@ function DanishStemmer() {
 			new Among("erens", 24, 1), new Among("ers", 16, 1),
 			new Among("ets", 16, 1), new Among("erets", 28, 1),
 			new Among("et", -1, 1), new Among("eret", 30, 1)];
-
 	var a_1 = [new Among("gd", -1, -1), new Among("dt", -1, -1),
 			new Among("gt", -1, -1), new Among("kt", -1, -1)];
-
 	var a_2 = [new Among("ig", -1, 1), new Among("lig", 0, 1),
 			new Among("elig", 1, 1), new Among("els", -1, 1),
 			new Among("l\u00F8st", -1, 2)];
-
 	var g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 128];
-
 	var g_s_ending = [239, 254, 42, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16];
-
 	var I_x, I_p1, S_ch;
-
-	var snowballProgram = new SnowballProgram();
-
+	var sbp = new SnowballProgram();
 	this.setCurrent = function(word) {
-		snowballProgram.setCurrent(word);
+		sbp.setCurrent(word);
 	};
-
 	this.getCurrent = function() {
-		return snowballProgram.getCurrent()
+		return sbp.getCurrent();
 	};
-
 	function r_mark_regions() {
-
 		var v_1, v_2;
-		I_p1 = snowballProgram.limit;
-		v_1 = snowballProgram.cursor;
-		var c = snowballProgram.cursor + 3;
-		if (0 > c || c > snowballProgram.limit) {
+		I_p1 = sbp.limit;
+		v_1 = sbp.cursor;
+		var c = sbp.cursor + 3;
+		if (0 > c || c > sbp.limit) {
 			return false;
 		}
-		snowballProgram.cursor = c;
-		I_x = snowballProgram.cursor;
-		snowballProgram.cursor = v_1;
+		sbp.cursor = c;
+		I_x = sbp.cursor;
+		sbp.cursor = v_1;
 		golab0 : while (true) {
-			v_2 = snowballProgram.cursor;
+			v_2 = sbp.cursor;
 			lab1 : do {
-				if (!(snowballProgram.in_grouping(g_v, 97, 248))) {
+				if (!(sbp.in_grouping(g_v, 97, 248))) {
 					break lab1;
 				}
-				snowballProgram.cursor = v_2;
+				sbp.cursor = v_2;
 				break golab0;
 			} while (false);
-			snowballProgram.cursor = v_2;
-			if (snowballProgram.cursor >= snowballProgram.limit) {
+			sbp.cursor = v_2;
+			if (sbp.cursor >= sbp.limit) {
 				return false;
 			}
-			snowballProgram.cursor++;
+			sbp.cursor++;
 		}
 		golab2 : while (true) {
 			lab3 : do {
-				if (!(snowballProgram.out_grouping(g_v, 97, 248))) {
+				if (!(sbp.out_grouping(g_v, 97, 248))) {
 					break lab3;
 				}
 				break golab2;
 			} while (false);
-			if (snowballProgram.cursor >= snowballProgram.limit) {
+			if (sbp.cursor >= sbp.limit) {
 				return false;
 			}
-			snowballProgram.cursor++;
+			sbp.cursor++;
 		}
-		I_p1 = snowballProgram.cursor;
+		I_p1 = sbp.cursor;
 		lab4 : do {
 			if (!(I_p1 < I_x)) {
 				break lab4;
 			}
 			I_p1 = I_x;
 		} while (false);
-
 		return true;
 	}
-
 	function r_main_suffix() {
 		var among_var, v_1, v_2;
-
-		v_1 = snowballProgram.limit - snowballProgram.cursor;
-		if (snowballProgram.cursor < I_p1) {
+		v_1 = sbp.limit - sbp.cursor;
+		if (sbp.cursor < I_p1) {
 			return false;
 		}
-		snowballProgram.cursor = I_p1;
-		v_2 = snowballProgram.limit_backward;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit - v_1;
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_0, 32);
+		sbp.cursor = I_p1;
+		v_2 = sbp.limit_backward;
+		sbp.limit_backward = sbp.cursor;
+		sbp.cursor = sbp.limit - v_1;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a_0, 32);
 		if (among_var == 0) {
-			snowballProgram.limit_backward = v_2;
+			sbp.limit_backward = v_2;
 			return false;
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		snowballProgram.limit_backward = v_2;
+		sbp.bra = sbp.cursor;
+		sbp.limit_backward = v_2;
 		switch (among_var) {
 			case 0 :
 				return false;
 			case 1 :
-				snowballProgram.slice_del();
+				sbp.slice_del();
 				break;
 			case 2 :
-				if (!(snowballProgram.in_grouping_b(g_s_ending, 97, 229))) {
+				if (!(sbp.in_grouping_b(g_s_ending, 97, 229))) {
 					return false;
 				}
-				snowballProgram.slice_del();
+				sbp.slice_del();
 				break;
 		}
-
 		return true;
 	}
-
 	function r_consonant_pair() {
 		var v_1, v_2, v_3;
-
-		v_1 = snowballProgram.limit - snowballProgram.cursor;
-		v_2 = snowballProgram.limit - snowballProgram.cursor;
-		if (snowballProgram.cursor < I_p1) {
+		v_1 = sbp.limit - sbp.cursor;
+		v_2 = sbp.limit - sbp.cursor;
+		if (sbp.cursor < I_p1) {
 			return false;
 		}
-		snowballProgram.cursor = I_p1;
-		v_3 = snowballProgram.limit_backward;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit - v_2;
-		snowballProgram.ket = snowballProgram.cursor;
-		if (snowballProgram.find_among_b(a_1, 4) == 0) {
-			snowballProgram.limit_backward = v_3;
+		sbp.cursor = I_p1;
+		v_3 = sbp.limit_backward;
+		sbp.limit_backward = sbp.cursor;
+		sbp.cursor = sbp.limit - v_2;
+		sbp.ket = sbp.cursor;
+		if (sbp.find_among_b(a_1, 4) == 0) {
+			sbp.limit_backward = v_3;
 			return false;
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		snowballProgram.limit_backward = v_3;
-		snowballProgram.cursor = snowballProgram.limit - v_1;
-		if (snowballProgram.cursor <= snowballProgram.limit_backward) {
+		sbp.bra = sbp.cursor;
+		sbp.limit_backward = v_3;
+		sbp.cursor = sbp.limit - v_1;
+		if (sbp.cursor <= sbp.limit_backward) {
 			return false;
 		}
-		snowballProgram.cursor--;
-		snowballProgram.bra = snowballProgram.cursor;
-		snowballProgram.slice_del();
-
+		sbp.cursor--;
+		sbp.bra = sbp.cursor;
+		sbp.slice_del();
 		return true;
 	}
-
 	function r_other_suffix() {
 		var among_var, v_1, v_2, v_3, v_4;
-
-		v_1 = snowballProgram.limit - snowballProgram.cursor;
+		v_1 = sbp.limit - sbp.cursor;
 		lab0 : do {
-			snowballProgram.ket = snowballProgram.cursor;
-			if (!(snowballProgram.eq_s_b(2, "st"))) {
+			sbp.ket = sbp.cursor;
+			if (!(sbp.eq_s_b(2, "st"))) {
 				break lab0;
 			}
-			snowballProgram.bra = snowballProgram.cursor;
-			if (!(snowballProgram.eq_s_b(2, "ig"))) {
+			sbp.bra = sbp.cursor;
+			if (!(sbp.eq_s_b(2, "ig"))) {
 				break lab0;
 			}
-			snowballProgram.slice_del();
+			sbp.slice_del();
 		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_1;
-		v_2 = snowballProgram.limit - snowballProgram.cursor;
-		if (snowballProgram.cursor < I_p1) {
+		sbp.cursor = sbp.limit - v_1;
+		v_2 = sbp.limit - sbp.cursor;
+		if (sbp.cursor < I_p1) {
 			return false;
 		}
-		snowballProgram.cursor = I_p1;
-		v_3 = snowballProgram.limit_backward;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit - v_2;
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_2, 5);
+		sbp.cursor = I_p1;
+		v_3 = sbp.limit_backward;
+		sbp.limit_backward = sbp.cursor;
+		sbp.cursor = sbp.limit - v_2;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a_2, 5);
 		if (among_var == 0) {
-			snowballProgram.limit_backward = v_3;
+			sbp.limit_backward = v_3;
 			return false;
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		snowballProgram.limit_backward = v_3;
+		sbp.bra = sbp.cursor;
+		sbp.limit_backward = v_3;
 		switch (among_var) {
 			case 0 :
 				return false;
 			case 1 :
-				snowballProgram.slice_del();
-				v_4 = snowballProgram.limit - snowballProgram.cursor;
+				sbp.slice_del();
+				v_4 = sbp.limit - sbp.cursor;
 				lab1 : do {
 					if (!r_consonant_pair()) {
 						break lab1;
 					}
 				} while (false);
-				snowballProgram.cursor = snowballProgram.limit - v_4;
+				sbp.cursor = sbp.limit - v_4;
 				break;
 			case 2 :
-				snowballProgram.slice_from("l\u00F8s");
+				sbp.slice_from("l\u00F8s");
 				break;
 		}
-
 		return true;
 	}
-
 	function r_undouble() {
 		var v_1, v_2;
-
-		v_1 = snowballProgram.limit - snowballProgram.cursor;
-		if (snowballProgram.cursor < I_p1) {
+		v_1 = sbp.limit - sbp.cursor;
+		if (sbp.cursor < I_p1) {
 			return false;
 		}
-		snowballProgram.cursor = I_p1;
-		v_2 = snowballProgram.limit_backward;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit - v_1;
-		snowballProgram.ket = snowballProgram.cursor;
-		if (!(snowballProgram.out_grouping_b(g_v, 97, 248))) {
-			snowballProgram.limit_backward = v_2;
+		sbp.cursor = I_p1;
+		v_2 = sbp.limit_backward;
+		sbp.limit_backward = sbp.cursor;
+		sbp.cursor = sbp.limit - v_1;
+		sbp.ket = sbp.cursor;
+		if (!(sbp.out_grouping_b(g_v, 97, 248))) {
+			sbp.limit_backward = v_2;
 			return false;
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		S_ch = snowballProgram.slice_to(S_ch);
-		snowballProgram.limit_backward = v_2;
-		if (!(snowballProgram.eq_v_b(S_ch))) {
+		sbp.bra = sbp.cursor;
+		S_ch = sbp.slice_to(S_ch);
+		sbp.limit_backward = v_2;
+		if (!(sbp.eq_v_b(S_ch))) {
 			return false;
 		}
-		snowballProgram.slice_del();
-
+		sbp.slice_del();
 		return true;
 	}
-
 	this.stem = function() {
 		var v_1, v_2, v_3, v_4, v_5;
-
-		v_1 = snowballProgram.cursor;
+		v_1 = sbp.cursor;
 		lab0 : do {
 			if (!r_mark_regions()) {
 				break lab0;
 			}
 		} while (false);
-		snowballProgram.cursor = v_1;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit;
-		v_2 = snowballProgram.limit - snowballProgram.cursor;
+		sbp.cursor = v_1;
+		sbp.limit_backward = sbp.cursor;
+		sbp.cursor = sbp.limit;
+		v_2 = sbp.limit - sbp.cursor;
 		lab1 : do {
 			if (!r_main_suffix()) {
 				break lab1;
 			}
 		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_2;
-		v_3 = snowballProgram.limit - snowballProgram.cursor;
+		sbp.cursor = sbp.limit - v_2;
+		v_3 = sbp.limit - sbp.cursor;
 		lab2 : do {
 			if (!r_consonant_pair()) {
 				break lab2;
 			}
 		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_3;
-		v_4 = snowballProgram.limit - snowballProgram.cursor;
+		sbp.cursor = sbp.limit - v_3;
+		v_4 = sbp.limit - sbp.cursor;
 		lab3 : do {
 			if (!r_other_suffix()) {
 				break lab3;
 			}
 		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_4;
-		v_5 = snowballProgram.limit - snowballProgram.cursor;
+		sbp.cursor = sbp.limit - v_4;
+		v_5 = sbp.limit - sbp.cursor;
 		lab4 : do {
 			if (!r_undouble()) {
 				break lab4;
 			}
 		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_5;
-		snowballProgram.cursor = snowballProgram.limit_backward;
-
+		sbp.cursor = sbp.limit - v_5;
+		sbp.cursor = sbp.limit_backward;
 		return true;
 	}
 }

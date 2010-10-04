@@ -35,11 +35,15 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-const constUrimButtonId = "urim-button-toolbar";
-
 Components.utils.import("resource://urim/log4moz.js");
 
-const firefoxOverlay = {
+if ("undefined" == typeof(XULUrimChrome)) {
+	var XULSchoolChrome = {
+		constUrimButtonId : "urim-button-toolbar"
+	};
+};
+
+XULUrimChrome.firefoxOverlay = {
 
 	_logger : null,
 
@@ -111,7 +115,7 @@ const firefoxOverlay = {
 			var toolbar = toolbox.childNodes[i];
 			if (toolbar.localName == "toolbar"
 					&& toolbar.getAttribute("customizable") == "true") {
-				if (toolbar.currentSet.indexOf(constUrimButtonId) > -1) {
+				if (toolbar.currentSet.indexOf(XULUrimChrome.constUrimButtonId) > -1) {
 					return true;
 				}
 			}
@@ -133,7 +137,7 @@ const firefoxOverlay = {
 					var child = toolbar.firstChild;
 					while (child) {
 						if (child.id == "urlbar-container") {
-							newSet += constUrimButtonId + ",";
+							newSet += XULUrimChrome.constUrimButtonId + ",";
 						}
 						newSet += child.id + ",";
 						child = child.nextSibling;
@@ -166,5 +170,5 @@ const firefoxOverlay = {
 	}
 };
 
-window.addEventListener("load", firefoxOverlay, false);
-window.addEventListener("unload", firefoxOverlay, false);
+window.addEventListener("load", XULUrimChrome.firefoxOverlay, false);
+window.addEventListener("unload", XULUrimChrome.firefoxOverlay, false);
