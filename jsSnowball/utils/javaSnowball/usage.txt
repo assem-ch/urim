@@ -1,1 +1,5 @@
 java StemmerTest russian защите
+
+***** OR *****
+
+java StemmerTest russian
