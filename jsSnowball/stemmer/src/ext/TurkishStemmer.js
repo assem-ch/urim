@@ -3,40 +3,40 @@ function TurkishStemmer() {
 			new Among("miz", -1, -1), new Among("niz", -1, -1),
 			new Among("muz", -1, -1), new Among("nuz", -1, -1),
 			new Among("m\u00FCz", -1, -1), new Among("n\u00FCz", -1, -1),
-			new Among("m\u0131z", -1, -1), new Among("n\u0131z", -1, -1)];
-	var a_1 = [new Among("leri", -1, -1), new Among("lar\u0131", -1, -1)];
-	var a_2 = [new Among("ni", -1, -1), new Among("nu", -1, -1),
-			new Among("n\u00FC", -1, -1), new Among("n\u0131", -1, -1)];
-	var a_3 = [new Among("in", -1, -1), new Among("un", -1, -1),
-			new Among("\u00FCn", -1, -1), new Among("\u0131n", -1, -1)];
-	var a_4 = [new Among("a", -1, -1), new Among("e", -1, -1)];
-	var a_5 = [new Among("na", -1, -1), new Among("ne", -1, -1)];
-	var a_6 = [new Among("da", -1, -1), new Among("ta", -1, -1),
-			new Among("de", -1, -1), new Among("te", -1, -1)];
-	var a_7 = [new Among("nda", -1, -1), new Among("nde", -1, -1)];
-	var a_8 = [new Among("dan", -1, -1), new Among("tan", -1, -1),
-			new Among("den", -1, -1), new Among("ten", -1, -1)];
-	var a_9 = [new Among("ndan", -1, -1), new Among("nden", -1, -1)];
-	var a_10 = [new Among("la", -1, -1), new Among("le", -1, -1)];
-	var a_11 = [new Among("ca", -1, -1), new Among("ce", -1, -1)];
-	var a_12 = [new Among("im", -1, -1), new Among("um", -1, -1),
-			new Among("\u00FCm", -1, -1), new Among("\u0131m", -1, -1)];
-	var a_13 = [new Among("sin", -1, -1), new Among("sun", -1, -1),
-			new Among("s\u00FCn", -1, -1), new Among("s\u0131n", -1, -1)];
-	var a_14 = [new Among("iz", -1, -1), new Among("uz", -1, -1),
-			new Among("\u00FCz", -1, -1), new Among("\u0131z", -1, -1)];
-	var a_15 = [new Among("siniz", -1, -1), new Among("sunuz", -1, -1),
+			new Among("m\u0131z", -1, -1), new Among("n\u0131z", -1, -1)], a_1 = [
+			new Among("leri", -1, -1), new Among("lar\u0131", -1, -1)], a_2 = [
+			new Among("ni", -1, -1), new Among("nu", -1, -1),
+			new Among("n\u00FC", -1, -1), new Among("n\u0131", -1, -1)], a_3 = [
+			new Among("in", -1, -1), new Among("un", -1, -1),
+			new Among("\u00FCn", -1, -1), new Among("\u0131n", -1, -1)], a_4 = [
+			new Among("a", -1, -1), new Among("e", -1, -1)], a_5 = [
+			new Among("na", -1, -1), new Among("ne", -1, -1)], a_6 = [
+			new Among("da", -1, -1), new Among("ta", -1, -1),
+			new Among("de", -1, -1), new Among("te", -1, -1)], a_7 = [
+			new Among("nda", -1, -1), new Among("nde", -1, -1)], a_8 = [
+			new Among("dan", -1, -1), new Among("tan", -1, -1),
+			new Among("den", -1, -1), new Among("ten", -1, -1)], a_9 = [
+			new Among("ndan", -1, -1), new Among("nden", -1, -1)], a_10 = [
+			new Among("la", -1, -1), new Among("le", -1, -1)], a_11 = [
+			new Among("ca", -1, -1), new Among("ce", -1, -1)], a_12 = [
+			new Among("im", -1, -1), new Among("um", -1, -1),
+			new Among("\u00FCm", -1, -1), new Among("\u0131m", -1, -1)], a_13 = [
+			new Among("sin", -1, -1), new Among("sun", -1, -1),
+			new Among("s\u00FCn", -1, -1), new Among("s\u0131n", -1, -1)], a_14 = [
+			new Among("iz", -1, -1), new Among("uz", -1, -1),
+			new Among("\u00FCz", -1, -1), new Among("\u0131z", -1, -1)], a_15 = [
+			new Among("siniz", -1, -1), new Among("sunuz", -1, -1),
 			new Among("s\u00FCn\u00FCz", -1, -1),
-			new Among("s\u0131n\u0131z", -1, -1)];
-	var a_16 = [new Among("lar", -1, -1), new Among("ler", -1, -1)];
-	var a_17 = [new Among("niz", -1, -1), new Among("nuz", -1, -1),
-			new Among("n\u00FCz", -1, -1), new Among("n\u0131z", -1, -1)];
-	var a_18 = [new Among("dir", -1, -1), new Among("tir", -1, -1),
+			new Among("s\u0131n\u0131z", -1, -1)], a_16 = [
+			new Among("lar", -1, -1), new Among("ler", -1, -1)], a_17 = [
+			new Among("niz", -1, -1), new Among("nuz", -1, -1),
+			new Among("n\u00FCz", -1, -1), new Among("n\u0131z", -1, -1)], a_18 = [
+			new Among("dir", -1, -1), new Among("tir", -1, -1),
 			new Among("dur", -1, -1), new Among("tur", -1, -1),
 			new Among("d\u00FCr", -1, -1), new Among("t\u00FCr", -1, -1),
-			new Among("d\u0131r", -1, -1), new Among("t\u0131r", -1, -1)];
-	var a_19 = [new Among("cas\u0131na", -1, -1), new Among("cesine", -1, -1)];
-	var a_20 = [new Among("di", -1, -1), new Among("ti", -1, -1),
+			new Among("d\u0131r", -1, -1), new Among("t\u0131r", -1, -1)], a_19 = [
+			new Among("cas\u0131na", -1, -1), new Among("cesine", -1, -1)], a_20 = [
+			new Among("di", -1, -1), new Among("ti", -1, -1),
 			new Among("dik", -1, -1), new Among("tik", -1, -1),
 			new Among("duk", -1, -1), new Among("tuk", -1, -1),
 			new Among("d\u00FCk", -1, -1), new Among("t\u00FCk", -1, -1),
@@ -51,30 +51,23 @@ function TurkishStemmer() {
 			new Among("d\u0131n", -1, -1), new Among("t\u0131n", -1, -1),
 			new Among("du", -1, -1), new Among("tu", -1, -1),
 			new Among("d\u00FC", -1, -1), new Among("t\u00FC", -1, -1),
-			new Among("d\u0131", -1, -1), new Among("t\u0131", -1, -1)];
-	var a_21 = [new Among("sa", -1, -1), new Among("se", -1, -1),
+			new Among("d\u0131", -1, -1), new Among("t\u0131", -1, -1)], a_21 = [
+			new Among("sa", -1, -1), new Among("se", -1, -1),
 			new Among("sak", -1, -1), new Among("sek", -1, -1),
 			new Among("sam", -1, -1), new Among("sem", -1, -1),
-			new Among("san", -1, -1), new Among("sen", -1, -1)];
-	var a_22 = [new Among("mi\u015F", -1, -1), new Among("mu\u015F", -1, -1),
+			new Among("san", -1, -1), new Among("sen", -1, -1)], a_22 = [
+			new Among("mi\u015F", -1, -1), new Among("mu\u015F", -1, -1),
 			new Among("m\u00FC\u015F", -1, -1),
-			new Among("m\u0131\u015F", -1, -1)];
-	var a_23 = [new Among("b", -1, 1), new Among("c", -1, 2),
-			new Among("d", -1, 3), new Among("\u011F", -1, 4)];
-	var g_vowel = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32,
-			8, 0, 0, 0, 0, 0, 0, 1];
-	var g_U = [1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0,
-			0, 0, 0, 0, 1];
-	var g_vowel1 = [1, 64, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-			0, 0, 0, 0, 0, 0, 0, 1];
-	var g_vowel2 = [17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 130];
-	var g_vowel3 = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-			0, 0, 0, 0, 0, 0, 1];
-	var g_vowel4 = [17];
-	var g_vowel5 = [65];
-	var g_vowel6 = [65];
-	var B_continue_stemming_noun_suffixes, I_strlen;
-	var sbp = new SnowballProgram();
+			new Among("m\u0131\u015F", -1, -1)], a_23 = [new Among("b", -1, 1),
+			new Among("c", -1, 2), new Among("d", -1, 3),
+			new Among("\u011F", -1, 4)], g_vowel = [17, 65, 16, 0, 0, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 8, 0, 0, 0, 0, 0, 0, 1], g_U = [
+			1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0,
+			0, 0, 0, 1], g_vowel1 = [1, 64, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], g_vowel2 = [17, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 130], g_vowel3 = [1, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1], g_vowel4 = [17], g_vowel5 = [65], g_vowel6 = [65], B_c_s_n_s, I_strlen, sbp = new SnowballProgram();
 	this.setCurrent = function(word) {
 		sbp.setCurrent(word);
 	};
@@ -458,270 +451,103 @@ function TurkishStemmer() {
 		return true;
 	}
 	function r_mark_possessives() {
-		if (sbp.find_among_b(a_0, 10) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_U_vowel()) {
-			return false;
-		}
-		return true;
+		return sbp.find_among_b(a_0, 10)
+				&& r_mark_suffix_with_optional_U_vowel();
 	}
 	function r_mark_sU() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (!(sbp.in_grouping_b(g_U, 105, 305))) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_s_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.in_grouping_b(g_U, 105, 305)
+				&& r_mark_suffix_with_optional_s_consonant();
 	}
 	function r_mark_lArI() {
-		if (sbp.find_among_b(a_1, 2) == 0) {
-			return false;
-		}
-		return true;
+		return sbp.find_among_b(a_1, 2);
 	}
 	function r_mark_yU() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (!(sbp.in_grouping_b(g_U, 105, 305))) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.in_grouping_b(g_U, 105, 305)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_nU() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_2, 4) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_2, 4);
 	}
 	function r_mark_nUn() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_3, 4) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_n_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_3, 4)
+				&& r_mark_suffix_with_optional_n_consonant();
 	}
 	function r_mark_yA() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_4, 2) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_4, 2)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_nA() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_5, 2) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_5, 2);
 	}
 	function r_mark_DA() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_6, 4) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_6, 4);
 	}
 	function r_mark_ndA() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_7, 2) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_7, 2);
 	}
 	function r_mark_DAn() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_8, 4) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_8, 4);
 	}
 	function r_mark_ndAn() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_9, 2) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_9, 2);
 	}
 	function r_mark_ylA() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_10, 2) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_10, 2)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_ki() {
-		if (!(sbp.eq_s_b(2, "ki"))) {
-			return false;
-		}
-		return true;
+		return sbp.eq_s_b(2, "ki");
 	}
 	function r_mark_ncA() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_11, 2) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_n_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_11, 2)
+				&& r_mark_suffix_with_optional_n_consonant();
 	}
 	function r_mark_yUm() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_12, 4) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_12, 4)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_sUn() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_13, 4) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_13, 4);
 	}
 	function r_mark_yUz() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_14, 4) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_14, 4)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_sUnUz() {
-		if (sbp.find_among_b(a_15, 4) == 0) {
-			return false;
-		}
-		return true;
+		return sbp.find_among_b(a_15, 4);
 	}
 	function r_mark_lAr() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_16, 2) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_16, 2);
 	}
 	function r_mark_nUz() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_17, 4) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_17, 4);
 	}
 	function r_mark_DUr() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_18, 8) == 0) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_18, 8);
 	}
 	function r_mark_cAsInA() {
-		if (sbp.find_among_b(a_19, 2) == 0) {
-			return false;
-		}
-		return true;
+		return sbp.find_among_b(a_19, 2);
 	}
 	function r_mark_yDU() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_20, 32) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_20, 32)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_ysA() {
-		if (sbp.find_among_b(a_21, 8) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return sbp.find_among_b(a_21, 8)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_ymUs_() {
-		if (!r_check_vowel_harmony()) {
-			return false;
-		}
-		if (sbp.find_among_b(a_22, 4) == 0) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return r_check_vowel_harmony() && sbp.find_among_b(a_22, 4)
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_mark_yken() {
-		if (!(sbp.eq_s_b(3, "ken"))) {
-			return false;
-		}
-		if (!r_mark_suffix_with_optional_y_consonant()) {
-			return false;
-		}
-		return true;
+		return sbp.eq_s_b(3, "ken")
+				&& r_mark_suffix_with_optional_y_consonant();
 	}
 	function r_stem_nominal_verb_suffixes() {
 		var v_1, v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_10;
 		sbp.ket = sbp.cursor;
-		B_continue_stemming_noun_suffixes = true;
+		B_c_s_n_s = true;
 		lab0 : do {
 			v_1 = sbp.limit - sbp.cursor;
 			lab1 : do {
@@ -841,7 +667,7 @@ function TurkishStemmer() {
 						}
 					} while (false);
 				} while (false);
-				B_continue_stemming_noun_suffixes = false;
+				B_c_s_n_s = false;
 				break lab0;
 			} while (false);
 			sbp.cursor = sbp.limit - v_1;
@@ -1844,60 +1670,29 @@ function TurkishStemmer() {
 		return true;
 	}
 	function r_postlude() {
-		var v_1, v_2, v_3;
-		v_1 = sbp.cursor;
-		lab0 : do {
-			if (!r_is_reserved_word()) {
-				break lab0;
-			}
+		var v_1 = sbp.cursor;
+		if (r_is_reserved_word())
 			return false;
-		} while (false);
-		sbp.cursor = v_1;
-		sbp.limit_backward = sbp.cursor;
+		sbp.limit_backward = v_1;
 		sbp.cursor = sbp.limit;
-		v_2 = sbp.limit - sbp.cursor;
-		lab1 : do {
-			if (!r_append_U_to_stems_ending_with_d_or_g()) {
-				break lab1;
-			}
-		} while (false);
-		sbp.cursor = sbp.limit - v_2;
-		v_3 = sbp.limit - sbp.cursor;
-		lab2 : do {
-			if (!r_post_process_last_consonants()) {
-				break lab2;
-			}
-		} while (false);
-		sbp.cursor = sbp.limit_backward;
+		r_append_U_to_stems_ending_with_d_or_g();
+		sbp.cursor = sbp.limit;
+		r_post_process_last_consonants();
 		return true;
 	}
 	this.stem = function() {
-		var v_1, v_2;
-		if (!r_more_than_one_syllable_word()) {
-			return false;
-		}
-		sbp.limit_backward = sbp.cursor;
-		sbp.cursor = sbp.limit;
-		v_1 = sbp.limit - sbp.cursor;
-		lab0 : do {
-			if (!r_stem_nominal_verb_suffixes()) {
-				break lab0;
+		if (r_more_than_one_syllable_word()) {
+			sbp.limit_backward = sbp.cursor;
+			sbp.cursor = sbp.limit;
+			r_stem_nominal_verb_suffixes();
+			sbp.cursor = sbp.limit;
+			if (B_c_s_n_s) {
+				r_stem_noun_suffixes();
+				sbp.cursor = sbp.limit_backward;
+				if (r_postlude())
+					return true;
 			}
-		} while (false);
-		sbp.cursor = sbp.limit - v_1;
-		if (!(B_continue_stemming_noun_suffixes)) {
-			return false;
 		}
-		v_2 = sbp.limit - sbp.cursor;
-		lab1 : do {
-			if (!r_stem_noun_suffixes()) {
-				break lab1;
-			}
-		} while (false);
-		sbp.cursor = sbp.limit_backward;
-		if (!r_postlude()) {
-			return false;
-		}
-		return true;
+		return false;
 	}
 }
