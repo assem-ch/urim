@@ -67,206 +67,47 @@ function TurkishStemmer() {
 			0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], g_vowel2 = [17, 0, 0, 0,
 			0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 130], g_vowel3 = [1, 0,
 			0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-			0, 0, 1], g_vowel4 = [17], g_vowel5 = [65], g_vowel6 = [65], B_c_s_n_s, I_strlen, sbp = new SnowballProgram();
+			0, 0, 1], g_vowel4 = [17], g_vowel5 = [65], g_vowel6 = [65], B_c_s_n_s, I_strlen, g_habr = [
+			["a", g_vowel1, 97, 305], ["e", g_vowel2, 101, 252],
+			["\u0131", g_vowel3, 97, 305], ["i", g_vowel4, 101, 105],
+			["o", g_vowel5, 111, 117], ["\u00F6", g_vowel6, 246, 252],
+			["u", g_vowel5, 111, 117]], sbp = new SnowballProgram();
 	this.setCurrent = function(word) {
 		sbp.setCurrent(word);
 	};
 	this.getCurrent = function() {
 		return sbp.getCurrent();
 	};
-	function r_check_vowel_harmony() {
-		var v_1, v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_10, v_11;
-		v_1 = sbp.limit - sbp.cursor;
-		golab0 : while (true) {
-			v_2 = sbp.limit - sbp.cursor;
-			lab1 : do {
-				if (!(sbp.in_grouping_b(g_vowel, 97, 305))) {
-					break lab1;
-				}
-				sbp.cursor = sbp.limit - v_2;
-				break golab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_2;
-			if (sbp.cursor <= sbp.limit_backward) {
-				return false;
+	function habr1(g_v, n1, n2) {
+		while (true) {
+			var v_1 = sbp.limit - sbp.cursor;
+			if (sbp.in_grouping_b(g_v, n1, n2)) {
+				sbp.cursor = sbp.limit - v_1;
+				break;
 			}
+			sbp.cursor = sbp.limit - v_1;
+			if (sbp.cursor <= sbp.limit_backward)
+				return false;
 			sbp.cursor--;
 		}
-		lab2 : do {
-			v_3 = sbp.limit - sbp.cursor;
-			lab3 : do {
-				if (!(sbp.eq_s_b(1, "a"))) {
-					break lab3;
-				}
-				golab4 : while (true) {
-					v_4 = sbp.limit - sbp.cursor;
-					lab5 : do {
-						if (!(sbp.in_grouping_b(g_vowel1, 97, 305))) {
-							break lab5;
-						}
-						sbp.cursor = sbp.limit - v_4;
-						break golab4;
-					} while (false);
-					sbp.cursor = sbp.limit - v_4;
-					if (sbp.cursor <= sbp.limit_backward) {
-						break lab3;
-					}
-					sbp.cursor--;
-				}
-				break lab2;
-			} while (false);
-			sbp.cursor = sbp.limit - v_3;
-			lab6 : do {
-				if (!(sbp.eq_s_b(1, "e"))) {
-					break lab6;
-				}
-				golab7 : while (true) {
-					v_5 = sbp.limit - sbp.cursor;
-					lab8 : do {
-						if (!(sbp.in_grouping_b(g_vowel2, 101, 252))) {
-							break lab8;
-						}
-						sbp.cursor = sbp.limit - v_5;
-						break golab7;
-					} while (false);
-					sbp.cursor = sbp.limit - v_5;
-					if (sbp.cursor <= sbp.limit_backward) {
-						break lab6;
-					}
-					sbp.cursor--;
-				}
-				break lab2;
-			} while (false);
-			sbp.cursor = sbp.limit - v_3;
-			lab9 : do {
-				if (!(sbp.eq_s_b(1, "\u0131"))) {
-					break lab9;
-				}
-				golab10 : while (true) {
-					v_6 = sbp.limit - sbp.cursor;
-					lab11 : do {
-						if (!(sbp.in_grouping_b(g_vowel3, 97, 305))) {
-							break lab11;
-						}
-						sbp.cursor = sbp.limit - v_6;
-						break golab10;
-					} while (false);
-					sbp.cursor = sbp.limit - v_6;
-					if (sbp.cursor <= sbp.limit_backward) {
-						break lab9;
-					}
-					sbp.cursor--;
-				}
-				break lab2;
-			} while (false);
-			sbp.cursor = sbp.limit - v_3;
-			lab12 : do {
-				if (!(sbp.eq_s_b(1, "i"))) {
-					break lab12;
-				}
-				golab13 : while (true) {
-					v_7 = sbp.limit - sbp.cursor;
-					lab14 : do {
-						if (!(sbp.in_grouping_b(g_vowel4, 101, 105))) {
-							break lab14;
-						}
-						sbp.cursor = sbp.limit - v_7;
-						break golab13;
-					} while (false);
-					sbp.cursor = sbp.limit - v_7;
-					if (sbp.cursor <= sbp.limit_backward) {
-						break lab12;
-					}
-					sbp.cursor--;
-				}
-				break lab2;
-			} while (false);
-			sbp.cursor = sbp.limit - v_3;
-			lab15 : do {
-				if (!(sbp.eq_s_b(1, "o"))) {
-					break lab15;
-				}
-				golab16 : while (true) {
-					v_8 = sbp.limit - sbp.cursor;
-					lab17 : do {
-						if (!(sbp.in_grouping_b(g_vowel5, 111, 117))) {
-							break lab17;
-						}
-						sbp.cursor = sbp.limit - v_8;
-						break golab16;
-					} while (false);
-					sbp.cursor = sbp.limit - v_8;
-					if (sbp.cursor <= sbp.limit_backward) {
-						break lab15;
-					}
-					sbp.cursor--;
-				}
-				break lab2;
-			} while (false);
-			sbp.cursor = sbp.limit - v_3;
-			lab18 : do {
-				if (!(sbp.eq_s_b(1, "\u00F6"))) {
-					break lab18;
-				}
-				golab19 : while (true) {
-					v_9 = sbp.limit - sbp.cursor;
-					lab20 : do {
-						if (!(sbp.in_grouping_b(g_vowel6, 246, 252))) {
-							break lab20;
-						}
-						sbp.cursor = sbp.limit - v_9;
-						break golab19;
-					} while (false);
-					sbp.cursor = sbp.limit - v_9;
-					if (sbp.cursor <= sbp.limit_backward) {
-						break lab18;
-					}
-					sbp.cursor--;
-				}
-				break lab2;
-			} while (false);
-			sbp.cursor = sbp.limit - v_3;
-			lab21 : do {
-				if (!(sbp.eq_s_b(1, "u"))) {
-					break lab21;
-				}
-				golab22 : while (true) {
-					v_10 = sbp.limit - sbp.cursor;
-					lab23 : do {
-						if (!(sbp.in_grouping_b(g_vowel5, 111, 117))) {
-							break lab23;
-						}
-						sbp.cursor = sbp.limit - v_10;
-						break golab22;
-					} while (false);
-					sbp.cursor = sbp.limit - v_10;
-					if (sbp.cursor <= sbp.limit_backward) {
-						break lab21;
-					}
-					sbp.cursor--;
-				}
-				break lab2;
-			} while (false);
-			sbp.cursor = sbp.limit - v_3;
-			if (!(sbp.eq_s_b(1, "\u00FC"))) {
-				return false;
+		return true;
+	}
+	function r_check_vowel_harmony() {
+		var v_1, v_2;
+		v_1 = sbp.limit - sbp.cursor;
+		habr1(g_vowel, 97, 305);
+		for (var i = 0; i < g_habr.length; i++) {
+			v_2 = sbp.limit - sbp.cursor;
+			var habr = g_habr[i];
+			if (sbp.eq_s_b(1, habr[0]) && habr1(habr[1], habr[2], habr[3])) {
+				sbp.cursor = sbp.limit - v_1;
+				return true;
 			}
-			golab24 : while (true) {
-				v_11 = sbp.limit - sbp.cursor;
-				lab25 : do {
-					if (!(sbp.in_grouping_b(g_vowel6, 246, 252))) {
-						break lab25;
-					}
-					sbp.cursor = sbp.limit - v_11;
-					break golab24;
-				} while (false);
-				sbp.cursor = sbp.limit - v_11;
-				if (sbp.cursor <= sbp.limit_backward) {
-					return false;
-				}
-				sbp.cursor--;
-			}
-		} while (false);
+			sbp.cursor = sbp.limit - v_2;
+		}
+		sbp.cursor = sbp.limit - v_2;
+		if (!sbp.eq_s_b(1, "\u00FC") || !habr1(g_vowel6, 246, 252))
+			return false;
 		sbp.cursor = sbp.limit - v_1;
 		return true;
 	}
