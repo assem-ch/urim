@@ -482,449 +482,241 @@ function TurkishStemmer() {
 		}
 		return false;
 	}
-	function r_stem_noun_suffixes() {
-		var v_1, v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_10, v_11, v_12, v_13, v_14, v_15, v_16, v_17, v_18, v_19, v_20, v_21, v_22, v_23, v_24, v_25, v_26, v_27;
-		lab0 : do {
-			v_1 = sbp.limit - sbp.cursor;
-			lab1 : do {
-				sbp.ket = sbp.cursor;
-				if (!r_mark_lAr()) {
-					break lab1;
-				}
-				sbp.bra = sbp.cursor;
-				sbp.slice_del();
-				v_2 = sbp.limit - sbp.cursor;
-				lab2 : do {
-					if (!r_stem_suffix_chain_before_ki()) {
-						sbp.cursor = sbp.limit - v_2;
-						break lab2;
-					}
-				} while (false);
-				break lab0;
-			} while (false);
+	function habr9(v_1) {
+		sbp.ket = sbp.cursor;
+		if (!r_mark_ndA()) {
 			sbp.cursor = sbp.limit - v_1;
-			lab3 : do {
-				sbp.ket = sbp.cursor;
-				if (!r_mark_ncA()) {
-					break lab3;
-				}
-				sbp.bra = sbp.cursor;
-				sbp.slice_del();
-				v_3 = sbp.limit - sbp.cursor;
-				lab4 : do {
-					lab5 : do {
-						v_4 = sbp.limit - sbp.cursor;
-						lab6 : do {
-							sbp.ket = sbp.cursor;
-							if (!r_mark_lArI()) {
-								break lab6;
-							}
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							break lab5;
-						} while (false);
-						sbp.cursor = sbp.limit - v_4;
-						lab7 : do {
-							sbp.ket = sbp.cursor;
-							lab8 : do {
-								v_5 = sbp.limit - sbp.cursor;
-								lab9 : do {
-									if (!r_mark_possessives()) {
-										break lab9;
-									}
-									break lab8;
-								} while (false);
-								sbp.cursor = sbp.limit - v_5;
-								if (!r_mark_sU()) {
-									break lab7;
-								}
-							} while (false);
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							v_6 = sbp.limit - sbp.cursor;
-							lab10 : do {
-								sbp.ket = sbp.cursor;
-								if (!r_mark_lAr()) {
-									sbp.cursor = sbp.limit - v_6;
-									break lab10;
-								}
-								sbp.bra = sbp.cursor;
-								sbp.slice_del();
-								if (!r_stem_suffix_chain_before_ki()) {
-									sbp.cursor = sbp.limit - v_6;
-									break lab10;
-								}
-							} while (false);
-							break lab5;
-						} while (false);
-						sbp.cursor = sbp.limit - v_4;
-						sbp.ket = sbp.cursor;
-						if (!r_mark_lAr()) {
-							sbp.cursor = sbp.limit - v_3;
-							break lab4;
-						}
-						sbp.bra = sbp.cursor;
-						sbp.slice_del();
-						if (!r_stem_suffix_chain_before_ki()) {
-							sbp.cursor = sbp.limit - v_3;
-							break lab4;
-						}
-					} while (false);
-				} while (false);
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			lab11 : do {
-				sbp.ket = sbp.cursor;
-				lab12 : do {
-					v_7 = sbp.limit - sbp.cursor;
-					lab13 : do {
-						if (!r_mark_ndA()) {
-							break lab13;
-						}
-						break lab12;
-					} while (false);
-					sbp.cursor = sbp.limit - v_7;
-					if (!r_mark_nA()) {
-						break lab11;
-					}
-				} while (false);
-				lab14 : do {
-					v_8 = sbp.limit - sbp.cursor;
-					lab15 : do {
-						if (!r_mark_lArI()) {
-							break lab15;
-						}
-						sbp.bra = sbp.cursor;
-						sbp.slice_del();
-						break lab14;
-					} while (false);
-					sbp.cursor = sbp.limit - v_8;
-					lab16 : do {
-						if (!r_mark_sU()) {
-							break lab16;
-						}
-						sbp.bra = sbp.cursor;
-						sbp.slice_del();
-						v_9 = sbp.limit - sbp.cursor;
-						lab17 : do {
-							sbp.ket = sbp.cursor;
-							if (!r_mark_lAr()) {
-								sbp.cursor = sbp.limit - v_9;
-								break lab17;
-							}
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							if (!r_stem_suffix_chain_before_ki()) {
-								sbp.cursor = sbp.limit - v_9;
-								break lab17;
-							}
-						} while (false);
-						break lab14;
-					} while (false);
-					sbp.cursor = sbp.limit - v_8;
-					if (!r_stem_suffix_chain_before_ki()) {
-						break lab11;
-					}
-				} while (false);
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			lab18 : do {
-				sbp.ket = sbp.cursor;
-				lab19 : do {
-					v_10 = sbp.limit - sbp.cursor;
-					lab20 : do {
-						if (!r_mark_ndAn()) {
-							break lab20;
-						}
-						break lab19;
-					} while (false);
-					sbp.cursor = sbp.limit - v_10;
-					if (!r_mark_nU()) {
-						break lab18;
-					}
-				} while (false);
-				lab21 : do {
-					v_11 = sbp.limit - sbp.cursor;
-					lab22 : do {
-						if (!r_mark_sU()) {
-							break lab22;
-						}
-						sbp.bra = sbp.cursor;
-						sbp.slice_del();
-						v_12 = sbp.limit - sbp.cursor;
-						lab23 : do {
-							sbp.ket = sbp.cursor;
-							if (!r_mark_lAr()) {
-								sbp.cursor = sbp.limit - v_12;
-								break lab23;
-							}
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							if (!r_stem_suffix_chain_before_ki()) {
-								sbp.cursor = sbp.limit - v_12;
-								break lab23;
-							}
-						} while (false);
-						break lab21;
-					} while (false);
-					sbp.cursor = sbp.limit - v_11;
-					if (!r_mark_lArI()) {
-						break lab18;
-					}
-				} while (false);
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			lab24 : do {
-				sbp.ket = sbp.cursor;
-				if (!r_mark_DAn()) {
-					break lab24;
-				}
-				sbp.bra = sbp.cursor;
-				sbp.slice_del();
-				v_13 = sbp.limit - sbp.cursor;
-				lab25 : do {
-					sbp.ket = sbp.cursor;
-					lab26 : do {
-						v_14 = sbp.limit - sbp.cursor;
-						lab27 : do {
-							if (!r_mark_possessives()) {
-								break lab27;
-							}
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							v_15 = sbp.limit - sbp.cursor;
-							lab28 : do {
-								sbp.ket = sbp.cursor;
-								if (!r_mark_lAr()) {
-									sbp.cursor = sbp.limit - v_15;
-									break lab28;
-								}
-								sbp.bra = sbp.cursor;
-								sbp.slice_del();
-								if (!r_stem_suffix_chain_before_ki()) {
-									sbp.cursor = sbp.limit - v_15;
-									break lab28;
-								}
-							} while (false);
-							break lab26;
-						} while (false);
-						sbp.cursor = sbp.limit - v_14;
-						lab29 : do {
-							if (!r_mark_lAr()) {
-								break lab29;
-							}
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							v_16 = sbp.limit - sbp.cursor;
-							lab30 : do {
-								if (!r_stem_suffix_chain_before_ki()) {
-									sbp.cursor = sbp.limit - v_16;
-									break lab30;
-								}
-							} while (false);
-							break lab26;
-						} while (false);
-						sbp.cursor = sbp.limit - v_14;
-						if (!r_stem_suffix_chain_before_ki()) {
-							sbp.cursor = sbp.limit - v_13;
-							break lab25;
-						}
-					} while (false);
-				} while (false);
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			lab31 : do {
-				sbp.ket = sbp.cursor;
-				lab32 : do {
-					v_17 = sbp.limit - sbp.cursor;
-					lab33 : do {
-						if (!r_mark_nUn()) {
-							break lab33;
-						}
-						break lab32;
-					} while (false);
-					sbp.cursor = sbp.limit - v_17;
-					if (!r_mark_ylA()) {
-						break lab31;
-					}
-				} while (false);
-				sbp.bra = sbp.cursor;
-				sbp.slice_del();
-				v_18 = sbp.limit - sbp.cursor;
-				lab34 : do {
-					lab35 : do {
-						v_19 = sbp.limit - sbp.cursor;
-						lab36 : do {
-							sbp.ket = sbp.cursor;
-							if (!r_mark_lAr()) {
-								break lab36;
-							}
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							if (!r_stem_suffix_chain_before_ki()) {
-								break lab36;
-							}
-							break lab35;
-						} while (false);
-						sbp.cursor = sbp.limit - v_19;
-						lab37 : do {
-							sbp.ket = sbp.cursor;
-							lab38 : do {
-								v_20 = sbp.limit - sbp.cursor;
-								lab39 : do {
-									if (!r_mark_possessives()) {
-										break lab39;
-									}
-									break lab38;
-								} while (false);
-								sbp.cursor = sbp.limit - v_20;
-								if (!r_mark_sU()) {
-									break lab37;
-								}
-							} while (false);
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							v_21 = sbp.limit - sbp.cursor;
-							lab40 : do {
-								sbp.ket = sbp.cursor;
-								if (!r_mark_lAr()) {
-									sbp.cursor = sbp.limit - v_21;
-									break lab40;
-								}
-								sbp.bra = sbp.cursor;
-								sbp.slice_del();
-								if (!r_stem_suffix_chain_before_ki()) {
-									sbp.cursor = sbp.limit - v_21;
-									break lab40;
-								}
-							} while (false);
-							break lab35;
-						} while (false);
-						sbp.cursor = sbp.limit - v_19;
-						if (!r_stem_suffix_chain_before_ki()) {
-							sbp.cursor = sbp.limit - v_18;
-							break lab34;
-						}
-					} while (false);
-				} while (false);
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			lab41 : do {
-				sbp.ket = sbp.cursor;
-				if (!r_mark_lArI()) {
-					break lab41;
-				}
-				sbp.bra = sbp.cursor;
-				sbp.slice_del();
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			lab42 : do {
-				if (!r_stem_suffix_chain_before_ki()) {
-					break lab42;
-				}
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			lab43 : do {
-				sbp.ket = sbp.cursor;
-				lab44 : do {
-					v_22 = sbp.limit - sbp.cursor;
-					lab45 : do {
-						if (!r_mark_DA()) {
-							break lab45;
-						}
-						break lab44;
-					} while (false);
-					sbp.cursor = sbp.limit - v_22;
-					lab46 : do {
-						if (!r_mark_yU()) {
-							break lab46;
-						}
-						break lab44;
-					} while (false);
-					sbp.cursor = sbp.limit - v_22;
-					if (!r_mark_yA()) {
-						break lab43;
-					}
-				} while (false);
-				sbp.bra = sbp.cursor;
-				sbp.slice_del();
-				v_23 = sbp.limit - sbp.cursor;
-				lab47 : do {
-					sbp.ket = sbp.cursor;
-					lab48 : do {
-						v_24 = sbp.limit - sbp.cursor;
-						lab49 : do {
-							if (!r_mark_possessives()) {
-								break lab49;
-							}
-							sbp.bra = sbp.cursor;
-							sbp.slice_del();
-							v_25 = sbp.limit - sbp.cursor;
-							lab50 : do {
-								sbp.ket = sbp.cursor;
-								if (!r_mark_lAr()) {
-									sbp.cursor = sbp.limit - v_25;
-									break lab50;
-								}
-							} while (false);
-							break lab48;
-						} while (false);
-						sbp.cursor = sbp.limit - v_24;
-						if (!r_mark_lAr()) {
-							sbp.cursor = sbp.limit - v_23;
-							break lab47;
-						}
-					} while (false);
-					sbp.bra = sbp.cursor;
-					sbp.slice_del();
-					sbp.ket = sbp.cursor;
-					if (!r_stem_suffix_chain_before_ki()) {
-						sbp.cursor = sbp.limit - v_23;
-						break lab47;
-					}
-				} while (false);
-				break lab0;
-			} while (false);
-			sbp.cursor = sbp.limit - v_1;
-			sbp.ket = sbp.cursor;
-			lab51 : do {
-				v_26 = sbp.limit - sbp.cursor;
-				lab52 : do {
-					if (!r_mark_possessives()) {
-						break lab52;
-					}
-					break lab51;
-				} while (false);
-				sbp.cursor = sbp.limit - v_26;
-				if (!r_mark_sU()) {
-					return false;
-				}
-			} while (false);
+			if (!r_mark_nA())
+				return false;
+		}
+		var v_2 = sbp.limit - sbp.cursor;
+		if (r_mark_lArI()) {
 			sbp.bra = sbp.cursor;
 			sbp.slice_del();
-			v_27 = sbp.limit - sbp.cursor;
-			lab53 : do {
+		} else {
+			sbp.cursor = sbp.limit - v_2;
+			if (r_mark_sU()) {
+				sbp.bra = sbp.cursor;
+				sbp.slice_del();
 				sbp.ket = sbp.cursor;
-				if (!r_mark_lAr()) {
-					sbp.cursor = sbp.limit - v_27;
-					break lab53;
+				if (r_mark_lAr()) {
+					sbp.bra = sbp.cursor;
+					sbp.slice_del();
+					r_stem_suffix_chain_before_ki();
+				}
+			} else {
+				sbp.cursor = sbp.limit - v_2;
+				if (!r_stem_suffix_chain_before_ki())
+					return false;
+			}
+		}
+		return true;
+	}
+	function habr10(v_1) {
+		sbp.ket = sbp.cursor;
+		if (!r_mark_ndAn()) {
+			sbp.cursor = sbp.limit - v_1;
+			if (!r_mark_nU())
+				return false;
+		}
+		var v_2 = sbp.limit - sbp.cursor;
+		if (!r_mark_sU()) {
+			sbp.cursor = sbp.limit - v_2;
+			if (!r_mark_lArI())
+				return false;
+		}
+		sbp.bra = sbp.cursor;
+		sbp.slice_del();
+		sbp.ket = sbp.cursor;
+		if (r_mark_lAr()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			r_stem_suffix_chain_before_ki();
+		}
+		return true;
+	}
+	function habr11() {
+		var v_1 = sbp.limit - sbp.cursor, v_2;
+		sbp.ket = sbp.cursor;
+		if (!r_mark_nUn()) {
+			sbp.cursor = sbp.limit - v_1;
+			if (!r_mark_ylA())
+				return false;
+		}
+		sbp.bra = sbp.cursor;
+		sbp.slice_del();
+		v_2 = sbp.limit - sbp.cursor;
+		sbp.ket = sbp.cursor;
+		if (r_mark_lAr()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			if (r_stem_suffix_chain_before_ki())
+				return true;
+		}
+		sbp.cursor = sbp.limit - v_2;
+		sbp.ket = sbp.cursor;
+		if (!r_mark_possessives()) {
+			sbp.cursor = sbp.limit - v_2;
+			if (!r_mark_sU()) {
+				sbp.cursor = sbp.limit - v_2;
+				if (!r_stem_suffix_chain_before_ki())
+					return true;
+			}
+		}
+		sbp.bra = sbp.cursor;
+		sbp.slice_del();
+		sbp.ket = sbp.cursor;
+		if (r_mark_lAr()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			r_stem_suffix_chain_before_ki();
+		}
+		return true;
+	}
+	function habr12() {
+		var v_1 = sbp.limit - sbp.cursor, v_2, v_3;
+		sbp.ket = sbp.cursor;
+		if (!r_mark_DA()) {
+			sbp.cursor = sbp.limit - v_1;
+			if (!r_mark_yU()) {
+				sbp.cursor = sbp.limit - v_1;
+				if (!r_mark_yA())
+					return false;
+			}
+		}
+		sbp.bra = sbp.cursor;
+		sbp.slice_del();
+		sbp.ket = sbp.cursor;
+		v_2 = sbp.limit - sbp.cursor;
+		if (r_mark_possessives()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			v_3 = sbp.limit - sbp.cursor;
+			sbp.ket = sbp.cursor;
+			if (!r_mark_lAr())
+				sbp.cursor = sbp.limit - v_3;
+		} else {
+			sbp.cursor = sbp.limit - v_2;
+			if (!r_mark_lAr())
+				return true;
+		}
+		sbp.bra = sbp.cursor;
+		sbp.slice_del();
+		sbp.ket = sbp.cursor;
+		r_stem_suffix_chain_before_ki();
+		return true;
+	}
+	function r_stem_noun_suffixes() {
+		var v_1 = sbp.limit - sbp.cursor, v_2, v_3;
+		sbp.ket = sbp.cursor;
+		if (r_mark_lAr()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			r_stem_suffix_chain_before_ki();
+			return;
+		}
+		sbp.cursor = sbp.limit - v_1;
+		sbp.ket = sbp.cursor;
+		if (r_mark_ncA()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			v_2 = sbp.limit - sbp.cursor;
+			sbp.ket = sbp.cursor;
+			if (r_mark_lArI()) {
+				sbp.bra = sbp.cursor;
+				sbp.slice_del();
+			} else {
+				sbp.cursor = sbp.limit - v_2;
+				sbp.ket = sbp.cursor;
+				if (!r_mark_possessives()) {
+					sbp.cursor = sbp.limit - v_2;
+					if (!r_mark_sU()) {
+						sbp.cursor = sbp.limit - v_2;
+						sbp.ket = sbp.cursor;
+						if (!r_mark_lAr())
+							return;
+						sbp.bra = sbp.cursor;
+						sbp.slice_del();
+						if (!r_stem_suffix_chain_before_ki())
+							return;
+					}
 				}
 				sbp.bra = sbp.cursor;
 				sbp.slice_del();
-				if (!r_stem_suffix_chain_before_ki()) {
-					sbp.cursor = sbp.limit - v_27;
-					break lab53;
+				sbp.ket = sbp.cursor;
+				if (r_mark_lAr()) {
+					sbp.bra = sbp.cursor;
+					sbp.slice_del();
+					r_stem_suffix_chain_before_ki();
 				}
-			} while (false);
-		} while (false);
-		return true;
+			}
+			return;
+		}
+		sbp.cursor = sbp.limit - v_1;
+		if (habr9(v_1))
+			return;
+		sbp.cursor = sbp.limit - v_1;
+		if (habr10(v_1))
+			return;
+		sbp.cursor = sbp.limit - v_1;
+		sbp.ket = sbp.cursor;
+		if (r_mark_DAn()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			sbp.ket = sbp.cursor;
+			v_3 = sbp.limit - sbp.cursor;
+			if (r_mark_possessives()) {
+				sbp.bra = sbp.cursor;
+				sbp.slice_del();
+				sbp.ket = sbp.cursor;
+				if (r_mark_lAr()) {
+					sbp.bra = sbp.cursor;
+					sbp.slice_del();
+					r_stem_suffix_chain_before_ki();
+				}
+			} else {
+				sbp.cursor = sbp.limit - v_3;
+				if (r_mark_lAr()) {
+					sbp.bra = sbp.cursor;
+					sbp.slice_del();
+					r_stem_suffix_chain_before_ki();
+				} else {
+					sbp.cursor = sbp.limit - v_3;
+					r_stem_suffix_chain_before_ki();
+				}
+			}
+			return;
+		}
+		sbp.cursor = sbp.limit - v_1;
+		if (habr11())
+			return;
+		sbp.cursor = sbp.limit - v_1;
+		if (r_mark_lArI()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			return;
+		}
+		sbp.cursor = sbp.limit - v_1;
+		if (r_stem_suffix_chain_before_ki())
+			return;
+		sbp.cursor = sbp.limit - v_1;
+		if (habr12())
+			return;
+		sbp.cursor = sbp.limit - v_1;
+		sbp.ket = sbp.cursor;
+		if (!r_mark_possessives()) {
+			sbp.cursor = sbp.limit - v_1;
+			if (!r_mark_sU())
+				return;
+		}
+		sbp.bra = sbp.cursor;
+		sbp.slice_del();
+		sbp.ket = sbp.cursor;
+		if (r_mark_lAr()) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+			r_stem_suffix_chain_before_ki();
+		}
 	}
 	function r_post_process_last_consonants() {
 		var among_var;
