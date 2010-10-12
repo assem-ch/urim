@@ -38,7 +38,7 @@
 Components.utils.import("resource://urim/log4moz.js");
 
 if ("undefined" == typeof(XULUrimChrome)) {
-	var XULSchoolChrome = {
+	var XULUrimChrome = {
 		constUrimButtonId : "urim-button-toolbar"
 	};
 };

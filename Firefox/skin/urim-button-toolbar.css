@@ -1,9 +1,21 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #urim-button-toolbar {
-	list-style-image: url("chrome://urim/skin/png/toolbar/ispice_24.png");
+	list-style-image: url("chrome://urim/skin/png/toolbar/urim-button-toolbar-24.png");
+}
+
+#urim-button-toolbar {
+	-moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+#urim-button-toolbar:not([disabled="true"]):hover {
+	-moz-image-region: rect(24px, 24px, 48px, 0px);
+}
+
+#urim-button-toolbar[disabled="true"] {
+	-moz-image-region: rect(48px, 24px, 72px, 0px);
 }
 
 toolbar[iconsize="small"] #urim-button-toolbar {
-	list-style-image: url("chrome://urim/skin/png/toolbar/ispice_16.png");
+	list-style-image: url("chrome://urim/skin/png/toolbar/urim-button-toolbar-16.png");
 }
