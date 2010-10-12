@@ -41,36 +41,27 @@ Components.utils.import("resource://urim/analysis/stemmer/Among.js");
 Components.utils.import("resource://urim/analysis/stemmer/SnowballProgram.js");
 
 function SpanishStemmer() {
-
 	var a_0 = [new Among("", -1, 6), new Among("\u00E1", 0, 1),
 			new Among("\u00E9", 0, 2), new Among("\u00ED", 0, 3),
-			new Among("\u00F3", 0, 4), new Among("\u00FA", 0, 5)];
-
-	var a_1 = [new Among("la", -1, -1), new Among("sela", 0, -1),
+			new Among("\u00F3", 0, 4), new Among("\u00FA", 0, 5)], a_1 = [
+			new Among("la", -1, -1), new Among("sela", 0, -1),
 			new Among("le", -1, -1), new Among("me", -1, -1),
 			new Among("se", -1, -1), new Among("lo", -1, -1),
 			new Among("selo", 5, -1), new Among("las", -1, -1),
 			new Among("selas", 7, -1), new Among("les", -1, -1),
 			new Among("los", -1, -1), new Among("selos", 10, -1),
-			new Among("nos", -1, -1)];
-
-	var a_2 = [new Among("ando", -1, 6), new Among("iendo", -1, 6),
-			new Among("yendo", -1, 7), new Among("\u00E1ndo", -1, 2),
-			new Among("i\u00E9ndo", -1, 1), new Among("ar", -1, 6),
-			new Among("er", -1, 6), new Among("ir", -1, 6),
-			new Among("\u00E1r", -1, 3), new Among("\u00E9r", -1, 4),
-			new Among("\u00EDr", -1, 5)];
-
-	var a_3 = [new Among("ic", -1, -1), new Among("ad", -1, -1),
-			new Among("os", -1, -1), new Among("iv", -1, 1)];
-
-	var a_4 = [new Among("able", -1, 1), new Among("ible", -1, 1),
-			new Among("ante", -1, 1)];
-
-	var a_5 = [new Among("ic", -1, 1), new Among("abil", -1, 1),
-			new Among("iv", -1, 1)];
-
-	var a_6 = [new Among("ica", -1, 1), new Among("ancia", -1, 2),
+			new Among("nos", -1, -1)], a_2 = [new Among("ando", -1, 6),
+			new Among("iendo", -1, 6), new Among("yendo", -1, 7),
+			new Among("\u00E1ndo", -1, 2), new Among("i\u00E9ndo", -1, 1),
+			new Among("ar", -1, 6), new Among("er", -1, 6),
+			new Among("ir", -1, 6), new Among("\u00E1r", -1, 3),
+			new Among("\u00E9r", -1, 4), new Among("\u00EDr", -1, 5)], a_3 = [
+			new Among("ic", -1, -1), new Among("ad", -1, -1),
+			new Among("os", -1, -1), new Among("iv", -1, 1)], a_4 = [
+			new Among("able", -1, 1), new Among("ible", -1, 1),
+			new Among("ante", -1, 1)], a_5 = [new Among("ic", -1, 1),
+			new Among("abil", -1, 1), new Among("iv", -1, 1)], a_6 = [
+			new Among("ica", -1, 1), new Among("ancia", -1, 2),
 			new Among("encia", -1, 5), new Among("adora", -1, 2),
 			new Among("osa", -1, 1), new Among("ista", -1, 1),
 			new Among("iva", -1, 9), new Among("anza", -1, 1),
@@ -92,16 +83,14 @@ function SpanishStemmer() {
 			new Among("adores", -1, 2), new Among("antes", -1, 2),
 			new Among("icos", -1, 1), new Among("ismos", -1, 1),
 			new Among("osos", -1, 1), new Among("amientos", -1, 1),
-			new Among("imientos", -1, 1), new Among("ivos", -1, 9)];
-
-	var a_7 = [new Among("ya", -1, 1), new Among("ye", -1, 1),
+			new Among("imientos", -1, 1), new Among("ivos", -1, 9)], a_7 = [
+			new Among("ya", -1, 1), new Among("ye", -1, 1),
 			new Among("yan", -1, 1), new Among("yen", -1, 1),
 			new Among("yeron", -1, 1), new Among("yendo", -1, 1),
 			new Among("yo", -1, 1), new Among("yas", -1, 1),
 			new Among("yes", -1, 1), new Among("yais", -1, 1),
-			new Among("yamos", -1, 1), new Among("y\u00F3", -1, 1)];
-
-	var a_8 = [new Among("aba", -1, 2), new Among("ada", -1, 2),
+			new Among("yamos", -1, 1), new Among("y\u00F3", -1, 1)], a_8 = [
+			new Among("aba", -1, 2), new Among("ada", -1, 2),
 			new Among("ida", -1, 2), new Among("ara", -1, 2),
 			new Among("iera", -1, 2), new Among("\u00EDa", -1, 2),
 			new Among("ar\u00EDa", 5, 2), new Among("er\u00EDa", 5, 2),
@@ -148,667 +137,358 @@ function SpanishStemmer() {
 			new Among("\u00EDs", -1, 2), new Among("ar\u00E1", -1, 2),
 			new Among("er\u00E1", -1, 2), new Among("ir\u00E1", -1, 2),
 			new Among("ar\u00E9", -1, 2), new Among("er\u00E9", -1, 2),
-			new Among("ir\u00E9", -1, 2), new Among("i\u00F3", -1, 2)];
-
-	var a_9 = [new Among("a", -1, 1), new Among("e", -1, 2),
+			new Among("ir\u00E9", -1, 2), new Among("i\u00F3", -1, 2)], a_9 = [
+			new Among("a", -1, 1), new Among("e", -1, 2),
 			new Among("o", -1, 1), new Among("os", -1, 1),
 			new Among("\u00E1", -1, 1), new Among("\u00E9", -1, 2),
-			new Among("\u00ED", -1, 1), new Among("\u00F3", -1, 1)];
-
-	var g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 10];
-
-	var I_p2, I_p1, I_pV;
-
-	var snowballProgram = new SnowballProgram();
-
+			new Among("\u00ED", -1, 1), new Among("\u00F3", -1, 1)], g_v = [17,
+			65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 10], I_p2, I_p1, I_pV, sbp = new SnowballProgram();
 	this.setCurrent = function(word) {
-		snowballProgram.setCurrent(word);
+		sbp.setCurrent(word);
 	};
-
 	this.getCurrent = function() {
-		return snowballProgram.getCurrent()
+		return sbp.getCurrent();
 	};
-
+	function habr1() {
+		if (sbp.out_grouping(g_v, 97, 252)) {
+			while (!sbp.in_grouping(g_v, 97, 252)) {
+				if (sbp.cursor >= sbp.limit)
+					return true;
+				sbp.cursor++;
+			}
+			return false;
+		}
+		return true;
+	}
+	function habr2() {
+		if (sbp.in_grouping(g_v, 97, 252)) {
+			var v_1 = sbp.cursor;
+			if (habr1()) {
+				sbp.cursor = v_1;
+				if (!sbp.in_grouping(g_v, 97, 252))
+					return true;
+				while (!sbp.out_grouping(g_v, 97, 252)) {
+					if (sbp.cursor >= sbp.limit)
+						return true;
+					sbp.cursor++;
+				}
+			}
+			return false;
+		}
+		return true;
+	}
+	function habr3() {
+		var v_1 = sbp.cursor, v_2;
+		if (habr2()) {
+			sbp.cursor = v_1;
+			if (!sbp.out_grouping(g_v, 97, 252))
+				return;
+			v_2 = sbp.cursor;
+			if (habr1()) {
+				sbp.cursor = v_2;
+				if (!sbp.in_grouping(g_v, 97, 252) || sbp.cursor >= sbp.limit)
+					return;
+				sbp.cursor++;
+			}
+		}
+		I_pV = sbp.cursor;
+	}
+	function habr4() {
+		while (!sbp.in_grouping(g_v, 97, 252)) {
+			if (sbp.cursor >= sbp.limit)
+				return false;
+			sbp.cursor++;
+		}
+		while (!sbp.out_grouping(g_v, 97, 252)) {
+			if (sbp.cursor >= sbp.limit)
+				return false;
+			sbp.cursor++;
+		}
+		return true;
+	}
 	function r_mark_regions() {
-		var v_1, v_2, v_3, v_6, v_8;
-
-		I_pV = snowballProgram.limit;
-		I_p1 = snowballProgram.limit;
-		I_p2 = snowballProgram.limit;
-		v_1 = snowballProgram.cursor;
-		lab0 : do {
-			lab1 : do {
-				v_2 = snowballProgram.cursor;
-				lab2 : do {
-					if (!(snowballProgram.in_grouping(g_v, 97, 252))) {
-						break lab2;
-					}
-					lab3 : do {
-						v_3 = snowballProgram.cursor;
-						lab4 : do {
-							if (!(snowballProgram.out_grouping(g_v, 97, 252))) {
-								break lab4;
-							}
-							golab5 : while (true) {
-								lab6 : do {
-									if (!(snowballProgram.in_grouping(g_v, 97,
-											252))) {
-										break lab6;
-									}
-									break golab5;
-								} while (false);
-								if (snowballProgram.cursor >= snowballProgram.limit) {
-									break lab4;
-								}
-								snowballProgram.cursor++;
-							}
-							break lab3;
-						} while (false);
-						snowballProgram.cursor = v_3;
-						if (!(snowballProgram.in_grouping(g_v, 97, 252))) {
-							break lab2;
-						}
-						golab7 : while (true) {
-							lab8 : do {
-								if (!(snowballProgram
-										.out_grouping(g_v, 97, 252))) {
-									break lab8;
-								}
-								break golab7;
-							} while (false);
-							if (snowballProgram.cursor >= snowballProgram.limit) {
-								break lab2;
-							}
-							snowballProgram.cursor++;
-						}
-					} while (false);
-					break lab1;
-				} while (false);
-				snowballProgram.cursor = v_2;
-				if (!(snowballProgram.out_grouping(g_v, 97, 252))) {
-					break lab0;
-				}
-				lab9 : do {
-					v_6 = snowballProgram.cursor;
-					lab10 : do {
-						if (!(snowballProgram.out_grouping(g_v, 97, 252))) {
-							break lab10;
-						}
-						golab11 : while (true) {
-							lab12 : do {
-								if (!(snowballProgram.in_grouping(g_v, 97, 252))) {
-									break lab12;
-								}
-								break golab11;
-							} while (false);
-							if (snowballProgram.cursor >= snowballProgram.limit) {
-								break lab10;
-							}
-							snowballProgram.cursor++;
-						}
-						break lab9;
-					} while (false);
-					snowballProgram.cursor = v_6;
-					if (!(snowballProgram.in_grouping(g_v, 97, 252))) {
-						break lab0;
-					}
-					if (snowballProgram.cursor >= snowballProgram.limit) {
-						break lab0;
-					}
-					snowballProgram.cursor++;
-				} while (false);
-			} while (false);
-			I_pV = snowballProgram.cursor;
-		} while (false);
-		snowballProgram.cursor = v_1;
-		v_8 = snowballProgram.cursor;
-		lab13 : do {
-			golab14 : while (true) {
-				lab15 : do {
-					if (!(snowballProgram.in_grouping(g_v, 97, 252))) {
-						break lab15;
-					}
-					break golab14;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab13;
-				}
-				snowballProgram.cursor++;
-			}
-			golab16 : while (true) {
-				lab17 : do {
-					if (!(snowballProgram.out_grouping(g_v, 97, 252))) {
-						break lab17;
-					}
-					break golab16;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab13;
-				}
-				snowballProgram.cursor++;
-			}
-			I_p1 = snowballProgram.cursor;
-			golab18 : while (true) {
-				lab19 : do {
-					if (!(snowballProgram.in_grouping(g_v, 97, 252))) {
-						break lab19;
-					}
-					break golab18;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab13;
-				}
-				snowballProgram.cursor++;
-			}
-			golab20 : while (true) {
-				lab21 : do {
-					if (!(snowballProgram.out_grouping(g_v, 97, 252))) {
-						break lab21;
-					}
-					break golab20;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab13;
-				}
-				snowballProgram.cursor++;
-			}
-			I_p2 = snowballProgram.cursor;
-		} while (false);
-		snowballProgram.cursor = v_8;
-
-		return true;
+		var v_1 = sbp.cursor;
+		I_pV = sbp.limit;
+		I_p1 = I_pV;
+		I_p2 = I_pV;
+		habr3();
+		sbp.cursor = v_1;
+		if (habr4()) {
+			I_p1 = sbp.cursor;
+			if (habr4())
+				I_p2 = sbp.cursor;
+		}
 	}
-
 	function r_postlude() {
-		var among_var, v_1;
-
-		replab0 : while (true) {
-			v_1 = snowballProgram.cursor;
-			lab1 : do {
-				snowballProgram.bra = snowballProgram.cursor;
-				among_var = snowballProgram.find_among(a_0, 6);
-				if (among_var == 0) {
-					break lab1;
-				}
-				snowballProgram.ket = snowballProgram.cursor;
+		var among_var;
+		while (true) {
+			sbp.bra = sbp.cursor;
+			among_var = sbp.find_among(a_0, 6);
+			if (among_var) {
+				sbp.ket = sbp.cursor;
 				switch (among_var) {
-					case 0 :
-						break lab1;
 					case 1 :
-						snowballProgram.slice_from("a");
-						break;
+						sbp.slice_from("a");
+						continue;
 					case 2 :
-						snowballProgram.slice_from("e");
-						break;
+						sbp.slice_from("e");
+						continue;
 					case 3 :
-						snowballProgram.slice_from("i");
-						break;
+						sbp.slice_from("i");
+						continue;
 					case 4 :
-						snowballProgram.slice_from("o");
-						break;
+						sbp.slice_from("o");
+						continue;
 					case 5 :
-						snowballProgram.slice_from("u");
-						break;
+						sbp.slice_from("u");
+						continue;
 					case 6 :
-						if (snowballProgram.cursor >= snowballProgram.limit) {
-							break lab1;
-						}
-						snowballProgram.cursor++;
-						break;
+						if (sbp.cursor >= sbp.limit)
+							break;
+						sbp.cursor++;
+						continue;
 				}
-				continue replab0;
-			} while (false);
-			snowballProgram.cursor = v_1;
-			break replab0;
+			}
+			break;
 		}
-
-		return true;
 	}
-
 	function r_RV() {
-		if (!(I_pV <= snowballProgram.cursor)) {
-			return false;
-		}
-		return true;
+		return I_pV <= sbp.cursor;
 	}
-
 	function r_R1() {
-		if (!(I_p1 <= snowballProgram.cursor)) {
-			return false;
-		}
-		return true;
+		return I_p1 <= sbp.cursor;
 	}
-
 	function r_R2() {
-		if (!(I_p2 <= snowballProgram.cursor)) {
-			return false;
-		}
-		return true;
+		return I_p2 <= sbp.cursor;
 	}
-
 	function r_attached_pronoun() {
 		var among_var;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		if (snowballProgram.find_among_b(a_1, 13) == 0) {
-			return false;
-		}
-		snowballProgram.bra = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_2, 11);
-		if (among_var == 0) {
-			return false;
-		}
-		if (!r_RV()) {
-			return false;
-		}
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				snowballProgram.bra = snowballProgram.cursor;
-				snowballProgram.slice_from("iendo");
-				break;
-			case 2 :
-				snowballProgram.bra = snowballProgram.cursor;
-				snowballProgram.slice_from("ando");
-				break;
-			case 3 :
-				snowballProgram.bra = snowballProgram.cursor;
-				snowballProgram.slice_from("ar");
-				break;
-			case 4 :
-				snowballProgram.bra = snowballProgram.cursor;
-				snowballProgram.slice_from("er");
-				break;
-			case 5 :
-				snowballProgram.bra = snowballProgram.cursor;
-				snowballProgram.slice_from("ir");
-				break;
-			case 6 :
-				snowballProgram.slice_del();
-				break;
-			case 7 :
-				if (!(snowballProgram.eq_s_b(1, "u"))) {
-					return false;
+		sbp.ket = sbp.cursor;
+		if (sbp.find_among_b(a_1, 13)) {
+			sbp.bra = sbp.cursor;
+			among_var = sbp.find_among_b(a_2, 11);
+			if (among_var && r_RV())
+				switch (among_var) {
+					case 1 :
+						sbp.bra = sbp.cursor;
+						sbp.slice_from("iendo");
+						break;
+					case 2 :
+						sbp.bra = sbp.cursor;
+						sbp.slice_from("ando");
+						break;
+					case 3 :
+						sbp.bra = sbp.cursor;
+						sbp.slice_from("ar");
+						break;
+					case 4 :
+						sbp.bra = sbp.cursor;
+						sbp.slice_from("er");
+						break;
+					case 5 :
+						sbp.bra = sbp.cursor;
+						sbp.slice_from("ir");
+						break;
+					case 6 :
+						sbp.slice_del();
+						break;
+					case 7 :
+						if (sbp.eq_s_b(1, "u"))
+							sbp.slice_del();
+						break;
 				}
-				snowballProgram.slice_del();
-				break;
 		}
-
-		return true;
 	}
-
+	function habr5(a, n) {
+		if (!r_R2())
+			return true;
+		sbp.slice_del();
+		sbp.ket = sbp.cursor;
+		var among_var = sbp.find_among_b(a, n);
+		if (among_var) {
+			sbp.bra = sbp.cursor;
+			if (among_var == 1 && r_R2())
+				sbp.slice_del();
+		}
+		return false;
+	}
+	function habr6(c1) {
+		if (!r_R2())
+			return true;
+		sbp.slice_del();
+		sbp.ket = sbp.cursor;
+		if (sbp.eq_s_b(2, c1)) {
+			sbp.bra = sbp.cursor;
+			if (r_R2())
+				sbp.slice_del();
+		}
+		return false;
+	}
 	function r_standard_suffix() {
-		var among_var, v_1, v_2, v_3, v_4, v_5;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_6, 46);
-		if (among_var == 0) {
-			return false;
+		var among_var;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a_6, 46);
+		if (among_var) {
+			sbp.bra = sbp.cursor;
+			switch (among_var) {
+				case 1 :
+					if (!r_R2())
+						return false;
+					sbp.slice_del();
+					break;
+				case 2 :
+					if (habr6("ic"))
+						return false;
+					break;
+				case 3 :
+					if (!r_R2())
+						return false;
+					sbp.slice_from("log");
+					break;
+				case 4 :
+					if (!r_R2())
+						return false;
+					sbp.slice_from("u");
+					break;
+				case 5 :
+					if (!r_R2())
+						return false;
+					sbp.slice_from("ente");
+					break;
+				case 6 :
+					if (!r_R1())
+						return false;
+					sbp.slice_del();
+					sbp.ket = sbp.cursor;
+					among_var = sbp.find_among_b(a_3, 4);
+					if (among_var) {
+						sbp.bra = sbp.cursor;
+						if (r_R2()) {
+							sbp.slice_del();
+							if (among_var == 1) {
+								sbp.ket = sbp.cursor;
+								if (sbp.eq_s_b(2, "at")) {
+									sbp.bra = sbp.cursor;
+									if (r_R2())
+										sbp.slice_del();
+								}
+							}
+						}
+					}
+					break;
+				case 7 :
+					if (habr5(a_4, 3))
+						return false;
+					break;
+				case 8 :
+					if (habr5(a_5, 3))
+						return false;
+					break;
+				case 9 :
+					if (habr6("at"))
+						return false;
+					break;
+			}
+			return true;
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				break;
-			case 2 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				v_1 = snowballProgram.limit - snowballProgram.cursor;
-				lab0 : do {
-					snowballProgram.ket = snowballProgram.cursor;
-					if (!(snowballProgram.eq_s_b(2, "ic"))) {
-						snowballProgram.cursor = snowballProgram.limit - v_1;
-						break lab0;
-					}
-					snowballProgram.bra = snowballProgram.cursor;
-					if (!r_R2()) {
-						snowballProgram.cursor = snowballProgram.limit - v_1;
-						break lab0;
-					}
-					snowballProgram.slice_del();
-				} while (false);
-				break;
-			case 3 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_from("log");
-				break;
-			case 4 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_from("u");
-				break;
-			case 5 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_from("ente");
-				break;
-			case 6 :
-				if (!r_R1()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				v_2 = snowballProgram.limit - snowballProgram.cursor;
-				lab1 : do {
-					snowballProgram.ket = snowballProgram.cursor;
-					among_var = snowballProgram.find_among_b(a_3, 4);
-					if (among_var == 0) {
-						snowballProgram.cursor = snowballProgram.limit - v_2;
-						break lab1;
-					}
-					snowballProgram.bra = snowballProgram.cursor;
-					if (!r_R2()) {
-						snowballProgram.cursor = snowballProgram.limit - v_2;
-						break lab1;
-					}
-					snowballProgram.slice_del();
-					switch (among_var) {
-						case 0 :
-							snowballProgram.cursor = snowballProgram.limit
-									- v_2;
-							break lab1;
-						case 1 :
-							snowballProgram.ket = snowballProgram.cursor;
-							if (!(snowballProgram.eq_s_b(2, "at"))) {
-								snowballProgram.cursor = snowballProgram.limit
-										- v_2;
-								break lab1;
-							}
-							snowballProgram.bra = snowballProgram.cursor;
-							if (!r_R2()) {
-								snowballProgram.cursor = snowballProgram.limit
-										- v_2;
-								break lab1;
-							}
-							snowballProgram.slice_del();
-							break;
-					}
-				} while (false);
-				break;
-			case 7 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				v_3 = snowballProgram.limit - snowballProgram.cursor;
-				lab2 : do {
-					snowballProgram.ket = snowballProgram.cursor;
-					among_var = snowballProgram.find_among_b(a_4, 3);
-					if (among_var == 0) {
-						snowballProgram.cursor = snowballProgram.limit - v_3;
-						break lab2;
-					}
-					snowballProgram.bra = snowballProgram.cursor;
-					switch (among_var) {
-						case 0 :
-							snowballProgram.cursor = snowballProgram.limit
-									- v_3;
-							break lab2;
-						case 1 :
-							if (!r_R2()) {
-								snowballProgram.cursor = snowballProgram.limit
-										- v_3;
-								break lab2;
-							}
-							snowballProgram.slice_del();
-							break;
-					}
-				} while (false);
-				break;
-			case 8 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				v_4 = snowballProgram.limit - snowballProgram.cursor;
-				lab3 : do {
-					snowballProgram.ket = snowballProgram.cursor;
-					among_var = snowballProgram.find_among_b(a_5, 3);
-					if (among_var == 0) {
-						snowballProgram.cursor = snowballProgram.limit - v_4;
-						break lab3;
-					}
-					snowballProgram.bra = snowballProgram.cursor;
-					switch (among_var) {
-						case 0 :
-							snowballProgram.cursor = snowballProgram.limit
-									- v_4;
-							break lab3;
-						case 1 :
-							if (!r_R2()) {
-								snowballProgram.cursor = snowballProgram.limit
-										- v_4;
-								break lab3;
-							}
-							snowballProgram.slice_del();
-							break;
-					}
-				} while (false);
-				break;
-			case 9 :
-				if (!r_R2()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				v_5 = snowballProgram.limit - snowballProgram.cursor;
-				lab4 : do {
-					snowballProgram.ket = snowballProgram.cursor;
-					if (!(snowballProgram.eq_s_b(2, "at"))) {
-						snowballProgram.cursor = snowballProgram.limit - v_5;
-						break lab4;
-					}
-					snowballProgram.bra = snowballProgram.cursor;
-					if (!r_R2()) {
-						snowballProgram.cursor = snowballProgram.limit - v_5;
-						break lab4;
-					}
-					snowballProgram.slice_del();
-				} while (false);
-				break;
-		}
-
-		return true;
+		return false;
 	}
-
 	function r_y_verb_suffix() {
-		var among_var, v_1, v_2;
-
-		v_1 = snowballProgram.limit - snowballProgram.cursor;
-		if (snowballProgram.cursor < I_pV) {
-			return false;
-		}
-		snowballProgram.cursor = I_pV;
-		v_2 = snowballProgram.limit_backward;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit - v_1;
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_7, 12);
-		if (among_var == 0) {
-			snowballProgram.limit_backward = v_2;
-			return false;
-		}
-		snowballProgram.bra = snowballProgram.cursor;
-		snowballProgram.limit_backward = v_2;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				if (!(snowballProgram.eq_s_b(1, "u"))) {
-					return false;
+		var among_var, v_1;
+		if (sbp.cursor >= I_pV) {
+			v_1 = sbp.limit_backward;
+			sbp.limit_backward = I_pV;
+			sbp.ket = sbp.cursor;
+			among_var = sbp.find_among_b(a_7, 12);
+			sbp.limit_backward = v_1;
+			if (among_var) {
+				sbp.bra = sbp.cursor;
+				if (among_var == 1) {
+					if (!sbp.eq_s_b(1, "u"))
+						return false;
+					sbp.slice_del();
 				}
-				snowballProgram.slice_del();
-				break;
+				return true;
+			}
 		}
-
-		return true;
+		return false;
 	}
-
 	function r_verb_suffix() {
-		var among_var, v_1, v_2, v_3, v_4;
-
-		v_1 = snowballProgram.limit - snowballProgram.cursor;
-		if (snowballProgram.cursor < I_pV) {
-			return false;
+		var among_var, v_1, v_2, v_3;
+		if (sbp.cursor >= I_pV) {
+			v_1 = sbp.limit_backward;
+			sbp.limit_backward = I_pV;
+			sbp.ket = sbp.cursor;
+			among_var = sbp.find_among_b(a_8, 96);
+			sbp.limit_backward = v_1;
+			if (among_var) {
+				sbp.bra = sbp.cursor;
+				switch (among_var) {
+					case 1 :
+						v_2 = sbp.limit - sbp.cursor;
+						if (sbp.eq_s_b(1, "u")) {
+							v_3 = sbp.limit - sbp.cursor;
+							if (sbp.eq_s_b(1, "g"))
+								sbp.cursor = sbp.limit - v_3;
+							else
+								sbp.cursor = sbp.limit - v_2;
+						} else
+							sbp.cursor = sbp.limit - v_2;
+						sbp.bra = sbp.cursor;
+					case 2 :
+						sbp.slice_del();
+						break;
+				}
+			}
 		}
-		snowballProgram.cursor = I_pV;
-		v_2 = snowballProgram.limit_backward;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit - v_1;
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_8, 96);
-		if (among_var == 0) {
-			snowballProgram.limit_backward = v_2;
-			return false;
-		}
-		snowballProgram.bra = snowballProgram.cursor;
-		snowballProgram.limit_backward = v_2;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				v_3 = snowballProgram.limit - snowballProgram.cursor;
-				lab0 : do {
-					if (!(snowballProgram.eq_s_b(1, "u"))) {
-						snowballProgram.cursor = snowballProgram.limit - v_3;
-						break lab0;
-					}
-					v_4 = snowballProgram.limit - snowballProgram.cursor;
-					if (!(snowballProgram.eq_s_b(1, "g"))) {
-						snowballProgram.cursor = snowballProgram.limit - v_3;
-						break lab0;
-					}
-					snowballProgram.cursor = snowballProgram.limit - v_4;
-				} while (false);
-				snowballProgram.bra = snowballProgram.cursor;
-				snowballProgram.slice_del();
-				break;
-			case 2 :
-				snowballProgram.slice_del();
-				break;
-		}
-
-		return true;
 	}
-
 	function r_residual_suffix() {
-		var among_var, v_1, v_2;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_9, 8);
-		if (among_var == 0) {
-			return false;
+		var among_var, v_1;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a_9, 8);
+		if (among_var) {
+			sbp.bra = sbp.cursor;
+			switch (among_var) {
+				case 1 :
+					if (r_RV())
+						sbp.slice_del();
+					break;
+				case 2 :
+					if (r_RV()) {
+						sbp.slice_del();
+						sbp.ket = sbp.cursor;
+						if (sbp.eq_s_b(1, "u")) {
+							sbp.bra = sbp.cursor;
+							v_1 = sbp.limit - sbp.cursor;
+							if (sbp.eq_s_b(1, "g")) {
+								sbp.cursor = sbp.limit - v_1;
+								if (r_RV())
+									sbp.slice_del();
+							}
+						}
+					}
+					break;
+			}
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				if (!r_RV()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				break;
-			case 2 :
-				if (!r_RV()) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				v_1 = snowballProgram.limit - snowballProgram.cursor;
-				lab0 : do {
-					snowballProgram.ket = snowballProgram.cursor;
-					if (!(snowballProgram.eq_s_b(1, "u"))) {
-						snowballProgram.cursor = snowballProgram.limit - v_1;
-						break lab0;
-					}
-					snowballProgram.bra = snowballProgram.cursor;
-					v_2 = snowballProgram.limit - snowballProgram.cursor;
-					if (!(snowballProgram.eq_s_b(1, "g"))) {
-						snowballProgram.cursor = snowballProgram.limit - v_1;
-						break lab0;
-					}
-					snowballProgram.cursor = snowballProgram.limit - v_2;
-					if (!r_RV()) {
-						snowballProgram.cursor = snowballProgram.limit - v_1;
-						break lab0;
-					}
-					snowballProgram.slice_del();
-				} while (false);
-				break;
-		}
-
-		return true;
 	}
-
 	this.stem = function() {
-		var v_1, v_2, v_3, v_4, v_5, v_6;
-
-		v_1 = snowballProgram.cursor;
-		lab0 : do {
-			if (!r_mark_regions()) {
-				break lab0;
+		var v_1 = sbp.cursor;
+		r_mark_regions();
+		sbp.limit_backward = v_1;
+		sbp.cursor = sbp.limit;
+		r_attached_pronoun();
+		sbp.cursor = sbp.limit;
+		if (!r_standard_suffix()) {
+			sbp.cursor = sbp.limit;
+			if (!r_y_verb_suffix()) {
+				sbp.cursor = sbp.limit;
+				r_verb_suffix();
 			}
-		} while (false);
-		snowballProgram.cursor = v_1;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit;
-		v_2 = snowballProgram.limit - snowballProgram.cursor;
-		lab1 : do {
-			if (!r_attached_pronoun()) {
-				break lab1;
-			}
-		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_2;
-		v_3 = snowballProgram.limit - snowballProgram.cursor;
-		lab2 : do {
-			lab3 : do {
-				v_4 = snowballProgram.limit - snowballProgram.cursor;
-				lab4 : do {
-					if (!r_standard_suffix()) {
-						break lab4;
-					}
-					break lab3;
-				} while (false);
-				snowballProgram.cursor = snowballProgram.limit - v_4;
-				lab5 : do {
-					if (!r_y_verb_suffix()) {
-						break lab5;
-					}
-					break lab3;
-				} while (false);
-				snowballProgram.cursor = snowballProgram.limit - v_4;
-				if (!r_verb_suffix()) {
-					break lab2;
-				}
-			} while (false);
-		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_3;
-		v_5 = snowballProgram.limit - snowballProgram.cursor;
-		lab6 : do {
-			if (!r_residual_suffix()) {
-				break lab6;
-			}
-		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_5;
-		snowballProgram.cursor = snowballProgram.limit_backward;
-		v_6 = snowballProgram.cursor;
-		lab7 : do {
-			if (!r_postlude()) {
-				break lab7;
-			}
-		} while (false);
-		snowballProgram.cursor = v_6;
-
+		}
+		sbp.cursor = sbp.limit;
+		r_residual_suffix();
+		sbp.cursor = sbp.limit_backward;
+		r_postlude();
 		return true;
 	}
 }

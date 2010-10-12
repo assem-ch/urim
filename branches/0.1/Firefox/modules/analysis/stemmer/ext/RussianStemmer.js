@@ -41,7 +41,6 @@ Components.utils.import("resource://urim/analysis/stemmer/Among.js");
 Components.utils.import("resource://urim/analysis/stemmer/SnowballProgram.js");
 
 function RussianStemmer() {
-
 	var a_0 = [new Among("\u0432", -1, 1), new Among("\u0438\u0432", 0, 2),
 			new Among("\u044B\u0432", 0, 2),
 			new Among("\u0432\u0448\u0438", -1, 1),
@@ -49,11 +48,9 @@ function RussianStemmer() {
 			new Among("\u044B\u0432\u0448\u0438", 3, 2),
 			new Among("\u0432\u0448\u0438\u0441\u044C", -1, 1),
 			new Among("\u0438\u0432\u0448\u0438\u0441\u044C", 6, 2),
-			new Among("\u044B\u0432\u0448\u0438\u0441\u044C", 6, 2)];
-
-	var a_1 = [new Among("\u0435\u0435", -1, 1),
-			new Among("\u0438\u0435", -1, 1), new Among("\u043E\u0435", -1, 1),
-			new Among("\u044B\u0435", -1, 1),
+			new Among("\u044B\u0432\u0448\u0438\u0441\u044C", 6, 2)], a_1 = [
+			new Among("\u0435\u0435", -1, 1), new Among("\u0438\u0435", -1, 1),
+			new Among("\u043E\u0435", -1, 1), new Among("\u044B\u0435", -1, 1),
 			new Among("\u0438\u043C\u0438", -1, 1),
 			new Among("\u044B\u043C\u0438", -1, 1),
 			new Among("\u0435\u0439", -1, 1), new Among("\u0438\u0439", -1, 1),
@@ -67,19 +64,15 @@ function RussianStemmer() {
 			new Among("\u0438\u0445", -1, 1), new Among("\u044B\u0445", -1, 1),
 			new Among("\u0435\u044E", -1, 1), new Among("\u043E\u044E", -1, 1),
 			new Among("\u0443\u044E", -1, 1), new Among("\u044E\u044E", -1, 1),
-			new Among("\u0430\u044F", -1, 1), new Among("\u044F\u044F", -1, 1)];
-
-	var a_2 = [new Among("\u0435\u043C", -1, 1),
-			new Among("\u043D\u043D", -1, 1), new Among("\u0432\u0448", -1, 1),
+			new Among("\u0430\u044F", -1, 1), new Among("\u044F\u044F", -1, 1)], a_2 = [
+			new Among("\u0435\u043C", -1, 1), new Among("\u043D\u043D", -1, 1),
+			new Among("\u0432\u0448", -1, 1),
 			new Among("\u0438\u0432\u0448", 2, 2),
 			new Among("\u044B\u0432\u0448", 2, 2), new Among("\u0449", -1, 1),
 			new Among("\u044E\u0449", 5, 1),
-			new Among("\u0443\u044E\u0449", 6, 2)]
-
-	var a_3 = [new Among("\u0441\u044C", -1, 1),
-			new Among("\u0441\u044F", -1, 1)];
-
-	var a_4 = [new Among("\u043B\u0430", -1, 1),
+			new Among("\u0443\u044E\u0449", 6, 2)], a_3 = [
+			new Among("\u0441\u044C", -1, 1), new Among("\u0441\u044F", -1, 1)], a_4 = [
+			new Among("\u043B\u0430", -1, 1),
 			new Among("\u0438\u043B\u0430", 0, 2),
 			new Among("\u044B\u043B\u0430", 0, 2),
 			new Among("\u043D\u0430", -1, 1),
@@ -115,9 +108,8 @@ function RussianStemmer() {
 			new Among("\u044B\u0442\u044C", 39, 2),
 			new Among("\u0435\u0448\u044C", -1, 1),
 			new Among("\u0438\u0448\u044C", -1, 2), new Among("\u044E", -1, 2),
-			new Among("\u0443\u044E", 44, 2)];
-
-	var a_5 = [new Among("\u0430", -1, 1), new Among("\u0435\u0432", -1, 1),
+			new Among("\u0443\u044E", 44, 2)], a_5 = [
+			new Among("\u0430", -1, 1), new Among("\u0435\u0432", -1, 1),
 			new Among("\u043E\u0432", -1, 1), new Among("\u0435", -1, 1),
 			new Among("\u0438\u0435", 3, 1), new Among("\u044C\u0435", 3, 1),
 			new Among("\u0438", -1, 1), new Among("\u0435\u0438", 6, 1),
@@ -138,428 +130,165 @@ function RussianStemmer() {
 			new Among("\u044C", -1, 1), new Among("\u044E", -1, 1),
 			new Among("\u0438\u044E", 30, 1), new Among("\u044C\u044E", 30, 1),
 			new Among("\u044F", -1, 1), new Among("\u0438\u044F", 33, 1),
-			new Among("\u044C\u044F", 33, 1)];
-
-	var a_6 = [new Among("\u043E\u0441\u0442", -1, 1),
-			new Among("\u043E\u0441\u0442\u044C", -1, 1)];
-
-	var a_7 = [new Among("\u0435\u0439\u0448\u0435", -1, 1),
+			new Among("\u044C\u044F", 33, 1)], a_6 = [
+			new Among("\u043E\u0441\u0442", -1, 1),
+			new Among("\u043E\u0441\u0442\u044C", -1, 1)], a_7 = [
+			new Among("\u0435\u0439\u0448\u0435", -1, 1),
 			new Among("\u043D", -1, 2), new Among("\u0435\u0439\u0448", -1, 1),
-			new Among("\u044C", -1, 3)];
-
-	var g_v = [33, 65, 8, 232];
-
-	var I_p2, I_pV;
-
-	var snowballProgram = new SnowballProgram();
-
+			new Among("\u044C", -1, 3)], g_v = [33, 65, 8, 232], I_p2, I_pV, sbp = new SnowballProgram();
 	this.setCurrent = function(word) {
-		snowballProgram.setCurrent(word);
+		sbp.setCurrent(word);
 	};
-
 	this.getCurrent = function() {
-		return snowballProgram.getCurrent()
+		return sbp.getCurrent();
 	};
-
+	function habr3() {
+		while (!sbp.in_grouping(g_v, 1072, 1103)) {
+			if (sbp.cursor >= sbp.limit)
+				return false;
+			sbp.cursor++;
+		}
+		return true;
+	}
+	function habr4() {
+		while (!sbp.out_grouping(g_v, 1072, 1103)) {
+			if (sbp.cursor >= sbp.limit)
+				return false;
+			sbp.cursor++;
+		}
+		return true;
+	}
 	function r_mark_regions() {
-		var v_1;
-
-		I_pV = snowballProgram.limit;
-		I_p2 = snowballProgram.limit;
-		v_1 = snowballProgram.cursor;
-		lab0 : do {
-			golab1 : while (true) {
-				lab2 : do {
-					if (!(snowballProgram.in_grouping(g_v, 1072, 1103))) {
-						break lab2;
-					}
-					break golab1;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab0;
-				}
-				snowballProgram.cursor++;
-			}
-			I_pV = snowballProgram.cursor;
-			golab3 : while (true) {
-				lab4 : do {
-					if (!(snowballProgram.out_grouping(g_v, 1072, 1103))) {
-						break lab4;
-					}
-					break golab3;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab0;
-				}
-				snowballProgram.cursor++;
-			}
-			golab5 : while (true) {
-				lab6 : do {
-					if (!(snowballProgram.in_grouping(g_v, 1072, 1103))) {
-						break lab6;
-					}
-					break golab5;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab0;
-				}
-				snowballProgram.cursor++;
-			}
-			golab7 : while (true) {
-				lab8 : do {
-					if (!(snowballProgram.out_grouping(g_v, 1072, 1103))) {
-						break lab8;
-					}
-					break golab7;
-				} while (false);
-				if (snowballProgram.cursor >= snowballProgram.limit) {
-					break lab0;
-				}
-				snowballProgram.cursor++;
-			}
-			I_p2 = snowballProgram.cursor;
-		} while (false);
-		snowballProgram.cursor = v_1;
-
-		return true;
+		I_pV = sbp.limit;
+		I_p2 = I_pV;
+		if (habr3()) {
+			I_pV = sbp.cursor;
+			if (habr4())
+				if (habr3())
+					if (habr4())
+						I_p2 = sbp.cursor;
+		}
 	}
-
 	function r_R2() {
-		if (!(I_p2 <= snowballProgram.cursor)) {
-			return false;
-		}
-		return true;
+		return I_p2 <= sbp.cursor;
 	}
-
-	function r_perfective_gerund() {
-		var among_var;
-		var v_1;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_0, 9);
-		if (among_var == 0) {
-			return false;
-		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				lab0 : do {
-					v_1 = snowballProgram.limit - snowballProgram.cursor;
-					lab1 : do {
-						if (!(snowballProgram.eq_s_b(1, "\u0430"))) {
-							break lab1;
-						}
-						break lab0;
-					} while (false);
-					snowballProgram.cursor = snowballProgram.limit - v_1;
-					if (!(snowballProgram.eq_s_b(1, "\u044F"))) {
-						return false;
+	function habr2(a, n) {
+		var among_var, v_1;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a, n);
+		if (among_var) {
+			sbp.bra = sbp.cursor;
+			switch (among_var) {
+				case 1 :
+					v_1 = sbp.limit - sbp.cursor;
+					if (!sbp.eq_s_b(1, "\u0430")) {
+						sbp.cursor = sbp.limit - v_1;
+						if (!sbp.eq_s_b(1, "\u044F"))
+							return false;
 					}
-				} while (false);
-				snowballProgram.slice_del();
-				break;
-			case 2 :
-				snowballProgram.slice_del();
-				break;
+				case 2 :
+					sbp.slice_del();
+					break;
+			}
+			return true;
 		}
-
-		return true;
+		return false;
 	}
-
-	function r_adjective() {
+	function r_perfective_gerund() {
+		return habr2(a_0, 9);
+	}
+	function habr1(a, n) {
 		var among_var;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_1, 26);
-		if (among_var == 0) {
-			return false;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a, n);
+		if (among_var) {
+			sbp.bra = sbp.cursor;
+			if (among_var == 1)
+				sbp.slice_del();
+			return true;
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				snowballProgram.slice_del();
-				break;
-		}
-
-		return true;
+		return false;
 	}
-
+	function r_adjective() {
+		return habr1(a_1, 26);
+	}
 	function r_adjectival() {
 		var among_var;
-		var v_1;
-		var v_2;
-
-		if (!r_adjective()) {
-			return false;
+		if (r_adjective()) {
+			habr2(a_2, 8);
+			return true;
 		}
-		v_1 = snowballProgram.limit - snowballProgram.cursor;
-		lab0 : do {
-			snowballProgram.ket = snowballProgram.cursor;
-			among_var = snowballProgram.find_among_b(a_2, 8);
-			if (among_var == 0) {
-				snowballProgram.cursor = snowballProgram.limit - v_1;
-				break lab0;
-			}
-			snowballProgram.bra = snowballProgram.cursor;
-			switch (among_var) {
-				case 0 :
-					snowballProgram.cursor = snowballProgram.limit - v_1;
-					break lab0;
-				case 1 :
-					lab1 : do {
-						v_2 = snowballProgram.limit - snowballProgram.cursor;
-						lab2 : do {
-							if (!(snowballProgram.eq_s_b(1, "\u0430"))) {
-								break lab2;
-							}
-							break lab1;
-						} while (false);
-						snowballProgram.cursor = snowballProgram.limit - v_2;
-						if (!(snowballProgram.eq_s_b(1, "\u044F"))) {
-							snowballProgram.cursor = snowballProgram.limit
-									- v_1;
-							break lab0;
-						}
-					} while (false);
-					snowballProgram.slice_del();
-					break;
-				case 2 :
-					snowballProgram.slice_del();
-					break;
-			}
-		} while (false);
-
-		return true;
+		return false;
 	}
-
 	function r_reflexive() {
-
-		var among_var;
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_3, 2);
-		if (among_var == 0) {
-			return false;
-		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				snowballProgram.slice_del();
-				break;
-		}
-
-		return true;
+		return habr1(a_3, 2);
 	}
-
 	function r_verb() {
-		var among_var;
-		var v_1;
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_4, 46);
-		if (among_var == 0) {
-			return false;
-		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				lab0 : do {
-					v_1 = snowballProgram.limit - snowballProgram.cursor;
-					lab1 : do {
-						if (!(snowballProgram.eq_s_b(1, "\u0430"))) {
-							break lab1;
-						}
-						break lab0;
-					} while (false);
-					snowballProgram.cursor = snowballProgram.limit - v_1;
-					if (!(snowballProgram.eq_s_b(1, "\u044F"))) {
-						return false;
-					}
-				} while (false);
-				snowballProgram.slice_del();
-				break;
-			case 2 :
-				snowballProgram.slice_del();
-				break;
-		}
-		return true;
+		return habr2(a_4, 46);
 	}
-
 	function r_noun() {
-		var among_var;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_5, 36);
-		if (among_var == 0) {
-			return false;
-		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				snowballProgram.slice_del();
-				break;
-		}
-
-		return true;
+		habr1(a_5, 36);
 	}
-
 	function r_derivational() {
 		var among_var;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_6, 2);
-		if (among_var == 0) {
-			return false;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a_6, 2);
+		if (among_var) {
+			sbp.bra = sbp.cursor;
+			if (r_R2() && among_var == 1)
+				sbp.slice_del();
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		if (!r_R2()) {
-			return false;
-		}
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				snowballProgram.slice_del();
-				break;
-		}
-
-		return true;
 	}
-
 	function r_tidy_up() {
 		var among_var;
-
-		snowballProgram.ket = snowballProgram.cursor;
-		among_var = snowballProgram.find_among_b(a_7, 4);
-		if (among_var == 0) {
-			return false;
+		sbp.ket = sbp.cursor;
+		among_var = sbp.find_among_b(a_7, 4);
+		if (among_var) {
+			sbp.bra = sbp.cursor;
+			switch (among_var) {
+				case 1 :
+					sbp.slice_del();
+					sbp.ket = sbp.cursor;
+					if (!sbp.eq_s_b(1, "\u043D"))
+						break;
+					sbp.bra = sbp.cursor;
+				case 2 :
+					if (!sbp.eq_s_b(1, "\u043D"))
+						break;
+				case 3 :
+					sbp.slice_del();
+					break;
+			}
 		}
-		snowballProgram.bra = snowballProgram.cursor;
-		switch (among_var) {
-			case 0 :
-				return false;
-			case 1 :
-				snowballProgram.slice_del();
-				snowballProgram.ket = snowballProgram.cursor;
-				if (!(snowballProgram.eq_s_b(1, "\u043D"))) {
-					return false;
-				}
-				snowballProgram.bra = snowballProgram.cursor;
-				if (!(snowballProgram.eq_s_b(1, "\u043D"))) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				break;
-			case 2 :
-				if (!(snowballProgram.eq_s_b(1, "\u043D"))) {
-					return false;
-				}
-				snowballProgram.slice_del();
-				break;
-			case 3 :
-				snowballProgram.slice_del();
-				break;
-		}
-
-		return true;
 	}
-
 	this.stem = function() {
-		var v_1, v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_10;
-
-		v_1 = snowballProgram.cursor;
-		lab0 : do {
-			if (!r_mark_regions()) {
-				break lab0;
-			}
-		} while (false);
-		snowballProgram.cursor = v_1;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit;
-		v_2 = snowballProgram.limit - snowballProgram.cursor;
-		if (snowballProgram.cursor < I_pV) {
+		r_mark_regions();
+		sbp.cursor = sbp.limit;
+		if (sbp.cursor < I_pV)
 			return false;
+		sbp.limit_backward = I_pV;
+		if (!r_perfective_gerund()) {
+			sbp.cursor = sbp.limit;
+			if (!r_reflexive())
+				sbp.cursor = sbp.limit;
+			if (!r_adjectival()) {
+				sbp.cursor = sbp.limit;
+				if (!r_verb()) {
+					sbp.cursor = sbp.limit;
+					r_noun();
+				}
+			}
 		}
-		snowballProgram.cursor = I_pV;
-		v_3 = snowballProgram.limit_backward;
-		snowballProgram.limit_backward = snowballProgram.cursor;
-		snowballProgram.cursor = snowballProgram.limit - v_2;
-		v_4 = snowballProgram.limit - snowballProgram.cursor;
-		lab1 : do {
-			lab2 : do {
-				v_5 = snowballProgram.limit - snowballProgram.cursor;
-				lab3 : do {
-					if (!r_perfective_gerund()) {
-						break lab3;
-					}
-					break lab2;
-				} while (false);
-				snowballProgram.cursor = snowballProgram.limit - v_5;
-				v_6 = snowballProgram.limit - snowballProgram.cursor;
-				lab4 : do {
-					if (!r_reflexive()) {
-						snowballProgram.cursor = snowballProgram.limit - v_6;
-						break lab4;
-					}
-				} while (false);
-				lab5 : do {
-					v_7 = snowballProgram.limit - snowballProgram.cursor;
-					lab6 : do {
-						if (!r_adjectival()) {
-							break lab6;
-						}
-						break lab5;
-					} while (false);
-					snowballProgram.cursor = snowballProgram.limit - v_7;
-					lab7 : do {
-						if (!r_verb()) {
-							break lab7;
-						}
-						break lab5;
-					} while (false);
-					snowballProgram.cursor = snowballProgram.limit - v_7;
-					if (!r_noun()) {
-						break lab1;
-					}
-				} while (false);
-			} while (false);
-		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_4;
-		v_8 = snowballProgram.limit - snowballProgram.cursor;
-		lab8 : do {
-			snowballProgram.ket = snowballProgram.cursor;
-			if (!(snowballProgram.eq_s_b(1, "\u0438"))) {
-				snowballProgram.cursor = snowballProgram.limit - v_8;
-				break lab8;
-			}
-			snowballProgram.bra = snowballProgram.cursor;
-			snowballProgram.slice_del();
-		} while (false);
-		v_9 = snowballProgram.limit - snowballProgram.cursor;
-		lab9 : do {
-			if (!r_derivational()) {
-				break lab9;
-			}
-		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_9;
-		v_10 = snowballProgram.limit - snowballProgram.cursor;
-		lab10 : do {
-			if (!r_tidy_up()) {
-				break lab10;
-			}
-		} while (false);
-		snowballProgram.cursor = snowballProgram.limit - v_10;
-		snowballProgram.limit_backward = v_3;
-		snowballProgram.cursor = snowballProgram.limit_backward;
-
+		sbp.cursor = sbp.limit;
+		sbp.ket = sbp.cursor;
+		if (sbp.eq_s_b(1, "\u0438")) {
+			sbp.bra = sbp.cursor;
+			sbp.slice_del();
+		} else
+			sbp.cursor = sbp.limit;
+		r_derivational();
+		sbp.cursor = sbp.limit;
+		r_tidy_up();
 		return true;
 	}
 }

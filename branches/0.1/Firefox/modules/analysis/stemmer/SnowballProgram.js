@@ -59,136 +59,133 @@ function SnowballProgram() {
 			return result;
 		},
 		in_grouping : function(s, min, max) {
-			if (this.cursor >= this.limit)
-				return false;
-			var ch = current.charCodeAt(this.cursor);
-			if (ch > max || ch < min)
-				return false;
-			ch -= min;
-			if ((s[ch >> 3] & (0X1 << (ch & 0X7))) == 0)
-				return false;
-			this.cursor++;
-			return true;
+			if (this.cursor < this.limit) {
+				var ch = current.charCodeAt(this.cursor);
+				if (ch <= max && ch >= min) {
+					ch -= min;
+					if (s[ch >> 3] & (0X1 << (ch & 0X7))) {
+						this.cursor++;
+						return true;
+					}
+				}
+			}
+			return false;
 		},
 		in_grouping_b : function(s, min, max) {
-			if (this.cursor <= this.limit_backward)
-				return false;
-			var ch = current.charCodeAt(this.cursor - 1);
-			if (ch > max || ch < min)
-				return false;
-			ch -= min;
-			if ((s[ch >> 3] & (0X1 << (ch & 0X7))) == 0)
-				return false;
-			this.cursor--;
-			return true;
+			if (this.cursor > this.limit_backward) {
+				var ch = current.charCodeAt(this.cursor - 1);
+				if (ch <= max && ch >= min) {
+					ch -= min;
+					if (s[ch >> 3] & (0X1 << (ch & 0X7))) {
+						this.cursor--;
+						return true;
+					}
+				}
+			}
+			return false;
 		},
 		out_grouping : function(s, min, max) {
-			if (this.cursor >= this.limit)
-				return false;
-			var ch = current.charCodeAt(this.cursor);
-			if (ch > max || ch < min) {
-				this.cursor++;
-				return true;
-			}
-			ch -= min;
-			if ((s[ch >> 3] & (0X1 << (ch & 0X7))) == 0) {
-				this.cursor++;
-				return true;
+			if (this.cursor < this.limit) {
+				var ch = current.charCodeAt(this.cursor);
+				if (ch > max || ch < min) {
+					this.cursor++;
+					return true;
+				}
+				ch -= min;
+				if (!(s[ch >> 3] & (0X1 << (ch & 0X7)))) {
+					this.cursor++;
+					return true;
+				}
 			}
 			return false;
 		},
 		out_grouping_b : function(s, min, max) {
-			if (this.cursor <= this.limit_backward)
-				return false;
-			var ch = current.charCodeAt(this.cursor - 1);
-			if (ch > max || ch < min) {
-				this.cursor--;
-				return true;
-			}
-			ch -= min;
-			if ((s[ch >> 3] & (0X1 << (ch & 0X7))) == 0) {
-				this.cursor--;
-				return true;
+			if (this.cursor > this.limit_backward) {
+				var ch = current.charCodeAt(this.cursor - 1);
+				if (ch > max || ch < min) {
+					this.cursor--;
+					return true;
+				}
+				ch -= min;
+				if (!(s[ch >> 3] & (0X1 << (ch & 0X7)))) {
+					this.cursor--;
+					return true;
+				}
 			}
 			return false;
 		},
 		in_range : function(min, max) {
-			if (this.cursor >= this.limit)
-				return false;
-			var ch = current.charCodeAt(this.cursor);
-			if (ch > max || ch < min)
-				return false;
-			this.cursor++;
-			return true;
+			if (this.cursor < this.limit) {
+				var ch = current.charCodeAt(this.cursor);
+				if (ch <= max && ch >= min) {
+					this.cursor++;
+					return true;
+				}
+			}
+			return false;
 		},
 		in_range_b : function(min, max) {
-			if (this.cursor <= this.limit_backward)
-				return false;
-			var ch = current.charCodeAt(this.cursor - 1);
-			if (ch > max || ch < min)
-				return false;
-			this.cursor--;
-			return true;
+			if (this.cursor > this.limit_backward) {
+				var ch = current.charCodeAt(this.cursor - 1);
+				if (ch <= max && ch >= min) {
+					this.cursor--;
+					return true;
+				}
+			}
+			return false;
 		},
 		out_range : function(min, max) {
-			if (this.cursor >= this.limit)
-				return false;
-			var ch = current.charCodeAt(this.cursor);
-			if (!(ch > max || ch < min))
-				return false;
-			this.cursor++;
-			return true;
+			if (this.cursor < this.limit) {
+				var ch = current.charCodeAt(this.cursor);
+				if (ch > max || ch < min) {
+					this.cursor++;
+					return true;
+				}
+			}
+			return false;
 		},
 		out_range_b : function(min, max) {
-			if (this.cursor <= this.limit_backward)
-				return false;
-			var ch = current.charCodeAt(this.cursor - 1);
-			if (!(ch > max || ch < min))
-				return false;
-			this.cursor--;
-			return true;
+			if (this.cursor > this.limit_backward) {
+				var ch = current.charCodeAt(this.cursor - 1);
+				if (ch > max || ch < min) {
+					this.cursor--;
+					return true;
+				}
+			}
+			return false;
 		},
 		eq_s : function(s_size, s) {
 			if (this.limit - this.cursor < s_size)
 				return false;
-			for (var i = 0; i != s_size; i++) {
+			for (var i = 0; i < s_size; i++)
 				if (current.charCodeAt(this.cursor + i) != s.charCodeAt(i))
 					return false;
-			}
 			this.cursor += s_size;
 			return true;
 		},
 		eq_s_b : function(s_size, s) {
 			if (this.cursor - this.limit_backward < s_size)
 				return false;
-			for (var i = 0; i != s_size; i++) {
+			for (var i = 0; i < s_size; i++)
 				if (current.charCodeAt(this.cursor - s_size + i) != s
 						.charCodeAt(i))
 					return false;
-			}
 			this.cursor -= s_size;
 			return true;
 		},
 		find_among : function(v, v_size) {
-			var i = 0;
-			var j = v_size;
-			var c = this.cursor;
-			var l = this.limit;
-			var common_i = 0;
-			var common_j = 0;
-			var first_key_inspected = false;
+			var i = 0, j = v_size, c = this.cursor, l = this.limit, common_i = 0, common_j = 0, first_key_inspected = false;
 			while (true) {
-				var k = i + ((j - i) >> 1);
-				var diff = 0;
-				var common = common_i < common_j ? common_i : common_j;
-				var w = v[k];
+				var k = i + ((j - i) >> 1), diff = 0, common = common_i < common_j
+						? common_i
+						: common_j, w = v[k];
 				for (var i2 = common; i2 < w.s_size; i2++) {
 					if (c + common == l) {
 						diff = -1;
 						break;
 					}
 					diff = current.charCodeAt(c + common) - w.s[i2];
-					if (diff != 0)
+					if (diff)
 						break;
 					common++;
 				}
@@ -200,11 +197,7 @@ function SnowballProgram() {
 					common_i = common;
 				}
 				if (j - i <= 1) {
-					if (i > 0)
-						break;
-					if (j == i)
-						break;
-					if (first_key_inspected)
+					if (i > 0 || j == i || first_key_inspected)
 						break;
 					first_key_inspected = true;
 				}
@@ -226,25 +219,18 @@ function SnowballProgram() {
 			}
 		},
 		find_among_b : function(v, v_size) {
-			var i = 0;
-			var j = v_size;
-			var c = this.cursor;
-			var lb = this.limit_backward;
-			var common_i = 0;
-			var common_j = 0;
-			var first_key_inspected = false;
+			var i = 0, j = v_size, c = this.cursor, lb = this.limit_backward, common_i = 0, common_j = 0, first_key_inspected = false;
 			while (true) {
-				var k = i + ((j - i) >> 1);
-				var diff = 0;
-				var common = common_i < common_j ? common_i : common_j;
-				var w = v[k];
+				var k = i + ((j - i) >> 1), diff = 0, common = common_i < common_j
+						? common_i
+						: common_j, w = v[k];
 				for (var i2 = w.s_size - 1 - common; i2 >= 0; i2--) {
 					if (c - common == lb) {
 						diff = -1;
 						break;
 					}
 					diff = current.charCodeAt(c - 1 - common) - w.s[i2];
-					if (diff != 0)
+					if (diff)
 						break;
 					common++;
 				}
@@ -256,11 +242,7 @@ function SnowballProgram() {
 					common_i = common;
 				}
 				if (j - i <= 1) {
-					if (i > 0)
-						break;
-					if (j == i)
-						break;
-					if (first_key_inspected)
+					if (i > 0 || j == i || first_key_inspected)
 						break;
 					first_key_inspected = true;
 				}
@@ -282,9 +264,8 @@ function SnowballProgram() {
 			}
 		},
 		replace_s : function(c_bra, c_ket, s) {
-			var adjustment = s.length - (c_ket - c_bra);
-			var left = current.substring(0, c_bra);
-			var right = current.substring(c_ket);
+			var adjustment = s.length - (c_ket - c_bra), left = current
+					.substring(0, c_bra), right = current.substring(c_ket);
 			current = left + s + right;
 			this.limit += adjustment;
 			if (this.cursor >= c_ket)
@@ -295,9 +276,8 @@ function SnowballProgram() {
 		},
 		slice_check : function() {
 			if (this.bra < 0 || this.bra > this.ket || this.ket > this.limit
-					|| this.limit > current.length) {
+					|| this.limit > current.length)
 				throw ("faulty slice operation");
-			}
 		},
 		slice_from : function(s) {
 			this.slice_check();
