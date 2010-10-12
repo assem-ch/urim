@@ -48,8 +48,7 @@ function Among(s, substring_i, result, method) {
 	this.method = method;
 }
 Among.prototype.toCharArray = function(s) {
-	var sLength = s.length;
-	var charArr = new Array(sLength);
+	var sLength = s.length, charArr = new Array(sLength);
 	for (var i = 0; i < sLength; i++)
 		charArr[i] = s.charCodeAt(i);
 	return charArr;
