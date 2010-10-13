@@ -33,7 +33,7 @@
   
 	<toolbox id="navigator-toolbox">
 		<toolbarpalette id="BrowserToolbarPalette">
-			<toolbarbutton id="urim-button-toolbar" tooltiptext="&urimbutton.tooltip;" observes="viewUrimSidebar" class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+			<toolbarbutton id="urim-browser-xul-toolbar-button" tooltiptext="&urimbutton.tooltip;" observes="viewUrimSidebar" class="toolbarbutton-1 chromeclass-toolbar-additional"/>
 		</toolbarpalette>
 	</toolbox>
 </overlay>

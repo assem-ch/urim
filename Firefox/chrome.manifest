@@ -7,4 +7,4 @@ locale  urim 	ru 			jar:chrome/urim.jar!/locale/ru/
 
 skin	urim	classic/1.0	jar:chrome/urim.jar!/skin/
 overlay	chrome://browser/content/browser.xul	chrome://urim/content/firefoxOverlay.xul
-style	chrome://browser/content/browser.xul	chrome://urim/skin/urim-button-toolbar.css
+style	chrome://browser/content/browser.xul	chrome://urim/skin/urim-browser-xul-toolbar-button.css
