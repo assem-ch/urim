@@ -65,10 +65,10 @@ XULUrimChrome.firefoxOverlay = {
 			this._logger.error(ex);
 		}
 	},
-
-	uninit : function() {
-		this._logger.info("firefoxOverlay:uninit");
-	},
+//
+//	uninit : function() {
+//		this._logger.info("firefoxOverlay:uninit");
+//	},
 
 	setupLogging : function() {
 		this._logger = Log4Moz.repository.getLogger("Urim.firefoxOverlay");
@@ -163,12 +163,8 @@ XULUrimChrome.firefoxOverlay = {
 			case "load" :
 				this.init();
 				break;
-			case "unload" :
-				this.uninit();
-				break;
 		}
 	}
 };
 
 window.addEventListener("load", XULUrimChrome.firefoxOverlay, false);
-window.addEventListener("unload", XULUrimChrome.firefoxOverlay, false);

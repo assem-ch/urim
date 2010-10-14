@@ -12,14 +12,13 @@
 
 <!DOCTYPE page SYSTEM "chrome://urim/locale/urim.dtd">
 
-<page id="urim" title="&urimsidebar.title;"
-	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	
+
 	<script type="application/x-javascript" src="chrome://urim/content/urimSidebar.js"/>
 	<script type="application/x-javascript" src="chrome://urim/content/pageHighlighter.js"/>
 	<script type="application/x-javascript" src="chrome://urim/content/overflowManager.js"/>
-	
+
 	<html:style>
 
 	.tag-cloud {
