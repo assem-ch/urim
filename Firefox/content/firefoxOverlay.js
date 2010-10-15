@@ -35,78 +35,18 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-Components.utils.import("resource://urim/log4moz.js");
-
-if ("undefined" == typeof(XULUrimChrome)) {
-	var XULUrimChrome = {
-		constUrimButtonId : "urim-browser-xul-toolbar-button"
-	};
-};
-
 XULUrimChrome.firefoxOverlay = {
 
-	_logger : null,
+	constUrimButtonId : "urim-browser-xul-toolbar-button",
 
 	init : function() {
 		try {
-			if (!this._logger) {
-				this.setupLogging();
-				this._logger.info("firefoxOverlay:init");
-			}
-		} catch (ex) {
-			var consoleService = Components.classes["@mozilla.org/consoleservice;1"]
-					.getService(Components.interfaces.nsIConsoleService);
-			consoleService.logStringMessage(ex);
-		}
-
-		try {
 			this.addToolbarButton();
 		} catch (ex) {
-			this._logger.error(ex);
+			var consoleService = Ci["@mozilla.org/consoleservice;1"]
+					.getService(Ci.nsIConsoleService);
+			consoleService.logStringMessage(ex);
 		}
-	},
-//
-//	uninit : function() {
-//		this._logger.info("firefoxOverlay:uninit");
-//	},
-
-	setupLogging : function() {
-		this._logger = Log4Moz.repository.getLogger("Urim.firefoxOverlay");
-
-		var formatter = new Log4Moz.BasicFormatter();
-		var root = Log4Moz.repository.rootLogger;
-
-		/* Fatal, Error, Warn, Info, Config, Debug, Trace, All */
-
-		root.level = Log4Moz.Level.Warn;
-
-		var capp = new Log4Moz.ConsoleAppender(formatter);
-		capp.level = Log4Moz.Level.All;
-		root.addAppender(capp);
-
-		var dapp = new Log4Moz.DumpAppender(formatter);
-		dapp.level = Log4Moz.Level.All;
-		root.addAppender(dapp);
-
-		var verbose = Components.classes["@mozilla.org/file/directory_service;1"]
-				.getService(Components.interfaces.nsIProperties).get("ProfD",
-						Components.interfaces.nsIFile);
-
-		verbose.QueryInterface(Components.interfaces.nsILocalFile);
-		verbose.append("urim");
-		verbose.append("logs");
-		verbose.append("verbose-log.txt");
-
-		this._logger.info("Log path: " + verbose.path);
-
-		if (!verbose.exists())
-			verbose.create(verbose.NORMAL_FILE_TYPE, 0644);
-
-		var maxSize = 65536; // 64 * 1024 (64KB)
-		var debugApp = new Log4Moz.RotatingFileAppender(verbose, formatter,
-				maxSize);
-		debugApp.level = Log4Moz.Level.All;
-		root.addAppender(debugApp);
 	},
 
 	hasButton : function() {
@@ -115,7 +55,7 @@ XULUrimChrome.firefoxOverlay = {
 			var toolbar = toolbox.childNodes[i];
 			if (toolbar.localName == "toolbar"
 					&& toolbar.getAttribute("customizable") == "true") {
-				if (toolbar.currentSet.indexOf(XULUrimChrome.constUrimButtonId) > -1) {
+				if (toolbar.currentSet.indexOf(this.constUrimButtonId) > -1) {
 					return true;
 				}
 			}
@@ -124,9 +64,6 @@ XULUrimChrome.firefoxOverlay = {
 
 	addToolbarButton : function() {
 		if (!this.hasButton()) {
-			this._logger
-					.info("Urim toolbar button does not present, adding new");
-
 			var toolbox = document.getElementById("navigator-toolbox");
 			for (var i = 0; i < toolbox.childNodes.length; ++i) {
 				toolbar = toolbox.childNodes[i];
@@ -137,7 +74,7 @@ XULUrimChrome.firefoxOverlay = {
 					var child = toolbar.firstChild;
 					while (child) {
 						if (child.id == "urlbar-container") {
-							newSet += XULUrimChrome.constUrimButtonId + ",";
+							newSet += this.constUrimButtonId + ",";
 						}
 						newSet += child.id + ",";
 						child = child.nextSibling;
@@ -149,13 +86,14 @@ XULUrimChrome.firefoxOverlay = {
 					try {
 						BrowserToolboxCustomizeDone(true);
 					} catch (ex) {
-						this._logger.error(ex);
+						var consoleService = Cc["@mozilla.org/consoleservice;1"]
+								.getService(Ci.nsIConsoleService);
+						consoleService.logStringMessage(ex);
 					}
 					break;
 				}
 			}
-		} else
-			this._logger.info("Urim toolbar button already exists");
+		}
 	},
 
 	handleEvent : function(event) {

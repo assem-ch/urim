@@ -36,32 +36,56 @@
  * ***** END LICENSE BLOCK ***** */
 
 Components.utils.import("resource://urim/StringHashMap.js");
-
-const STATE_STOP = Components.interfaces.nsIWebProgressListener.STATE_STOP;
-const STATE_IS_WINDOW = Components.interfaces.nsIWebProgressListener.STATE_IS_WINDOW;
-
-Components.utils.import("resource://urim/log4moz.js");
 Components.utils.import("resource://urim/UrimCore.js");
 
-const urimSidebar = (function() {
+XULUrimChrome.urimSidebar = (function() {
+	var _logger = XULUrimChrome.loggerWrapper.getLogger("Urim.urimSidebar");
+	var _urimCore = new UrimCore();
 
-	const _logger = Log4Moz.repository.getLogger("Urim.urimSidebar");
-	const _urimCore = new UrimCore();
+	var stateChangeListener = {
+		QueryInterface : function(aIID) {
+			if (aIID.equals(Ci.nsIWebProgressListener)
+					|| aIID.equals(Ci.nsISupportsWeakReference)
+					|| aIID.equals(Ci.nsISupports))
+				return this;
+			throw Components.results.NS_NOINTERFACE;
+		},
+
+		onLocationChange : function(aProgress, aRequest, aURI) {
+			onContentChanged();
+		},
+
+		onStateChange : function(aWebProgress, aRequest, aFlag, aStatus) {
+			if ((aFlag & Ci.nsIWebProgressListener.STATE_STOP)
+					&& (aFlag & Ci.nsIWebProgressListener.STATE_IS_WINDOW)) {
+				onContentChanged();
+			}
+		},
+
+		onProgressChange : function(aWebProgress, aRequest, curSelf, maxSelf,
+				curTot, maxTot) {
+		},
+
+		onStatusChange : function(aWebProgress, aRequest, aStatus, aMessage) {
+		},
+
+		onSecurityChange : function(aWebProgress, aRequest, aState) {
+		}
+	};
 
 	function getMainWindow() {
-		return window
-				.QueryInterface(Components.interfaces.nsIInterfaceRequestor)
-				.getInterface(Components.interfaces.nsIWebNavigation)
-				.QueryInterface(Components.interfaces.nsIDocShellTreeItem).rootTreeItem
-				.QueryInterface(Components.interfaces.nsIInterfaceRequestor)
-				.getInterface(Components.interfaces.nsIDOMWindow);
+		return window.QueryInterface(Ci.nsIInterfaceRequestor)
+				.getInterface(Ci.nsIWebNavigation)
+				.QueryInterface(Ci.nsIDocShellTreeItem).rootTreeItem
+				.QueryInterface(Ci.nsIInterfaceRequestor)
+				.getInterface(Ci.nsIDOMWindow);
 	}
 
 	function htmlToText(aStr) {
-		var formatConverter = Components.classes["@mozilla.org/widget/htmlformatconverter;1"]
-				.createInstance(Components.interfaces.nsIFormatConverter);
-		var fromStr = Components.classes["@mozilla.org/supports-string;1"]
-				.createInstance(Components.interfaces.nsISupportsString);
+		var formatConverter = Cc["@mozilla.org/widget/htmlformatconverter;1"]
+				.createInstance(Ci.nsIFormatConverter);
+		var fromStr = Cc["@mozilla.org/supports-string;1"]
+				.createInstance(Ci.nsISupportsString);
 		fromStr.data = aStr;
 		var toStr = {
 			value : null
@@ -74,8 +98,7 @@ const urimSidebar = (function() {
 			return aStr;
 		}
 		if (toStr.value) {
-			toStr = toStr.value
-					.QueryInterface(Components.interfaces.nsISupportsString);
+			toStr = toStr.value.QueryInterface(Ci.nsISupportsString);
 			return toStr.toString();
 		}
 
@@ -83,11 +106,11 @@ const urimSidebar = (function() {
 	}
 
 	function init() {
-		_logger.info("urimSidebar:init");
+		_logger.info("Log path: "
+				+ XULUrimChrome.loggerWrapper.getLogPath());
 		try {
-			getMainWindow().gBrowser.addProgressListener(
-					urimSidebar_stateChangeListener,
-					Components.interfaces.nsIWebProgress.NOTIFY_STATE_DOCUMENT);
+			getMainWindow().gBrowser.addProgressListener(stateChangeListener,
+					Ci.nsIWebProgress.NOTIFY_STATE_DOCUMENT);
 		} catch (ex) {
 			_logger.error(ex);
 		}
@@ -97,7 +120,7 @@ const urimSidebar = (function() {
 	function uninit() {
 		try {
 			getMainWindow().gBrowser
-					.removeProgressListener(urimSidebar_stateChangeListener);
+					.removeProgressListener(stateChangeListener);
 		} catch (ex) {
 			_logger.error(ex);
 		}
@@ -106,7 +129,7 @@ const urimSidebar = (function() {
 
 	function onContentChanged() {
 		try {
-			var isElapsedLoging = Log4Moz.Level.Warn > Log4Moz.repository.rootLogger.level, htmlBuildStart;
+			var isElapsedLoging = XULUrimChrome.loggerWrapper.isElapsedLoging(), htmlBuildStart;
 			var localGbrowser = getMainWindow().gBrowser;
 			var text = localGbrowser.contentWindow.getSelection().toString();
 			if (!text && localGbrowser.webProgress.isLoadingDocument) {
@@ -234,7 +257,8 @@ const urimSidebar = (function() {
 
 			htmlTag.setAttribute("class", "w" + item.font);
 			var uniqueBaseForms = getUniqueBaseForms(value);
-			htmlTag.setAttribute("onmouseup", "urimSidebar.onClickTag(["
+			htmlTag.setAttribute("onmouseup",
+					"XULUrimChrome.urimSidebar.onClickTag(["
 							+ getBaseEntriesAsCharArrayStr(uniqueBaseForms)
 							+ "], event);");
 			htmlTag.setAttribute("href", "#\"" + uniqueBaseForms.join("\",\"")
@@ -298,13 +322,14 @@ const urimSidebar = (function() {
 
 			switch (e.button) {
 				case 0 :
-					gUrimPageHighlighter.FindArrayInPage(tagCharCodesArray, e,
-							getMainWindow(), function(logText) {
+					XULUrimChrome.pageHighlighter.FindArrayInPage(
+							tagCharCodesArray, e, getMainWindow(), function(
+									logText) {
 								_logger.info(logText);
 							});
 					break;
 				case 2 :
-					gUrimPageHighlighter.HighlightArrayInPage(
+					XULUrimChrome.pageHighlighter.HighlightArrayInPage(
 							tagCharCodesArray, getMainWindow(), function(
 									logText) {
 								_logger.info(logText);
@@ -345,7 +370,6 @@ const urimSidebar = (function() {
 	}
 
 	return {
-		onContentChanged : onContentChanged,
 		onClickTag : onClickTag,
 
 		handleEvent : function(event) {
@@ -361,35 +385,5 @@ const urimSidebar = (function() {
 	};
 })();
 
-const urimSidebar_stateChangeListener = {
-	QueryInterface : function(aIID) {
-		if (aIID.equals(Components.interfaces.nsIWebProgressListener)
-				|| aIID.equals(Components.interfaces.nsISupportsWeakReference)
-				|| aIID.equals(Components.interfaces.nsISupports))
-			return this;
-		throw Components.results.NS_NOINTERFACE;
-	},
-
-	onLocationChange : function(aProgress, aRequest, aURI) {
-		urimSidebar.onContentChanged();
-	},
-
-	onStateChange : function(aWebProgress, aRequest, aFlag, aStatus) {
-		if ((aFlag & STATE_STOP) && (aFlag & STATE_IS_WINDOW)) {
-			urimSidebar.onContentChanged();
-		}
-	},
-
-	onProgressChange : function(aWebProgress, aRequest, curSelf, maxSelf,
-			curTot, maxTot) {
-	},
-
-	onStatusChange : function(aWebProgress, aRequest, aStatus, aMessage) {
-	},
-
-	onSecurityChange : function(aWebProgress, aRequest, aState) {
-	}
-};
-
-window.addEventListener("load", urimSidebar, false);
-window.addEventListener("unload", urimSidebar, false);
+window.addEventListener("load", XULUrimChrome.urimSidebar, false);
+window.addEventListener("unload", XULUrimChrome.urimSidebar, false);
