@@ -508,7 +508,7 @@ function EnglishStemmer() {
 		}
 	}
 	this.stem = function() {
-		var v_1 = sbp.cursor, v_2;
+		var v_1 = sbp.cursor;
 		if (!r_exception1()) {
 			sbp.cursor = v_1;
 			var c = sbp.cursor + 3;
@@ -526,8 +526,7 @@ function EnglishStemmer() {
 						sbp.cursor = sbp.limit;
 						habr[i]();
 					}
-				v_2 = sbp.limit_backward;
-				sbp.cursor = v_2;
+				sbp.cursor = sbp.limit_backward;
 				r_postlude();
 			}
 		}
