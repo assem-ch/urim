@@ -35,9 +35,10 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-Components.utils.import("resource://urim/log4moz.js");
-
-XULUrimChrome.loggerWrapper = (function(rootLevel) {
+XULUrimChrome.loggerWrapper = (function() {
+	var scope = {};
+	Components.utils.import("resource://urim/log4moz.js", scope);
+	var Log4Moz = scope.Log4Moz;
 
 	function isLoggingSet() {
 		return Log4Moz.repository.rootLogger.appenders.length;
@@ -48,7 +49,9 @@ XULUrimChrome.loggerWrapper = (function(rootLevel) {
 			var formatter = new Log4Moz.BasicFormatter();
 			var root = Log4Moz.repository.rootLogger;
 
-			root.level = rootLevel;
+			/* Fatal, Error, Warn, Info, Config, Debug, Trace, All */
+
+			root.level = Log4Moz.Level.Warn;
 
 			var capp = new Log4Moz.ConsoleAppender(formatter);
 			capp.level = Log4Moz.Level.All;
@@ -103,7 +106,4 @@ XULUrimChrome.loggerWrapper = (function(rootLevel) {
 			return Log4Moz.Level.Warn > Log4Moz.repository.rootLogger.level;
 		}
 	};
-
-	/* Fatal, Error, Warn, Info, Config, Debug, Trace, All */
-
-})(Log4Moz.Level.Warn);
+})();

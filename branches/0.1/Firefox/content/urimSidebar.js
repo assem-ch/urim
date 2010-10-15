@@ -35,10 +35,12 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-Components.utils.import("resource://urim/StringHashMap.js");
-Components.utils.import("resource://urim/UrimCore.js");
-
 XULUrimChrome.urimSidebar = (function() {
+	var scope = {};
+	Components.utils.import("resource://urim/StringHashMap.js", scope);
+	Components.utils.import("resource://urim/UrimCore.js", scope);
+	var UrimCore = scope.UrimCore, StringHashMap = scope.StringHashMap;
+
 	var _logger = XULUrimChrome.loggerWrapper.getLogger("Urim.urimSidebar");
 	var _urimCore = new UrimCore();
 
@@ -106,8 +108,7 @@ XULUrimChrome.urimSidebar = (function() {
 	}
 
 	function init() {
-		_logger.info("Log path: "
-				+ XULUrimChrome.loggerWrapper.getLogPath());
+		_logger.info("Log path: " + XULUrimChrome.loggerWrapper.getLogPath());
 		try {
 			getMainWindow().gBrowser.addProgressListener(stateChangeListener,
 					Ci.nsIWebProgress.NOTIFY_STATE_DOCUMENT);
