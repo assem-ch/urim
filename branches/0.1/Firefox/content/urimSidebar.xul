@@ -4,7 +4,7 @@
 <?xml-stylesheet href="chrome://urim/skin/urim.css" type="text/css"?>
 
 <?xml-stylesheet href="data:text/css,
-		.vbox-tag-cloud {
+		.urim-vbox-tag-cloud {
 		margin-left: 5px;
 		overflow: hidden;
 	}
@@ -12,9 +12,12 @@
 
 <!DOCTYPE page SYSTEM "chrome://urim/locale/urim.dtd">
 
-<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+<page id="xulurim-sidebar-page" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
 
+	<script type="application/x-javascript" src="chrome://urim/content/XULUrimChrome.js"/>
+	<script type="application/x-javascript" src="chrome://urim/content/loggerWrapper.js"/>
 	<script type="application/x-javascript" src="chrome://urim/content/urimSidebar.js"/>
 	<script type="application/x-javascript" src="chrome://urim/content/pageHighlighter.js"/>
 	<script type="application/x-javascript" src="chrome://urim/content/overflowManager.js"/>
@@ -67,8 +70,8 @@
 	.tag-cloud a.w10  { font-size: 260%; }
 
 	</html:style>
-	<vbox flex="1" pack="center" class="vbox-tag-cloud"
-		onoverflow="gUrimOverflowManager.onOverflow(this, this.firstChild.childNodes[1].childNodes);">
+	<vbox flex="1" pack="center" class="urim-vbox-tag-cloud"
+		onoverflow="XULUrimChrome.overflowManager.onOverflow(this, this.firstChild.childNodes[1].childNodes);">
 		<html:div class="tag-cloud">
 			<html:ul id="urim-tag-cloud" />
 		</html:div>

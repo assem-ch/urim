@@ -35,7 +35,7 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-const gUrimPageHighlighter = (function() {
+XULUrimChrome.pageHighlighter = (function() {
 	var lastTermsFindArray, lastTermsFindRoundArray, lastTermsHighlightArray, findStart, bIgnoreNextBackWrap, isLastResultNotFound, isLastShift;
 
 	function areArraysEquals(array1, array2) {
@@ -44,11 +44,11 @@ const gUrimPageHighlighter = (function() {
 
 	function findResultToHumanStr(result) {
 		switch (result) {
-			case Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND :
+			case Ci.nsITypeAheadFind.FIND_NOTFOUND :
 				return "FIND_NOTFOUND";
-			case Components.interfaces.nsITypeAheadFind.FIND_FOUND :
+			case Ci.nsITypeAheadFind.FIND_FOUND :
 				return "FIND_FOUND";
-			case Components.interfaces.nsITypeAheadFind.FIND_WRAPPED :
+			case Ci.nsITypeAheadFind.FIND_WRAPPED :
 				return "FIND_WRAPPED";
 		}
 	}
@@ -160,8 +160,8 @@ const gUrimPageHighlighter = (function() {
 
 				/* Ignore backward search FIND_WRAPPED - do not change find term */
 
-				if (res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED
-						&& e.shiftKey && bIgnoreNextBackWrap) {
+				if (res == Ci.nsITypeAheadFind.FIND_WRAPPED && e.shiftKey
+						&& bIgnoreNextBackWrap) {
 					if (log)
 						log("Ignore wrap '" + term + "' : "
 								+ findResultToHumanStr(res));
@@ -176,8 +176,8 @@ const gUrimPageHighlighter = (function() {
 				if (log)
 					log("'" + term + "' : " + findResultToHumanStr(res));
 
-				if (res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND
-						|| res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED) {
+				if (res == Ci.nsITypeAheadFind.FIND_NOTFOUND
+						|| res == Ci.nsITypeAheadFind.FIND_WRAPPED) {
 
 					/*
 					 * This is special case situation. If item not found, it
@@ -187,20 +187,19 @@ const gUrimPageHighlighter = (function() {
 					 * found too.
 					 */
 
-					if (isLastResultNotFound
-							&& isLastShift != e.shiftKey
-							&& res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND) {
+					if (isLastResultNotFound && isLastShift != e.shiftKey
+							&& res == Ci.nsITypeAheadFind.FIND_NOTFOUND) {
 						if (log)
 							log("'" + term + "' : Special case - skip");
 						callback();
 					}
 
-					isLastResultNotFound = res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND;
+					isLastResultNotFound = res == Ci.nsITypeAheadFind.FIND_NOTFOUND;
 					isLastShift = e.shiftKey;
 
 					callback();
 
-					if (res == Components.interfaces.nsITypeAheadFind.FIND_WRAPPED) {
+					if (res == Ci.nsITypeAheadFind.FIND_WRAPPED) {
 						mainWindow.gBrowser.contentWindow.getSelection()
 								.removeAllRanges();
 
@@ -219,7 +218,7 @@ const gUrimPageHighlighter = (function() {
 				} else
 					bIgnoreNextBackWrap = false;
 
-				isLastResultNotFound = res == Components.interfaces.nsITypeAheadFind.FIND_NOTFOUND;
+				isLastResultNotFound = res == Ci.nsITypeAheadFind.FIND_NOTFOUND;
 				isLastShift = e.shiftKey;
 
 				return term;

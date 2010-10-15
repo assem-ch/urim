@@ -34,11 +34,9 @@
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
  * ***** END LICENSE BLOCK ***** */
- 
-Components.utils.import("resource://urim/log4moz.js");
 
-const gUrimOverflowManager = (function() {
-	const _logger = Log4Moz.repository.getLogger("Urim.overflowManager");
+XULUrimChrome.overflowManager = (function() {
+	var _logger = XULUrimChrome.loggerWrapper.getLogger("Urim.overflowManager");
 
 	var _modifiedChilds = [];
 	var _lastWindowInnerWidth, _lastWindowInnerHeight;
