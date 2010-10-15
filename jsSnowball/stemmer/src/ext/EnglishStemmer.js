@@ -52,7 +52,7 @@ return false;}
 function r_postlude(){var v_1;if(B_Y_found){while(true){v_1=sbp.cursor;sbp.bra=v_1;if(sbp.eq_s(1,"Y")){sbp.ket=sbp.cursor;sbp.cursor=v_1;sbp.slice_from("y");continue;}
 sbp.cursor=v_1;if(sbp.cursor>=sbp.limit)
 return;sbp.cursor++;}}}
-this.stem=function(){var v_1=sbp.cursor,v_2;if(!r_exception1()){sbp.cursor=v_1;var c=sbp.cursor+3;if(0<=c&&c<=sbp.limit){sbp.cursor=v_1;r_prelude();sbp.cursor=v_1;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_Step_1a();sbp.cursor=sbp.limit;if(!r_exception2())
+this.stem=function(){var v_1=sbp.cursor;if(!r_exception1()){sbp.cursor=v_1;var c=sbp.cursor+3;if(0<=c&&c<=sbp.limit){sbp.cursor=v_1;r_prelude();sbp.cursor=v_1;r_mark_regions();sbp.limit_backward=v_1;sbp.cursor=sbp.limit;r_Step_1a();sbp.cursor=sbp.limit;if(!r_exception2())
 for(var i=0;i<habr.length;i++){sbp.cursor=sbp.limit;habr[i]();}
-v_2=sbp.limit_backward;sbp.cursor=v_2;r_postlude();}}
+sbp.cursor=sbp.limit_backward;r_postlude();}}
 return true;}}
