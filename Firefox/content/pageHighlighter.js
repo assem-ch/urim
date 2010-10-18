@@ -36,6 +36,7 @@
  * ***** END LICENSE BLOCK ***** */
 
 XULUrimChrome.pageHighlighter = (function() {
+	var CinsITAF = Components.interfaces.nsITypeAheadFind;
 	var lastTermsFindArray, lastTermsFindRoundArray, lastTermsHighlightArray, findStart, bIgnoreNextBackWrap, isLastResultNotFound, isLastShift;
 
 	function areArraysEquals(array1, array2) {
@@ -44,11 +45,11 @@ XULUrimChrome.pageHighlighter = (function() {
 
 	function findResultToHumanStr(result) {
 		switch (result) {
-			case Ci.nsITypeAheadFind.FIND_NOTFOUND :
+			case CinsITAF.FIND_NOTFOUND :
 				return "FIND_NOTFOUND";
-			case Ci.nsITypeAheadFind.FIND_FOUND :
+			case CinsITAF.FIND_FOUND :
 				return "FIND_FOUND";
-			case Ci.nsITypeAheadFind.FIND_WRAPPED :
+			case CinsITAF.FIND_WRAPPED :
 				return "FIND_WRAPPED";
 		}
 	}
@@ -160,7 +161,7 @@ XULUrimChrome.pageHighlighter = (function() {
 
 				/* Ignore backward search FIND_WRAPPED - do not change find term */
 
-				if (res == Ci.nsITypeAheadFind.FIND_WRAPPED && e.shiftKey
+				if (res == CinsITAF.FIND_WRAPPED && e.shiftKey
 						&& bIgnoreNextBackWrap) {
 					if (log)
 						log("Ignore wrap '" + term + "' : "
@@ -176,8 +177,8 @@ XULUrimChrome.pageHighlighter = (function() {
 				if (log)
 					log("'" + term + "' : " + findResultToHumanStr(res));
 
-				if (res == Ci.nsITypeAheadFind.FIND_NOTFOUND
-						|| res == Ci.nsITypeAheadFind.FIND_WRAPPED) {
+				if (res == CinsITAF.FIND_NOTFOUND
+						|| res == CinsITAF.FIND_WRAPPED) {
 
 					/*
 					 * This is special case situation. If item not found, it
@@ -188,18 +189,18 @@ XULUrimChrome.pageHighlighter = (function() {
 					 */
 
 					if (isLastResultNotFound && isLastShift != e.shiftKey
-							&& res == Ci.nsITypeAheadFind.FIND_NOTFOUND) {
+							&& res == CinsITAF.FIND_NOTFOUND) {
 						if (log)
 							log("'" + term + "' : Special case - skip");
 						callback();
 					}
 
-					isLastResultNotFound = res == Ci.nsITypeAheadFind.FIND_NOTFOUND;
+					isLastResultNotFound = res == CinsITAF.FIND_NOTFOUND;
 					isLastShift = e.shiftKey;
 
 					callback();
 
-					if (res == Ci.nsITypeAheadFind.FIND_WRAPPED) {
+					if (res == CinsITAF.FIND_WRAPPED) {
 						mainWindow.gBrowser.contentWindow.getSelection()
 								.removeAllRanges();
 
@@ -218,7 +219,7 @@ XULUrimChrome.pageHighlighter = (function() {
 				} else
 					bIgnoreNextBackWrap = false;
 
-				isLastResultNotFound = res == Ci.nsITypeAheadFind.FIND_NOTFOUND;
+				isLastResultNotFound = res == CinsITAF.FIND_NOTFOUND;
 				isLastShift = e.shiftKey;
 
 				return term;

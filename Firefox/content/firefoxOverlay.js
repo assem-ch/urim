@@ -36,16 +36,20 @@
  * ***** END LICENSE BLOCK ***** */
 
 XULUrimChrome.firefoxOverlay = {
-
 	constUrimButtonId : "urim-browser-xul-toolbar-button",
+
+	reportError : function(ex) {
+		var consoleService = Components.classes["@mozilla.org/consoleservice;1"]
+				.getService(Components.interfaces.nsIConsoleService);
+		consoleService.logStringMessage("ERROR XULUrimChrome.firefoxOverlay: "
+				+ ex);
+	},
 
 	init : function() {
 		try {
 			this.addToolbarButton();
 		} catch (ex) {
-			var consoleService = Ci["@mozilla.org/consoleservice;1"]
-					.getService(Ci.nsIConsoleService);
-			consoleService.logStringMessage(ex);
+			this.reportError(ex);
 		}
 	},
 
@@ -86,9 +90,7 @@ XULUrimChrome.firefoxOverlay = {
 					try {
 						BrowserToolboxCustomizeDone(true);
 					} catch (ex) {
-						var consoleService = Cc["@mozilla.org/consoleservice;1"]
-								.getService(Ci.nsIConsoleService);
-						consoleService.logStringMessage(ex);
+						this.reportError(ex);
 					}
 					break;
 				}
