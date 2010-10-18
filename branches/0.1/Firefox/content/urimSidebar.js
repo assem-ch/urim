@@ -36,6 +36,8 @@
  * ***** END LICENSE BLOCK ***** */
 
 XULUrimChrome.urimSidebar = (function() {
+	var Cc = Components.classes, Ci = Components.interfaces;
+
 	var scope = {};
 	Components.utils.import("resource://urim/StringHashMap.js", scope);
 	Components.utils.import("resource://urim/UrimCore.js", scope);

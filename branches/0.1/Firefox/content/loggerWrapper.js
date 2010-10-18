@@ -36,6 +36,8 @@
  * ***** END LICENSE BLOCK ***** */
 
 XULUrimChrome.loggerWrapper = (function() {
+	var Cc = Components.classes, Ci = Components.interfaces;
+
 	var scope = {};
 	Components.utils.import("resource://urim/log4moz.js", scope);
 	var Log4Moz = scope.Log4Moz;

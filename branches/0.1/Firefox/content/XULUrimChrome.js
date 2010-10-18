@@ -35,14 +35,6 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-if ("undefined" == typeof(Cc)) {
-	var Cc = Components.classes;
-};
-
-if ("undefined" == typeof(Ci)) {
-	var Ci = Components.interfaces;
-};
-
 /*******************************************************************************
  * XULUrimChrome namespace.
  * https://developer.mozilla.org/en/XUL_School/JavaScript_Object_Management
