@@ -179,3 +179,5 @@
 ----
 =[http://code.google.com/p/urim/ Urim]=
 [http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim_small.png]
+
+Тему Скарлет на скриншоте можно взять [http://www.getpersonas.com/en-US/persona/115994 тут]
