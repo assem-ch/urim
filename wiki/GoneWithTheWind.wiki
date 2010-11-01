@@ -178,10 +178,10 @@
 
 ----
 =[http://code.google.com/p/urim/ Urim]=
-[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/cloud.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/cloud.png]
-[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Win/find.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/find.png]
-[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/hightight.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/hightight.png]
-[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/selection.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/selection.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/cloud.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/Small/cloud.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/find.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/Small/find.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/hightight.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/Small/hightight.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/selection.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/Small/selection.png]
 
 
 [http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim_small.png]
