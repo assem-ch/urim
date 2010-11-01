@@ -178,6 +178,12 @@
 
 ----
 =[http://code.google.com/p/urim/ Urim]=
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/cloud.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/cloud.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Win/find.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/find.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/hightight.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/hightight.png]
+[http://urim.googlecode.com/svn/wiki/images/GonneWithWind/selection.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/Small/selection.png]
+
+
 [http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim.png http://urim.googlecode.com/svn/wiki/images/GonneWithWind/urim/urim_small.png]
 
 Тему Скарлет на скриншоте можно взять [http://www.getpersonas.com/en-US/persona/115994 тут]
