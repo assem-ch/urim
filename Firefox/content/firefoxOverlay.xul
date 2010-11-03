@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://urim/locale/urim.dtd">
+<overlay id="xulurim-browser-overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://urim/content/XULUrimChrome.js"/>
+	<script type="application/x-javascript" src="chrome://urim/content/firefoxOverlay.js"/>
+
+	<menupopup id="viewSidebarMenu">
+		<menuitem key="xulurim-key-opensidebar" observes="xulurim-sidebar-broadcaster"/>
+	</menupopup>
+
+	<menupopup id="menu_ToolsPopup">
+		<menuitem key="xulurim-key-opensidebar" observes="xulurim-sidebar-broadcaster" position="1"/>
+	</menupopup>
+
+	<keyset>
+		<key id="xulurim-key-opensidebar" observes="xulurim-sidebar-broadcaster"
+			modifiers="alt shift" key="U"/>
+	</keyset>
+
+	<broadcasterset>
+		<broadcaster id="xulurim-sidebar-broadcaster"
+			label="&xulurim.menu.label;"
+			autoCheck="false"
+			type="checkbox"
+			group="sidebar"
+			sidebarurl="chrome://urim/content/urimSidebar.xul"
+			sidebartitle="&xulurim.sidebar.title;"
+			oncommand="toggleSidebar('xulurim-sidebar-broadcaster');"/>
+	</broadcasterset>
+
+	<toolbox id="navigator-toolbox">
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="urim-browser-xul-toolbar-button" tooltiptext="&xulurim.toolbarbutton.tooltip;" observes="xulurim-sidebar-broadcaster" class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+		</toolbarpalette>
+	</toolbox>
+</overlay>
