@@ -1,0 +1,5 @@
+List:
+	https://addons.mozilla.org/en-US/firefox/pages/appversions/
+
+Download:
+	http://www.mozilla-russia.org/products/firefox/history.html

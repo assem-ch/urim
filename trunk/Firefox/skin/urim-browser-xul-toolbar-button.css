@@ -1,0 +1,29 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#urim-browser-xul-toolbar-button{
+	list-style-image: url("chrome://urim/skin/png/toolbar/urim-button-toolbar-24.png");
+}
+
+#urim-browser-xul-toolbar-button{
+	-moz-image-region: rect(24px, 24px, 48px, 0px);
+}
+
+#urim-browser-xul-toolbar-button:not([disabled="true"]):hover {
+	-moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+#urim-browser-xul-toolbar-button[disabled="true"] {
+	-moz-image-region: rect(48px, 24px, 72px, 0px);
+}
+
+toolbar[iconsize="small"] #urim-browser-xul-toolbar-button{
+	-moz-image-region: rect(28px, 20px, 44px, 4px);
+}
+
+toolbar[iconsize="small"] #urim-browser-xul-toolbar-button:not([disabled="true"]):hover {
+	-moz-image-region: rect(4px, 20px, 20px, 4px);
+}
+
+toolbar[iconsize="small"] #urim-browser-xul-toolbar-button[disabled="true"] {
+	-moz-image-region: rect(52px, 20px, 68px, 4px);
+}
