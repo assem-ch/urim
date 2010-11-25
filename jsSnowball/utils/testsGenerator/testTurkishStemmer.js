@@ -97518,11 +97518,11 @@ var turkishTestDiffs385 = {
 	"\u0161nemli" : "\u0161nemli"
 };
 
-var testturkish385 = function() {
+function diffsTemplateTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs385) {
+	for (var sVoc in testDiffs) {
 		total++;
-		var base = turkishTestDiffs385[sVoc];
+		var base = testDiffs[sVoc];
 		var stem = stemmer(sVoc);
 		if (base != stem) {
 			fails++;
@@ -97536,6932 +97536,1546 @@ var testturkish385 = function() {
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
-var testturkish384 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs384) {
-		total++;
-		var base = turkishTestDiffs384[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish383 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs383) {
-		total++;
-		var base = turkishTestDiffs383[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish382 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs382) {
-		total++;
-		var base = turkishTestDiffs382[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish381 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs381) {
-		total++;
-		var base = turkishTestDiffs381[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish380 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs380) {
-		total++;
-		var base = turkishTestDiffs380[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish379 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs379) {
-		total++;
-		var base = turkishTestDiffs379[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish378 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs378) {
-		total++;
-		var base = turkishTestDiffs378[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish377 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs377) {
-		total++;
-		var base = turkishTestDiffs377[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish376 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs376) {
-		total++;
-		var base = turkishTestDiffs376[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish375 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs375) {
-		total++;
-		var base = turkishTestDiffs375[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish374 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs374) {
-		total++;
-		var base = turkishTestDiffs374[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish373 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs373) {
-		total++;
-		var base = turkishTestDiffs373[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish372 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs372) {
-		total++;
-		var base = turkishTestDiffs372[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish371 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs371) {
-		total++;
-		var base = turkishTestDiffs371[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish370 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs370) {
-		total++;
-		var base = turkishTestDiffs370[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish369 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs369) {
-		total++;
-		var base = turkishTestDiffs369[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish368 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs368) {
-		total++;
-		var base = turkishTestDiffs368[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish367 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs367) {
-		total++;
-		var base = turkishTestDiffs367[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish366 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs366) {
-		total++;
-		var base = turkishTestDiffs366[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish365 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs365) {
-		total++;
-		var base = turkishTestDiffs365[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish364 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs364) {
-		total++;
-		var base = turkishTestDiffs364[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish363 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs363) {
-		total++;
-		var base = turkishTestDiffs363[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish362 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs362) {
-		total++;
-		var base = turkishTestDiffs362[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish361 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs361) {
-		total++;
-		var base = turkishTestDiffs361[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish360 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs360) {
-		total++;
-		var base = turkishTestDiffs360[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish359 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs359) {
-		total++;
-		var base = turkishTestDiffs359[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish358 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs358) {
-		total++;
-		var base = turkishTestDiffs358[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish357 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs357) {
-		total++;
-		var base = turkishTestDiffs357[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish356 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs356) {
-		total++;
-		var base = turkishTestDiffs356[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish355 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs355) {
-		total++;
-		var base = turkishTestDiffs355[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish354 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs354) {
-		total++;
-		var base = turkishTestDiffs354[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish353 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs353) {
-		total++;
-		var base = turkishTestDiffs353[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish352 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs352) {
-		total++;
-		var base = turkishTestDiffs352[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish351 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs351) {
-		total++;
-		var base = turkishTestDiffs351[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish350 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs350) {
-		total++;
-		var base = turkishTestDiffs350[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish349 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs349) {
-		total++;
-		var base = turkishTestDiffs349[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish348 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs348) {
-		total++;
-		var base = turkishTestDiffs348[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish347 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs347) {
-		total++;
-		var base = turkishTestDiffs347[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish346 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs346) {
-		total++;
-		var base = turkishTestDiffs346[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish345 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs345) {
-		total++;
-		var base = turkishTestDiffs345[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish344 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs344) {
-		total++;
-		var base = turkishTestDiffs344[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish343 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs343) {
-		total++;
-		var base = turkishTestDiffs343[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish342 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs342) {
-		total++;
-		var base = turkishTestDiffs342[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish341 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs341) {
-		total++;
-		var base = turkishTestDiffs341[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish340 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs340) {
-		total++;
-		var base = turkishTestDiffs340[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish339 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs339) {
-		total++;
-		var base = turkishTestDiffs339[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish338 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs338) {
-		total++;
-		var base = turkishTestDiffs338[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish337 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs337) {
-		total++;
-		var base = turkishTestDiffs337[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish336 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs336) {
-		total++;
-		var base = turkishTestDiffs336[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish335 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs335) {
-		total++;
-		var base = turkishTestDiffs335[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish334 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs334) {
-		total++;
-		var base = turkishTestDiffs334[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish333 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs333) {
-		total++;
-		var base = turkishTestDiffs333[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish332 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs332) {
-		total++;
-		var base = turkishTestDiffs332[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish331 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs331) {
-		total++;
-		var base = turkishTestDiffs331[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish330 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs330) {
-		total++;
-		var base = turkishTestDiffs330[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish329 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs329) {
-		total++;
-		var base = turkishTestDiffs329[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish328 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs328) {
-		total++;
-		var base = turkishTestDiffs328[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish327 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs327) {
-		total++;
-		var base = turkishTestDiffs327[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish326 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs326) {
-		total++;
-		var base = turkishTestDiffs326[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish325 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs325) {
-		total++;
-		var base = turkishTestDiffs325[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish324 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs324) {
-		total++;
-		var base = turkishTestDiffs324[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish323 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs323) {
-		total++;
-		var base = turkishTestDiffs323[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish322 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs322) {
-		total++;
-		var base = turkishTestDiffs322[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish321 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs321) {
-		total++;
-		var base = turkishTestDiffs321[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish320 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs320) {
-		total++;
-		var base = turkishTestDiffs320[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish319 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs319) {
-		total++;
-		var base = turkishTestDiffs319[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish318 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs318) {
-		total++;
-		var base = turkishTestDiffs318[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish317 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs317) {
-		total++;
-		var base = turkishTestDiffs317[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish316 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs316) {
-		total++;
-		var base = turkishTestDiffs316[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish315 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs315) {
-		total++;
-		var base = turkishTestDiffs315[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish314 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs314) {
-		total++;
-		var base = turkishTestDiffs314[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish313 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs313) {
-		total++;
-		var base = turkishTestDiffs313[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish312 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs312) {
-		total++;
-		var base = turkishTestDiffs312[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish311 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs311) {
-		total++;
-		var base = turkishTestDiffs311[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish310 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs310) {
-		total++;
-		var base = turkishTestDiffs310[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish309 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs309) {
-		total++;
-		var base = turkishTestDiffs309[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish308 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs308) {
-		total++;
-		var base = turkishTestDiffs308[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish307 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs307) {
-		total++;
-		var base = turkishTestDiffs307[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish306 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs306) {
-		total++;
-		var base = turkishTestDiffs306[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testturkish305 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs305) {
-		total++;
-		var base = turkishTestDiffs305[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish385 = function() {
+	diffsTemplateTest(turkishTestDiffs385);
 }
 
-var testturkish304 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs304) {
-		total++;
-		var base = turkishTestDiffs304[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish384 = function() {
+	diffsTemplateTest(turkishTestDiffs384);
 }
 
-var testturkish303 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs303) {
-		total++;
-		var base = turkishTestDiffs303[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish383 = function() {
+	diffsTemplateTest(turkishTestDiffs383);
 }
 
-var testturkish302 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs302) {
-		total++;
-		var base = turkishTestDiffs302[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish382 = function() {
+	diffsTemplateTest(turkishTestDiffs382);
 }
 
-var testturkish301 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs301) {
-		total++;
-		var base = turkishTestDiffs301[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish381 = function() {
+	diffsTemplateTest(turkishTestDiffs381);
 }
 
-var testturkish300 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs300) {
-		total++;
-		var base = turkishTestDiffs300[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish380 = function() {
+	diffsTemplateTest(turkishTestDiffs380);
 }
 
-var testturkish299 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs299) {
-		total++;
-		var base = turkishTestDiffs299[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish379 = function() {
+	diffsTemplateTest(turkishTestDiffs379);
 }
 
-var testturkish298 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs298) {
-		total++;
-		var base = turkishTestDiffs298[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish378 = function() {
+	diffsTemplateTest(turkishTestDiffs378);
 }
 
-var testturkish297 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs297) {
-		total++;
-		var base = turkishTestDiffs297[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish377 = function() {
+	diffsTemplateTest(turkishTestDiffs377);
 }
 
-var testturkish296 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs296) {
-		total++;
-		var base = turkishTestDiffs296[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish376 = function() {
+	diffsTemplateTest(turkishTestDiffs376);
 }
 
-var testturkish295 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs295) {
-		total++;
-		var base = turkishTestDiffs295[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish375 = function() {
+	diffsTemplateTest(turkishTestDiffs375);
 }
 
-var testturkish294 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs294) {
-		total++;
-		var base = turkishTestDiffs294[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish374 = function() {
+	diffsTemplateTest(turkishTestDiffs374);
 }
 
-var testturkish293 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs293) {
-		total++;
-		var base = turkishTestDiffs293[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish373 = function() {
+	diffsTemplateTest(turkishTestDiffs373);
 }
 
-var testturkish292 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs292) {
-		total++;
-		var base = turkishTestDiffs292[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish372 = function() {
+	diffsTemplateTest(turkishTestDiffs372);
 }
 
-var testturkish291 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs291) {
-		total++;
-		var base = turkishTestDiffs291[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish371 = function() {
+	diffsTemplateTest(turkishTestDiffs371);
 }
 
-var testturkish290 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs290) {
-		total++;
-		var base = turkishTestDiffs290[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish370 = function() {
+	diffsTemplateTest(turkishTestDiffs370);
 }
 
-var testturkish289 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs289) {
-		total++;
-		var base = turkishTestDiffs289[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish369 = function() {
+	diffsTemplateTest(turkishTestDiffs369);
 }
 
-var testturkish288 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs288) {
-		total++;
-		var base = turkishTestDiffs288[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish368 = function() {
+	diffsTemplateTest(turkishTestDiffs368);
 }
 
-var testturkish287 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs287) {
-		total++;
-		var base = turkishTestDiffs287[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish367 = function() {
+	diffsTemplateTest(turkishTestDiffs367);
 }
 
-var testturkish286 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs286) {
-		total++;
-		var base = turkishTestDiffs286[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish366 = function() {
+	diffsTemplateTest(turkishTestDiffs366);
 }
 
-var testturkish285 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs285) {
-		total++;
-		var base = turkishTestDiffs285[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish365 = function() {
+	diffsTemplateTest(turkishTestDiffs365);
+}
+
+var testTurkish364 = function() {
+	diffsTemplateTest(turkishTestDiffs364);
+}
+
+var testTurkish363 = function() {
+	diffsTemplateTest(turkishTestDiffs363);
+}
+
+var testTurkish362 = function() {
+	diffsTemplateTest(turkishTestDiffs362);
+}
+
+var testTurkish361 = function() {
+	diffsTemplateTest(turkishTestDiffs361);
+}
+
+var testTurkish360 = function() {
+	diffsTemplateTest(turkishTestDiffs360);
 }
 
-var testturkish284 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs284) {
-		total++;
-		var base = turkishTestDiffs284[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish359 = function() {
+	diffsTemplateTest(turkishTestDiffs359);
 }
 
-var testturkish283 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs283) {
-		total++;
-		var base = turkishTestDiffs283[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish358 = function() {
+	diffsTemplateTest(turkishTestDiffs358);
 }
 
-var testturkish282 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs282) {
-		total++;
-		var base = turkishTestDiffs282[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish357 = function() {
+	diffsTemplateTest(turkishTestDiffs357);
 }
 
-var testturkish281 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs281) {
-		total++;
-		var base = turkishTestDiffs281[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish356 = function() {
+	diffsTemplateTest(turkishTestDiffs356);
 }
 
-var testturkish280 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs280) {
-		total++;
-		var base = turkishTestDiffs280[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish355 = function() {
+	diffsTemplateTest(turkishTestDiffs355);
 }
 
-var testturkish279 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs279) {
-		total++;
-		var base = turkishTestDiffs279[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish354 = function() {
+	diffsTemplateTest(turkishTestDiffs354);
 }
 
-var testturkish278 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs278) {
-		total++;
-		var base = turkishTestDiffs278[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish353 = function() {
+	diffsTemplateTest(turkishTestDiffs353);
 }
 
-var testturkish277 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs277) {
-		total++;
-		var base = turkishTestDiffs277[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish352 = function() {
+	diffsTemplateTest(turkishTestDiffs352);
 }
 
-var testturkish276 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs276) {
-		total++;
-		var base = turkishTestDiffs276[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish351 = function() {
+	diffsTemplateTest(turkishTestDiffs351);
 }
 
-var testturkish275 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs275) {
-		total++;
-		var base = turkishTestDiffs275[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish350 = function() {
+	diffsTemplateTest(turkishTestDiffs350);
 }
 
-var testturkish274 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs274) {
-		total++;
-		var base = turkishTestDiffs274[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish349 = function() {
+	diffsTemplateTest(turkishTestDiffs349);
 }
 
-var testturkish273 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs273) {
-		total++;
-		var base = turkishTestDiffs273[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish348 = function() {
+	diffsTemplateTest(turkishTestDiffs348);
 }
 
-var testturkish272 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs272) {
-		total++;
-		var base = turkishTestDiffs272[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish347 = function() {
+	diffsTemplateTest(turkishTestDiffs347);
 }
 
-var testturkish271 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs271) {
-		total++;
-		var base = turkishTestDiffs271[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish346 = function() {
+	diffsTemplateTest(turkishTestDiffs346);
 }
 
-var testturkish270 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs270) {
-		total++;
-		var base = turkishTestDiffs270[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish345 = function() {
+	diffsTemplateTest(turkishTestDiffs345);
 }
 
-var testturkish269 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs269) {
-		total++;
-		var base = turkishTestDiffs269[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish344 = function() {
+	diffsTemplateTest(turkishTestDiffs344);
 }
 
-var testturkish268 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs268) {
-		total++;
-		var base = turkishTestDiffs268[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish343 = function() {
+	diffsTemplateTest(turkishTestDiffs343);
 }
 
-var testturkish267 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs267) {
-		total++;
-		var base = turkishTestDiffs267[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish342 = function() {
+	diffsTemplateTest(turkishTestDiffs342);
 }
 
-var testturkish266 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs266) {
-		total++;
-		var base = turkishTestDiffs266[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish341 = function() {
+	diffsTemplateTest(turkishTestDiffs341);
+}
+
+var testTurkish340 = function() {
+	diffsTemplateTest(turkishTestDiffs340);
+}
+
+var testTurkish339 = function() {
+	diffsTemplateTest(turkishTestDiffs339);
+}
+
+var testTurkish338 = function() {
+	diffsTemplateTest(turkishTestDiffs338);
+}
+
+var testTurkish337 = function() {
+	diffsTemplateTest(turkishTestDiffs337);
+}
+
+var testTurkish336 = function() {
+	diffsTemplateTest(turkishTestDiffs336);
 }
 
-var testturkish265 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs265) {
-		total++;
-		var base = turkishTestDiffs265[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish335 = function() {
+	diffsTemplateTest(turkishTestDiffs335);
 }
 
-var testturkish264 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs264) {
-		total++;
-		var base = turkishTestDiffs264[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish334 = function() {
+	diffsTemplateTest(turkishTestDiffs334);
 }
 
-var testturkish263 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs263) {
-		total++;
-		var base = turkishTestDiffs263[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish333 = function() {
+	diffsTemplateTest(turkishTestDiffs333);
 }
 
-var testturkish262 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs262) {
-		total++;
-		var base = turkishTestDiffs262[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish332 = function() {
+	diffsTemplateTest(turkishTestDiffs332);
 }
 
-var testturkish261 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs261) {
-		total++;
-		var base = turkishTestDiffs261[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish331 = function() {
+	diffsTemplateTest(turkishTestDiffs331);
 }
 
-var testturkish260 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs260) {
-		total++;
-		var base = turkishTestDiffs260[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish330 = function() {
+	diffsTemplateTest(turkishTestDiffs330);
 }
 
-var testturkish259 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs259) {
-		total++;
-		var base = turkishTestDiffs259[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish329 = function() {
+	diffsTemplateTest(turkishTestDiffs329);
 }
 
-var testturkish258 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs258) {
-		total++;
-		var base = turkishTestDiffs258[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish328 = function() {
+	diffsTemplateTest(turkishTestDiffs328);
 }
 
-var testturkish257 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs257) {
-		total++;
-		var base = turkishTestDiffs257[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish327 = function() {
+	diffsTemplateTest(turkishTestDiffs327);
 }
 
-var testturkish256 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs256) {
-		total++;
-		var base = turkishTestDiffs256[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish326 = function() {
+	diffsTemplateTest(turkishTestDiffs326);
 }
 
-var testturkish255 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs255) {
-		total++;
-		var base = turkishTestDiffs255[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish325 = function() {
+	diffsTemplateTest(turkishTestDiffs325);
 }
 
-var testturkish254 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs254) {
-		total++;
-		var base = turkishTestDiffs254[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish324 = function() {
+	diffsTemplateTest(turkishTestDiffs324);
 }
 
-var testturkish253 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs253) {
-		total++;
-		var base = turkishTestDiffs253[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish323 = function() {
+	diffsTemplateTest(turkishTestDiffs323);
 }
 
-var testturkish252 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs252) {
-		total++;
-		var base = turkishTestDiffs252[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish322 = function() {
+	diffsTemplateTest(turkishTestDiffs322);
 }
 
-var testturkish251 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs251) {
-		total++;
-		var base = turkishTestDiffs251[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish321 = function() {
+	diffsTemplateTest(turkishTestDiffs321);
 }
 
-var testturkish250 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs250) {
-		total++;
-		var base = turkishTestDiffs250[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish320 = function() {
+	diffsTemplateTest(turkishTestDiffs320);
 }
 
-var testturkish249 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs249) {
-		total++;
-		var base = turkishTestDiffs249[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish319 = function() {
+	diffsTemplateTest(turkishTestDiffs319);
 }
 
-var testturkish248 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs248) {
-		total++;
-		var base = turkishTestDiffs248[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish318 = function() {
+	diffsTemplateTest(turkishTestDiffs318);
 }
 
-var testturkish247 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs247) {
-		total++;
-		var base = turkishTestDiffs247[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish317 = function() {
+	diffsTemplateTest(turkishTestDiffs317);
+}
+
+var testTurkish316 = function() {
+	diffsTemplateTest(turkishTestDiffs316);
+}
+
+var testTurkish315 = function() {
+	diffsTemplateTest(turkishTestDiffs315);
+}
+
+var testTurkish314 = function() {
+	diffsTemplateTest(turkishTestDiffs314);
+}
+
+var testTurkish313 = function() {
+	diffsTemplateTest(turkishTestDiffs313);
+}
+
+var testTurkish312 = function() {
+	diffsTemplateTest(turkishTestDiffs312);
 }
 
-var testturkish246 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs246) {
-		total++;
-		var base = turkishTestDiffs246[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish311 = function() {
+	diffsTemplateTest(turkishTestDiffs311);
 }
 
-var testturkish245 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs245) {
-		total++;
-		var base = turkishTestDiffs245[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish310 = function() {
+	diffsTemplateTest(turkishTestDiffs310);
 }
 
-var testturkish244 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs244) {
-		total++;
-		var base = turkishTestDiffs244[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish309 = function() {
+	diffsTemplateTest(turkishTestDiffs309);
 }
 
-var testturkish243 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs243) {
-		total++;
-		var base = turkishTestDiffs243[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish308 = function() {
+	diffsTemplateTest(turkishTestDiffs308);
 }
 
-var testturkish242 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs242) {
-		total++;
-		var base = turkishTestDiffs242[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish307 = function() {
+	diffsTemplateTest(turkishTestDiffs307);
 }
 
-var testturkish241 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs241) {
-		total++;
-		var base = turkishTestDiffs241[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish306 = function() {
+	diffsTemplateTest(turkishTestDiffs306);
 }
 
-var testturkish240 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs240) {
-		total++;
-		var base = turkishTestDiffs240[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish305 = function() {
+	diffsTemplateTest(turkishTestDiffs305);
 }
 
-var testturkish239 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs239) {
-		total++;
-		var base = turkishTestDiffs239[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish304 = function() {
+	diffsTemplateTest(turkishTestDiffs304);
 }
 
-var testturkish238 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs238) {
-		total++;
-		var base = turkishTestDiffs238[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish303 = function() {
+	diffsTemplateTest(turkishTestDiffs303);
 }
 
-var testturkish237 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs237) {
-		total++;
-		var base = turkishTestDiffs237[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish302 = function() {
+	diffsTemplateTest(turkishTestDiffs302);
 }
 
-var testturkish236 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs236) {
-		total++;
-		var base = turkishTestDiffs236[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish301 = function() {
+	diffsTemplateTest(turkishTestDiffs301);
 }
 
-var testturkish235 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs235) {
-		total++;
-		var base = turkishTestDiffs235[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish300 = function() {
+	diffsTemplateTest(turkishTestDiffs300);
 }
 
-var testturkish234 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs234) {
-		total++;
-		var base = turkishTestDiffs234[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish299 = function() {
+	diffsTemplateTest(turkishTestDiffs299);
 }
 
-var testturkish233 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs233) {
-		total++;
-		var base = turkishTestDiffs233[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish298 = function() {
+	diffsTemplateTest(turkishTestDiffs298);
 }
 
-var testturkish232 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs232) {
-		total++;
-		var base = turkishTestDiffs232[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish297 = function() {
+	diffsTemplateTest(turkishTestDiffs297);
 }
 
-var testturkish231 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs231) {
-		total++;
-		var base = turkishTestDiffs231[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish296 = function() {
+	diffsTemplateTest(turkishTestDiffs296);
 }
 
-var testturkish230 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs230) {
-		total++;
-		var base = turkishTestDiffs230[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish295 = function() {
+	diffsTemplateTest(turkishTestDiffs295);
 }
 
-var testturkish229 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs229) {
-		total++;
-		var base = turkishTestDiffs229[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish294 = function() {
+	diffsTemplateTest(turkishTestDiffs294);
 }
 
-var testturkish228 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs228) {
-		total++;
-		var base = turkishTestDiffs228[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish293 = function() {
+	diffsTemplateTest(turkishTestDiffs293);
+}
+
+var testTurkish292 = function() {
+	diffsTemplateTest(turkishTestDiffs292);
+}
+
+var testTurkish291 = function() {
+	diffsTemplateTest(turkishTestDiffs291);
+}
+
+var testTurkish290 = function() {
+	diffsTemplateTest(turkishTestDiffs290);
+}
+
+var testTurkish289 = function() {
+	diffsTemplateTest(turkishTestDiffs289);
+}
+
+var testTurkish288 = function() {
+	diffsTemplateTest(turkishTestDiffs288);
 }
 
-var testturkish227 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs227) {
-		total++;
-		var base = turkishTestDiffs227[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish287 = function() {
+	diffsTemplateTest(turkishTestDiffs287);
 }
 
-var testturkish226 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs226) {
-		total++;
-		var base = turkishTestDiffs226[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish286 = function() {
+	diffsTemplateTest(turkishTestDiffs286);
 }
 
-var testturkish225 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs225) {
-		total++;
-		var base = turkishTestDiffs225[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish285 = function() {
+	diffsTemplateTest(turkishTestDiffs285);
 }
 
-var testturkish224 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs224) {
-		total++;
-		var base = turkishTestDiffs224[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish284 = function() {
+	diffsTemplateTest(turkishTestDiffs284);
 }
 
-var testturkish223 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs223) {
-		total++;
-		var base = turkishTestDiffs223[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish283 = function() {
+	diffsTemplateTest(turkishTestDiffs283);
 }
 
-var testturkish222 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs222) {
-		total++;
-		var base = turkishTestDiffs222[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish282 = function() {
+	diffsTemplateTest(turkishTestDiffs282);
 }
 
-var testturkish221 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs221) {
-		total++;
-		var base = turkishTestDiffs221[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish281 = function() {
+	diffsTemplateTest(turkishTestDiffs281);
 }
 
-var testturkish220 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs220) {
-		total++;
-		var base = turkishTestDiffs220[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish280 = function() {
+	diffsTemplateTest(turkishTestDiffs280);
 }
 
-var testturkish219 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs219) {
-		total++;
-		var base = turkishTestDiffs219[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish279 = function() {
+	diffsTemplateTest(turkishTestDiffs279);
 }
 
-var testturkish218 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs218) {
-		total++;
-		var base = turkishTestDiffs218[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish278 = function() {
+	diffsTemplateTest(turkishTestDiffs278);
 }
 
-var testturkish217 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs217) {
-		total++;
-		var base = turkishTestDiffs217[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish277 = function() {
+	diffsTemplateTest(turkishTestDiffs277);
 }
 
-var testturkish216 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs216) {
-		total++;
-		var base = turkishTestDiffs216[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish276 = function() {
+	diffsTemplateTest(turkishTestDiffs276);
 }
 
-var testturkish215 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs215) {
-		total++;
-		var base = turkishTestDiffs215[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish275 = function() {
+	diffsTemplateTest(turkishTestDiffs275);
 }
 
-var testturkish214 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs214) {
-		total++;
-		var base = turkishTestDiffs214[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish274 = function() {
+	diffsTemplateTest(turkishTestDiffs274);
 }
 
-var testturkish213 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs213) {
-		total++;
-		var base = turkishTestDiffs213[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish273 = function() {
+	diffsTemplateTest(turkishTestDiffs273);
 }
 
-var testturkish212 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs212) {
-		total++;
-		var base = turkishTestDiffs212[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish272 = function() {
+	diffsTemplateTest(turkishTestDiffs272);
 }
 
-var testturkish211 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs211) {
-		total++;
-		var base = turkishTestDiffs211[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish271 = function() {
+	diffsTemplateTest(turkishTestDiffs271);
 }
 
-var testturkish210 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs210) {
-		total++;
-		var base = turkishTestDiffs210[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish270 = function() {
+	diffsTemplateTest(turkishTestDiffs270);
 }
 
-var testturkish209 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs209) {
-		total++;
-		var base = turkishTestDiffs209[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish269 = function() {
+	diffsTemplateTest(turkishTestDiffs269);
+}
+
+var testTurkish268 = function() {
+	diffsTemplateTest(turkishTestDiffs268);
+}
+
+var testTurkish267 = function() {
+	diffsTemplateTest(turkishTestDiffs267);
+}
+
+var testTurkish266 = function() {
+	diffsTemplateTest(turkishTestDiffs266);
+}
+
+var testTurkish265 = function() {
+	diffsTemplateTest(turkishTestDiffs265);
+}
+
+var testTurkish264 = function() {
+	diffsTemplateTest(turkishTestDiffs264);
 }
 
-var testturkish208 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs208) {
-		total++;
-		var base = turkishTestDiffs208[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish263 = function() {
+	diffsTemplateTest(turkishTestDiffs263);
 }
 
-var testturkish207 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs207) {
-		total++;
-		var base = turkishTestDiffs207[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish262 = function() {
+	diffsTemplateTest(turkishTestDiffs262);
 }
 
-var testturkish206 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs206) {
-		total++;
-		var base = turkishTestDiffs206[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish261 = function() {
+	diffsTemplateTest(turkishTestDiffs261);
 }
 
-var testturkish205 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs205) {
-		total++;
-		var base = turkishTestDiffs205[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish260 = function() {
+	diffsTemplateTest(turkishTestDiffs260);
 }
 
-var testturkish204 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs204) {
-		total++;
-		var base = turkishTestDiffs204[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish259 = function() {
+	diffsTemplateTest(turkishTestDiffs259);
 }
 
-var testturkish203 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs203) {
-		total++;
-		var base = turkishTestDiffs203[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish258 = function() {
+	diffsTemplateTest(turkishTestDiffs258);
 }
 
-var testturkish202 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs202) {
-		total++;
-		var base = turkishTestDiffs202[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish257 = function() {
+	diffsTemplateTest(turkishTestDiffs257);
 }
 
-var testturkish201 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs201) {
-		total++;
-		var base = turkishTestDiffs201[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish256 = function() {
+	diffsTemplateTest(turkishTestDiffs256);
 }
 
-var testturkish200 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs200) {
-		total++;
-		var base = turkishTestDiffs200[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish255 = function() {
+	diffsTemplateTest(turkishTestDiffs255);
 }
 
-var testturkish199 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs199) {
-		total++;
-		var base = turkishTestDiffs199[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish254 = function() {
+	diffsTemplateTest(turkishTestDiffs254);
 }
 
-var testturkish198 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs198) {
-		total++;
-		var base = turkishTestDiffs198[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish253 = function() {
+	diffsTemplateTest(turkishTestDiffs253);
 }
 
-var testturkish197 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs197) {
-		total++;
-		var base = turkishTestDiffs197[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish252 = function() {
+	diffsTemplateTest(turkishTestDiffs252);
 }
 
-var testturkish196 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs196) {
-		total++;
-		var base = turkishTestDiffs196[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish251 = function() {
+	diffsTemplateTest(turkishTestDiffs251);
 }
 
-var testturkish195 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs195) {
-		total++;
-		var base = turkishTestDiffs195[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish250 = function() {
+	diffsTemplateTest(turkishTestDiffs250);
 }
 
-var testturkish194 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs194) {
-		total++;
-		var base = turkishTestDiffs194[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish249 = function() {
+	diffsTemplateTest(turkishTestDiffs249);
 }
 
-var testturkish193 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs193) {
-		total++;
-		var base = turkishTestDiffs193[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish248 = function() {
+	diffsTemplateTest(turkishTestDiffs248);
 }
 
-var testturkish192 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs192) {
-		total++;
-		var base = turkishTestDiffs192[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish247 = function() {
+	diffsTemplateTest(turkishTestDiffs247);
 }
 
-var testturkish191 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs191) {
-		total++;
-		var base = turkishTestDiffs191[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish246 = function() {
+	diffsTemplateTest(turkishTestDiffs246);
 }
 
-var testturkish190 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs190) {
-		total++;
-		var base = turkishTestDiffs190[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish245 = function() {
+	diffsTemplateTest(turkishTestDiffs245);
+}
+
+var testTurkish244 = function() {
+	diffsTemplateTest(turkishTestDiffs244);
+}
+
+var testTurkish243 = function() {
+	diffsTemplateTest(turkishTestDiffs243);
+}
+
+var testTurkish242 = function() {
+	diffsTemplateTest(turkishTestDiffs242);
+}
+
+var testTurkish241 = function() {
+	diffsTemplateTest(turkishTestDiffs241);
+}
+
+var testTurkish240 = function() {
+	diffsTemplateTest(turkishTestDiffs240);
 }
 
-var testturkish189 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs189) {
-		total++;
-		var base = turkishTestDiffs189[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish239 = function() {
+	diffsTemplateTest(turkishTestDiffs239);
 }
 
-var testturkish188 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs188) {
-		total++;
-		var base = turkishTestDiffs188[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish238 = function() {
+	diffsTemplateTest(turkishTestDiffs238);
 }
 
-var testturkish187 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs187) {
-		total++;
-		var base = turkishTestDiffs187[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish237 = function() {
+	diffsTemplateTest(turkishTestDiffs237);
 }
 
-var testturkish186 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs186) {
-		total++;
-		var base = turkishTestDiffs186[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish236 = function() {
+	diffsTemplateTest(turkishTestDiffs236);
 }
 
-var testturkish185 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs185) {
-		total++;
-		var base = turkishTestDiffs185[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish235 = function() {
+	diffsTemplateTest(turkishTestDiffs235);
 }
 
-var testturkish184 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs184) {
-		total++;
-		var base = turkishTestDiffs184[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish234 = function() {
+	diffsTemplateTest(turkishTestDiffs234);
 }
 
-var testturkish183 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs183) {
-		total++;
-		var base = turkishTestDiffs183[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish233 = function() {
+	diffsTemplateTest(turkishTestDiffs233);
 }
 
-var testturkish182 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs182) {
-		total++;
-		var base = turkishTestDiffs182[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish232 = function() {
+	diffsTemplateTest(turkishTestDiffs232);
 }
 
-var testturkish181 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs181) {
-		total++;
-		var base = turkishTestDiffs181[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish231 = function() {
+	diffsTemplateTest(turkishTestDiffs231);
 }
 
-var testturkish180 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs180) {
-		total++;
-		var base = turkishTestDiffs180[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish230 = function() {
+	diffsTemplateTest(turkishTestDiffs230);
 }
 
-var testturkish179 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs179) {
-		total++;
-		var base = turkishTestDiffs179[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish229 = function() {
+	diffsTemplateTest(turkishTestDiffs229);
 }
 
-var testturkish178 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs178) {
-		total++;
-		var base = turkishTestDiffs178[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish228 = function() {
+	diffsTemplateTest(turkishTestDiffs228);
 }
 
-var testturkish177 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs177) {
-		total++;
-		var base = turkishTestDiffs177[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish227 = function() {
+	diffsTemplateTest(turkishTestDiffs227);
 }
 
-var testturkish176 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs176) {
-		total++;
-		var base = turkishTestDiffs176[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish226 = function() {
+	diffsTemplateTest(turkishTestDiffs226);
 }
 
-var testturkish175 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs175) {
-		total++;
-		var base = turkishTestDiffs175[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish225 = function() {
+	diffsTemplateTest(turkishTestDiffs225);
 }
 
-var testturkish174 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs174) {
-		total++;
-		var base = turkishTestDiffs174[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish224 = function() {
+	diffsTemplateTest(turkishTestDiffs224);
 }
 
-var testturkish173 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs173) {
-		total++;
-		var base = turkishTestDiffs173[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish223 = function() {
+	diffsTemplateTest(turkishTestDiffs223);
 }
 
-var testturkish172 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs172) {
-		total++;
-		var base = turkishTestDiffs172[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish222 = function() {
+	diffsTemplateTest(turkishTestDiffs222);
 }
 
-var testturkish171 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs171) {
-		total++;
-		var base = turkishTestDiffs171[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish221 = function() {
+	diffsTemplateTest(turkishTestDiffs221);
+}
+
+var testTurkish220 = function() {
+	diffsTemplateTest(turkishTestDiffs220);
+}
+
+var testTurkish219 = function() {
+	diffsTemplateTest(turkishTestDiffs219);
+}
+
+var testTurkish218 = function() {
+	diffsTemplateTest(turkishTestDiffs218);
+}
+
+var testTurkish217 = function() {
+	diffsTemplateTest(turkishTestDiffs217);
+}
+
+var testTurkish216 = function() {
+	diffsTemplateTest(turkishTestDiffs216);
 }
 
-var testturkish170 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs170) {
-		total++;
-		var base = turkishTestDiffs170[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish215 = function() {
+	diffsTemplateTest(turkishTestDiffs215);
 }
 
-var testturkish169 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs169) {
-		total++;
-		var base = turkishTestDiffs169[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish214 = function() {
+	diffsTemplateTest(turkishTestDiffs214);
 }
 
-var testturkish168 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs168) {
-		total++;
-		var base = turkishTestDiffs168[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish213 = function() {
+	diffsTemplateTest(turkishTestDiffs213);
 }
 
-var testturkish167 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs167) {
-		total++;
-		var base = turkishTestDiffs167[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish212 = function() {
+	diffsTemplateTest(turkishTestDiffs212);
 }
 
-var testturkish166 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs166) {
-		total++;
-		var base = turkishTestDiffs166[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish211 = function() {
+	diffsTemplateTest(turkishTestDiffs211);
 }
 
-var testturkish165 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs165) {
-		total++;
-		var base = turkishTestDiffs165[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish210 = function() {
+	diffsTemplateTest(turkishTestDiffs210);
 }
 
-var testturkish164 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs164) {
-		total++;
-		var base = turkishTestDiffs164[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish209 = function() {
+	diffsTemplateTest(turkishTestDiffs209);
 }
 
-var testturkish163 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs163) {
-		total++;
-		var base = turkishTestDiffs163[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish208 = function() {
+	diffsTemplateTest(turkishTestDiffs208);
 }
 
-var testturkish162 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs162) {
-		total++;
-		var base = turkishTestDiffs162[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish207 = function() {
+	diffsTemplateTest(turkishTestDiffs207);
 }
 
-var testturkish161 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs161) {
-		total++;
-		var base = turkishTestDiffs161[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish206 = function() {
+	diffsTemplateTest(turkishTestDiffs206);
 }
 
-var testturkish160 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs160) {
-		total++;
-		var base = turkishTestDiffs160[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish205 = function() {
+	diffsTemplateTest(turkishTestDiffs205);
 }
 
-var testturkish159 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs159) {
-		total++;
-		var base = turkishTestDiffs159[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish204 = function() {
+	diffsTemplateTest(turkishTestDiffs204);
 }
 
-var testturkish158 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs158) {
-		total++;
-		var base = turkishTestDiffs158[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish203 = function() {
+	diffsTemplateTest(turkishTestDiffs203);
 }
 
-var testturkish157 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs157) {
-		total++;
-		var base = turkishTestDiffs157[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish202 = function() {
+	diffsTemplateTest(turkishTestDiffs202);
 }
 
-var testturkish156 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs156) {
-		total++;
-		var base = turkishTestDiffs156[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish201 = function() {
+	diffsTemplateTest(turkishTestDiffs201);
 }
 
-var testturkish155 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs155) {
-		total++;
-		var base = turkishTestDiffs155[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish200 = function() {
+	diffsTemplateTest(turkishTestDiffs200);
 }
 
-var testturkish154 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs154) {
-		total++;
-		var base = turkishTestDiffs154[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish199 = function() {
+	diffsTemplateTest(turkishTestDiffs199);
 }
 
-var testturkish153 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs153) {
-		total++;
-		var base = turkishTestDiffs153[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish198 = function() {
+	diffsTemplateTest(turkishTestDiffs198);
 }
 
-var testturkish152 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs152) {
-		total++;
-		var base = turkishTestDiffs152[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish197 = function() {
+	diffsTemplateTest(turkishTestDiffs197);
+}
+
+var testTurkish196 = function() {
+	diffsTemplateTest(turkishTestDiffs196);
+}
+
+var testTurkish195 = function() {
+	diffsTemplateTest(turkishTestDiffs195);
+}
+
+var testTurkish194 = function() {
+	diffsTemplateTest(turkishTestDiffs194);
+}
+
+var testTurkish193 = function() {
+	diffsTemplateTest(turkishTestDiffs193);
+}
+
+var testTurkish192 = function() {
+	diffsTemplateTest(turkishTestDiffs192);
 }
 
-var testturkish151 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs151) {
-		total++;
-		var base = turkishTestDiffs151[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish191 = function() {
+	diffsTemplateTest(turkishTestDiffs191);
 }
 
-var testturkish150 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs150) {
-		total++;
-		var base = turkishTestDiffs150[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish190 = function() {
+	diffsTemplateTest(turkishTestDiffs190);
 }
 
-var testturkish149 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs149) {
-		total++;
-		var base = turkishTestDiffs149[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish189 = function() {
+	diffsTemplateTest(turkishTestDiffs189);
 }
 
-var testturkish148 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs148) {
-		total++;
-		var base = turkishTestDiffs148[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish188 = function() {
+	diffsTemplateTest(turkishTestDiffs188);
 }
 
-var testturkish147 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs147) {
-		total++;
-		var base = turkishTestDiffs147[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish187 = function() {
+	diffsTemplateTest(turkishTestDiffs187);
 }
 
-var testturkish146 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs146) {
-		total++;
-		var base = turkishTestDiffs146[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish186 = function() {
+	diffsTemplateTest(turkishTestDiffs186);
 }
 
-var testturkish145 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs145) {
-		total++;
-		var base = turkishTestDiffs145[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish185 = function() {
+	diffsTemplateTest(turkishTestDiffs185);
 }
 
-var testturkish144 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs144) {
-		total++;
-		var base = turkishTestDiffs144[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish184 = function() {
+	diffsTemplateTest(turkishTestDiffs184);
 }
 
-var testturkish143 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs143) {
-		total++;
-		var base = turkishTestDiffs143[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish183 = function() {
+	diffsTemplateTest(turkishTestDiffs183);
 }
 
-var testturkish142 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs142) {
-		total++;
-		var base = turkishTestDiffs142[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish182 = function() {
+	diffsTemplateTest(turkishTestDiffs182);
 }
 
-var testturkish141 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs141) {
-		total++;
-		var base = turkishTestDiffs141[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish181 = function() {
+	diffsTemplateTest(turkishTestDiffs181);
 }
 
-var testturkish140 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs140) {
-		total++;
-		var base = turkishTestDiffs140[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish180 = function() {
+	diffsTemplateTest(turkishTestDiffs180);
 }
 
-var testturkish139 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs139) {
-		total++;
-		var base = turkishTestDiffs139[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish179 = function() {
+	diffsTemplateTest(turkishTestDiffs179);
 }
 
-var testturkish138 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs138) {
-		total++;
-		var base = turkishTestDiffs138[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish178 = function() {
+	diffsTemplateTest(turkishTestDiffs178);
 }
 
-var testturkish137 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs137) {
-		total++;
-		var base = turkishTestDiffs137[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish177 = function() {
+	diffsTemplateTest(turkishTestDiffs177);
 }
 
-var testturkish136 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs136) {
-		total++;
-		var base = turkishTestDiffs136[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish176 = function() {
+	diffsTemplateTest(turkishTestDiffs176);
 }
 
-var testturkish135 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs135) {
-		total++;
-		var base = turkishTestDiffs135[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish175 = function() {
+	diffsTemplateTest(turkishTestDiffs175);
 }
 
-var testturkish134 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs134) {
-		total++;
-		var base = turkishTestDiffs134[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish174 = function() {
+	diffsTemplateTest(turkishTestDiffs174);
 }
 
-var testturkish133 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs133) {
-		total++;
-		var base = turkishTestDiffs133[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish173 = function() {
+	diffsTemplateTest(turkishTestDiffs173);
+}
+
+var testTurkish172 = function() {
+	diffsTemplateTest(turkishTestDiffs172);
+}
+
+var testTurkish171 = function() {
+	diffsTemplateTest(turkishTestDiffs171);
+}
+
+var testTurkish170 = function() {
+	diffsTemplateTest(turkishTestDiffs170);
+}
+
+var testTurkish169 = function() {
+	diffsTemplateTest(turkishTestDiffs169);
+}
+
+var testTurkish168 = function() {
+	diffsTemplateTest(turkishTestDiffs168);
 }
 
-var testturkish132 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs132) {
-		total++;
-		var base = turkishTestDiffs132[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish167 = function() {
+	diffsTemplateTest(turkishTestDiffs167);
 }
 
-var testturkish131 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs131) {
-		total++;
-		var base = turkishTestDiffs131[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish166 = function() {
+	diffsTemplateTest(turkishTestDiffs166);
 }
 
-var testturkish130 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs130) {
-		total++;
-		var base = turkishTestDiffs130[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish165 = function() {
+	diffsTemplateTest(turkishTestDiffs165);
 }
 
-var testturkish129 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs129) {
-		total++;
-		var base = turkishTestDiffs129[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish164 = function() {
+	diffsTemplateTest(turkishTestDiffs164);
 }
 
-var testturkish128 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs128) {
-		total++;
-		var base = turkishTestDiffs128[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish163 = function() {
+	diffsTemplateTest(turkishTestDiffs163);
 }
 
-var testturkish127 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs127) {
-		total++;
-		var base = turkishTestDiffs127[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish162 = function() {
+	diffsTemplateTest(turkishTestDiffs162);
 }
 
-var testturkish126 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs126) {
-		total++;
-		var base = turkishTestDiffs126[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish161 = function() {
+	diffsTemplateTest(turkishTestDiffs161);
 }
 
-var testturkish125 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs125) {
-		total++;
-		var base = turkishTestDiffs125[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish160 = function() {
+	diffsTemplateTest(turkishTestDiffs160);
 }
 
-var testturkish124 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs124) {
-		total++;
-		var base = turkishTestDiffs124[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish159 = function() {
+	diffsTemplateTest(turkishTestDiffs159);
 }
 
-var testturkish123 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs123) {
-		total++;
-		var base = turkishTestDiffs123[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish158 = function() {
+	diffsTemplateTest(turkishTestDiffs158);
 }
 
-var testturkish122 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs122) {
-		total++;
-		var base = turkishTestDiffs122[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish157 = function() {
+	diffsTemplateTest(turkishTestDiffs157);
 }
 
-var testturkish121 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs121) {
-		total++;
-		var base = turkishTestDiffs121[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish156 = function() {
+	diffsTemplateTest(turkishTestDiffs156);
 }
 
-var testturkish120 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs120) {
-		total++;
-		var base = turkishTestDiffs120[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish155 = function() {
+	diffsTemplateTest(turkishTestDiffs155);
 }
 
-var testturkish119 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs119) {
-		total++;
-		var base = turkishTestDiffs119[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish154 = function() {
+	diffsTemplateTest(turkishTestDiffs154);
 }
 
-var testturkish118 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs118) {
-		total++;
-		var base = turkishTestDiffs118[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish153 = function() {
+	diffsTemplateTest(turkishTestDiffs153);
 }
 
-var testturkish117 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs117) {
-		total++;
-		var base = turkishTestDiffs117[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish152 = function() {
+	diffsTemplateTest(turkishTestDiffs152);
 }
 
-var testturkish116 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs116) {
-		total++;
-		var base = turkishTestDiffs116[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish151 = function() {
+	diffsTemplateTest(turkishTestDiffs151);
 }
 
-var testturkish115 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs115) {
-		total++;
-		var base = turkishTestDiffs115[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish150 = function() {
+	diffsTemplateTest(turkishTestDiffs150);
 }
 
-var testturkish114 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs114) {
-		total++;
-		var base = turkishTestDiffs114[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish149 = function() {
+	diffsTemplateTest(turkishTestDiffs149);
+}
+
+var testTurkish148 = function() {
+	diffsTemplateTest(turkishTestDiffs148);
+}
+
+var testTurkish147 = function() {
+	diffsTemplateTest(turkishTestDiffs147);
+}
+
+var testTurkish146 = function() {
+	diffsTemplateTest(turkishTestDiffs146);
+}
+
+var testTurkish145 = function() {
+	diffsTemplateTest(turkishTestDiffs145);
+}
+
+var testTurkish144 = function() {
+	diffsTemplateTest(turkishTestDiffs144);
 }
 
-var testturkish113 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs113) {
-		total++;
-		var base = turkishTestDiffs113[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish143 = function() {
+	diffsTemplateTest(turkishTestDiffs143);
 }
 
-var testturkish112 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs112) {
-		total++;
-		var base = turkishTestDiffs112[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish142 = function() {
+	diffsTemplateTest(turkishTestDiffs142);
 }
 
-var testturkish111 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs111) {
-		total++;
-		var base = turkishTestDiffs111[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish141 = function() {
+	diffsTemplateTest(turkishTestDiffs141);
 }
 
-var testturkish110 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs110) {
-		total++;
-		var base = turkishTestDiffs110[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish140 = function() {
+	diffsTemplateTest(turkishTestDiffs140);
 }
 
-var testturkish109 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs109) {
-		total++;
-		var base = turkishTestDiffs109[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish139 = function() {
+	diffsTemplateTest(turkishTestDiffs139);
 }
 
-var testturkish108 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs108) {
-		total++;
-		var base = turkishTestDiffs108[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish138 = function() {
+	diffsTemplateTest(turkishTestDiffs138);
 }
 
-var testturkish107 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs107) {
-		total++;
-		var base = turkishTestDiffs107[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish137 = function() {
+	diffsTemplateTest(turkishTestDiffs137);
 }
 
-var testturkish106 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs106) {
-		total++;
-		var base = turkishTestDiffs106[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish136 = function() {
+	diffsTemplateTest(turkishTestDiffs136);
 }
 
-var testturkish105 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs105) {
-		total++;
-		var base = turkishTestDiffs105[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish135 = function() {
+	diffsTemplateTest(turkishTestDiffs135);
 }
 
-var testturkish104 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs104) {
-		total++;
-		var base = turkishTestDiffs104[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish134 = function() {
+	diffsTemplateTest(turkishTestDiffs134);
 }
 
-var testturkish103 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs103) {
-		total++;
-		var base = turkishTestDiffs103[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish133 = function() {
+	diffsTemplateTest(turkishTestDiffs133);
 }
 
-var testturkish102 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs102) {
-		total++;
-		var base = turkishTestDiffs102[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish132 = function() {
+	diffsTemplateTest(turkishTestDiffs132);
 }
 
-var testturkish101 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs101) {
-		total++;
-		var base = turkishTestDiffs101[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish131 = function() {
+	diffsTemplateTest(turkishTestDiffs131);
 }
 
-var testturkish100 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs100) {
-		total++;
-		var base = turkishTestDiffs100[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish130 = function() {
+	diffsTemplateTest(turkishTestDiffs130);
 }
 
-var testturkish99 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs99) {
-		total++;
-		var base = turkishTestDiffs99[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish129 = function() {
+	diffsTemplateTest(turkishTestDiffs129);
 }
 
-var testturkish98 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs98) {
-		total++;
-		var base = turkishTestDiffs98[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish128 = function() {
+	diffsTemplateTest(turkishTestDiffs128);
 }
 
-var testturkish97 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs97) {
-		total++;
-		var base = turkishTestDiffs97[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish127 = function() {
+	diffsTemplateTest(turkishTestDiffs127);
 }
 
-var testturkish96 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs96) {
-		total++;
-		var base = turkishTestDiffs96[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish126 = function() {
+	diffsTemplateTest(turkishTestDiffs126);
 }
 
-var testturkish95 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs95) {
-		total++;
-		var base = turkishTestDiffs95[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish125 = function() {
+	diffsTemplateTest(turkishTestDiffs125);
+}
+
+var testTurkish124 = function() {
+	diffsTemplateTest(turkishTestDiffs124);
+}
+
+var testTurkish123 = function() {
+	diffsTemplateTest(turkishTestDiffs123);
+}
+
+var testTurkish122 = function() {
+	diffsTemplateTest(turkishTestDiffs122);
+}
+
+var testTurkish121 = function() {
+	diffsTemplateTest(turkishTestDiffs121);
+}
+
+var testTurkish120 = function() {
+	diffsTemplateTest(turkishTestDiffs120);
 }
 
-var testturkish94 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs94) {
-		total++;
-		var base = turkishTestDiffs94[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish119 = function() {
+	diffsTemplateTest(turkishTestDiffs119);
 }
 
-var testturkish93 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs93) {
-		total++;
-		var base = turkishTestDiffs93[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish118 = function() {
+	diffsTemplateTest(turkishTestDiffs118);
 }
 
-var testturkish92 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs92) {
-		total++;
-		var base = turkishTestDiffs92[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish117 = function() {
+	diffsTemplateTest(turkishTestDiffs117);
 }
 
-var testturkish91 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs91) {
-		total++;
-		var base = turkishTestDiffs91[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish116 = function() {
+	diffsTemplateTest(turkishTestDiffs116);
 }
 
-var testturkish90 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs90) {
-		total++;
-		var base = turkishTestDiffs90[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish115 = function() {
+	diffsTemplateTest(turkishTestDiffs115);
 }
 
-var testturkish89 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs89) {
-		total++;
-		var base = turkishTestDiffs89[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish114 = function() {
+	diffsTemplateTest(turkishTestDiffs114);
 }
 
-var testturkish88 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs88) {
-		total++;
-		var base = turkishTestDiffs88[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish113 = function() {
+	diffsTemplateTest(turkishTestDiffs113);
 }
 
-var testturkish87 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs87) {
-		total++;
-		var base = turkishTestDiffs87[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish112 = function() {
+	diffsTemplateTest(turkishTestDiffs112);
 }
 
-var testturkish86 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs86) {
-		total++;
-		var base = turkishTestDiffs86[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish111 = function() {
+	diffsTemplateTest(turkishTestDiffs111);
 }
 
-var testturkish85 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs85) {
-		total++;
-		var base = turkishTestDiffs85[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish110 = function() {
+	diffsTemplateTest(turkishTestDiffs110);
 }
 
-var testturkish84 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs84) {
-		total++;
-		var base = turkishTestDiffs84[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish109 = function() {
+	diffsTemplateTest(turkishTestDiffs109);
 }
 
-var testturkish83 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs83) {
-		total++;
-		var base = turkishTestDiffs83[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish108 = function() {
+	diffsTemplateTest(turkishTestDiffs108);
 }
 
-var testturkish82 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs82) {
-		total++;
-		var base = turkishTestDiffs82[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish107 = function() {
+	diffsTemplateTest(turkishTestDiffs107);
 }
 
-var testturkish81 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs81) {
-		total++;
-		var base = turkishTestDiffs81[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish106 = function() {
+	diffsTemplateTest(turkishTestDiffs106);
 }
 
-var testturkish80 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs80) {
-		total++;
-		var base = turkishTestDiffs80[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish105 = function() {
+	diffsTemplateTest(turkishTestDiffs105);
 }
 
-var testturkish79 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs79) {
-		total++;
-		var base = turkishTestDiffs79[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish104 = function() {
+	diffsTemplateTest(turkishTestDiffs104);
 }
 
-var testturkish78 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs78) {
-		total++;
-		var base = turkishTestDiffs78[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish103 = function() {
+	diffsTemplateTest(turkishTestDiffs103);
 }
 
-var testturkish77 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs77) {
-		total++;
-		var base = turkishTestDiffs77[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish102 = function() {
+	diffsTemplateTest(turkishTestDiffs102);
 }
 
-var testturkish76 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs76) {
-		total++;
-		var base = turkishTestDiffs76[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish101 = function() {
+	diffsTemplateTest(turkishTestDiffs101);
+}
+
+var testTurkish100 = function() {
+	diffsTemplateTest(turkishTestDiffs100);
+}
+
+var testTurkish99 = function() {
+	diffsTemplateTest(turkishTestDiffs99);
+}
+
+var testTurkish98 = function() {
+	diffsTemplateTest(turkishTestDiffs98);
+}
+
+var testTurkish97 = function() {
+	diffsTemplateTest(turkishTestDiffs97);
+}
+
+var testTurkish96 = function() {
+	diffsTemplateTest(turkishTestDiffs96);
 }
 
-var testturkish75 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs75) {
-		total++;
-		var base = turkishTestDiffs75[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish95 = function() {
+	diffsTemplateTest(turkishTestDiffs95);
 }
 
-var testturkish74 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs74) {
-		total++;
-		var base = turkishTestDiffs74[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish94 = function() {
+	diffsTemplateTest(turkishTestDiffs94);
 }
 
-var testturkish73 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs73) {
-		total++;
-		var base = turkishTestDiffs73[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish93 = function() {
+	diffsTemplateTest(turkishTestDiffs93);
 }
 
-var testturkish72 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs72) {
-		total++;
-		var base = turkishTestDiffs72[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish92 = function() {
+	diffsTemplateTest(turkishTestDiffs92);
 }
 
-var testturkish71 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs71) {
-		total++;
-		var base = turkishTestDiffs71[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish91 = function() {
+	diffsTemplateTest(turkishTestDiffs91);
 }
 
-var testturkish70 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs70) {
-		total++;
-		var base = turkishTestDiffs70[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish90 = function() {
+	diffsTemplateTest(turkishTestDiffs90);
 }
 
-var testturkish69 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs69) {
-		total++;
-		var base = turkishTestDiffs69[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish89 = function() {
+	diffsTemplateTest(turkishTestDiffs89);
 }
 
-var testturkish68 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs68) {
-		total++;
-		var base = turkishTestDiffs68[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish88 = function() {
+	diffsTemplateTest(turkishTestDiffs88);
 }
 
-var testturkish67 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs67) {
-		total++;
-		var base = turkishTestDiffs67[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish87 = function() {
+	diffsTemplateTest(turkishTestDiffs87);
 }
 
-var testturkish66 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs66) {
-		total++;
-		var base = turkishTestDiffs66[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish86 = function() {
+	diffsTemplateTest(turkishTestDiffs86);
 }
 
-var testturkish65 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs65) {
-		total++;
-		var base = turkishTestDiffs65[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish85 = function() {
+	diffsTemplateTest(turkishTestDiffs85);
 }
 
-var testturkish64 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs64) {
-		total++;
-		var base = turkishTestDiffs64[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish84 = function() {
+	diffsTemplateTest(turkishTestDiffs84);
 }
 
-var testturkish63 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs63) {
-		total++;
-		var base = turkishTestDiffs63[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish83 = function() {
+	diffsTemplateTest(turkishTestDiffs83);
 }
 
-var testturkish62 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs62) {
-		total++;
-		var base = turkishTestDiffs62[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish82 = function() {
+	diffsTemplateTest(turkishTestDiffs82);
 }
 
-var testturkish61 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs61) {
-		total++;
-		var base = turkishTestDiffs61[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish81 = function() {
+	diffsTemplateTest(turkishTestDiffs81);
 }
 
-var testturkish60 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs60) {
-		total++;
-		var base = turkishTestDiffs60[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish80 = function() {
+	diffsTemplateTest(turkishTestDiffs80);
 }
 
-var testturkish59 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs59) {
-		total++;
-		var base = turkishTestDiffs59[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish79 = function() {
+	diffsTemplateTest(turkishTestDiffs79);
 }
 
-var testturkish58 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs58) {
-		total++;
-		var base = turkishTestDiffs58[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish78 = function() {
+	diffsTemplateTest(turkishTestDiffs78);
 }
 
-var testturkish57 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs57) {
-		total++;
-		var base = turkishTestDiffs57[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish77 = function() {
+	diffsTemplateTest(turkishTestDiffs77);
+}
+
+var testTurkish76 = function() {
+	diffsTemplateTest(turkishTestDiffs76);
+}
+
+var testTurkish75 = function() {
+	diffsTemplateTest(turkishTestDiffs75);
+}
+
+var testTurkish74 = function() {
+	diffsTemplateTest(turkishTestDiffs74);
+}
+
+var testTurkish73 = function() {
+	diffsTemplateTest(turkishTestDiffs73);
+}
+
+var testTurkish72 = function() {
+	diffsTemplateTest(turkishTestDiffs72);
 }
 
-var testturkish56 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs56) {
-		total++;
-		var base = turkishTestDiffs56[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish71 = function() {
+	diffsTemplateTest(turkishTestDiffs71);
 }
 
-var testturkish55 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs55) {
-		total++;
-		var base = turkishTestDiffs55[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish70 = function() {
+	diffsTemplateTest(turkishTestDiffs70);
 }
 
-var testturkish54 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs54) {
-		total++;
-		var base = turkishTestDiffs54[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish69 = function() {
+	diffsTemplateTest(turkishTestDiffs69);
 }
 
-var testturkish53 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs53) {
-		total++;
-		var base = turkishTestDiffs53[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish68 = function() {
+	diffsTemplateTest(turkishTestDiffs68);
 }
 
-var testturkish52 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs52) {
-		total++;
-		var base = turkishTestDiffs52[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish67 = function() {
+	diffsTemplateTest(turkishTestDiffs67);
 }
 
-var testturkish51 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs51) {
-		total++;
-		var base = turkishTestDiffs51[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish66 = function() {
+	diffsTemplateTest(turkishTestDiffs66);
 }
 
-var testturkish50 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs50) {
-		total++;
-		var base = turkishTestDiffs50[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish65 = function() {
+	diffsTemplateTest(turkishTestDiffs65);
 }
 
-var testturkish49 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs49) {
-		total++;
-		var base = turkishTestDiffs49[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish64 = function() {
+	diffsTemplateTest(turkishTestDiffs64);
 }
 
-var testturkish48 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs48) {
-		total++;
-		var base = turkishTestDiffs48[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish63 = function() {
+	diffsTemplateTest(turkishTestDiffs63);
 }
 
-var testturkish47 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs47) {
-		total++;
-		var base = turkishTestDiffs47[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish62 = function() {
+	diffsTemplateTest(turkishTestDiffs62);
 }
 
-var testturkish46 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs46) {
-		total++;
-		var base = turkishTestDiffs46[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish61 = function() {
+	diffsTemplateTest(turkishTestDiffs61);
 }
 
-var testturkish45 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs45) {
-		total++;
-		var base = turkishTestDiffs45[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish60 = function() {
+	diffsTemplateTest(turkishTestDiffs60);
 }
 
-var testturkish44 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs44) {
-		total++;
-		var base = turkishTestDiffs44[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish59 = function() {
+	diffsTemplateTest(turkishTestDiffs59);
 }
 
-var testturkish43 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs43) {
-		total++;
-		var base = turkishTestDiffs43[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish58 = function() {
+	diffsTemplateTest(turkishTestDiffs58);
 }
 
-var testturkish42 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs42) {
-		total++;
-		var base = turkishTestDiffs42[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish57 = function() {
+	diffsTemplateTest(turkishTestDiffs57);
 }
 
-var testturkish41 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs41) {
-		total++;
-		var base = turkishTestDiffs41[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish56 = function() {
+	diffsTemplateTest(turkishTestDiffs56);
 }
 
-var testturkish40 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs40) {
-		total++;
-		var base = turkishTestDiffs40[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish55 = function() {
+	diffsTemplateTest(turkishTestDiffs55);
 }
 
-var testturkish39 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs39) {
-		total++;
-		var base = turkishTestDiffs39[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish54 = function() {
+	diffsTemplateTest(turkishTestDiffs54);
 }
 
-var testturkish38 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs38) {
-		total++;
-		var base = turkishTestDiffs38[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish53 = function() {
+	diffsTemplateTest(turkishTestDiffs53);
+}
+
+var testTurkish52 = function() {
+	diffsTemplateTest(turkishTestDiffs52);
+}
+
+var testTurkish51 = function() {
+	diffsTemplateTest(turkishTestDiffs51);
+}
+
+var testTurkish50 = function() {
+	diffsTemplateTest(turkishTestDiffs50);
+}
+
+var testTurkish49 = function() {
+	diffsTemplateTest(turkishTestDiffs49);
+}
+
+var testTurkish48 = function() {
+	diffsTemplateTest(turkishTestDiffs48);
 }
 
-var testturkish37 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs37) {
-		total++;
-		var base = turkishTestDiffs37[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish47 = function() {
+	diffsTemplateTest(turkishTestDiffs47);
 }
 
-var testturkish36 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs36) {
-		total++;
-		var base = turkishTestDiffs36[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish46 = function() {
+	diffsTemplateTest(turkishTestDiffs46);
 }
 
-var testturkish35 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs35) {
-		total++;
-		var base = turkishTestDiffs35[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish45 = function() {
+	diffsTemplateTest(turkishTestDiffs45);
 }
 
-var testturkish34 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs34) {
-		total++;
-		var base = turkishTestDiffs34[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish44 = function() {
+	diffsTemplateTest(turkishTestDiffs44);
 }
 
-var testturkish33 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs33) {
-		total++;
-		var base = turkishTestDiffs33[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish43 = function() {
+	diffsTemplateTest(turkishTestDiffs43);
 }
 
-var testturkish32 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs32) {
-		total++;
-		var base = turkishTestDiffs32[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish42 = function() {
+	diffsTemplateTest(turkishTestDiffs42);
 }
 
-var testturkish31 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs31) {
-		total++;
-		var base = turkishTestDiffs31[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish41 = function() {
+	diffsTemplateTest(turkishTestDiffs41);
 }
 
-var testturkish30 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs30) {
-		total++;
-		var base = turkishTestDiffs30[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish40 = function() {
+	diffsTemplateTest(turkishTestDiffs40);
 }
 
-var testturkish29 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs29) {
-		total++;
-		var base = turkishTestDiffs29[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish39 = function() {
+	diffsTemplateTest(turkishTestDiffs39);
 }
 
-var testturkish28 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs28) {
-		total++;
-		var base = turkishTestDiffs28[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish38 = function() {
+	diffsTemplateTest(turkishTestDiffs38);
 }
 
-var testturkish27 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs27) {
-		total++;
-		var base = turkishTestDiffs27[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish37 = function() {
+	diffsTemplateTest(turkishTestDiffs37);
 }
 
-var testturkish26 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs26) {
-		total++;
-		var base = turkishTestDiffs26[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish36 = function() {
+	diffsTemplateTest(turkishTestDiffs36);
 }
 
-var testturkish25 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs25) {
-		total++;
-		var base = turkishTestDiffs25[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish35 = function() {
+	diffsTemplateTest(turkishTestDiffs35);
 }
 
-var testturkish24 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs24) {
-		total++;
-		var base = turkishTestDiffs24[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish34 = function() {
+	diffsTemplateTest(turkishTestDiffs34);
 }
 
-var testturkish23 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs23) {
-		total++;
-		var base = turkishTestDiffs23[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish33 = function() {
+	diffsTemplateTest(turkishTestDiffs33);
 }
 
-var testturkish22 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs22) {
-		total++;
-		var base = turkishTestDiffs22[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish32 = function() {
+	diffsTemplateTest(turkishTestDiffs32);
 }
 
-var testturkish21 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs21) {
-		total++;
-		var base = turkishTestDiffs21[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish31 = function() {
+	diffsTemplateTest(turkishTestDiffs31);
 }
 
-var testturkish20 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs20) {
-		total++;
-		var base = turkishTestDiffs20[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish30 = function() {
+	diffsTemplateTest(turkishTestDiffs30);
 }
 
-var testturkish19 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs19) {
-		total++;
-		var base = turkishTestDiffs19[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish29 = function() {
+	diffsTemplateTest(turkishTestDiffs29);
+}
+
+var testTurkish28 = function() {
+	diffsTemplateTest(turkishTestDiffs28);
+}
+
+var testTurkish27 = function() {
+	diffsTemplateTest(turkishTestDiffs27);
+}
+
+var testTurkish26 = function() {
+	diffsTemplateTest(turkishTestDiffs26);
+}
+
+var testTurkish25 = function() {
+	diffsTemplateTest(turkishTestDiffs25);
+}
+
+var testTurkish24 = function() {
+	diffsTemplateTest(turkishTestDiffs24);
 }
 
-var testturkish18 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs18) {
-		total++;
-		var base = turkishTestDiffs18[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish23 = function() {
+	diffsTemplateTest(turkishTestDiffs23);
 }
 
-var testturkish17 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs17) {
-		total++;
-		var base = turkishTestDiffs17[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish22 = function() {
+	diffsTemplateTest(turkishTestDiffs22);
 }
 
-var testturkish16 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs16) {
-		total++;
-		var base = turkishTestDiffs16[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish21 = function() {
+	diffsTemplateTest(turkishTestDiffs21);
 }
 
-var testturkish15 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs15) {
-		total++;
-		var base = turkishTestDiffs15[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish20 = function() {
+	diffsTemplateTest(turkishTestDiffs20);
 }
 
-var testturkish14 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs14) {
-		total++;
-		var base = turkishTestDiffs14[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish19 = function() {
+	diffsTemplateTest(turkishTestDiffs19);
 }
 
-var testturkish13 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs13) {
-		total++;
-		var base = turkishTestDiffs13[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish18 = function() {
+	diffsTemplateTest(turkishTestDiffs18);
 }
 
-var testturkish12 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs12) {
-		total++;
-		var base = turkishTestDiffs12[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish17 = function() {
+	diffsTemplateTest(turkishTestDiffs17);
 }
 
-var testturkish11 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs11) {
-		total++;
-		var base = turkishTestDiffs11[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish16 = function() {
+	diffsTemplateTest(turkishTestDiffs16);
 }
 
-var testturkish10 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs10) {
-		total++;
-		var base = turkishTestDiffs10[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish15 = function() {
+	diffsTemplateTest(turkishTestDiffs15);
 }
 
-var testturkish9 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs9) {
-		total++;
-		var base = turkishTestDiffs9[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish14 = function() {
+	diffsTemplateTest(turkishTestDiffs14);
 }
 
-var testturkish8 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs8) {
-		total++;
-		var base = turkishTestDiffs8[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish13 = function() {
+	diffsTemplateTest(turkishTestDiffs13);
 }
 
-var testturkish7 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs7) {
-		total++;
-		var base = turkishTestDiffs7[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish12 = function() {
+	diffsTemplateTest(turkishTestDiffs12);
 }
 
-var testturkish6 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs6) {
-		total++;
-		var base = turkishTestDiffs6[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish11 = function() {
+	diffsTemplateTest(turkishTestDiffs11);
 }
 
-var testturkish5 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs5) {
-		total++;
-		var base = turkishTestDiffs5[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish10 = function() {
+	diffsTemplateTest(turkishTestDiffs10);
 }
 
-var testturkish4 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs4) {
-		total++;
-		var base = turkishTestDiffs4[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish9 = function() {
+	diffsTemplateTest(turkishTestDiffs9);
 }
 
-var testturkish3 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs3) {
-		total++;
-		var base = turkishTestDiffs3[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish8 = function() {
+	diffsTemplateTest(turkishTestDiffs8);
 }
 
-var testturkish2 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs2) {
-		total++;
-		var base = turkishTestDiffs2[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish7 = function() {
+	diffsTemplateTest(turkishTestDiffs7);
 }
 
-var testturkish1 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs1) {
-		total++;
-		var base = turkishTestDiffs1[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish6 = function() {
+	diffsTemplateTest(turkishTestDiffs6);
 }
 
-var testturkish0 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in turkishTestDiffs0) {
-		total++;
-		var base = turkishTestDiffs0[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testTurkish5 = function() {
+	diffsTemplateTest(turkishTestDiffs5);
+}
+
+var testTurkish4 = function() {
+	diffsTemplateTest(turkishTestDiffs4);
+}
+
+var testTurkish3 = function() {
+	diffsTemplateTest(turkishTestDiffs3);
+}
+
+var testTurkish2 = function() {
+	diffsTemplateTest(turkishTestDiffs2);
+}
+
+var testTurkish1 = function() {
+	diffsTemplateTest(turkishTestDiffs1);
+}
+
+var testTurkish0 = function() {
+	diffsTemplateTest(turkishTestDiffs0);
 }

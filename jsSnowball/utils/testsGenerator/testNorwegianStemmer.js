@@ -27450,11 +27450,11 @@ var norwegianTestDiffs108 = {
 	"\u00f8ystein" : "\u00f8ystein"
 };
 
-var testnorwegian108 = function() {
+function diffsTemplateTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs108) {
+	for (var sVoc in testDiffs) {
 		total++;
-		var base = norwegianTestDiffs108[sVoc];
+		var base = testDiffs[sVoc];
 		var stem = stemmer(sVoc);
 		if (base != stem) {
 			fails++;
@@ -27468,1946 +27468,438 @@ var testnorwegian108 = function() {
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
-var testnorwegian107 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs107) {
-		total++;
-		var base = norwegianTestDiffs107[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian106 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs106) {
-		total++;
-		var base = norwegianTestDiffs106[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian105 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs105) {
-		total++;
-		var base = norwegianTestDiffs105[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian104 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs104) {
-		total++;
-		var base = norwegianTestDiffs104[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian103 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs103) {
-		total++;
-		var base = norwegianTestDiffs103[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian102 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs102) {
-		total++;
-		var base = norwegianTestDiffs102[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian101 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs101) {
-		total++;
-		var base = norwegianTestDiffs101[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian100 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs100) {
-		total++;
-		var base = norwegianTestDiffs100[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian99 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs99) {
-		total++;
-		var base = norwegianTestDiffs99[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian98 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs98) {
-		total++;
-		var base = norwegianTestDiffs98[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian97 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs97) {
-		total++;
-		var base = norwegianTestDiffs97[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian96 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs96) {
-		total++;
-		var base = norwegianTestDiffs96[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian95 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs95) {
-		total++;
-		var base = norwegianTestDiffs95[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian94 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs94) {
-		total++;
-		var base = norwegianTestDiffs94[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian93 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs93) {
-		total++;
-		var base = norwegianTestDiffs93[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian92 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs92) {
-		total++;
-		var base = norwegianTestDiffs92[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian91 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs91) {
-		total++;
-		var base = norwegianTestDiffs91[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian90 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs90) {
-		total++;
-		var base = norwegianTestDiffs90[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian89 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs89) {
-		total++;
-		var base = norwegianTestDiffs89[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian108 = function() {
+	diffsTemplateTest(norwegianTestDiffs108);
 }
 
-var testnorwegian88 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs88) {
-		total++;
-		var base = norwegianTestDiffs88[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testnorwegian87 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs87) {
-		total++;
-		var base = norwegianTestDiffs87[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian107 = function() {
+	diffsTemplateTest(norwegianTestDiffs107);
 }
 
-var testnorwegian86 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs86) {
-		total++;
-		var base = norwegianTestDiffs86[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian106 = function() {
+	diffsTemplateTest(norwegianTestDiffs106);
 }
 
-var testnorwegian85 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs85) {
-		total++;
-		var base = norwegianTestDiffs85[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian105 = function() {
+	diffsTemplateTest(norwegianTestDiffs105);
 }
 
-var testnorwegian84 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs84) {
-		total++;
-		var base = norwegianTestDiffs84[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian104 = function() {
+	diffsTemplateTest(norwegianTestDiffs104);
 }
 
-var testnorwegian83 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs83) {
-		total++;
-		var base = norwegianTestDiffs83[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian103 = function() {
+	diffsTemplateTest(norwegianTestDiffs103);
 }
 
-var testnorwegian82 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs82) {
-		total++;
-		var base = norwegianTestDiffs82[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian102 = function() {
+	diffsTemplateTest(norwegianTestDiffs102);
 }
 
-var testnorwegian81 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs81) {
-		total++;
-		var base = norwegianTestDiffs81[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian101 = function() {
+	diffsTemplateTest(norwegianTestDiffs101);
 }
 
-var testnorwegian80 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs80) {
-		total++;
-		var base = norwegianTestDiffs80[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian100 = function() {
+	diffsTemplateTest(norwegianTestDiffs100);
 }
 
-var testnorwegian79 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs79) {
-		total++;
-		var base = norwegianTestDiffs79[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian99 = function() {
+	diffsTemplateTest(norwegianTestDiffs99);
 }
 
-var testnorwegian78 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs78) {
-		total++;
-		var base = norwegianTestDiffs78[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian98 = function() {
+	diffsTemplateTest(norwegianTestDiffs98);
 }
 
-var testnorwegian77 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs77) {
-		total++;
-		var base = norwegianTestDiffs77[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian97 = function() {
+	diffsTemplateTest(norwegianTestDiffs97);
 }
 
-var testnorwegian76 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs76) {
-		total++;
-		var base = norwegianTestDiffs76[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian96 = function() {
+	diffsTemplateTest(norwegianTestDiffs96);
 }
 
-var testnorwegian75 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs75) {
-		total++;
-		var base = norwegianTestDiffs75[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian95 = function() {
+	diffsTemplateTest(norwegianTestDiffs95);
 }
 
-var testnorwegian74 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs74) {
-		total++;
-		var base = norwegianTestDiffs74[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian94 = function() {
+	diffsTemplateTest(norwegianTestDiffs94);
 }
 
-var testnorwegian73 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs73) {
-		total++;
-		var base = norwegianTestDiffs73[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian93 = function() {
+	diffsTemplateTest(norwegianTestDiffs93);
 }
 
-var testnorwegian72 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs72) {
-		total++;
-		var base = norwegianTestDiffs72[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian92 = function() {
+	diffsTemplateTest(norwegianTestDiffs92);
 }
 
-var testnorwegian71 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs71) {
-		total++;
-		var base = norwegianTestDiffs71[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian91 = function() {
+	diffsTemplateTest(norwegianTestDiffs91);
 }
 
-var testnorwegian70 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs70) {
-		total++;
-		var base = norwegianTestDiffs70[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian90 = function() {
+	diffsTemplateTest(norwegianTestDiffs90);
 }
 
-var testnorwegian69 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs69) {
-		total++;
-		var base = norwegianTestDiffs69[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian89 = function() {
+	diffsTemplateTest(norwegianTestDiffs89);
 }
 
-var testnorwegian68 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs68) {
-		total++;
-		var base = norwegianTestDiffs68[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian88 = function() {
+	diffsTemplateTest(norwegianTestDiffs88);
 }
 
-var testnorwegian67 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs67) {
-		total++;
-		var base = norwegianTestDiffs67[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian87 = function() {
+	diffsTemplateTest(norwegianTestDiffs87);
 }
 
-var testnorwegian66 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs66) {
-		total++;
-		var base = norwegianTestDiffs66[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian86 = function() {
+	diffsTemplateTest(norwegianTestDiffs86);
 }
 
-var testnorwegian65 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs65) {
-		total++;
-		var base = norwegianTestDiffs65[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian85 = function() {
+	diffsTemplateTest(norwegianTestDiffs85);
 }
 
-var testnorwegian64 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs64) {
-		total++;
-		var base = norwegianTestDiffs64[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian84 = function() {
+	diffsTemplateTest(norwegianTestDiffs84);
 }
 
-var testnorwegian63 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs63) {
-		total++;
-		var base = norwegianTestDiffs63[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian83 = function() {
+	diffsTemplateTest(norwegianTestDiffs83);
 }
 
-var testnorwegian62 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs62) {
-		total++;
-		var base = norwegianTestDiffs62[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian82 = function() {
+	diffsTemplateTest(norwegianTestDiffs82);
 }
 
-var testnorwegian61 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs61) {
-		total++;
-		var base = norwegianTestDiffs61[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian81 = function() {
+	diffsTemplateTest(norwegianTestDiffs81);
 }
 
-var testnorwegian60 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs60) {
-		total++;
-		var base = norwegianTestDiffs60[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian80 = function() {
+	diffsTemplateTest(norwegianTestDiffs80);
 }
 
-var testnorwegian59 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs59) {
-		total++;
-		var base = norwegianTestDiffs59[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian79 = function() {
+	diffsTemplateTest(norwegianTestDiffs79);
 }
 
-var testnorwegian58 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs58) {
-		total++;
-		var base = norwegianTestDiffs58[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian78 = function() {
+	diffsTemplateTest(norwegianTestDiffs78);
 }
 
-var testnorwegian57 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs57) {
-		total++;
-		var base = norwegianTestDiffs57[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian77 = function() {
+	diffsTemplateTest(norwegianTestDiffs77);
+}
+
+var testNorwegian76 = function() {
+	diffsTemplateTest(norwegianTestDiffs76);
+}
+
+var testNorwegian75 = function() {
+	diffsTemplateTest(norwegianTestDiffs75);
+}
+
+var testNorwegian74 = function() {
+	diffsTemplateTest(norwegianTestDiffs74);
+}
+
+var testNorwegian73 = function() {
+	diffsTemplateTest(norwegianTestDiffs73);
+}
+
+var testNorwegian72 = function() {
+	diffsTemplateTest(norwegianTestDiffs72);
 }
 
-var testnorwegian56 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs56) {
-		total++;
-		var base = norwegianTestDiffs56[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian71 = function() {
+	diffsTemplateTest(norwegianTestDiffs71);
 }
 
-var testnorwegian55 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs55) {
-		total++;
-		var base = norwegianTestDiffs55[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian70 = function() {
+	diffsTemplateTest(norwegianTestDiffs70);
 }
 
-var testnorwegian54 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs54) {
-		total++;
-		var base = norwegianTestDiffs54[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian69 = function() {
+	diffsTemplateTest(norwegianTestDiffs69);
 }
 
-var testnorwegian53 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs53) {
-		total++;
-		var base = norwegianTestDiffs53[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian68 = function() {
+	diffsTemplateTest(norwegianTestDiffs68);
 }
 
-var testnorwegian52 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs52) {
-		total++;
-		var base = norwegianTestDiffs52[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian67 = function() {
+	diffsTemplateTest(norwegianTestDiffs67);
 }
 
-var testnorwegian51 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs51) {
-		total++;
-		var base = norwegianTestDiffs51[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian66 = function() {
+	diffsTemplateTest(norwegianTestDiffs66);
 }
 
-var testnorwegian50 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs50) {
-		total++;
-		var base = norwegianTestDiffs50[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian65 = function() {
+	diffsTemplateTest(norwegianTestDiffs65);
 }
 
-var testnorwegian49 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs49) {
-		total++;
-		var base = norwegianTestDiffs49[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian64 = function() {
+	diffsTemplateTest(norwegianTestDiffs64);
 }
 
-var testnorwegian48 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs48) {
-		total++;
-		var base = norwegianTestDiffs48[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian63 = function() {
+	diffsTemplateTest(norwegianTestDiffs63);
 }
 
-var testnorwegian47 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs47) {
-		total++;
-		var base = norwegianTestDiffs47[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian62 = function() {
+	diffsTemplateTest(norwegianTestDiffs62);
 }
 
-var testnorwegian46 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs46) {
-		total++;
-		var base = norwegianTestDiffs46[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian61 = function() {
+	diffsTemplateTest(norwegianTestDiffs61);
 }
 
-var testnorwegian45 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs45) {
-		total++;
-		var base = norwegianTestDiffs45[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian60 = function() {
+	diffsTemplateTest(norwegianTestDiffs60);
 }
 
-var testnorwegian44 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs44) {
-		total++;
-		var base = norwegianTestDiffs44[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian59 = function() {
+	diffsTemplateTest(norwegianTestDiffs59);
 }
 
-var testnorwegian43 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs43) {
-		total++;
-		var base = norwegianTestDiffs43[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian58 = function() {
+	diffsTemplateTest(norwegianTestDiffs58);
 }
 
-var testnorwegian42 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs42) {
-		total++;
-		var base = norwegianTestDiffs42[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian57 = function() {
+	diffsTemplateTest(norwegianTestDiffs57);
 }
 
-var testnorwegian41 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs41) {
-		total++;
-		var base = norwegianTestDiffs41[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian56 = function() {
+	diffsTemplateTest(norwegianTestDiffs56);
 }
 
-var testnorwegian40 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs40) {
-		total++;
-		var base = norwegianTestDiffs40[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian55 = function() {
+	diffsTemplateTest(norwegianTestDiffs55);
 }
 
-var testnorwegian39 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs39) {
-		total++;
-		var base = norwegianTestDiffs39[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian54 = function() {
+	diffsTemplateTest(norwegianTestDiffs54);
 }
 
-var testnorwegian38 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs38) {
-		total++;
-		var base = norwegianTestDiffs38[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian53 = function() {
+	diffsTemplateTest(norwegianTestDiffs53);
+}
+
+var testNorwegian52 = function() {
+	diffsTemplateTest(norwegianTestDiffs52);
+}
+
+var testNorwegian51 = function() {
+	diffsTemplateTest(norwegianTestDiffs51);
+}
+
+var testNorwegian50 = function() {
+	diffsTemplateTest(norwegianTestDiffs50);
+}
+
+var testNorwegian49 = function() {
+	diffsTemplateTest(norwegianTestDiffs49);
+}
+
+var testNorwegian48 = function() {
+	diffsTemplateTest(norwegianTestDiffs48);
 }
 
-var testnorwegian37 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs37) {
-		total++;
-		var base = norwegianTestDiffs37[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian47 = function() {
+	diffsTemplateTest(norwegianTestDiffs47);
 }
 
-var testnorwegian36 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs36) {
-		total++;
-		var base = norwegianTestDiffs36[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian46 = function() {
+	diffsTemplateTest(norwegianTestDiffs46);
 }
 
-var testnorwegian35 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs35) {
-		total++;
-		var base = norwegianTestDiffs35[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian45 = function() {
+	diffsTemplateTest(norwegianTestDiffs45);
 }
 
-var testnorwegian34 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs34) {
-		total++;
-		var base = norwegianTestDiffs34[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian44 = function() {
+	diffsTemplateTest(norwegianTestDiffs44);
 }
 
-var testnorwegian33 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs33) {
-		total++;
-		var base = norwegianTestDiffs33[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian43 = function() {
+	diffsTemplateTest(norwegianTestDiffs43);
 }
 
-var testnorwegian32 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs32) {
-		total++;
-		var base = norwegianTestDiffs32[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian42 = function() {
+	diffsTemplateTest(norwegianTestDiffs42);
 }
 
-var testnorwegian31 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs31) {
-		total++;
-		var base = norwegianTestDiffs31[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian41 = function() {
+	diffsTemplateTest(norwegianTestDiffs41);
 }
 
-var testnorwegian30 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs30) {
-		total++;
-		var base = norwegianTestDiffs30[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian40 = function() {
+	diffsTemplateTest(norwegianTestDiffs40);
 }
 
-var testnorwegian29 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs29) {
-		total++;
-		var base = norwegianTestDiffs29[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian39 = function() {
+	diffsTemplateTest(norwegianTestDiffs39);
 }
 
-var testnorwegian28 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs28) {
-		total++;
-		var base = norwegianTestDiffs28[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian38 = function() {
+	diffsTemplateTest(norwegianTestDiffs38);
 }
 
-var testnorwegian27 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs27) {
-		total++;
-		var base = norwegianTestDiffs27[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian37 = function() {
+	diffsTemplateTest(norwegianTestDiffs37);
 }
 
-var testnorwegian26 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs26) {
-		total++;
-		var base = norwegianTestDiffs26[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian36 = function() {
+	diffsTemplateTest(norwegianTestDiffs36);
 }
 
-var testnorwegian25 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs25) {
-		total++;
-		var base = norwegianTestDiffs25[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian35 = function() {
+	diffsTemplateTest(norwegianTestDiffs35);
 }
 
-var testnorwegian24 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs24) {
-		total++;
-		var base = norwegianTestDiffs24[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian34 = function() {
+	diffsTemplateTest(norwegianTestDiffs34);
 }
 
-var testnorwegian23 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs23) {
-		total++;
-		var base = norwegianTestDiffs23[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian33 = function() {
+	diffsTemplateTest(norwegianTestDiffs33);
 }
 
-var testnorwegian22 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs22) {
-		total++;
-		var base = norwegianTestDiffs22[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian32 = function() {
+	diffsTemplateTest(norwegianTestDiffs32);
 }
 
-var testnorwegian21 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs21) {
-		total++;
-		var base = norwegianTestDiffs21[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian31 = function() {
+	diffsTemplateTest(norwegianTestDiffs31);
 }
 
-var testnorwegian20 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs20) {
-		total++;
-		var base = norwegianTestDiffs20[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian30 = function() {
+	diffsTemplateTest(norwegianTestDiffs30);
 }
 
-var testnorwegian19 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs19) {
-		total++;
-		var base = norwegianTestDiffs19[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian29 = function() {
+	diffsTemplateTest(norwegianTestDiffs29);
+}
+
+var testNorwegian28 = function() {
+	diffsTemplateTest(norwegianTestDiffs28);
+}
+
+var testNorwegian27 = function() {
+	diffsTemplateTest(norwegianTestDiffs27);
+}
+
+var testNorwegian26 = function() {
+	diffsTemplateTest(norwegianTestDiffs26);
+}
+
+var testNorwegian25 = function() {
+	diffsTemplateTest(norwegianTestDiffs25);
+}
+
+var testNorwegian24 = function() {
+	diffsTemplateTest(norwegianTestDiffs24);
 }
 
-var testnorwegian18 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs18) {
-		total++;
-		var base = norwegianTestDiffs18[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian23 = function() {
+	diffsTemplateTest(norwegianTestDiffs23);
 }
 
-var testnorwegian17 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs17) {
-		total++;
-		var base = norwegianTestDiffs17[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian22 = function() {
+	diffsTemplateTest(norwegianTestDiffs22);
 }
 
-var testnorwegian16 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs16) {
-		total++;
-		var base = norwegianTestDiffs16[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian21 = function() {
+	diffsTemplateTest(norwegianTestDiffs21);
 }
 
-var testnorwegian15 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs15) {
-		total++;
-		var base = norwegianTestDiffs15[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian20 = function() {
+	diffsTemplateTest(norwegianTestDiffs20);
 }
 
-var testnorwegian14 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs14) {
-		total++;
-		var base = norwegianTestDiffs14[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian19 = function() {
+	diffsTemplateTest(norwegianTestDiffs19);
 }
 
-var testnorwegian13 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs13) {
-		total++;
-		var base = norwegianTestDiffs13[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian18 = function() {
+	diffsTemplateTest(norwegianTestDiffs18);
 }
 
-var testnorwegian12 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs12) {
-		total++;
-		var base = norwegianTestDiffs12[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian17 = function() {
+	diffsTemplateTest(norwegianTestDiffs17);
 }
 
-var testnorwegian11 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs11) {
-		total++;
-		var base = norwegianTestDiffs11[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian16 = function() {
+	diffsTemplateTest(norwegianTestDiffs16);
 }
 
-var testnorwegian10 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs10) {
-		total++;
-		var base = norwegianTestDiffs10[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian15 = function() {
+	diffsTemplateTest(norwegianTestDiffs15);
 }
 
-var testnorwegian9 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs9) {
-		total++;
-		var base = norwegianTestDiffs9[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian14 = function() {
+	diffsTemplateTest(norwegianTestDiffs14);
 }
 
-var testnorwegian8 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs8) {
-		total++;
-		var base = norwegianTestDiffs8[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian13 = function() {
+	diffsTemplateTest(norwegianTestDiffs13);
 }
 
-var testnorwegian7 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs7) {
-		total++;
-		var base = norwegianTestDiffs7[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian12 = function() {
+	diffsTemplateTest(norwegianTestDiffs12);
 }
 
-var testnorwegian6 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs6) {
-		total++;
-		var base = norwegianTestDiffs6[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian11 = function() {
+	diffsTemplateTest(norwegianTestDiffs11);
 }
 
-var testnorwegian5 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs5) {
-		total++;
-		var base = norwegianTestDiffs5[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian10 = function() {
+	diffsTemplateTest(norwegianTestDiffs10);
 }
 
-var testnorwegian4 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs4) {
-		total++;
-		var base = norwegianTestDiffs4[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian9 = function() {
+	diffsTemplateTest(norwegianTestDiffs9);
 }
 
-var testnorwegian3 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs3) {
-		total++;
-		var base = norwegianTestDiffs3[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian8 = function() {
+	diffsTemplateTest(norwegianTestDiffs8);
 }
 
-var testnorwegian2 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs2) {
-		total++;
-		var base = norwegianTestDiffs2[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian7 = function() {
+	diffsTemplateTest(norwegianTestDiffs7);
 }
 
-var testnorwegian1 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs1) {
-		total++;
-		var base = norwegianTestDiffs1[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian6 = function() {
+	diffsTemplateTest(norwegianTestDiffs6);
 }
 
-var testnorwegian0 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in norwegianTestDiffs0) {
-		total++;
-		var base = norwegianTestDiffs0[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testNorwegian5 = function() {
+	diffsTemplateTest(norwegianTestDiffs5);
+}
+
+var testNorwegian4 = function() {
+	diffsTemplateTest(norwegianTestDiffs4);
+}
+
+var testNorwegian3 = function() {
+	diffsTemplateTest(norwegianTestDiffs3);
+}
+
+var testNorwegian2 = function() {
+	diffsTemplateTest(norwegianTestDiffs2);
+}
+
+var testNorwegian1 = function() {
+	diffsTemplateTest(norwegianTestDiffs1);
+}
+
+var testNorwegian0 = function() {
+	diffsTemplateTest(norwegianTestDiffs0);
 }

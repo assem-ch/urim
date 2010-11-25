@@ -30190,11 +30190,11 @@ var romanianTestDiffs119 = {
 	"\u0163\u0103r\u0103nizare" : "\u0163\u0103r\u0103niz"
 };
 
-var testromanian119 = function() {
+function diffsTemplateTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs119) {
+	for (var sVoc in testDiffs) {
 		total++;
-		var base = romanianTestDiffs119[sVoc];
+		var base = testDiffs[sVoc];
 		var stem = stemmer(sVoc);
 		if (base != stem) {
 			fails++;
@@ -30208,2144 +30208,482 @@ var testromanian119 = function() {
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
-var testromanian118 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs118) {
-		total++;
-		var base = romanianTestDiffs118[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian117 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs117) {
-		total++;
-		var base = romanianTestDiffs117[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian116 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs116) {
-		total++;
-		var base = romanianTestDiffs116[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian115 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs115) {
-		total++;
-		var base = romanianTestDiffs115[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian114 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs114) {
-		total++;
-		var base = romanianTestDiffs114[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian113 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs113) {
-		total++;
-		var base = romanianTestDiffs113[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian112 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs112) {
-		total++;
-		var base = romanianTestDiffs112[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian111 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs111) {
-		total++;
-		var base = romanianTestDiffs111[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian110 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs110) {
-		total++;
-		var base = romanianTestDiffs110[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian109 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs109) {
-		total++;
-		var base = romanianTestDiffs109[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian108 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs108) {
-		total++;
-		var base = romanianTestDiffs108[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian107 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs107) {
-		total++;
-		var base = romanianTestDiffs107[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian106 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs106) {
-		total++;
-		var base = romanianTestDiffs106[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian105 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs105) {
-		total++;
-		var base = romanianTestDiffs105[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian104 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs104) {
-		total++;
-		var base = romanianTestDiffs104[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian103 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs103) {
-		total++;
-		var base = romanianTestDiffs103[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian102 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs102) {
-		total++;
-		var base = romanianTestDiffs102[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian101 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs101) {
-		total++;
-		var base = romanianTestDiffs101[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian100 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs100) {
-		total++;
-		var base = romanianTestDiffs100[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian99 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs99) {
-		total++;
-		var base = romanianTestDiffs99[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian98 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs98) {
-		total++;
-		var base = romanianTestDiffs98[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian97 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs97) {
-		total++;
-		var base = romanianTestDiffs97[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian96 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs96) {
-		total++;
-		var base = romanianTestDiffs96[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testromanian95 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs95) {
-		total++;
-		var base = romanianTestDiffs95[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian119 = function() {
+	diffsTemplateTest(romanianTestDiffs119);
 }
 
-var testromanian94 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs94) {
-		total++;
-		var base = romanianTestDiffs94[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian118 = function() {
+	diffsTemplateTest(romanianTestDiffs118);
 }
 
-var testromanian93 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs93) {
-		total++;
-		var base = romanianTestDiffs93[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian117 = function() {
+	diffsTemplateTest(romanianTestDiffs117);
 }
 
-var testromanian92 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs92) {
-		total++;
-		var base = romanianTestDiffs92[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian116 = function() {
+	diffsTemplateTest(romanianTestDiffs116);
 }
 
-var testromanian91 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs91) {
-		total++;
-		var base = romanianTestDiffs91[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian115 = function() {
+	diffsTemplateTest(romanianTestDiffs115);
 }
 
-var testromanian90 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs90) {
-		total++;
-		var base = romanianTestDiffs90[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian114 = function() {
+	diffsTemplateTest(romanianTestDiffs114);
 }
 
-var testromanian89 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs89) {
-		total++;
-		var base = romanianTestDiffs89[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian113 = function() {
+	diffsTemplateTest(romanianTestDiffs113);
 }
 
-var testromanian88 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs88) {
-		total++;
-		var base = romanianTestDiffs88[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian112 = function() {
+	diffsTemplateTest(romanianTestDiffs112);
 }
 
-var testromanian87 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs87) {
-		total++;
-		var base = romanianTestDiffs87[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian111 = function() {
+	diffsTemplateTest(romanianTestDiffs111);
 }
 
-var testromanian86 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs86) {
-		total++;
-		var base = romanianTestDiffs86[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian110 = function() {
+	diffsTemplateTest(romanianTestDiffs110);
 }
 
-var testromanian85 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs85) {
-		total++;
-		var base = romanianTestDiffs85[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian109 = function() {
+	diffsTemplateTest(romanianTestDiffs109);
 }
 
-var testromanian84 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs84) {
-		total++;
-		var base = romanianTestDiffs84[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian108 = function() {
+	diffsTemplateTest(romanianTestDiffs108);
 }
 
-var testromanian83 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs83) {
-		total++;
-		var base = romanianTestDiffs83[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian107 = function() {
+	diffsTemplateTest(romanianTestDiffs107);
 }
 
-var testromanian82 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs82) {
-		total++;
-		var base = romanianTestDiffs82[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian106 = function() {
+	diffsTemplateTest(romanianTestDiffs106);
 }
 
-var testromanian81 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs81) {
-		total++;
-		var base = romanianTestDiffs81[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian105 = function() {
+	diffsTemplateTest(romanianTestDiffs105);
 }
 
-var testromanian80 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs80) {
-		total++;
-		var base = romanianTestDiffs80[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian104 = function() {
+	diffsTemplateTest(romanianTestDiffs104);
 }
 
-var testromanian79 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs79) {
-		total++;
-		var base = romanianTestDiffs79[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian103 = function() {
+	diffsTemplateTest(romanianTestDiffs103);
 }
 
-var testromanian78 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs78) {
-		total++;
-		var base = romanianTestDiffs78[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian102 = function() {
+	diffsTemplateTest(romanianTestDiffs102);
 }
 
-var testromanian77 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs77) {
-		total++;
-		var base = romanianTestDiffs77[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian101 = function() {
+	diffsTemplateTest(romanianTestDiffs101);
 }
 
-var testromanian76 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs76) {
-		total++;
-		var base = romanianTestDiffs76[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian100 = function() {
+	diffsTemplateTest(romanianTestDiffs100);
+}
+
+var testRomanian99 = function() {
+	diffsTemplateTest(romanianTestDiffs99);
+}
+
+var testRomanian98 = function() {
+	diffsTemplateTest(romanianTestDiffs98);
+}
+
+var testRomanian97 = function() {
+	diffsTemplateTest(romanianTestDiffs97);
+}
+
+var testRomanian96 = function() {
+	diffsTemplateTest(romanianTestDiffs96);
 }
 
-var testromanian75 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs75) {
-		total++;
-		var base = romanianTestDiffs75[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian95 = function() {
+	diffsTemplateTest(romanianTestDiffs95);
 }
 
-var testromanian74 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs74) {
-		total++;
-		var base = romanianTestDiffs74[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian94 = function() {
+	diffsTemplateTest(romanianTestDiffs94);
 }
 
-var testromanian73 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs73) {
-		total++;
-		var base = romanianTestDiffs73[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian93 = function() {
+	diffsTemplateTest(romanianTestDiffs93);
 }
 
-var testromanian72 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs72) {
-		total++;
-		var base = romanianTestDiffs72[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian92 = function() {
+	diffsTemplateTest(romanianTestDiffs92);
 }
 
-var testromanian71 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs71) {
-		total++;
-		var base = romanianTestDiffs71[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian91 = function() {
+	diffsTemplateTest(romanianTestDiffs91);
 }
 
-var testromanian70 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs70) {
-		total++;
-		var base = romanianTestDiffs70[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian90 = function() {
+	diffsTemplateTest(romanianTestDiffs90);
 }
 
-var testromanian69 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs69) {
-		total++;
-		var base = romanianTestDiffs69[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian89 = function() {
+	diffsTemplateTest(romanianTestDiffs89);
 }
 
-var testromanian68 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs68) {
-		total++;
-		var base = romanianTestDiffs68[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian88 = function() {
+	diffsTemplateTest(romanianTestDiffs88);
 }
 
-var testromanian67 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs67) {
-		total++;
-		var base = romanianTestDiffs67[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian87 = function() {
+	diffsTemplateTest(romanianTestDiffs87);
 }
 
-var testromanian66 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs66) {
-		total++;
-		var base = romanianTestDiffs66[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian86 = function() {
+	diffsTemplateTest(romanianTestDiffs86);
 }
 
-var testromanian65 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs65) {
-		total++;
-		var base = romanianTestDiffs65[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian85 = function() {
+	diffsTemplateTest(romanianTestDiffs85);
 }
 
-var testromanian64 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs64) {
-		total++;
-		var base = romanianTestDiffs64[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian84 = function() {
+	diffsTemplateTest(romanianTestDiffs84);
 }
 
-var testromanian63 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs63) {
-		total++;
-		var base = romanianTestDiffs63[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian83 = function() {
+	diffsTemplateTest(romanianTestDiffs83);
 }
 
-var testromanian62 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs62) {
-		total++;
-		var base = romanianTestDiffs62[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian82 = function() {
+	diffsTemplateTest(romanianTestDiffs82);
 }
 
-var testromanian61 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs61) {
-		total++;
-		var base = romanianTestDiffs61[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian81 = function() {
+	diffsTemplateTest(romanianTestDiffs81);
 }
 
-var testromanian60 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs60) {
-		total++;
-		var base = romanianTestDiffs60[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian80 = function() {
+	diffsTemplateTest(romanianTestDiffs80);
 }
 
-var testromanian59 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs59) {
-		total++;
-		var base = romanianTestDiffs59[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian79 = function() {
+	diffsTemplateTest(romanianTestDiffs79);
 }
 
-var testromanian58 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs58) {
-		total++;
-		var base = romanianTestDiffs58[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian78 = function() {
+	diffsTemplateTest(romanianTestDiffs78);
 }
 
-var testromanian57 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs57) {
-		total++;
-		var base = romanianTestDiffs57[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian77 = function() {
+	diffsTemplateTest(romanianTestDiffs77);
+}
+
+var testRomanian76 = function() {
+	diffsTemplateTest(romanianTestDiffs76);
+}
+
+var testRomanian75 = function() {
+	diffsTemplateTest(romanianTestDiffs75);
+}
+
+var testRomanian74 = function() {
+	diffsTemplateTest(romanianTestDiffs74);
+}
+
+var testRomanian73 = function() {
+	diffsTemplateTest(romanianTestDiffs73);
+}
+
+var testRomanian72 = function() {
+	diffsTemplateTest(romanianTestDiffs72);
 }
 
-var testromanian56 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs56) {
-		total++;
-		var base = romanianTestDiffs56[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian71 = function() {
+	diffsTemplateTest(romanianTestDiffs71);
 }
 
-var testromanian55 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs55) {
-		total++;
-		var base = romanianTestDiffs55[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian70 = function() {
+	diffsTemplateTest(romanianTestDiffs70);
 }
 
-var testromanian54 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs54) {
-		total++;
-		var base = romanianTestDiffs54[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian69 = function() {
+	diffsTemplateTest(romanianTestDiffs69);
 }
 
-var testromanian53 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs53) {
-		total++;
-		var base = romanianTestDiffs53[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian68 = function() {
+	diffsTemplateTest(romanianTestDiffs68);
 }
 
-var testromanian52 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs52) {
-		total++;
-		var base = romanianTestDiffs52[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian67 = function() {
+	diffsTemplateTest(romanianTestDiffs67);
 }
 
-var testromanian51 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs51) {
-		total++;
-		var base = romanianTestDiffs51[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian66 = function() {
+	diffsTemplateTest(romanianTestDiffs66);
 }
 
-var testromanian50 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs50) {
-		total++;
-		var base = romanianTestDiffs50[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian65 = function() {
+	diffsTemplateTest(romanianTestDiffs65);
 }
 
-var testromanian49 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs49) {
-		total++;
-		var base = romanianTestDiffs49[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian64 = function() {
+	diffsTemplateTest(romanianTestDiffs64);
 }
 
-var testromanian48 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs48) {
-		total++;
-		var base = romanianTestDiffs48[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian63 = function() {
+	diffsTemplateTest(romanianTestDiffs63);
 }
 
-var testromanian47 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs47) {
-		total++;
-		var base = romanianTestDiffs47[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian62 = function() {
+	diffsTemplateTest(romanianTestDiffs62);
 }
 
-var testromanian46 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs46) {
-		total++;
-		var base = romanianTestDiffs46[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian61 = function() {
+	diffsTemplateTest(romanianTestDiffs61);
 }
 
-var testromanian45 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs45) {
-		total++;
-		var base = romanianTestDiffs45[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian60 = function() {
+	diffsTemplateTest(romanianTestDiffs60);
 }
 
-var testromanian44 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs44) {
-		total++;
-		var base = romanianTestDiffs44[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian59 = function() {
+	diffsTemplateTest(romanianTestDiffs59);
 }
 
-var testromanian43 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs43) {
-		total++;
-		var base = romanianTestDiffs43[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian58 = function() {
+	diffsTemplateTest(romanianTestDiffs58);
 }
 
-var testromanian42 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs42) {
-		total++;
-		var base = romanianTestDiffs42[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian57 = function() {
+	diffsTemplateTest(romanianTestDiffs57);
 }
 
-var testromanian41 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs41) {
-		total++;
-		var base = romanianTestDiffs41[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian56 = function() {
+	diffsTemplateTest(romanianTestDiffs56);
 }
 
-var testromanian40 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs40) {
-		total++;
-		var base = romanianTestDiffs40[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian55 = function() {
+	diffsTemplateTest(romanianTestDiffs55);
 }
 
-var testromanian39 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs39) {
-		total++;
-		var base = romanianTestDiffs39[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian54 = function() {
+	diffsTemplateTest(romanianTestDiffs54);
 }
 
-var testromanian38 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs38) {
-		total++;
-		var base = romanianTestDiffs38[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian53 = function() {
+	diffsTemplateTest(romanianTestDiffs53);
+}
+
+var testRomanian52 = function() {
+	diffsTemplateTest(romanianTestDiffs52);
+}
+
+var testRomanian51 = function() {
+	diffsTemplateTest(romanianTestDiffs51);
+}
+
+var testRomanian50 = function() {
+	diffsTemplateTest(romanianTestDiffs50);
+}
+
+var testRomanian49 = function() {
+	diffsTemplateTest(romanianTestDiffs49);
+}
+
+var testRomanian48 = function() {
+	diffsTemplateTest(romanianTestDiffs48);
 }
 
-var testromanian37 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs37) {
-		total++;
-		var base = romanianTestDiffs37[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian47 = function() {
+	diffsTemplateTest(romanianTestDiffs47);
 }
 
-var testromanian36 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs36) {
-		total++;
-		var base = romanianTestDiffs36[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian46 = function() {
+	diffsTemplateTest(romanianTestDiffs46);
 }
 
-var testromanian35 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs35) {
-		total++;
-		var base = romanianTestDiffs35[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian45 = function() {
+	diffsTemplateTest(romanianTestDiffs45);
 }
 
-var testromanian34 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs34) {
-		total++;
-		var base = romanianTestDiffs34[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian44 = function() {
+	diffsTemplateTest(romanianTestDiffs44);
 }
 
-var testromanian33 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs33) {
-		total++;
-		var base = romanianTestDiffs33[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian43 = function() {
+	diffsTemplateTest(romanianTestDiffs43);
 }
 
-var testromanian32 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs32) {
-		total++;
-		var base = romanianTestDiffs32[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian42 = function() {
+	diffsTemplateTest(romanianTestDiffs42);
 }
 
-var testromanian31 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs31) {
-		total++;
-		var base = romanianTestDiffs31[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian41 = function() {
+	diffsTemplateTest(romanianTestDiffs41);
 }
 
-var testromanian30 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs30) {
-		total++;
-		var base = romanianTestDiffs30[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian40 = function() {
+	diffsTemplateTest(romanianTestDiffs40);
 }
 
-var testromanian29 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs29) {
-		total++;
-		var base = romanianTestDiffs29[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian39 = function() {
+	diffsTemplateTest(romanianTestDiffs39);
 }
 
-var testromanian28 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs28) {
-		total++;
-		var base = romanianTestDiffs28[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian38 = function() {
+	diffsTemplateTest(romanianTestDiffs38);
 }
 
-var testromanian27 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs27) {
-		total++;
-		var base = romanianTestDiffs27[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian37 = function() {
+	diffsTemplateTest(romanianTestDiffs37);
 }
 
-var testromanian26 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs26) {
-		total++;
-		var base = romanianTestDiffs26[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian36 = function() {
+	diffsTemplateTest(romanianTestDiffs36);
 }
 
-var testromanian25 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs25) {
-		total++;
-		var base = romanianTestDiffs25[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian35 = function() {
+	diffsTemplateTest(romanianTestDiffs35);
 }
 
-var testromanian24 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs24) {
-		total++;
-		var base = romanianTestDiffs24[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian34 = function() {
+	diffsTemplateTest(romanianTestDiffs34);
 }
 
-var testromanian23 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs23) {
-		total++;
-		var base = romanianTestDiffs23[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian33 = function() {
+	diffsTemplateTest(romanianTestDiffs33);
 }
 
-var testromanian22 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs22) {
-		total++;
-		var base = romanianTestDiffs22[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian32 = function() {
+	diffsTemplateTest(romanianTestDiffs32);
 }
 
-var testromanian21 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs21) {
-		total++;
-		var base = romanianTestDiffs21[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian31 = function() {
+	diffsTemplateTest(romanianTestDiffs31);
 }
 
-var testromanian20 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs20) {
-		total++;
-		var base = romanianTestDiffs20[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian30 = function() {
+	diffsTemplateTest(romanianTestDiffs30);
 }
 
-var testromanian19 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs19) {
-		total++;
-		var base = romanianTestDiffs19[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian29 = function() {
+	diffsTemplateTest(romanianTestDiffs29);
+}
+
+var testRomanian28 = function() {
+	diffsTemplateTest(romanianTestDiffs28);
+}
+
+var testRomanian27 = function() {
+	diffsTemplateTest(romanianTestDiffs27);
+}
+
+var testRomanian26 = function() {
+	diffsTemplateTest(romanianTestDiffs26);
+}
+
+var testRomanian25 = function() {
+	diffsTemplateTest(romanianTestDiffs25);
+}
+
+var testRomanian24 = function() {
+	diffsTemplateTest(romanianTestDiffs24);
 }
 
-var testromanian18 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs18) {
-		total++;
-		var base = romanianTestDiffs18[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian23 = function() {
+	diffsTemplateTest(romanianTestDiffs23);
 }
 
-var testromanian17 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs17) {
-		total++;
-		var base = romanianTestDiffs17[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian22 = function() {
+	diffsTemplateTest(romanianTestDiffs22);
 }
 
-var testromanian16 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs16) {
-		total++;
-		var base = romanianTestDiffs16[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian21 = function() {
+	diffsTemplateTest(romanianTestDiffs21);
 }
 
-var testromanian15 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs15) {
-		total++;
-		var base = romanianTestDiffs15[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian20 = function() {
+	diffsTemplateTest(romanianTestDiffs20);
 }
 
-var testromanian14 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs14) {
-		total++;
-		var base = romanianTestDiffs14[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian19 = function() {
+	diffsTemplateTest(romanianTestDiffs19);
 }
 
-var testromanian13 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs13) {
-		total++;
-		var base = romanianTestDiffs13[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian18 = function() {
+	diffsTemplateTest(romanianTestDiffs18);
 }
 
-var testromanian12 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs12) {
-		total++;
-		var base = romanianTestDiffs12[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian17 = function() {
+	diffsTemplateTest(romanianTestDiffs17);
 }
 
-var testromanian11 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs11) {
-		total++;
-		var base = romanianTestDiffs11[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian16 = function() {
+	diffsTemplateTest(romanianTestDiffs16);
 }
 
-var testromanian10 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs10) {
-		total++;
-		var base = romanianTestDiffs10[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian15 = function() {
+	diffsTemplateTest(romanianTestDiffs15);
 }
 
-var testromanian9 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs9) {
-		total++;
-		var base = romanianTestDiffs9[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian14 = function() {
+	diffsTemplateTest(romanianTestDiffs14);
 }
 
-var testromanian8 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs8) {
-		total++;
-		var base = romanianTestDiffs8[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian13 = function() {
+	diffsTemplateTest(romanianTestDiffs13);
 }
 
-var testromanian7 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs7) {
-		total++;
-		var base = romanianTestDiffs7[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian12 = function() {
+	diffsTemplateTest(romanianTestDiffs12);
 }
 
-var testromanian6 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs6) {
-		total++;
-		var base = romanianTestDiffs6[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian11 = function() {
+	diffsTemplateTest(romanianTestDiffs11);
 }
 
-var testromanian5 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs5) {
-		total++;
-		var base = romanianTestDiffs5[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian10 = function() {
+	diffsTemplateTest(romanianTestDiffs10);
 }
 
-var testromanian4 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs4) {
-		total++;
-		var base = romanianTestDiffs4[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian9 = function() {
+	diffsTemplateTest(romanianTestDiffs9);
 }
 
-var testromanian3 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs3) {
-		total++;
-		var base = romanianTestDiffs3[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian8 = function() {
+	diffsTemplateTest(romanianTestDiffs8);
 }
 
-var testromanian2 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs2) {
-		total++;
-		var base = romanianTestDiffs2[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian7 = function() {
+	diffsTemplateTest(romanianTestDiffs7);
 }
 
-var testromanian1 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs1) {
-		total++;
-		var base = romanianTestDiffs1[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian6 = function() {
+	diffsTemplateTest(romanianTestDiffs6);
 }
 
-var testromanian0 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in romanianTestDiffs0) {
-		total++;
-		var base = romanianTestDiffs0[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testRomanian5 = function() {
+	diffsTemplateTest(romanianTestDiffs5);
+}
+
+var testRomanian4 = function() {
+	diffsTemplateTest(romanianTestDiffs4);
+}
+
+var testRomanian3 = function() {
+	diffsTemplateTest(romanianTestDiffs3);
+}
+
+var testRomanian2 = function() {
+	diffsTemplateTest(romanianTestDiffs2);
+}
+
+var testRomanian1 = function() {
+	diffsTemplateTest(romanianTestDiffs1);
+}
+
+var testRomanian0 = function() {
+	diffsTemplateTest(romanianTestDiffs0);
 }

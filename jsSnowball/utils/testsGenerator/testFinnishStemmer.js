@@ -50639,11 +50639,11 @@ var finnishTestDiffs200 = {
 
 };
 
-var testfinnish200 = function() {
+function diffsTemplateTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs200) {
+	for (var sVoc in testDiffs) {
 		total++;
-		var base = finnishTestDiffs200[sVoc];
+		var base = testDiffs[sVoc];
 		var stem = stemmer(sVoc);
 		if (base != stem) {
 			fails++;
@@ -50657,3602 +50657,806 @@ var testfinnish200 = function() {
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
-var testfinnish199 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs199) {
-		total++;
-		var base = finnishTestDiffs199[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish198 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs198) {
-		total++;
-		var base = finnishTestDiffs198[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish197 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs197) {
-		total++;
-		var base = finnishTestDiffs197[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish196 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs196) {
-		total++;
-		var base = finnishTestDiffs196[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish195 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs195) {
-		total++;
-		var base = finnishTestDiffs195[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish194 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs194) {
-		total++;
-		var base = finnishTestDiffs194[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish193 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs193) {
-		total++;
-		var base = finnishTestDiffs193[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish192 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs192) {
-		total++;
-		var base = finnishTestDiffs192[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish191 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs191) {
-		total++;
-		var base = finnishTestDiffs191[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish190 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs190) {
-		total++;
-		var base = finnishTestDiffs190[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish189 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs189) {
-		total++;
-		var base = finnishTestDiffs189[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish188 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs188) {
-		total++;
-		var base = finnishTestDiffs188[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish187 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs187) {
-		total++;
-		var base = finnishTestDiffs187[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish186 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs186) {
-		total++;
-		var base = finnishTestDiffs186[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish185 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs185) {
-		total++;
-		var base = finnishTestDiffs185[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish184 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs184) {
-		total++;
-		var base = finnishTestDiffs184[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish183 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs183) {
-		total++;
-		var base = finnishTestDiffs183[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish182 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs182) {
-		total++;
-		var base = finnishTestDiffs182[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish181 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs181) {
-		total++;
-		var base = finnishTestDiffs181[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish180 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs180) {
-		total++;
-		var base = finnishTestDiffs180[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish179 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs179) {
-		total++;
-		var base = finnishTestDiffs179[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish178 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs178) {
-		total++;
-		var base = finnishTestDiffs178[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish177 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs177) {
-		total++;
-		var base = finnishTestDiffs177[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish176 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs176) {
-		total++;
-		var base = finnishTestDiffs176[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish175 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs175) {
-		total++;
-		var base = finnishTestDiffs175[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish174 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs174) {
-		total++;
-		var base = finnishTestDiffs174[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish173 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs173) {
-		total++;
-		var base = finnishTestDiffs173[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish172 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs172) {
-		total++;
-		var base = finnishTestDiffs172[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish171 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs171) {
-		total++;
-		var base = finnishTestDiffs171[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish170 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs170) {
-		total++;
-		var base = finnishTestDiffs170[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish169 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs169) {
-		total++;
-		var base = finnishTestDiffs169[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish168 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs168) {
-		total++;
-		var base = finnishTestDiffs168[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish167 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs167) {
-		total++;
-		var base = finnishTestDiffs167[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish166 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs166) {
-		total++;
-		var base = finnishTestDiffs166[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish165 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs165) {
-		total++;
-		var base = finnishTestDiffs165[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish164 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs164) {
-		total++;
-		var base = finnishTestDiffs164[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish163 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs163) {
-		total++;
-		var base = finnishTestDiffs163[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish162 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs162) {
-		total++;
-		var base = finnishTestDiffs162[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish161 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs161) {
-		total++;
-		var base = finnishTestDiffs161[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testfinnish160 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs160) {
-		total++;
-		var base = finnishTestDiffs160[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish200 = function() {
+	diffsTemplateTest(finnishTestDiffs200);
 }
 
-var testfinnish159 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs159) {
-		total++;
-		var base = finnishTestDiffs159[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish199 = function() {
+	diffsTemplateTest(finnishTestDiffs199);
 }
 
-var testfinnish158 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs158) {
-		total++;
-		var base = finnishTestDiffs158[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish198 = function() {
+	diffsTemplateTest(finnishTestDiffs198);
 }
 
-var testfinnish157 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs157) {
-		total++;
-		var base = finnishTestDiffs157[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish197 = function() {
+	diffsTemplateTest(finnishTestDiffs197);
 }
 
-var testfinnish156 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs156) {
-		total++;
-		var base = finnishTestDiffs156[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish196 = function() {
+	diffsTemplateTest(finnishTestDiffs196);
 }
 
-var testfinnish155 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs155) {
-		total++;
-		var base = finnishTestDiffs155[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish195 = function() {
+	diffsTemplateTest(finnishTestDiffs195);
 }
 
-var testfinnish154 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs154) {
-		total++;
-		var base = finnishTestDiffs154[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish194 = function() {
+	diffsTemplateTest(finnishTestDiffs194);
 }
 
-var testfinnish153 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs153) {
-		total++;
-		var base = finnishTestDiffs153[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish193 = function() {
+	diffsTemplateTest(finnishTestDiffs193);
 }
 
-var testfinnish152 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs152) {
-		total++;
-		var base = finnishTestDiffs152[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish192 = function() {
+	diffsTemplateTest(finnishTestDiffs192);
 }
 
-var testfinnish151 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs151) {
-		total++;
-		var base = finnishTestDiffs151[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish191 = function() {
+	diffsTemplateTest(finnishTestDiffs191);
 }
 
-var testfinnish150 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs150) {
-		total++;
-		var base = finnishTestDiffs150[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish190 = function() {
+	diffsTemplateTest(finnishTestDiffs190);
 }
 
-var testfinnish149 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs149) {
-		total++;
-		var base = finnishTestDiffs149[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish189 = function() {
+	diffsTemplateTest(finnishTestDiffs189);
 }
 
-var testfinnish148 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs148) {
-		total++;
-		var base = finnishTestDiffs148[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish188 = function() {
+	diffsTemplateTest(finnishTestDiffs188);
 }
 
-var testfinnish147 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs147) {
-		total++;
-		var base = finnishTestDiffs147[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish187 = function() {
+	diffsTemplateTest(finnishTestDiffs187);
 }
 
-var testfinnish146 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs146) {
-		total++;
-		var base = finnishTestDiffs146[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish186 = function() {
+	diffsTemplateTest(finnishTestDiffs186);
 }
 
-var testfinnish145 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs145) {
-		total++;
-		var base = finnishTestDiffs145[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish185 = function() {
+	diffsTemplateTest(finnishTestDiffs185);
 }
 
-var testfinnish144 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs144) {
-		total++;
-		var base = finnishTestDiffs144[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish184 = function() {
+	diffsTemplateTest(finnishTestDiffs184);
 }
 
-var testfinnish143 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs143) {
-		total++;
-		var base = finnishTestDiffs143[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish183 = function() {
+	diffsTemplateTest(finnishTestDiffs183);
 }
 
-var testfinnish142 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs142) {
-		total++;
-		var base = finnishTestDiffs142[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish182 = function() {
+	diffsTemplateTest(finnishTestDiffs182);
 }
 
-var testfinnish141 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs141) {
-		total++;
-		var base = finnishTestDiffs141[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish181 = function() {
+	diffsTemplateTest(finnishTestDiffs181);
 }
 
-var testfinnish140 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs140) {
-		total++;
-		var base = finnishTestDiffs140[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish180 = function() {
+	diffsTemplateTest(finnishTestDiffs180);
 }
 
-var testfinnish139 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs139) {
-		total++;
-		var base = finnishTestDiffs139[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish179 = function() {
+	diffsTemplateTest(finnishTestDiffs179);
 }
 
-var testfinnish138 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs138) {
-		total++;
-		var base = finnishTestDiffs138[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish178 = function() {
+	diffsTemplateTest(finnishTestDiffs178);
 }
 
-var testfinnish137 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs137) {
-		total++;
-		var base = finnishTestDiffs137[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish177 = function() {
+	diffsTemplateTest(finnishTestDiffs177);
 }
 
-var testfinnish136 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs136) {
-		total++;
-		var base = finnishTestDiffs136[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish176 = function() {
+	diffsTemplateTest(finnishTestDiffs176);
 }
 
-var testfinnish135 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs135) {
-		total++;
-		var base = finnishTestDiffs135[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish175 = function() {
+	diffsTemplateTest(finnishTestDiffs175);
 }
 
-var testfinnish134 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs134) {
-		total++;
-		var base = finnishTestDiffs134[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish174 = function() {
+	diffsTemplateTest(finnishTestDiffs174);
 }
 
-var testfinnish133 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs133) {
-		total++;
-		var base = finnishTestDiffs133[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish173 = function() {
+	diffsTemplateTest(finnishTestDiffs173);
+}
+
+var testFinnish172 = function() {
+	diffsTemplateTest(finnishTestDiffs172);
+}
+
+var testFinnish171 = function() {
+	diffsTemplateTest(finnishTestDiffs171);
+}
+
+var testFinnish170 = function() {
+	diffsTemplateTest(finnishTestDiffs170);
+}
+
+var testFinnish169 = function() {
+	diffsTemplateTest(finnishTestDiffs169);
+}
+
+var testFinnish168 = function() {
+	diffsTemplateTest(finnishTestDiffs168);
 }
 
-var testfinnish132 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs132) {
-		total++;
-		var base = finnishTestDiffs132[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish167 = function() {
+	diffsTemplateTest(finnishTestDiffs167);
 }
 
-var testfinnish131 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs131) {
-		total++;
-		var base = finnishTestDiffs131[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish166 = function() {
+	diffsTemplateTest(finnishTestDiffs166);
 }
 
-var testfinnish130 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs130) {
-		total++;
-		var base = finnishTestDiffs130[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish165 = function() {
+	diffsTemplateTest(finnishTestDiffs165);
 }
 
-var testfinnish129 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs129) {
-		total++;
-		var base = finnishTestDiffs129[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish164 = function() {
+	diffsTemplateTest(finnishTestDiffs164);
 }
 
-var testfinnish128 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs128) {
-		total++;
-		var base = finnishTestDiffs128[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish163 = function() {
+	diffsTemplateTest(finnishTestDiffs163);
 }
 
-var testfinnish127 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs127) {
-		total++;
-		var base = finnishTestDiffs127[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish162 = function() {
+	diffsTemplateTest(finnishTestDiffs162);
 }
 
-var testfinnish126 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs126) {
-		total++;
-		var base = finnishTestDiffs126[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish161 = function() {
+	diffsTemplateTest(finnishTestDiffs161);
 }
 
-var testfinnish125 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs125) {
-		total++;
-		var base = finnishTestDiffs125[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish160 = function() {
+	diffsTemplateTest(finnishTestDiffs160);
 }
 
-var testfinnish124 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs124) {
-		total++;
-		var base = finnishTestDiffs124[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish159 = function() {
+	diffsTemplateTest(finnishTestDiffs159);
 }
 
-var testfinnish123 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs123) {
-		total++;
-		var base = finnishTestDiffs123[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish158 = function() {
+	diffsTemplateTest(finnishTestDiffs158);
 }
 
-var testfinnish122 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs122) {
-		total++;
-		var base = finnishTestDiffs122[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish157 = function() {
+	diffsTemplateTest(finnishTestDiffs157);
 }
 
-var testfinnish121 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs121) {
-		total++;
-		var base = finnishTestDiffs121[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish156 = function() {
+	diffsTemplateTest(finnishTestDiffs156);
 }
 
-var testfinnish120 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs120) {
-		total++;
-		var base = finnishTestDiffs120[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish155 = function() {
+	diffsTemplateTest(finnishTestDiffs155);
 }
 
-var testfinnish119 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs119) {
-		total++;
-		var base = finnishTestDiffs119[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish154 = function() {
+	diffsTemplateTest(finnishTestDiffs154);
 }
 
-var testfinnish118 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs118) {
-		total++;
-		var base = finnishTestDiffs118[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish153 = function() {
+	diffsTemplateTest(finnishTestDiffs153);
 }
 
-var testfinnish117 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs117) {
-		total++;
-		var base = finnishTestDiffs117[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish152 = function() {
+	diffsTemplateTest(finnishTestDiffs152);
 }
 
-var testfinnish116 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs116) {
-		total++;
-		var base = finnishTestDiffs116[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish151 = function() {
+	diffsTemplateTest(finnishTestDiffs151);
 }
 
-var testfinnish115 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs115) {
-		total++;
-		var base = finnishTestDiffs115[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish150 = function() {
+	diffsTemplateTest(finnishTestDiffs150);
 }
 
-var testfinnish114 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs114) {
-		total++;
-		var base = finnishTestDiffs114[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish149 = function() {
+	diffsTemplateTest(finnishTestDiffs149);
+}
+
+var testFinnish148 = function() {
+	diffsTemplateTest(finnishTestDiffs148);
+}
+
+var testFinnish147 = function() {
+	diffsTemplateTest(finnishTestDiffs147);
+}
+
+var testFinnish146 = function() {
+	diffsTemplateTest(finnishTestDiffs146);
+}
+
+var testFinnish145 = function() {
+	diffsTemplateTest(finnishTestDiffs145);
+}
+
+var testFinnish144 = function() {
+	diffsTemplateTest(finnishTestDiffs144);
 }
 
-var testfinnish113 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs113) {
-		total++;
-		var base = finnishTestDiffs113[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish143 = function() {
+	diffsTemplateTest(finnishTestDiffs143);
 }
 
-var testfinnish112 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs112) {
-		total++;
-		var base = finnishTestDiffs112[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish142 = function() {
+	diffsTemplateTest(finnishTestDiffs142);
 }
 
-var testfinnish111 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs111) {
-		total++;
-		var base = finnishTestDiffs111[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish141 = function() {
+	diffsTemplateTest(finnishTestDiffs141);
 }
 
-var testfinnish110 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs110) {
-		total++;
-		var base = finnishTestDiffs110[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish140 = function() {
+	diffsTemplateTest(finnishTestDiffs140);
 }
 
-var testfinnish109 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs109) {
-		total++;
-		var base = finnishTestDiffs109[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish139 = function() {
+	diffsTemplateTest(finnishTestDiffs139);
 }
 
-var testfinnish108 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs108) {
-		total++;
-		var base = finnishTestDiffs108[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish138 = function() {
+	diffsTemplateTest(finnishTestDiffs138);
 }
 
-var testfinnish107 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs107) {
-		total++;
-		var base = finnishTestDiffs107[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish137 = function() {
+	diffsTemplateTest(finnishTestDiffs137);
 }
 
-var testfinnish106 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs106) {
-		total++;
-		var base = finnishTestDiffs106[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish136 = function() {
+	diffsTemplateTest(finnishTestDiffs136);
 }
 
-var testfinnish105 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs105) {
-		total++;
-		var base = finnishTestDiffs105[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish135 = function() {
+	diffsTemplateTest(finnishTestDiffs135);
 }
 
-var testfinnish104 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs104) {
-		total++;
-		var base = finnishTestDiffs104[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish134 = function() {
+	diffsTemplateTest(finnishTestDiffs134);
 }
 
-var testfinnish103 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs103) {
-		total++;
-		var base = finnishTestDiffs103[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish133 = function() {
+	diffsTemplateTest(finnishTestDiffs133);
 }
 
-var testfinnish102 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs102) {
-		total++;
-		var base = finnishTestDiffs102[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish132 = function() {
+	diffsTemplateTest(finnishTestDiffs132);
 }
 
-var testfinnish101 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs101) {
-		total++;
-		var base = finnishTestDiffs101[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish131 = function() {
+	diffsTemplateTest(finnishTestDiffs131);
 }
 
-var testfinnish100 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs100) {
-		total++;
-		var base = finnishTestDiffs100[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish130 = function() {
+	diffsTemplateTest(finnishTestDiffs130);
 }
 
-var testfinnish99 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs99) {
-		total++;
-		var base = finnishTestDiffs99[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish129 = function() {
+	diffsTemplateTest(finnishTestDiffs129);
 }
 
-var testfinnish98 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs98) {
-		total++;
-		var base = finnishTestDiffs98[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish128 = function() {
+	diffsTemplateTest(finnishTestDiffs128);
 }
 
-var testfinnish97 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs97) {
-		total++;
-		var base = finnishTestDiffs97[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish127 = function() {
+	diffsTemplateTest(finnishTestDiffs127);
 }
 
-var testfinnish96 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs96) {
-		total++;
-		var base = finnishTestDiffs96[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish126 = function() {
+	diffsTemplateTest(finnishTestDiffs126);
 }
 
-var testfinnish95 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs95) {
-		total++;
-		var base = finnishTestDiffs95[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish125 = function() {
+	diffsTemplateTest(finnishTestDiffs125);
+}
+
+var testFinnish124 = function() {
+	diffsTemplateTest(finnishTestDiffs124);
+}
+
+var testFinnish123 = function() {
+	diffsTemplateTest(finnishTestDiffs123);
+}
+
+var testFinnish122 = function() {
+	diffsTemplateTest(finnishTestDiffs122);
+}
+
+var testFinnish121 = function() {
+	diffsTemplateTest(finnishTestDiffs121);
+}
+
+var testFinnish120 = function() {
+	diffsTemplateTest(finnishTestDiffs120);
 }
 
-var testfinnish94 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs94) {
-		total++;
-		var base = finnishTestDiffs94[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish119 = function() {
+	diffsTemplateTest(finnishTestDiffs119);
 }
 
-var testfinnish93 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs93) {
-		total++;
-		var base = finnishTestDiffs93[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish118 = function() {
+	diffsTemplateTest(finnishTestDiffs118);
 }
 
-var testfinnish92 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs92) {
-		total++;
-		var base = finnishTestDiffs92[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish117 = function() {
+	diffsTemplateTest(finnishTestDiffs117);
 }
 
-var testfinnish91 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs91) {
-		total++;
-		var base = finnishTestDiffs91[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish116 = function() {
+	diffsTemplateTest(finnishTestDiffs116);
 }
 
-var testfinnish90 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs90) {
-		total++;
-		var base = finnishTestDiffs90[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish115 = function() {
+	diffsTemplateTest(finnishTestDiffs115);
 }
 
-var testfinnish89 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs89) {
-		total++;
-		var base = finnishTestDiffs89[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish114 = function() {
+	diffsTemplateTest(finnishTestDiffs114);
 }
 
-var testfinnish88 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs88) {
-		total++;
-		var base = finnishTestDiffs88[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish113 = function() {
+	diffsTemplateTest(finnishTestDiffs113);
 }
 
-var testfinnish87 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs87) {
-		total++;
-		var base = finnishTestDiffs87[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish112 = function() {
+	diffsTemplateTest(finnishTestDiffs112);
 }
 
-var testfinnish86 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs86) {
-		total++;
-		var base = finnishTestDiffs86[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish111 = function() {
+	diffsTemplateTest(finnishTestDiffs111);
 }
 
-var testfinnish85 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs85) {
-		total++;
-		var base = finnishTestDiffs85[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish110 = function() {
+	diffsTemplateTest(finnishTestDiffs110);
 }
 
-var testfinnish84 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs84) {
-		total++;
-		var base = finnishTestDiffs84[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish109 = function() {
+	diffsTemplateTest(finnishTestDiffs109);
 }
 
-var testfinnish83 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs83) {
-		total++;
-		var base = finnishTestDiffs83[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish108 = function() {
+	diffsTemplateTest(finnishTestDiffs108);
 }
 
-var testfinnish82 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs82) {
-		total++;
-		var base = finnishTestDiffs82[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish107 = function() {
+	diffsTemplateTest(finnishTestDiffs107);
 }
 
-var testfinnish81 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs81) {
-		total++;
-		var base = finnishTestDiffs81[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish106 = function() {
+	diffsTemplateTest(finnishTestDiffs106);
 }
 
-var testfinnish80 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs80) {
-		total++;
-		var base = finnishTestDiffs80[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish105 = function() {
+	diffsTemplateTest(finnishTestDiffs105);
 }
 
-var testfinnish79 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs79) {
-		total++;
-		var base = finnishTestDiffs79[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish104 = function() {
+	diffsTemplateTest(finnishTestDiffs104);
 }
 
-var testfinnish78 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs78) {
-		total++;
-		var base = finnishTestDiffs78[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish103 = function() {
+	diffsTemplateTest(finnishTestDiffs103);
 }
 
-var testfinnish77 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs77) {
-		total++;
-		var base = finnishTestDiffs77[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish102 = function() {
+	diffsTemplateTest(finnishTestDiffs102);
 }
 
-var testfinnish76 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs76) {
-		total++;
-		var base = finnishTestDiffs76[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish101 = function() {
+	diffsTemplateTest(finnishTestDiffs101);
+}
+
+var testFinnish100 = function() {
+	diffsTemplateTest(finnishTestDiffs100);
+}
+
+var testFinnish99 = function() {
+	diffsTemplateTest(finnishTestDiffs99);
+}
+
+var testFinnish98 = function() {
+	diffsTemplateTest(finnishTestDiffs98);
+}
+
+var testFinnish97 = function() {
+	diffsTemplateTest(finnishTestDiffs97);
+}
+
+var testFinnish96 = function() {
+	diffsTemplateTest(finnishTestDiffs96);
 }
 
-var testfinnish75 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs75) {
-		total++;
-		var base = finnishTestDiffs75[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish95 = function() {
+	diffsTemplateTest(finnishTestDiffs95);
 }
 
-var testfinnish74 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs74) {
-		total++;
-		var base = finnishTestDiffs74[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish94 = function() {
+	diffsTemplateTest(finnishTestDiffs94);
 }
 
-var testfinnish73 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs73) {
-		total++;
-		var base = finnishTestDiffs73[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish93 = function() {
+	diffsTemplateTest(finnishTestDiffs93);
 }
 
-var testfinnish72 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs72) {
-		total++;
-		var base = finnishTestDiffs72[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish92 = function() {
+	diffsTemplateTest(finnishTestDiffs92);
 }
 
-var testfinnish71 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs71) {
-		total++;
-		var base = finnishTestDiffs71[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish91 = function() {
+	diffsTemplateTest(finnishTestDiffs91);
 }
 
-var testfinnish70 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs70) {
-		total++;
-		var base = finnishTestDiffs70[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish90 = function() {
+	diffsTemplateTest(finnishTestDiffs90);
 }
 
-var testfinnish69 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs69) {
-		total++;
-		var base = finnishTestDiffs69[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish89 = function() {
+	diffsTemplateTest(finnishTestDiffs89);
 }
 
-var testfinnish68 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs68) {
-		total++;
-		var base = finnishTestDiffs68[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish88 = function() {
+	diffsTemplateTest(finnishTestDiffs88);
 }
 
-var testfinnish67 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs67) {
-		total++;
-		var base = finnishTestDiffs67[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish87 = function() {
+	diffsTemplateTest(finnishTestDiffs87);
 }
 
-var testfinnish66 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs66) {
-		total++;
-		var base = finnishTestDiffs66[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish86 = function() {
+	diffsTemplateTest(finnishTestDiffs86);
 }
 
-var testfinnish65 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs65) {
-		total++;
-		var base = finnishTestDiffs65[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish85 = function() {
+	diffsTemplateTest(finnishTestDiffs85);
 }
 
-var testfinnish64 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs64) {
-		total++;
-		var base = finnishTestDiffs64[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish84 = function() {
+	diffsTemplateTest(finnishTestDiffs84);
 }
 
-var testfinnish63 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs63) {
-		total++;
-		var base = finnishTestDiffs63[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish83 = function() {
+	diffsTemplateTest(finnishTestDiffs83);
 }
 
-var testfinnish62 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs62) {
-		total++;
-		var base = finnishTestDiffs62[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish82 = function() {
+	diffsTemplateTest(finnishTestDiffs82);
 }
 
-var testfinnish61 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs61) {
-		total++;
-		var base = finnishTestDiffs61[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish81 = function() {
+	diffsTemplateTest(finnishTestDiffs81);
 }
 
-var testfinnish60 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs60) {
-		total++;
-		var base = finnishTestDiffs60[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish80 = function() {
+	diffsTemplateTest(finnishTestDiffs80);
 }
 
-var testfinnish59 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs59) {
-		total++;
-		var base = finnishTestDiffs59[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish79 = function() {
+	diffsTemplateTest(finnishTestDiffs79);
 }
 
-var testfinnish58 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs58) {
-		total++;
-		var base = finnishTestDiffs58[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish78 = function() {
+	diffsTemplateTest(finnishTestDiffs78);
 }
 
-var testfinnish57 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs57) {
-		total++;
-		var base = finnishTestDiffs57[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish77 = function() {
+	diffsTemplateTest(finnishTestDiffs77);
+}
+
+var testFinnish76 = function() {
+	diffsTemplateTest(finnishTestDiffs76);
+}
+
+var testFinnish75 = function() {
+	diffsTemplateTest(finnishTestDiffs75);
+}
+
+var testFinnish74 = function() {
+	diffsTemplateTest(finnishTestDiffs74);
+}
+
+var testFinnish73 = function() {
+	diffsTemplateTest(finnishTestDiffs73);
+}
+
+var testFinnish72 = function() {
+	diffsTemplateTest(finnishTestDiffs72);
 }
 
-var testfinnish56 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs56) {
-		total++;
-		var base = finnishTestDiffs56[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish71 = function() {
+	diffsTemplateTest(finnishTestDiffs71);
 }
 
-var testfinnish55 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs55) {
-		total++;
-		var base = finnishTestDiffs55[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish70 = function() {
+	diffsTemplateTest(finnishTestDiffs70);
 }
 
-var testfinnish54 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs54) {
-		total++;
-		var base = finnishTestDiffs54[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish69 = function() {
+	diffsTemplateTest(finnishTestDiffs69);
 }
 
-var testfinnish53 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs53) {
-		total++;
-		var base = finnishTestDiffs53[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish68 = function() {
+	diffsTemplateTest(finnishTestDiffs68);
 }
 
-var testfinnish52 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs52) {
-		total++;
-		var base = finnishTestDiffs52[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish67 = function() {
+	diffsTemplateTest(finnishTestDiffs67);
 }
 
-var testfinnish51 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs51) {
-		total++;
-		var base = finnishTestDiffs51[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish66 = function() {
+	diffsTemplateTest(finnishTestDiffs66);
 }
 
-var testfinnish50 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs50) {
-		total++;
-		var base = finnishTestDiffs50[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish65 = function() {
+	diffsTemplateTest(finnishTestDiffs65);
 }
 
-var testfinnish49 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs49) {
-		total++;
-		var base = finnishTestDiffs49[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish64 = function() {
+	diffsTemplateTest(finnishTestDiffs64);
 }
 
-var testfinnish48 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs48) {
-		total++;
-		var base = finnishTestDiffs48[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish63 = function() {
+	diffsTemplateTest(finnishTestDiffs63);
 }
 
-var testfinnish47 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs47) {
-		total++;
-		var base = finnishTestDiffs47[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish62 = function() {
+	diffsTemplateTest(finnishTestDiffs62);
 }
 
-var testfinnish46 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs46) {
-		total++;
-		var base = finnishTestDiffs46[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish61 = function() {
+	diffsTemplateTest(finnishTestDiffs61);
 }
 
-var testfinnish45 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs45) {
-		total++;
-		var base = finnishTestDiffs45[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish60 = function() {
+	diffsTemplateTest(finnishTestDiffs60);
 }
 
-var testfinnish44 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs44) {
-		total++;
-		var base = finnishTestDiffs44[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish59 = function() {
+	diffsTemplateTest(finnishTestDiffs59);
 }
 
-var testfinnish43 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs43) {
-		total++;
-		var base = finnishTestDiffs43[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish58 = function() {
+	diffsTemplateTest(finnishTestDiffs58);
 }
 
-var testfinnish42 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs42) {
-		total++;
-		var base = finnishTestDiffs42[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish57 = function() {
+	diffsTemplateTest(finnishTestDiffs57);
 }
 
-var testfinnish41 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs41) {
-		total++;
-		var base = finnishTestDiffs41[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish56 = function() {
+	diffsTemplateTest(finnishTestDiffs56);
 }
 
-var testfinnish40 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs40) {
-		total++;
-		var base = finnishTestDiffs40[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish55 = function() {
+	diffsTemplateTest(finnishTestDiffs55);
 }
 
-var testfinnish39 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs39) {
-		total++;
-		var base = finnishTestDiffs39[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish54 = function() {
+	diffsTemplateTest(finnishTestDiffs54);
 }
 
-var testfinnish38 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs38) {
-		total++;
-		var base = finnishTestDiffs38[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish53 = function() {
+	diffsTemplateTest(finnishTestDiffs53);
+}
+
+var testFinnish52 = function() {
+	diffsTemplateTest(finnishTestDiffs52);
+}
+
+var testFinnish51 = function() {
+	diffsTemplateTest(finnishTestDiffs51);
+}
+
+var testFinnish50 = function() {
+	diffsTemplateTest(finnishTestDiffs50);
+}
+
+var testFinnish49 = function() {
+	diffsTemplateTest(finnishTestDiffs49);
+}
+
+var testFinnish48 = function() {
+	diffsTemplateTest(finnishTestDiffs48);
 }
 
-var testfinnish37 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs37) {
-		total++;
-		var base = finnishTestDiffs37[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish47 = function() {
+	diffsTemplateTest(finnishTestDiffs47);
 }
 
-var testfinnish36 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs36) {
-		total++;
-		var base = finnishTestDiffs36[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish46 = function() {
+	diffsTemplateTest(finnishTestDiffs46);
 }
 
-var testfinnish35 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs35) {
-		total++;
-		var base = finnishTestDiffs35[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish45 = function() {
+	diffsTemplateTest(finnishTestDiffs45);
 }
 
-var testfinnish34 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs34) {
-		total++;
-		var base = finnishTestDiffs34[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish44 = function() {
+	diffsTemplateTest(finnishTestDiffs44);
 }
 
-var testfinnish33 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs33) {
-		total++;
-		var base = finnishTestDiffs33[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish43 = function() {
+	diffsTemplateTest(finnishTestDiffs43);
 }
 
-var testfinnish32 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs32) {
-		total++;
-		var base = finnishTestDiffs32[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish42 = function() {
+	diffsTemplateTest(finnishTestDiffs42);
 }
 
-var testfinnish31 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs31) {
-		total++;
-		var base = finnishTestDiffs31[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish41 = function() {
+	diffsTemplateTest(finnishTestDiffs41);
 }
 
-var testfinnish30 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs30) {
-		total++;
-		var base = finnishTestDiffs30[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish40 = function() {
+	diffsTemplateTest(finnishTestDiffs40);
 }
 
-var testfinnish29 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs29) {
-		total++;
-		var base = finnishTestDiffs29[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish39 = function() {
+	diffsTemplateTest(finnishTestDiffs39);
 }
 
-var testfinnish28 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs28) {
-		total++;
-		var base = finnishTestDiffs28[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish38 = function() {
+	diffsTemplateTest(finnishTestDiffs38);
 }
 
-var testfinnish27 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs27) {
-		total++;
-		var base = finnishTestDiffs27[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish37 = function() {
+	diffsTemplateTest(finnishTestDiffs37);
 }
 
-var testfinnish26 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs26) {
-		total++;
-		var base = finnishTestDiffs26[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish36 = function() {
+	diffsTemplateTest(finnishTestDiffs36);
 }
 
-var testfinnish25 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs25) {
-		total++;
-		var base = finnishTestDiffs25[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish35 = function() {
+	diffsTemplateTest(finnishTestDiffs35);
 }
 
-var testfinnish24 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs24) {
-		total++;
-		var base = finnishTestDiffs24[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish34 = function() {
+	diffsTemplateTest(finnishTestDiffs34);
 }
 
-var testfinnish23 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs23) {
-		total++;
-		var base = finnishTestDiffs23[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish33 = function() {
+	diffsTemplateTest(finnishTestDiffs33);
 }
 
-var testfinnish22 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs22) {
-		total++;
-		var base = finnishTestDiffs22[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish32 = function() {
+	diffsTemplateTest(finnishTestDiffs32);
 }
 
-var testfinnish21 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs21) {
-		total++;
-		var base = finnishTestDiffs21[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish31 = function() {
+	diffsTemplateTest(finnishTestDiffs31);
 }
 
-var testfinnish20 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs20) {
-		total++;
-		var base = finnishTestDiffs20[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish30 = function() {
+	diffsTemplateTest(finnishTestDiffs30);
 }
 
-var testfinnish19 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs19) {
-		total++;
-		var base = finnishTestDiffs19[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish29 = function() {
+	diffsTemplateTest(finnishTestDiffs29);
+}
+
+var testFinnish28 = function() {
+	diffsTemplateTest(finnishTestDiffs28);
+}
+
+var testFinnish27 = function() {
+	diffsTemplateTest(finnishTestDiffs27);
+}
+
+var testFinnish26 = function() {
+	diffsTemplateTest(finnishTestDiffs26);
+}
+
+var testFinnish25 = function() {
+	diffsTemplateTest(finnishTestDiffs25);
+}
+
+var testFinnish24 = function() {
+	diffsTemplateTest(finnishTestDiffs24);
 }
 
-var testfinnish18 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs18) {
-		total++;
-		var base = finnishTestDiffs18[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish23 = function() {
+	diffsTemplateTest(finnishTestDiffs23);
 }
 
-var testfinnish17 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs17) {
-		total++;
-		var base = finnishTestDiffs17[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish22 = function() {
+	diffsTemplateTest(finnishTestDiffs22);
 }
 
-var testfinnish16 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs16) {
-		total++;
-		var base = finnishTestDiffs16[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish21 = function() {
+	diffsTemplateTest(finnishTestDiffs21);
 }
 
-var testfinnish15 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs15) {
-		total++;
-		var base = finnishTestDiffs15[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish20 = function() {
+	diffsTemplateTest(finnishTestDiffs20);
 }
 
-var testfinnish14 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs14) {
-		total++;
-		var base = finnishTestDiffs14[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish19 = function() {
+	diffsTemplateTest(finnishTestDiffs19);
 }
 
-var testfinnish13 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs13) {
-		total++;
-		var base = finnishTestDiffs13[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish18 = function() {
+	diffsTemplateTest(finnishTestDiffs18);
 }
 
-var testfinnish12 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs12) {
-		total++;
-		var base = finnishTestDiffs12[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish17 = function() {
+	diffsTemplateTest(finnishTestDiffs17);
 }
 
-var testfinnish11 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs11) {
-		total++;
-		var base = finnishTestDiffs11[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish16 = function() {
+	diffsTemplateTest(finnishTestDiffs16);
 }
 
-var testfinnish10 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs10) {
-		total++;
-		var base = finnishTestDiffs10[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish15 = function() {
+	diffsTemplateTest(finnishTestDiffs15);
 }
 
-var testfinnish9 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs9) {
-		total++;
-		var base = finnishTestDiffs9[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish14 = function() {
+	diffsTemplateTest(finnishTestDiffs14);
 }
 
-var testfinnish8 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs8) {
-		total++;
-		var base = finnishTestDiffs8[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish13 = function() {
+	diffsTemplateTest(finnishTestDiffs13);
 }
 
-var testfinnish7 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs7) {
-		total++;
-		var base = finnishTestDiffs7[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish12 = function() {
+	diffsTemplateTest(finnishTestDiffs12);
 }
 
-var testfinnish6 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs6) {
-		total++;
-		var base = finnishTestDiffs6[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish11 = function() {
+	diffsTemplateTest(finnishTestDiffs11);
 }
 
-var testfinnish5 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs5) {
-		total++;
-		var base = finnishTestDiffs5[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish10 = function() {
+	diffsTemplateTest(finnishTestDiffs10);
 }
 
-var testfinnish4 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs4) {
-		total++;
-		var base = finnishTestDiffs4[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish9 = function() {
+	diffsTemplateTest(finnishTestDiffs9);
 }
 
-var testfinnish3 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs3) {
-		total++;
-		var base = finnishTestDiffs3[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish8 = function() {
+	diffsTemplateTest(finnishTestDiffs8);
 }
 
-var testfinnish2 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs2) {
-		total++;
-		var base = finnishTestDiffs2[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish7 = function() {
+	diffsTemplateTest(finnishTestDiffs7);
 }
 
-var testfinnish1 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs1) {
-		total++;
-		var base = finnishTestDiffs1[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish6 = function() {
+	diffsTemplateTest(finnishTestDiffs6);
 }
 
-var testfinnish0 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in finnishTestDiffs0) {
-		total++;
-		var base = finnishTestDiffs0[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testFinnish5 = function() {
+	diffsTemplateTest(finnishTestDiffs5);
+}
+
+var testFinnish4 = function() {
+	diffsTemplateTest(finnishTestDiffs4);
+}
+
+var testFinnish3 = function() {
+	diffsTemplateTest(finnishTestDiffs3);
+}
+
+var testFinnish2 = function() {
+	diffsTemplateTest(finnishTestDiffs2);
+}
+
+var testFinnish1 = function() {
+	diffsTemplateTest(finnishTestDiffs1);
+}
+
+var testFinnish0 = function() {
+	diffsTemplateTest(finnishTestDiffs0);
 }

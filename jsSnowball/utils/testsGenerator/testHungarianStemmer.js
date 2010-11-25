@@ -40140,11 +40140,11 @@ var hungarianTestDiffs158 = {
 	"\u00fbv\u00e9szett\u00f6rt\u00e9netnek" : "\u00fbv\u00e9szett\u00f6rt\u00e9net"
 };
 
-var testhungarian158 = function() {
+function diffsTemplateTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs158) {
+	for (var sVoc in testDiffs) {
 		total++;
-		var base = hungarianTestDiffs158[sVoc];
+		var base = testDiffs[sVoc];
 		var stem = stemmer(sVoc);
 		if (base != stem) {
 			fails++;
@@ -40158,2846 +40158,638 @@ var testhungarian158 = function() {
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
-var testhungarian157 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs157) {
-		total++;
-		var base = hungarianTestDiffs157[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian156 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs156) {
-		total++;
-		var base = hungarianTestDiffs156[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian155 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs155) {
-		total++;
-		var base = hungarianTestDiffs155[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian154 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs154) {
-		total++;
-		var base = hungarianTestDiffs154[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian153 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs153) {
-		total++;
-		var base = hungarianTestDiffs153[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian152 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs152) {
-		total++;
-		var base = hungarianTestDiffs152[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian151 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs151) {
-		total++;
-		var base = hungarianTestDiffs151[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian150 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs150) {
-		total++;
-		var base = hungarianTestDiffs150[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian149 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs149) {
-		total++;
-		var base = hungarianTestDiffs149[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian148 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs148) {
-		total++;
-		var base = hungarianTestDiffs148[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian147 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs147) {
-		total++;
-		var base = hungarianTestDiffs147[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian146 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs146) {
-		total++;
-		var base = hungarianTestDiffs146[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian145 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs145) {
-		total++;
-		var base = hungarianTestDiffs145[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian144 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs144) {
-		total++;
-		var base = hungarianTestDiffs144[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian143 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs143) {
-		total++;
-		var base = hungarianTestDiffs143[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian142 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs142) {
-		total++;
-		var base = hungarianTestDiffs142[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian141 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs141) {
-		total++;
-		var base = hungarianTestDiffs141[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian140 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs140) {
-		total++;
-		var base = hungarianTestDiffs140[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian139 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs139) {
-		total++;
-		var base = hungarianTestDiffs139[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian138 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs138) {
-		total++;
-		var base = hungarianTestDiffs138[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian137 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs137) {
-		total++;
-		var base = hungarianTestDiffs137[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian136 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs136) {
-		total++;
-		var base = hungarianTestDiffs136[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian135 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs135) {
-		total++;
-		var base = hungarianTestDiffs135[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian134 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs134) {
-		total++;
-		var base = hungarianTestDiffs134[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian133 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs133) {
-		total++;
-		var base = hungarianTestDiffs133[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian158 = function() {
+	diffsTemplateTest(hungarianTestDiffs158);
 }
 
-var testhungarian132 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs132) {
-		total++;
-		var base = hungarianTestDiffs132[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian131 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs131) {
-		total++;
-		var base = hungarianTestDiffs131[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian130 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs130) {
-		total++;
-		var base = hungarianTestDiffs130[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian129 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs129) {
-		total++;
-		var base = hungarianTestDiffs129[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian128 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs128) {
-		total++;
-		var base = hungarianTestDiffs128[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testhungarian127 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs127) {
-		total++;
-		var base = hungarianTestDiffs127[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian157 = function() {
+	diffsTemplateTest(hungarianTestDiffs157);
 }
 
-var testhungarian126 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs126) {
-		total++;
-		var base = hungarianTestDiffs126[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian156 = function() {
+	diffsTemplateTest(hungarianTestDiffs156);
 }
 
-var testhungarian125 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs125) {
-		total++;
-		var base = hungarianTestDiffs125[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian155 = function() {
+	diffsTemplateTest(hungarianTestDiffs155);
 }
 
-var testhungarian124 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs124) {
-		total++;
-		var base = hungarianTestDiffs124[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian154 = function() {
+	diffsTemplateTest(hungarianTestDiffs154);
 }
 
-var testhungarian123 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs123) {
-		total++;
-		var base = hungarianTestDiffs123[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian153 = function() {
+	diffsTemplateTest(hungarianTestDiffs153);
 }
 
-var testhungarian122 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs122) {
-		total++;
-		var base = hungarianTestDiffs122[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian152 = function() {
+	diffsTemplateTest(hungarianTestDiffs152);
 }
 
-var testhungarian121 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs121) {
-		total++;
-		var base = hungarianTestDiffs121[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian151 = function() {
+	diffsTemplateTest(hungarianTestDiffs151);
 }
 
-var testhungarian120 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs120) {
-		total++;
-		var base = hungarianTestDiffs120[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian150 = function() {
+	diffsTemplateTest(hungarianTestDiffs150);
 }
 
-var testhungarian119 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs119) {
-		total++;
-		var base = hungarianTestDiffs119[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian149 = function() {
+	diffsTemplateTest(hungarianTestDiffs149);
 }
 
-var testhungarian118 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs118) {
-		total++;
-		var base = hungarianTestDiffs118[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian148 = function() {
+	diffsTemplateTest(hungarianTestDiffs148);
 }
 
-var testhungarian117 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs117) {
-		total++;
-		var base = hungarianTestDiffs117[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian147 = function() {
+	diffsTemplateTest(hungarianTestDiffs147);
 }
 
-var testhungarian116 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs116) {
-		total++;
-		var base = hungarianTestDiffs116[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian146 = function() {
+	diffsTemplateTest(hungarianTestDiffs146);
 }
 
-var testhungarian115 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs115) {
-		total++;
-		var base = hungarianTestDiffs115[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian145 = function() {
+	diffsTemplateTest(hungarianTestDiffs145);
 }
 
-var testhungarian114 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs114) {
-		total++;
-		var base = hungarianTestDiffs114[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian144 = function() {
+	diffsTemplateTest(hungarianTestDiffs144);
 }
 
-var testhungarian113 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs113) {
-		total++;
-		var base = hungarianTestDiffs113[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian143 = function() {
+	diffsTemplateTest(hungarianTestDiffs143);
 }
 
-var testhungarian112 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs112) {
-		total++;
-		var base = hungarianTestDiffs112[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian142 = function() {
+	diffsTemplateTest(hungarianTestDiffs142);
 }
 
-var testhungarian111 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs111) {
-		total++;
-		var base = hungarianTestDiffs111[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian141 = function() {
+	diffsTemplateTest(hungarianTestDiffs141);
 }
 
-var testhungarian110 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs110) {
-		total++;
-		var base = hungarianTestDiffs110[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian140 = function() {
+	diffsTemplateTest(hungarianTestDiffs140);
 }
 
-var testhungarian109 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs109) {
-		total++;
-		var base = hungarianTestDiffs109[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian139 = function() {
+	diffsTemplateTest(hungarianTestDiffs139);
 }
 
-var testhungarian108 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs108) {
-		total++;
-		var base = hungarianTestDiffs108[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian138 = function() {
+	diffsTemplateTest(hungarianTestDiffs138);
 }
 
-var testhungarian107 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs107) {
-		total++;
-		var base = hungarianTestDiffs107[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian137 = function() {
+	diffsTemplateTest(hungarianTestDiffs137);
 }
 
-var testhungarian106 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs106) {
-		total++;
-		var base = hungarianTestDiffs106[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian136 = function() {
+	diffsTemplateTest(hungarianTestDiffs136);
 }
 
-var testhungarian105 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs105) {
-		total++;
-		var base = hungarianTestDiffs105[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian135 = function() {
+	diffsTemplateTest(hungarianTestDiffs135);
 }
 
-var testhungarian104 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs104) {
-		total++;
-		var base = hungarianTestDiffs104[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian134 = function() {
+	diffsTemplateTest(hungarianTestDiffs134);
 }
 
-var testhungarian103 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs103) {
-		total++;
-		var base = hungarianTestDiffs103[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian133 = function() {
+	diffsTemplateTest(hungarianTestDiffs133);
 }
 
-var testhungarian102 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs102) {
-		total++;
-		var base = hungarianTestDiffs102[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian132 = function() {
+	diffsTemplateTest(hungarianTestDiffs132);
 }
 
-var testhungarian101 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs101) {
-		total++;
-		var base = hungarianTestDiffs101[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian131 = function() {
+	diffsTemplateTest(hungarianTestDiffs131);
 }
 
-var testhungarian100 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs100) {
-		total++;
-		var base = hungarianTestDiffs100[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian130 = function() {
+	diffsTemplateTest(hungarianTestDiffs130);
 }
 
-var testhungarian99 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs99) {
-		total++;
-		var base = hungarianTestDiffs99[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian129 = function() {
+	diffsTemplateTest(hungarianTestDiffs129);
 }
 
-var testhungarian98 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs98) {
-		total++;
-		var base = hungarianTestDiffs98[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian128 = function() {
+	diffsTemplateTest(hungarianTestDiffs128);
 }
 
-var testhungarian97 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs97) {
-		total++;
-		var base = hungarianTestDiffs97[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian127 = function() {
+	diffsTemplateTest(hungarianTestDiffs127);
 }
 
-var testhungarian96 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs96) {
-		total++;
-		var base = hungarianTestDiffs96[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian126 = function() {
+	diffsTemplateTest(hungarianTestDiffs126);
 }
 
-var testhungarian95 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs95) {
-		total++;
-		var base = hungarianTestDiffs95[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian125 = function() {
+	diffsTemplateTest(hungarianTestDiffs125);
+}
+
+var testHungarian124 = function() {
+	diffsTemplateTest(hungarianTestDiffs124);
+}
+
+var testHungarian123 = function() {
+	diffsTemplateTest(hungarianTestDiffs123);
+}
+
+var testHungarian122 = function() {
+	diffsTemplateTest(hungarianTestDiffs122);
+}
+
+var testHungarian121 = function() {
+	diffsTemplateTest(hungarianTestDiffs121);
+}
+
+var testHungarian120 = function() {
+	diffsTemplateTest(hungarianTestDiffs120);
 }
 
-var testhungarian94 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs94) {
-		total++;
-		var base = hungarianTestDiffs94[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian119 = function() {
+	diffsTemplateTest(hungarianTestDiffs119);
 }
 
-var testhungarian93 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs93) {
-		total++;
-		var base = hungarianTestDiffs93[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian118 = function() {
+	diffsTemplateTest(hungarianTestDiffs118);
 }
 
-var testhungarian92 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs92) {
-		total++;
-		var base = hungarianTestDiffs92[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian117 = function() {
+	diffsTemplateTest(hungarianTestDiffs117);
 }
 
-var testhungarian91 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs91) {
-		total++;
-		var base = hungarianTestDiffs91[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian116 = function() {
+	diffsTemplateTest(hungarianTestDiffs116);
 }
 
-var testhungarian90 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs90) {
-		total++;
-		var base = hungarianTestDiffs90[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian115 = function() {
+	diffsTemplateTest(hungarianTestDiffs115);
 }
 
-var testhungarian89 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs89) {
-		total++;
-		var base = hungarianTestDiffs89[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian114 = function() {
+	diffsTemplateTest(hungarianTestDiffs114);
 }
 
-var testhungarian88 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs88) {
-		total++;
-		var base = hungarianTestDiffs88[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian113 = function() {
+	diffsTemplateTest(hungarianTestDiffs113);
 }
 
-var testhungarian87 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs87) {
-		total++;
-		var base = hungarianTestDiffs87[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian112 = function() {
+	diffsTemplateTest(hungarianTestDiffs112);
 }
 
-var testhungarian86 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs86) {
-		total++;
-		var base = hungarianTestDiffs86[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian111 = function() {
+	diffsTemplateTest(hungarianTestDiffs111);
 }
 
-var testhungarian85 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs85) {
-		total++;
-		var base = hungarianTestDiffs85[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian110 = function() {
+	diffsTemplateTest(hungarianTestDiffs110);
 }
 
-var testhungarian84 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs84) {
-		total++;
-		var base = hungarianTestDiffs84[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian109 = function() {
+	diffsTemplateTest(hungarianTestDiffs109);
 }
 
-var testhungarian83 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs83) {
-		total++;
-		var base = hungarianTestDiffs83[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian108 = function() {
+	diffsTemplateTest(hungarianTestDiffs108);
 }
 
-var testhungarian82 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs82) {
-		total++;
-		var base = hungarianTestDiffs82[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian107 = function() {
+	diffsTemplateTest(hungarianTestDiffs107);
 }
 
-var testhungarian81 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs81) {
-		total++;
-		var base = hungarianTestDiffs81[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian106 = function() {
+	diffsTemplateTest(hungarianTestDiffs106);
 }
 
-var testhungarian80 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs80) {
-		total++;
-		var base = hungarianTestDiffs80[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian105 = function() {
+	diffsTemplateTest(hungarianTestDiffs105);
 }
 
-var testhungarian79 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs79) {
-		total++;
-		var base = hungarianTestDiffs79[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian104 = function() {
+	diffsTemplateTest(hungarianTestDiffs104);
 }
 
-var testhungarian78 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs78) {
-		total++;
-		var base = hungarianTestDiffs78[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian103 = function() {
+	diffsTemplateTest(hungarianTestDiffs103);
 }
 
-var testhungarian77 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs77) {
-		total++;
-		var base = hungarianTestDiffs77[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian102 = function() {
+	diffsTemplateTest(hungarianTestDiffs102);
 }
 
-var testhungarian76 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs76) {
-		total++;
-		var base = hungarianTestDiffs76[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian101 = function() {
+	diffsTemplateTest(hungarianTestDiffs101);
+}
+
+var testHungarian100 = function() {
+	diffsTemplateTest(hungarianTestDiffs100);
+}
+
+var testHungarian99 = function() {
+	diffsTemplateTest(hungarianTestDiffs99);
+}
+
+var testHungarian98 = function() {
+	diffsTemplateTest(hungarianTestDiffs98);
+}
+
+var testHungarian97 = function() {
+	diffsTemplateTest(hungarianTestDiffs97);
+}
+
+var testHungarian96 = function() {
+	diffsTemplateTest(hungarianTestDiffs96);
 }
 
-var testhungarian75 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs75) {
-		total++;
-		var base = hungarianTestDiffs75[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian95 = function() {
+	diffsTemplateTest(hungarianTestDiffs95);
 }
 
-var testhungarian74 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs74) {
-		total++;
-		var base = hungarianTestDiffs74[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian94 = function() {
+	diffsTemplateTest(hungarianTestDiffs94);
 }
 
-var testhungarian73 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs73) {
-		total++;
-		var base = hungarianTestDiffs73[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian93 = function() {
+	diffsTemplateTest(hungarianTestDiffs93);
 }
 
-var testhungarian72 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs72) {
-		total++;
-		var base = hungarianTestDiffs72[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian92 = function() {
+	diffsTemplateTest(hungarianTestDiffs92);
 }
 
-var testhungarian71 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs71) {
-		total++;
-		var base = hungarianTestDiffs71[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian91 = function() {
+	diffsTemplateTest(hungarianTestDiffs91);
 }
 
-var testhungarian70 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs70) {
-		total++;
-		var base = hungarianTestDiffs70[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian90 = function() {
+	diffsTemplateTest(hungarianTestDiffs90);
 }
 
-var testhungarian69 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs69) {
-		total++;
-		var base = hungarianTestDiffs69[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian89 = function() {
+	diffsTemplateTest(hungarianTestDiffs89);
 }
 
-var testhungarian68 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs68) {
-		total++;
-		var base = hungarianTestDiffs68[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian88 = function() {
+	diffsTemplateTest(hungarianTestDiffs88);
 }
 
-var testhungarian67 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs67) {
-		total++;
-		var base = hungarianTestDiffs67[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian87 = function() {
+	diffsTemplateTest(hungarianTestDiffs87);
 }
 
-var testhungarian66 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs66) {
-		total++;
-		var base = hungarianTestDiffs66[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian86 = function() {
+	diffsTemplateTest(hungarianTestDiffs86);
 }
 
-var testhungarian65 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs65) {
-		total++;
-		var base = hungarianTestDiffs65[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian85 = function() {
+	diffsTemplateTest(hungarianTestDiffs85);
 }
 
-var testhungarian64 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs64) {
-		total++;
-		var base = hungarianTestDiffs64[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian84 = function() {
+	diffsTemplateTest(hungarianTestDiffs84);
 }
 
-var testhungarian63 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs63) {
-		total++;
-		var base = hungarianTestDiffs63[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian83 = function() {
+	diffsTemplateTest(hungarianTestDiffs83);
 }
 
-var testhungarian62 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs62) {
-		total++;
-		var base = hungarianTestDiffs62[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian82 = function() {
+	diffsTemplateTest(hungarianTestDiffs82);
 }
 
-var testhungarian61 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs61) {
-		total++;
-		var base = hungarianTestDiffs61[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian81 = function() {
+	diffsTemplateTest(hungarianTestDiffs81);
 }
 
-var testhungarian60 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs60) {
-		total++;
-		var base = hungarianTestDiffs60[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian80 = function() {
+	diffsTemplateTest(hungarianTestDiffs80);
 }
 
-var testhungarian59 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs59) {
-		total++;
-		var base = hungarianTestDiffs59[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian79 = function() {
+	diffsTemplateTest(hungarianTestDiffs79);
 }
 
-var testhungarian58 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs58) {
-		total++;
-		var base = hungarianTestDiffs58[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian78 = function() {
+	diffsTemplateTest(hungarianTestDiffs78);
 }
 
-var testhungarian57 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs57) {
-		total++;
-		var base = hungarianTestDiffs57[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian77 = function() {
+	diffsTemplateTest(hungarianTestDiffs77);
+}
+
+var testHungarian76 = function() {
+	diffsTemplateTest(hungarianTestDiffs76);
+}
+
+var testHungarian75 = function() {
+	diffsTemplateTest(hungarianTestDiffs75);
+}
+
+var testHungarian74 = function() {
+	diffsTemplateTest(hungarianTestDiffs74);
+}
+
+var testHungarian73 = function() {
+	diffsTemplateTest(hungarianTestDiffs73);
+}
+
+var testHungarian72 = function() {
+	diffsTemplateTest(hungarianTestDiffs72);
 }
 
-var testhungarian56 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs56) {
-		total++;
-		var base = hungarianTestDiffs56[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian71 = function() {
+	diffsTemplateTest(hungarianTestDiffs71);
 }
 
-var testhungarian55 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs55) {
-		total++;
-		var base = hungarianTestDiffs55[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian70 = function() {
+	diffsTemplateTest(hungarianTestDiffs70);
 }
 
-var testhungarian54 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs54) {
-		total++;
-		var base = hungarianTestDiffs54[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian69 = function() {
+	diffsTemplateTest(hungarianTestDiffs69);
 }
 
-var testhungarian53 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs53) {
-		total++;
-		var base = hungarianTestDiffs53[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian68 = function() {
+	diffsTemplateTest(hungarianTestDiffs68);
 }
 
-var testhungarian52 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs52) {
-		total++;
-		var base = hungarianTestDiffs52[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian67 = function() {
+	diffsTemplateTest(hungarianTestDiffs67);
 }
 
-var testhungarian51 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs51) {
-		total++;
-		var base = hungarianTestDiffs51[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian66 = function() {
+	diffsTemplateTest(hungarianTestDiffs66);
 }
 
-var testhungarian50 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs50) {
-		total++;
-		var base = hungarianTestDiffs50[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian65 = function() {
+	diffsTemplateTest(hungarianTestDiffs65);
 }
 
-var testhungarian49 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs49) {
-		total++;
-		var base = hungarianTestDiffs49[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian64 = function() {
+	diffsTemplateTest(hungarianTestDiffs64);
 }
 
-var testhungarian48 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs48) {
-		total++;
-		var base = hungarianTestDiffs48[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian63 = function() {
+	diffsTemplateTest(hungarianTestDiffs63);
 }
 
-var testhungarian47 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs47) {
-		total++;
-		var base = hungarianTestDiffs47[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian62 = function() {
+	diffsTemplateTest(hungarianTestDiffs62);
 }
 
-var testhungarian46 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs46) {
-		total++;
-		var base = hungarianTestDiffs46[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian61 = function() {
+	diffsTemplateTest(hungarianTestDiffs61);
 }
 
-var testhungarian45 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs45) {
-		total++;
-		var base = hungarianTestDiffs45[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian60 = function() {
+	diffsTemplateTest(hungarianTestDiffs60);
 }
 
-var testhungarian44 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs44) {
-		total++;
-		var base = hungarianTestDiffs44[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian59 = function() {
+	diffsTemplateTest(hungarianTestDiffs59);
 }
 
-var testhungarian43 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs43) {
-		total++;
-		var base = hungarianTestDiffs43[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian58 = function() {
+	diffsTemplateTest(hungarianTestDiffs58);
 }
 
-var testhungarian42 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs42) {
-		total++;
-		var base = hungarianTestDiffs42[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian57 = function() {
+	diffsTemplateTest(hungarianTestDiffs57);
 }
 
-var testhungarian41 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs41) {
-		total++;
-		var base = hungarianTestDiffs41[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian56 = function() {
+	diffsTemplateTest(hungarianTestDiffs56);
 }
 
-var testhungarian40 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs40) {
-		total++;
-		var base = hungarianTestDiffs40[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian55 = function() {
+	diffsTemplateTest(hungarianTestDiffs55);
 }
 
-var testhungarian39 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs39) {
-		total++;
-		var base = hungarianTestDiffs39[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian54 = function() {
+	diffsTemplateTest(hungarianTestDiffs54);
 }
 
-var testhungarian38 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs38) {
-		total++;
-		var base = hungarianTestDiffs38[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian53 = function() {
+	diffsTemplateTest(hungarianTestDiffs53);
+}
+
+var testHungarian52 = function() {
+	diffsTemplateTest(hungarianTestDiffs52);
+}
+
+var testHungarian51 = function() {
+	diffsTemplateTest(hungarianTestDiffs51);
+}
+
+var testHungarian50 = function() {
+	diffsTemplateTest(hungarianTestDiffs50);
+}
+
+var testHungarian49 = function() {
+	diffsTemplateTest(hungarianTestDiffs49);
+}
+
+var testHungarian48 = function() {
+	diffsTemplateTest(hungarianTestDiffs48);
 }
 
-var testhungarian37 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs37) {
-		total++;
-		var base = hungarianTestDiffs37[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian47 = function() {
+	diffsTemplateTest(hungarianTestDiffs47);
 }
 
-var testhungarian36 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs36) {
-		total++;
-		var base = hungarianTestDiffs36[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian46 = function() {
+	diffsTemplateTest(hungarianTestDiffs46);
 }
 
-var testhungarian35 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs35) {
-		total++;
-		var base = hungarianTestDiffs35[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian45 = function() {
+	diffsTemplateTest(hungarianTestDiffs45);
 }
 
-var testhungarian34 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs34) {
-		total++;
-		var base = hungarianTestDiffs34[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian44 = function() {
+	diffsTemplateTest(hungarianTestDiffs44);
 }
 
-var testhungarian33 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs33) {
-		total++;
-		var base = hungarianTestDiffs33[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian43 = function() {
+	diffsTemplateTest(hungarianTestDiffs43);
 }
 
-var testhungarian32 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs32) {
-		total++;
-		var base = hungarianTestDiffs32[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian42 = function() {
+	diffsTemplateTest(hungarianTestDiffs42);
 }
 
-var testhungarian31 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs31) {
-		total++;
-		var base = hungarianTestDiffs31[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian41 = function() {
+	diffsTemplateTest(hungarianTestDiffs41);
 }
 
-var testhungarian30 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs30) {
-		total++;
-		var base = hungarianTestDiffs30[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian40 = function() {
+	diffsTemplateTest(hungarianTestDiffs40);
 }
 
-var testhungarian29 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs29) {
-		total++;
-		var base = hungarianTestDiffs29[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian39 = function() {
+	diffsTemplateTest(hungarianTestDiffs39);
 }
 
-var testhungarian28 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs28) {
-		total++;
-		var base = hungarianTestDiffs28[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian38 = function() {
+	diffsTemplateTest(hungarianTestDiffs38);
 }
 
-var testhungarian27 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs27) {
-		total++;
-		var base = hungarianTestDiffs27[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian37 = function() {
+	diffsTemplateTest(hungarianTestDiffs37);
 }
 
-var testhungarian26 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs26) {
-		total++;
-		var base = hungarianTestDiffs26[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian36 = function() {
+	diffsTemplateTest(hungarianTestDiffs36);
 }
 
-var testhungarian25 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs25) {
-		total++;
-		var base = hungarianTestDiffs25[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian35 = function() {
+	diffsTemplateTest(hungarianTestDiffs35);
 }
 
-var testhungarian24 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs24) {
-		total++;
-		var base = hungarianTestDiffs24[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian34 = function() {
+	diffsTemplateTest(hungarianTestDiffs34);
 }
 
-var testhungarian23 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs23) {
-		total++;
-		var base = hungarianTestDiffs23[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian33 = function() {
+	diffsTemplateTest(hungarianTestDiffs33);
 }
 
-var testhungarian22 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs22) {
-		total++;
-		var base = hungarianTestDiffs22[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian32 = function() {
+	diffsTemplateTest(hungarianTestDiffs32);
 }
 
-var testhungarian21 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs21) {
-		total++;
-		var base = hungarianTestDiffs21[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian31 = function() {
+	diffsTemplateTest(hungarianTestDiffs31);
 }
 
-var testhungarian20 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs20) {
-		total++;
-		var base = hungarianTestDiffs20[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian30 = function() {
+	diffsTemplateTest(hungarianTestDiffs30);
 }
 
-var testhungarian19 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs19) {
-		total++;
-		var base = hungarianTestDiffs19[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian29 = function() {
+	diffsTemplateTest(hungarianTestDiffs29);
+}
+
+var testHungarian28 = function() {
+	diffsTemplateTest(hungarianTestDiffs28);
+}
+
+var testHungarian27 = function() {
+	diffsTemplateTest(hungarianTestDiffs27);
+}
+
+var testHungarian26 = function() {
+	diffsTemplateTest(hungarianTestDiffs26);
+}
+
+var testHungarian25 = function() {
+	diffsTemplateTest(hungarianTestDiffs25);
+}
+
+var testHungarian24 = function() {
+	diffsTemplateTest(hungarianTestDiffs24);
 }
 
-var testhungarian18 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs18) {
-		total++;
-		var base = hungarianTestDiffs18[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian23 = function() {
+	diffsTemplateTest(hungarianTestDiffs23);
 }
 
-var testhungarian17 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs17) {
-		total++;
-		var base = hungarianTestDiffs17[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian22 = function() {
+	diffsTemplateTest(hungarianTestDiffs22);
 }
 
-var testhungarian16 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs16) {
-		total++;
-		var base = hungarianTestDiffs16[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian21 = function() {
+	diffsTemplateTest(hungarianTestDiffs21);
 }
 
-var testhungarian15 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs15) {
-		total++;
-		var base = hungarianTestDiffs15[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian20 = function() {
+	diffsTemplateTest(hungarianTestDiffs20);
 }
 
-var testhungarian14 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs14) {
-		total++;
-		var base = hungarianTestDiffs14[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian19 = function() {
+	diffsTemplateTest(hungarianTestDiffs19);
 }
 
-var testhungarian13 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs13) {
-		total++;
-		var base = hungarianTestDiffs13[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian18 = function() {
+	diffsTemplateTest(hungarianTestDiffs18);
 }
 
-var testhungarian12 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs12) {
-		total++;
-		var base = hungarianTestDiffs12[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian17 = function() {
+	diffsTemplateTest(hungarianTestDiffs17);
 }
 
-var testhungarian11 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs11) {
-		total++;
-		var base = hungarianTestDiffs11[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian16 = function() {
+	diffsTemplateTest(hungarianTestDiffs16);
 }
 
-var testhungarian10 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs10) {
-		total++;
-		var base = hungarianTestDiffs10[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian15 = function() {
+	diffsTemplateTest(hungarianTestDiffs15);
 }
 
-var testhungarian9 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs9) {
-		total++;
-		var base = hungarianTestDiffs9[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian14 = function() {
+	diffsTemplateTest(hungarianTestDiffs14);
 }
 
-var testhungarian8 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs8) {
-		total++;
-		var base = hungarianTestDiffs8[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian13 = function() {
+	diffsTemplateTest(hungarianTestDiffs13);
 }
 
-var testhungarian7 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs7) {
-		total++;
-		var base = hungarianTestDiffs7[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian12 = function() {
+	diffsTemplateTest(hungarianTestDiffs12);
 }
 
-var testhungarian6 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs6) {
-		total++;
-		var base = hungarianTestDiffs6[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian11 = function() {
+	diffsTemplateTest(hungarianTestDiffs11);
 }
 
-var testhungarian5 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs5) {
-		total++;
-		var base = hungarianTestDiffs5[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian10 = function() {
+	diffsTemplateTest(hungarianTestDiffs10);
 }
 
-var testhungarian4 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs4) {
-		total++;
-		var base = hungarianTestDiffs4[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian9 = function() {
+	diffsTemplateTest(hungarianTestDiffs9);
 }
 
-var testhungarian3 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs3) {
-		total++;
-		var base = hungarianTestDiffs3[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian8 = function() {
+	diffsTemplateTest(hungarianTestDiffs8);
 }
 
-var testhungarian2 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs2) {
-		total++;
-		var base = hungarianTestDiffs2[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian7 = function() {
+	diffsTemplateTest(hungarianTestDiffs7);
 }
 
-var testhungarian1 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs1) {
-		total++;
-		var base = hungarianTestDiffs1[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian6 = function() {
+	diffsTemplateTest(hungarianTestDiffs6);
 }
 
-var testhungarian0 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in hungarianTestDiffs0) {
-		total++;
-		var base = hungarianTestDiffs0[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testHungarian5 = function() {
+	diffsTemplateTest(hungarianTestDiffs5);
+}
+
+var testHungarian4 = function() {
+	diffsTemplateTest(hungarianTestDiffs4);
+}
+
+var testHungarian3 = function() {
+	diffsTemplateTest(hungarianTestDiffs3);
+}
+
+var testHungarian2 = function() {
+	diffsTemplateTest(hungarianTestDiffs2);
+}
+
+var testHungarian1 = function() {
+	diffsTemplateTest(hungarianTestDiffs1);
+}
+
+var testHungarian0 = function() {
+	diffsTemplateTest(hungarianTestDiffs0);
 }

@@ -36998,11 +36998,11 @@ var englishTestDiffs146 = {
 	"zu" : "zu"
 };
 
-var testenglish146 = function() {
+function diffsTemplateTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs146) {
+	for (var sVoc in testDiffs) {
 		total++;
-		var base = englishTestDiffs146[sVoc];
+		var base = testDiffs[sVoc];
 		var stem = stemmer(sVoc);
 		if (base != stem) {
 			fails++;
@@ -37016,2630 +37016,590 @@ var testenglish146 = function() {
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
-var testenglish145 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs145) {
-		total++;
-		var base = englishTestDiffs145[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish144 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs144) {
-		total++;
-		var base = englishTestDiffs144[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish143 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs143) {
-		total++;
-		var base = englishTestDiffs143[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish142 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs142) {
-		total++;
-		var base = englishTestDiffs142[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish141 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs141) {
-		total++;
-		var base = englishTestDiffs141[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish140 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs140) {
-		total++;
-		var base = englishTestDiffs140[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish139 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs139) {
-		total++;
-		var base = englishTestDiffs139[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish138 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs138) {
-		total++;
-		var base = englishTestDiffs138[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish137 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs137) {
-		total++;
-		var base = englishTestDiffs137[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish136 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs136) {
-		total++;
-		var base = englishTestDiffs136[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish135 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs135) {
-		total++;
-		var base = englishTestDiffs135[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish134 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs134) {
-		total++;
-		var base = englishTestDiffs134[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish133 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs133) {
-		total++;
-		var base = englishTestDiffs133[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish132 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs132) {
-		total++;
-		var base = englishTestDiffs132[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish131 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs131) {
-		total++;
-		var base = englishTestDiffs131[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish130 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs130) {
-		total++;
-		var base = englishTestDiffs130[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish129 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs129) {
-		total++;
-		var base = englishTestDiffs129[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish128 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs128) {
-		total++;
-		var base = englishTestDiffs128[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish127 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs127) {
-		total++;
-		var base = englishTestDiffs127[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish126 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs126) {
-		total++;
-		var base = englishTestDiffs126[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish125 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs125) {
-		total++;
-		var base = englishTestDiffs125[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish124 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs124) {
-		total++;
-		var base = englishTestDiffs124[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish123 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs123) {
-		total++;
-		var base = englishTestDiffs123[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish122 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs122) {
-		total++;
-		var base = englishTestDiffs122[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish121 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs121) {
-		total++;
-		var base = englishTestDiffs121[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish120 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs120) {
-		total++;
-		var base = englishTestDiffs120[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish119 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs119) {
-		total++;
-		var base = englishTestDiffs119[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish118 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs118) {
-		total++;
-		var base = englishTestDiffs118[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish117 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs117) {
-		total++;
-		var base = englishTestDiffs117[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
-}
-
-var testenglish116 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs116) {
-		total++;
-		var base = englishTestDiffs116[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish146 = function() {
+	diffsTemplateTest(englishTestDiffs146);
 }
 
-var testenglish115 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs115) {
-		total++;
-		var base = englishTestDiffs115[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish145 = function() {
+	diffsTemplateTest(englishTestDiffs145);
 }
 
-var testenglish114 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs114) {
-		total++;
-		var base = englishTestDiffs114[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish144 = function() {
+	diffsTemplateTest(englishTestDiffs144);
 }
 
-var testenglish113 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs113) {
-		total++;
-		var base = englishTestDiffs113[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish143 = function() {
+	diffsTemplateTest(englishTestDiffs143);
 }
 
-var testenglish112 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs112) {
-		total++;
-		var base = englishTestDiffs112[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish142 = function() {
+	diffsTemplateTest(englishTestDiffs142);
 }
 
-var testenglish111 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs111) {
-		total++;
-		var base = englishTestDiffs111[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish141 = function() {
+	diffsTemplateTest(englishTestDiffs141);
 }
 
-var testenglish110 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs110) {
-		total++;
-		var base = englishTestDiffs110[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish140 = function() {
+	diffsTemplateTest(englishTestDiffs140);
 }
 
-var testenglish109 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs109) {
-		total++;
-		var base = englishTestDiffs109[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish139 = function() {
+	diffsTemplateTest(englishTestDiffs139);
 }
 
-var testenglish108 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs108) {
-		total++;
-		var base = englishTestDiffs108[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish138 = function() {
+	diffsTemplateTest(englishTestDiffs138);
 }
 
-var testenglish107 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs107) {
-		total++;
-		var base = englishTestDiffs107[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish137 = function() {
+	diffsTemplateTest(englishTestDiffs137);
 }
 
-var testenglish106 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs106) {
-		total++;
-		var base = englishTestDiffs106[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish136 = function() {
+	diffsTemplateTest(englishTestDiffs136);
 }
 
-var testenglish105 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs105) {
-		total++;
-		var base = englishTestDiffs105[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish135 = function() {
+	diffsTemplateTest(englishTestDiffs135);
 }
 
-var testenglish104 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs104) {
-		total++;
-		var base = englishTestDiffs104[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish134 = function() {
+	diffsTemplateTest(englishTestDiffs134);
 }
 
-var testenglish103 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs103) {
-		total++;
-		var base = englishTestDiffs103[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish133 = function() {
+	diffsTemplateTest(englishTestDiffs133);
 }
 
-var testenglish102 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs102) {
-		total++;
-		var base = englishTestDiffs102[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish132 = function() {
+	diffsTemplateTest(englishTestDiffs132);
 }
 
-var testenglish101 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs101) {
-		total++;
-		var base = englishTestDiffs101[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish131 = function() {
+	diffsTemplateTest(englishTestDiffs131);
 }
 
-var testenglish100 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs100) {
-		total++;
-		var base = englishTestDiffs100[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish130 = function() {
+	diffsTemplateTest(englishTestDiffs130);
 }
 
-var testenglish99 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs99) {
-		total++;
-		var base = englishTestDiffs99[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish129 = function() {
+	diffsTemplateTest(englishTestDiffs129);
 }
 
-var testenglish98 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs98) {
-		total++;
-		var base = englishTestDiffs98[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish128 = function() {
+	diffsTemplateTest(englishTestDiffs128);
 }
 
-var testenglish97 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs97) {
-		total++;
-		var base = englishTestDiffs97[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish127 = function() {
+	diffsTemplateTest(englishTestDiffs127);
 }
 
-var testenglish96 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs96) {
-		total++;
-		var base = englishTestDiffs96[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish126 = function() {
+	diffsTemplateTest(englishTestDiffs126);
 }
 
-var testenglish95 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs95) {
-		total++;
-		var base = englishTestDiffs95[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish125 = function() {
+	diffsTemplateTest(englishTestDiffs125);
+}
+
+var testEnglish124 = function() {
+	diffsTemplateTest(englishTestDiffs124);
+}
+
+var testEnglish123 = function() {
+	diffsTemplateTest(englishTestDiffs123);
+}
+
+var testEnglish122 = function() {
+	diffsTemplateTest(englishTestDiffs122);
+}
+
+var testEnglish121 = function() {
+	diffsTemplateTest(englishTestDiffs121);
+}
+
+var testEnglish120 = function() {
+	diffsTemplateTest(englishTestDiffs120);
 }
 
-var testenglish94 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs94) {
-		total++;
-		var base = englishTestDiffs94[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish119 = function() {
+	diffsTemplateTest(englishTestDiffs119);
 }
 
-var testenglish93 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs93) {
-		total++;
-		var base = englishTestDiffs93[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish118 = function() {
+	diffsTemplateTest(englishTestDiffs118);
 }
 
-var testenglish92 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs92) {
-		total++;
-		var base = englishTestDiffs92[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish117 = function() {
+	diffsTemplateTest(englishTestDiffs117);
 }
 
-var testenglish91 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs91) {
-		total++;
-		var base = englishTestDiffs91[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish116 = function() {
+	diffsTemplateTest(englishTestDiffs116);
 }
 
-var testenglish90 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs90) {
-		total++;
-		var base = englishTestDiffs90[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish115 = function() {
+	diffsTemplateTest(englishTestDiffs115);
 }
 
-var testenglish89 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs89) {
-		total++;
-		var base = englishTestDiffs89[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish114 = function() {
+	diffsTemplateTest(englishTestDiffs114);
 }
 
-var testenglish88 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs88) {
-		total++;
-		var base = englishTestDiffs88[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish113 = function() {
+	diffsTemplateTest(englishTestDiffs113);
 }
 
-var testenglish87 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs87) {
-		total++;
-		var base = englishTestDiffs87[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish112 = function() {
+	diffsTemplateTest(englishTestDiffs112);
 }
 
-var testenglish86 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs86) {
-		total++;
-		var base = englishTestDiffs86[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish111 = function() {
+	diffsTemplateTest(englishTestDiffs111);
 }
 
-var testenglish85 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs85) {
-		total++;
-		var base = englishTestDiffs85[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish110 = function() {
+	diffsTemplateTest(englishTestDiffs110);
 }
 
-var testenglish84 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs84) {
-		total++;
-		var base = englishTestDiffs84[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish109 = function() {
+	diffsTemplateTest(englishTestDiffs109);
 }
 
-var testenglish83 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs83) {
-		total++;
-		var base = englishTestDiffs83[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish108 = function() {
+	diffsTemplateTest(englishTestDiffs108);
 }
 
-var testenglish82 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs82) {
-		total++;
-		var base = englishTestDiffs82[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish107 = function() {
+	diffsTemplateTest(englishTestDiffs107);
 }
 
-var testenglish81 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs81) {
-		total++;
-		var base = englishTestDiffs81[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish106 = function() {
+	diffsTemplateTest(englishTestDiffs106);
 }
 
-var testenglish80 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs80) {
-		total++;
-		var base = englishTestDiffs80[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish105 = function() {
+	diffsTemplateTest(englishTestDiffs105);
 }
 
-var testenglish79 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs79) {
-		total++;
-		var base = englishTestDiffs79[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish104 = function() {
+	diffsTemplateTest(englishTestDiffs104);
 }
 
-var testenglish78 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs78) {
-		total++;
-		var base = englishTestDiffs78[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish103 = function() {
+	diffsTemplateTest(englishTestDiffs103);
 }
 
-var testenglish77 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs77) {
-		total++;
-		var base = englishTestDiffs77[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish102 = function() {
+	diffsTemplateTest(englishTestDiffs102);
 }
 
-var testenglish76 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs76) {
-		total++;
-		var base = englishTestDiffs76[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish101 = function() {
+	diffsTemplateTest(englishTestDiffs101);
+}
+
+var testEnglish100 = function() {
+	diffsTemplateTest(englishTestDiffs100);
+}
+
+var testEnglish99 = function() {
+	diffsTemplateTest(englishTestDiffs99);
+}
+
+var testEnglish98 = function() {
+	diffsTemplateTest(englishTestDiffs98);
+}
+
+var testEnglish97 = function() {
+	diffsTemplateTest(englishTestDiffs97);
+}
+
+var testEnglish96 = function() {
+	diffsTemplateTest(englishTestDiffs96);
 }
 
-var testenglish75 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs75) {
-		total++;
-		var base = englishTestDiffs75[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish95 = function() {
+	diffsTemplateTest(englishTestDiffs95);
 }
 
-var testenglish74 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs74) {
-		total++;
-		var base = englishTestDiffs74[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish94 = function() {
+	diffsTemplateTest(englishTestDiffs94);
 }
 
-var testenglish73 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs73) {
-		total++;
-		var base = englishTestDiffs73[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish93 = function() {
+	diffsTemplateTest(englishTestDiffs93);
 }
 
-var testenglish72 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs72) {
-		total++;
-		var base = englishTestDiffs72[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish92 = function() {
+	diffsTemplateTest(englishTestDiffs92);
 }
 
-var testenglish71 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs71) {
-		total++;
-		var base = englishTestDiffs71[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish91 = function() {
+	diffsTemplateTest(englishTestDiffs91);
 }
 
-var testenglish70 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs70) {
-		total++;
-		var base = englishTestDiffs70[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish90 = function() {
+	diffsTemplateTest(englishTestDiffs90);
 }
 
-var testenglish69 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs69) {
-		total++;
-		var base = englishTestDiffs69[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish89 = function() {
+	diffsTemplateTest(englishTestDiffs89);
 }
 
-var testenglish68 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs68) {
-		total++;
-		var base = englishTestDiffs68[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish88 = function() {
+	diffsTemplateTest(englishTestDiffs88);
 }
 
-var testenglish67 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs67) {
-		total++;
-		var base = englishTestDiffs67[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish87 = function() {
+	diffsTemplateTest(englishTestDiffs87);
 }
 
-var testenglish66 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs66) {
-		total++;
-		var base = englishTestDiffs66[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish86 = function() {
+	diffsTemplateTest(englishTestDiffs86);
 }
 
-var testenglish65 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs65) {
-		total++;
-		var base = englishTestDiffs65[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish85 = function() {
+	diffsTemplateTest(englishTestDiffs85);
 }
 
-var testenglish64 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs64) {
-		total++;
-		var base = englishTestDiffs64[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish84 = function() {
+	diffsTemplateTest(englishTestDiffs84);
 }
 
-var testenglish63 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs63) {
-		total++;
-		var base = englishTestDiffs63[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish83 = function() {
+	diffsTemplateTest(englishTestDiffs83);
 }
 
-var testenglish62 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs62) {
-		total++;
-		var base = englishTestDiffs62[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish82 = function() {
+	diffsTemplateTest(englishTestDiffs82);
 }
 
-var testenglish61 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs61) {
-		total++;
-		var base = englishTestDiffs61[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish81 = function() {
+	diffsTemplateTest(englishTestDiffs81);
 }
 
-var testenglish60 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs60) {
-		total++;
-		var base = englishTestDiffs60[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish80 = function() {
+	diffsTemplateTest(englishTestDiffs80);
 }
 
-var testenglish59 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs59) {
-		total++;
-		var base = englishTestDiffs59[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish79 = function() {
+	diffsTemplateTest(englishTestDiffs79);
 }
 
-var testenglish58 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs58) {
-		total++;
-		var base = englishTestDiffs58[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish78 = function() {
+	diffsTemplateTest(englishTestDiffs78);
 }
 
-var testenglish57 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs57) {
-		total++;
-		var base = englishTestDiffs57[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish77 = function() {
+	diffsTemplateTest(englishTestDiffs77);
+}
+
+var testEnglish76 = function() {
+	diffsTemplateTest(englishTestDiffs76);
+}
+
+var testEnglish75 = function() {
+	diffsTemplateTest(englishTestDiffs75);
+}
+
+var testEnglish74 = function() {
+	diffsTemplateTest(englishTestDiffs74);
+}
+
+var testEnglish73 = function() {
+	diffsTemplateTest(englishTestDiffs73);
+}
+
+var testEnglish72 = function() {
+	diffsTemplateTest(englishTestDiffs72);
 }
 
-var testenglish56 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs56) {
-		total++;
-		var base = englishTestDiffs56[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish71 = function() {
+	diffsTemplateTest(englishTestDiffs71);
 }
 
-var testenglish55 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs55) {
-		total++;
-		var base = englishTestDiffs55[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish70 = function() {
+	diffsTemplateTest(englishTestDiffs70);
 }
 
-var testenglish54 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs54) {
-		total++;
-		var base = englishTestDiffs54[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish69 = function() {
+	diffsTemplateTest(englishTestDiffs69);
 }
 
-var testenglish53 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs53) {
-		total++;
-		var base = englishTestDiffs53[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish68 = function() {
+	diffsTemplateTest(englishTestDiffs68);
 }
 
-var testenglish52 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs52) {
-		total++;
-		var base = englishTestDiffs52[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish67 = function() {
+	diffsTemplateTest(englishTestDiffs67);
 }
 
-var testenglish51 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs51) {
-		total++;
-		var base = englishTestDiffs51[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish66 = function() {
+	diffsTemplateTest(englishTestDiffs66);
 }
 
-var testenglish50 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs50) {
-		total++;
-		var base = englishTestDiffs50[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish65 = function() {
+	diffsTemplateTest(englishTestDiffs65);
 }
 
-var testenglish49 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs49) {
-		total++;
-		var base = englishTestDiffs49[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish64 = function() {
+	diffsTemplateTest(englishTestDiffs64);
 }
 
-var testenglish48 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs48) {
-		total++;
-		var base = englishTestDiffs48[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish63 = function() {
+	diffsTemplateTest(englishTestDiffs63);
 }
 
-var testenglish47 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs47) {
-		total++;
-		var base = englishTestDiffs47[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish62 = function() {
+	diffsTemplateTest(englishTestDiffs62);
 }
 
-var testenglish46 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs46) {
-		total++;
-		var base = englishTestDiffs46[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish61 = function() {
+	diffsTemplateTest(englishTestDiffs61);
 }
 
-var testenglish45 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs45) {
-		total++;
-		var base = englishTestDiffs45[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish60 = function() {
+	diffsTemplateTest(englishTestDiffs60);
 }
 
-var testenglish44 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs44) {
-		total++;
-		var base = englishTestDiffs44[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish59 = function() {
+	diffsTemplateTest(englishTestDiffs59);
 }
 
-var testenglish43 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs43) {
-		total++;
-		var base = englishTestDiffs43[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish58 = function() {
+	diffsTemplateTest(englishTestDiffs58);
 }
 
-var testenglish42 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs42) {
-		total++;
-		var base = englishTestDiffs42[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish57 = function() {
+	diffsTemplateTest(englishTestDiffs57);
 }
 
-var testenglish41 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs41) {
-		total++;
-		var base = englishTestDiffs41[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish56 = function() {
+	diffsTemplateTest(englishTestDiffs56);
 }
 
-var testenglish40 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs40) {
-		total++;
-		var base = englishTestDiffs40[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish55 = function() {
+	diffsTemplateTest(englishTestDiffs55);
 }
 
-var testenglish39 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs39) {
-		total++;
-		var base = englishTestDiffs39[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish54 = function() {
+	diffsTemplateTest(englishTestDiffs54);
 }
 
-var testenglish38 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs38) {
-		total++;
-		var base = englishTestDiffs38[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish53 = function() {
+	diffsTemplateTest(englishTestDiffs53);
+}
+
+var testEnglish52 = function() {
+	diffsTemplateTest(englishTestDiffs52);
+}
+
+var testEnglish51 = function() {
+	diffsTemplateTest(englishTestDiffs51);
+}
+
+var testEnglish50 = function() {
+	diffsTemplateTest(englishTestDiffs50);
+}
+
+var testEnglish49 = function() {
+	diffsTemplateTest(englishTestDiffs49);
+}
+
+var testEnglish48 = function() {
+	diffsTemplateTest(englishTestDiffs48);
 }
 
-var testenglish37 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs37) {
-		total++;
-		var base = englishTestDiffs37[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish47 = function() {
+	diffsTemplateTest(englishTestDiffs47);
 }
 
-var testenglish36 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs36) {
-		total++;
-		var base = englishTestDiffs36[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish46 = function() {
+	diffsTemplateTest(englishTestDiffs46);
 }
 
-var testenglish35 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs35) {
-		total++;
-		var base = englishTestDiffs35[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish45 = function() {
+	diffsTemplateTest(englishTestDiffs45);
 }
 
-var testenglish34 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs34) {
-		total++;
-		var base = englishTestDiffs34[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish44 = function() {
+	diffsTemplateTest(englishTestDiffs44);
 }
 
-var testenglish33 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs33) {
-		total++;
-		var base = englishTestDiffs33[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish43 = function() {
+	diffsTemplateTest(englishTestDiffs43);
 }
 
-var testenglish32 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs32) {
-		total++;
-		var base = englishTestDiffs32[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish42 = function() {
+	diffsTemplateTest(englishTestDiffs42);
 }
 
-var testenglish31 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs31) {
-		total++;
-		var base = englishTestDiffs31[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish41 = function() {
+	diffsTemplateTest(englishTestDiffs41);
 }
 
-var testenglish30 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs30) {
-		total++;
-		var base = englishTestDiffs30[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish40 = function() {
+	diffsTemplateTest(englishTestDiffs40);
 }
 
-var testenglish29 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs29) {
-		total++;
-		var base = englishTestDiffs29[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish39 = function() {
+	diffsTemplateTest(englishTestDiffs39);
 }
 
-var testenglish28 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs28) {
-		total++;
-		var base = englishTestDiffs28[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish38 = function() {
+	diffsTemplateTest(englishTestDiffs38);
 }
 
-var testenglish27 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs27) {
-		total++;
-		var base = englishTestDiffs27[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish37 = function() {
+	diffsTemplateTest(englishTestDiffs37);
 }
 
-var testenglish26 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs26) {
-		total++;
-		var base = englishTestDiffs26[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish36 = function() {
+	diffsTemplateTest(englishTestDiffs36);
 }
 
-var testenglish25 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs25) {
-		total++;
-		var base = englishTestDiffs25[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish35 = function() {
+	diffsTemplateTest(englishTestDiffs35);
 }
 
-var testenglish24 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs24) {
-		total++;
-		var base = englishTestDiffs24[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish34 = function() {
+	diffsTemplateTest(englishTestDiffs34);
 }
 
-var testenglish23 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs23) {
-		total++;
-		var base = englishTestDiffs23[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish33 = function() {
+	diffsTemplateTest(englishTestDiffs33);
 }
 
-var testenglish22 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs22) {
-		total++;
-		var base = englishTestDiffs22[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish32 = function() {
+	diffsTemplateTest(englishTestDiffs32);
 }
 
-var testenglish21 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs21) {
-		total++;
-		var base = englishTestDiffs21[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish31 = function() {
+	diffsTemplateTest(englishTestDiffs31);
 }
 
-var testenglish20 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs20) {
-		total++;
-		var base = englishTestDiffs20[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish30 = function() {
+	diffsTemplateTest(englishTestDiffs30);
 }
 
-var testenglish19 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs19) {
-		total++;
-		var base = englishTestDiffs19[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish29 = function() {
+	diffsTemplateTest(englishTestDiffs29);
+}
+
+var testEnglish28 = function() {
+	diffsTemplateTest(englishTestDiffs28);
+}
+
+var testEnglish27 = function() {
+	diffsTemplateTest(englishTestDiffs27);
+}
+
+var testEnglish26 = function() {
+	diffsTemplateTest(englishTestDiffs26);
+}
+
+var testEnglish25 = function() {
+	diffsTemplateTest(englishTestDiffs25);
+}
+
+var testEnglish24 = function() {
+	diffsTemplateTest(englishTestDiffs24);
 }
 
-var testenglish18 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs18) {
-		total++;
-		var base = englishTestDiffs18[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish23 = function() {
+	diffsTemplateTest(englishTestDiffs23);
 }
 
-var testenglish17 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs17) {
-		total++;
-		var base = englishTestDiffs17[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish22 = function() {
+	diffsTemplateTest(englishTestDiffs22);
 }
 
-var testenglish16 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs16) {
-		total++;
-		var base = englishTestDiffs16[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish21 = function() {
+	diffsTemplateTest(englishTestDiffs21);
 }
 
-var testenglish15 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs15) {
-		total++;
-		var base = englishTestDiffs15[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish20 = function() {
+	diffsTemplateTest(englishTestDiffs20);
 }
 
-var testenglish14 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs14) {
-		total++;
-		var base = englishTestDiffs14[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish19 = function() {
+	diffsTemplateTest(englishTestDiffs19);
 }
 
-var testenglish13 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs13) {
-		total++;
-		var base = englishTestDiffs13[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish18 = function() {
+	diffsTemplateTest(englishTestDiffs18);
 }
 
-var testenglish12 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs12) {
-		total++;
-		var base = englishTestDiffs12[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish17 = function() {
+	diffsTemplateTest(englishTestDiffs17);
 }
 
-var testenglish11 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs11) {
-		total++;
-		var base = englishTestDiffs11[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish16 = function() {
+	diffsTemplateTest(englishTestDiffs16);
 }
 
-var testenglish10 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs10) {
-		total++;
-		var base = englishTestDiffs10[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish15 = function() {
+	diffsTemplateTest(englishTestDiffs15);
 }
 
-var testenglish9 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs9) {
-		total++;
-		var base = englishTestDiffs9[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish14 = function() {
+	diffsTemplateTest(englishTestDiffs14);
 }
 
-var testenglish8 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs8) {
-		total++;
-		var base = englishTestDiffs8[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish13 = function() {
+	diffsTemplateTest(englishTestDiffs13);
 }
 
-var testenglish7 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs7) {
-		total++;
-		var base = englishTestDiffs7[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish12 = function() {
+	diffsTemplateTest(englishTestDiffs12);
 }
 
-var testenglish6 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs6) {
-		total++;
-		var base = englishTestDiffs6[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish11 = function() {
+	diffsTemplateTest(englishTestDiffs11);
 }
 
-var testenglish5 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs5) {
-		total++;
-		var base = englishTestDiffs5[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish10 = function() {
+	diffsTemplateTest(englishTestDiffs10);
 }
 
-var testenglish4 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs4) {
-		total++;
-		var base = englishTestDiffs4[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish9 = function() {
+	diffsTemplateTest(englishTestDiffs9);
 }
 
-var testenglish3 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs3) {
-		total++;
-		var base = englishTestDiffs3[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish8 = function() {
+	diffsTemplateTest(englishTestDiffs8);
 }
 
-var testenglish2 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs2) {
-		total++;
-		var base = englishTestDiffs2[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish7 = function() {
+	diffsTemplateTest(englishTestDiffs7);
 }
 
-var testenglish1 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs1) {
-		total++;
-		var base = englishTestDiffs1[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish6 = function() {
+	diffsTemplateTest(englishTestDiffs6);
 }
 
-var testenglish0 = function() {
-	var buffer, fails = 0, total = 0;
-	for (var sVoc in englishTestDiffs0) {
-		total++;
-		var base = englishTestDiffs0[sVoc];
-		var stem = stemmer(sVoc);
-		if (base != stem) {
-			fails++;
-			if (buffer) {
-				buffer += "; ";
-				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
-				buffer = sVoc + " --> " + base + " | " + stem;
-		}
-	}
-	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
+var testEnglish5 = function() {
+	diffsTemplateTest(englishTestDiffs5);
+}
+
+var testEnglish4 = function() {
+	diffsTemplateTest(englishTestDiffs4);
+}
+
+var testEnglish3 = function() {
+	diffsTemplateTest(englishTestDiffs3);
+}
+
+var testEnglish2 = function() {
+	diffsTemplateTest(englishTestDiffs2);
+}
+
+var testEnglish1 = function() {
+	diffsTemplateTest(englishTestDiffs1);
+}
+
+var testEnglish0 = function() {
+	diffsTemplateTest(englishTestDiffs0);
 }
