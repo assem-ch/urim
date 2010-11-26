@@ -138,13 +138,13 @@ JsUnitTestManager.prototype.onLoad = function() {
 }
 
 // seconds to wait for each test page to load
-JsUnitTestManager.TESTPAGE_WAIT_SEC = 300;
+JsUnitTestManager.TESTPAGE_WAIT_SEC = 480;
 
 // milliseoncds between test runs
 JsUnitTestManager.TIMEOUT_LENGTH = 20;
 
 // seconds to wait for setUpPage to complete
-JsUnitTestManager.SETUPPAGE_TIMEOUT = 300;
+JsUnitTestManager.SETUPPAGE_TIMEOUT = 480;
 
 // milliseconds to wait between polls on setUpPages
 JsUnitTestManager.SETUPPAGE_INTERVAL = 100;

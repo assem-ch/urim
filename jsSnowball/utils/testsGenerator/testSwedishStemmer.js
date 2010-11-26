@@ -31027,7 +31027,7 @@ var swedishTestDiffs122 = {
 	"\u00f6\u00e4ndligt" : "\u00f6\u00e4nd"
 };
 
-function diffsTemplateTest(testDiffs) {
+function diffsTmpTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
 	for (var sVoc in testDiffs) {
 		total++;
@@ -31038,501 +31038,502 @@ function diffsTemplateTest(testDiffs) {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
+			} else {
 				buffer = sVoc + " --> " + base + " | " + stem;
+			}
 		}
 	}
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
 var testSwedish122 = function() {
-	diffsTemplateTest(swedishTestDiffs122);
+	diffsTmpTest(swedishTestDiffs122);
 }
 
 var testSwedish121 = function() {
-	diffsTemplateTest(swedishTestDiffs121);
+	diffsTmpTest(swedishTestDiffs121);
 }
 
 var testSwedish120 = function() {
-	diffsTemplateTest(swedishTestDiffs120);
+	diffsTmpTest(swedishTestDiffs120);
 }
 
 var testSwedish119 = function() {
-	diffsTemplateTest(swedishTestDiffs119);
+	diffsTmpTest(swedishTestDiffs119);
 }
 
 var testSwedish118 = function() {
-	diffsTemplateTest(swedishTestDiffs118);
+	diffsTmpTest(swedishTestDiffs118);
 }
 
 var testSwedish117 = function() {
-	diffsTemplateTest(swedishTestDiffs117);
+	diffsTmpTest(swedishTestDiffs117);
 }
 
 var testSwedish116 = function() {
-	diffsTemplateTest(swedishTestDiffs116);
+	diffsTmpTest(swedishTestDiffs116);
 }
 
 var testSwedish115 = function() {
-	diffsTemplateTest(swedishTestDiffs115);
+	diffsTmpTest(swedishTestDiffs115);
 }
 
 var testSwedish114 = function() {
-	diffsTemplateTest(swedishTestDiffs114);
+	diffsTmpTest(swedishTestDiffs114);
 }
 
 var testSwedish113 = function() {
-	diffsTemplateTest(swedishTestDiffs113);
+	diffsTmpTest(swedishTestDiffs113);
 }
 
 var testSwedish112 = function() {
-	diffsTemplateTest(swedishTestDiffs112);
+	diffsTmpTest(swedishTestDiffs112);
 }
 
 var testSwedish111 = function() {
-	diffsTemplateTest(swedishTestDiffs111);
+	diffsTmpTest(swedishTestDiffs111);
 }
 
 var testSwedish110 = function() {
-	diffsTemplateTest(swedishTestDiffs110);
+	diffsTmpTest(swedishTestDiffs110);
 }
 
 var testSwedish109 = function() {
-	diffsTemplateTest(swedishTestDiffs109);
+	diffsTmpTest(swedishTestDiffs109);
 }
 
 var testSwedish108 = function() {
-	diffsTemplateTest(swedishTestDiffs108);
+	diffsTmpTest(swedishTestDiffs108);
 }
 
 var testSwedish107 = function() {
-	diffsTemplateTest(swedishTestDiffs107);
+	diffsTmpTest(swedishTestDiffs107);
 }
 
 var testSwedish106 = function() {
-	diffsTemplateTest(swedishTestDiffs106);
+	diffsTmpTest(swedishTestDiffs106);
 }
 
 var testSwedish105 = function() {
-	diffsTemplateTest(swedishTestDiffs105);
+	diffsTmpTest(swedishTestDiffs105);
 }
 
 var testSwedish104 = function() {
-	diffsTemplateTest(swedishTestDiffs104);
+	diffsTmpTest(swedishTestDiffs104);
 }
 
 var testSwedish103 = function() {
-	diffsTemplateTest(swedishTestDiffs103);
+	diffsTmpTest(swedishTestDiffs103);
 }
 
 var testSwedish102 = function() {
-	diffsTemplateTest(swedishTestDiffs102);
+	diffsTmpTest(swedishTestDiffs102);
 }
 
 var testSwedish101 = function() {
-	diffsTemplateTest(swedishTestDiffs101);
+	diffsTmpTest(swedishTestDiffs101);
 }
 
 var testSwedish100 = function() {
-	diffsTemplateTest(swedishTestDiffs100);
+	diffsTmpTest(swedishTestDiffs100);
 }
 
 var testSwedish99 = function() {
-	diffsTemplateTest(swedishTestDiffs99);
+	diffsTmpTest(swedishTestDiffs99);
 }
 
 var testSwedish98 = function() {
-	diffsTemplateTest(swedishTestDiffs98);
+	diffsTmpTest(swedishTestDiffs98);
 }
 
 var testSwedish97 = function() {
-	diffsTemplateTest(swedishTestDiffs97);
+	diffsTmpTest(swedishTestDiffs97);
 }
 
 var testSwedish96 = function() {
-	diffsTemplateTest(swedishTestDiffs96);
+	diffsTmpTest(swedishTestDiffs96);
 }
 
 var testSwedish95 = function() {
-	diffsTemplateTest(swedishTestDiffs95);
+	diffsTmpTest(swedishTestDiffs95);
 }
 
 var testSwedish94 = function() {
-	diffsTemplateTest(swedishTestDiffs94);
+	diffsTmpTest(swedishTestDiffs94);
 }
 
 var testSwedish93 = function() {
-	diffsTemplateTest(swedishTestDiffs93);
+	diffsTmpTest(swedishTestDiffs93);
 }
 
 var testSwedish92 = function() {
-	diffsTemplateTest(swedishTestDiffs92);
+	diffsTmpTest(swedishTestDiffs92);
 }
 
 var testSwedish91 = function() {
-	diffsTemplateTest(swedishTestDiffs91);
+	diffsTmpTest(swedishTestDiffs91);
 }
 
 var testSwedish90 = function() {
-	diffsTemplateTest(swedishTestDiffs90);
+	diffsTmpTest(swedishTestDiffs90);
 }
 
 var testSwedish89 = function() {
-	diffsTemplateTest(swedishTestDiffs89);
+	diffsTmpTest(swedishTestDiffs89);
 }
 
 var testSwedish88 = function() {
-	diffsTemplateTest(swedishTestDiffs88);
+	diffsTmpTest(swedishTestDiffs88);
 }
 
 var testSwedish87 = function() {
-	diffsTemplateTest(swedishTestDiffs87);
+	diffsTmpTest(swedishTestDiffs87);
 }
 
 var testSwedish86 = function() {
-	diffsTemplateTest(swedishTestDiffs86);
+	diffsTmpTest(swedishTestDiffs86);
 }
 
 var testSwedish85 = function() {
-	diffsTemplateTest(swedishTestDiffs85);
+	diffsTmpTest(swedishTestDiffs85);
 }
 
 var testSwedish84 = function() {
-	diffsTemplateTest(swedishTestDiffs84);
+	diffsTmpTest(swedishTestDiffs84);
 }
 
 var testSwedish83 = function() {
-	diffsTemplateTest(swedishTestDiffs83);
+	diffsTmpTest(swedishTestDiffs83);
 }
 
 var testSwedish82 = function() {
-	diffsTemplateTest(swedishTestDiffs82);
+	diffsTmpTest(swedishTestDiffs82);
 }
 
 var testSwedish81 = function() {
-	diffsTemplateTest(swedishTestDiffs81);
+	diffsTmpTest(swedishTestDiffs81);
 }
 
 var testSwedish80 = function() {
-	diffsTemplateTest(swedishTestDiffs80);
+	diffsTmpTest(swedishTestDiffs80);
 }
 
 var testSwedish79 = function() {
-	diffsTemplateTest(swedishTestDiffs79);
+	diffsTmpTest(swedishTestDiffs79);
 }
 
 var testSwedish78 = function() {
-	diffsTemplateTest(swedishTestDiffs78);
+	diffsTmpTest(swedishTestDiffs78);
 }
 
 var testSwedish77 = function() {
-	diffsTemplateTest(swedishTestDiffs77);
+	diffsTmpTest(swedishTestDiffs77);
 }
 
 var testSwedish76 = function() {
-	diffsTemplateTest(swedishTestDiffs76);
+	diffsTmpTest(swedishTestDiffs76);
 }
 
 var testSwedish75 = function() {
-	diffsTemplateTest(swedishTestDiffs75);
+	diffsTmpTest(swedishTestDiffs75);
 }
 
 var testSwedish74 = function() {
-	diffsTemplateTest(swedishTestDiffs74);
+	diffsTmpTest(swedishTestDiffs74);
 }
 
 var testSwedish73 = function() {
-	diffsTemplateTest(swedishTestDiffs73);
+	diffsTmpTest(swedishTestDiffs73);
 }
 
 var testSwedish72 = function() {
-	diffsTemplateTest(swedishTestDiffs72);
+	diffsTmpTest(swedishTestDiffs72);
 }
 
 var testSwedish71 = function() {
-	diffsTemplateTest(swedishTestDiffs71);
+	diffsTmpTest(swedishTestDiffs71);
 }
 
 var testSwedish70 = function() {
-	diffsTemplateTest(swedishTestDiffs70);
+	diffsTmpTest(swedishTestDiffs70);
 }
 
 var testSwedish69 = function() {
-	diffsTemplateTest(swedishTestDiffs69);
+	diffsTmpTest(swedishTestDiffs69);
 }
 
 var testSwedish68 = function() {
-	diffsTemplateTest(swedishTestDiffs68);
+	diffsTmpTest(swedishTestDiffs68);
 }
 
 var testSwedish67 = function() {
-	diffsTemplateTest(swedishTestDiffs67);
+	diffsTmpTest(swedishTestDiffs67);
 }
 
 var testSwedish66 = function() {
-	diffsTemplateTest(swedishTestDiffs66);
+	diffsTmpTest(swedishTestDiffs66);
 }
 
 var testSwedish65 = function() {
-	diffsTemplateTest(swedishTestDiffs65);
+	diffsTmpTest(swedishTestDiffs65);
 }
 
 var testSwedish64 = function() {
-	diffsTemplateTest(swedishTestDiffs64);
+	diffsTmpTest(swedishTestDiffs64);
 }
 
 var testSwedish63 = function() {
-	diffsTemplateTest(swedishTestDiffs63);
+	diffsTmpTest(swedishTestDiffs63);
 }
 
 var testSwedish62 = function() {
-	diffsTemplateTest(swedishTestDiffs62);
+	diffsTmpTest(swedishTestDiffs62);
 }
 
 var testSwedish61 = function() {
-	diffsTemplateTest(swedishTestDiffs61);
+	diffsTmpTest(swedishTestDiffs61);
 }
 
 var testSwedish60 = function() {
-	diffsTemplateTest(swedishTestDiffs60);
+	diffsTmpTest(swedishTestDiffs60);
 }
 
 var testSwedish59 = function() {
-	diffsTemplateTest(swedishTestDiffs59);
+	diffsTmpTest(swedishTestDiffs59);
 }
 
 var testSwedish58 = function() {
-	diffsTemplateTest(swedishTestDiffs58);
+	diffsTmpTest(swedishTestDiffs58);
 }
 
 var testSwedish57 = function() {
-	diffsTemplateTest(swedishTestDiffs57);
+	diffsTmpTest(swedishTestDiffs57);
 }
 
 var testSwedish56 = function() {
-	diffsTemplateTest(swedishTestDiffs56);
+	diffsTmpTest(swedishTestDiffs56);
 }
 
 var testSwedish55 = function() {
-	diffsTemplateTest(swedishTestDiffs55);
+	diffsTmpTest(swedishTestDiffs55);
 }
 
 var testSwedish54 = function() {
-	diffsTemplateTest(swedishTestDiffs54);
+	diffsTmpTest(swedishTestDiffs54);
 }
 
 var testSwedish53 = function() {
-	diffsTemplateTest(swedishTestDiffs53);
+	diffsTmpTest(swedishTestDiffs53);
 }
 
 var testSwedish52 = function() {
-	diffsTemplateTest(swedishTestDiffs52);
+	diffsTmpTest(swedishTestDiffs52);
 }
 
 var testSwedish51 = function() {
-	diffsTemplateTest(swedishTestDiffs51);
+	diffsTmpTest(swedishTestDiffs51);
 }
 
 var testSwedish50 = function() {
-	diffsTemplateTest(swedishTestDiffs50);
+	diffsTmpTest(swedishTestDiffs50);
 }
 
 var testSwedish49 = function() {
-	diffsTemplateTest(swedishTestDiffs49);
+	diffsTmpTest(swedishTestDiffs49);
 }
 
 var testSwedish48 = function() {
-	diffsTemplateTest(swedishTestDiffs48);
+	diffsTmpTest(swedishTestDiffs48);
 }
 
 var testSwedish47 = function() {
-	diffsTemplateTest(swedishTestDiffs47);
+	diffsTmpTest(swedishTestDiffs47);
 }
 
 var testSwedish46 = function() {
-	diffsTemplateTest(swedishTestDiffs46);
+	diffsTmpTest(swedishTestDiffs46);
 }
 
 var testSwedish45 = function() {
-	diffsTemplateTest(swedishTestDiffs45);
+	diffsTmpTest(swedishTestDiffs45);
 }
 
 var testSwedish44 = function() {
-	diffsTemplateTest(swedishTestDiffs44);
+	diffsTmpTest(swedishTestDiffs44);
 }
 
 var testSwedish43 = function() {
-	diffsTemplateTest(swedishTestDiffs43);
+	diffsTmpTest(swedishTestDiffs43);
 }
 
 var testSwedish42 = function() {
-	diffsTemplateTest(swedishTestDiffs42);
+	diffsTmpTest(swedishTestDiffs42);
 }
 
 var testSwedish41 = function() {
-	diffsTemplateTest(swedishTestDiffs41);
+	diffsTmpTest(swedishTestDiffs41);
 }
 
 var testSwedish40 = function() {
-	diffsTemplateTest(swedishTestDiffs40);
+	diffsTmpTest(swedishTestDiffs40);
 }
 
 var testSwedish39 = function() {
-	diffsTemplateTest(swedishTestDiffs39);
+	diffsTmpTest(swedishTestDiffs39);
 }
 
 var testSwedish38 = function() {
-	diffsTemplateTest(swedishTestDiffs38);
+	diffsTmpTest(swedishTestDiffs38);
 }
 
 var testSwedish37 = function() {
-	diffsTemplateTest(swedishTestDiffs37);
+	diffsTmpTest(swedishTestDiffs37);
 }
 
 var testSwedish36 = function() {
-	diffsTemplateTest(swedishTestDiffs36);
+	diffsTmpTest(swedishTestDiffs36);
 }
 
 var testSwedish35 = function() {
-	diffsTemplateTest(swedishTestDiffs35);
+	diffsTmpTest(swedishTestDiffs35);
 }
 
 var testSwedish34 = function() {
-	diffsTemplateTest(swedishTestDiffs34);
+	diffsTmpTest(swedishTestDiffs34);
 }
 
 var testSwedish33 = function() {
-	diffsTemplateTest(swedishTestDiffs33);
+	diffsTmpTest(swedishTestDiffs33);
 }
 
 var testSwedish32 = function() {
-	diffsTemplateTest(swedishTestDiffs32);
+	diffsTmpTest(swedishTestDiffs32);
 }
 
 var testSwedish31 = function() {
-	diffsTemplateTest(swedishTestDiffs31);
+	diffsTmpTest(swedishTestDiffs31);
 }
 
 var testSwedish30 = function() {
-	diffsTemplateTest(swedishTestDiffs30);
+	diffsTmpTest(swedishTestDiffs30);
 }
 
 var testSwedish29 = function() {
-	diffsTemplateTest(swedishTestDiffs29);
+	diffsTmpTest(swedishTestDiffs29);
 }
 
 var testSwedish28 = function() {
-	diffsTemplateTest(swedishTestDiffs28);
+	diffsTmpTest(swedishTestDiffs28);
 }
 
 var testSwedish27 = function() {
-	diffsTemplateTest(swedishTestDiffs27);
+	diffsTmpTest(swedishTestDiffs27);
 }
 
 var testSwedish26 = function() {
-	diffsTemplateTest(swedishTestDiffs26);
+	diffsTmpTest(swedishTestDiffs26);
 }
 
 var testSwedish25 = function() {
-	diffsTemplateTest(swedishTestDiffs25);
+	diffsTmpTest(swedishTestDiffs25);
 }
 
 var testSwedish24 = function() {
-	diffsTemplateTest(swedishTestDiffs24);
+	diffsTmpTest(swedishTestDiffs24);
 }
 
 var testSwedish23 = function() {
-	diffsTemplateTest(swedishTestDiffs23);
+	diffsTmpTest(swedishTestDiffs23);
 }
 
 var testSwedish22 = function() {
-	diffsTemplateTest(swedishTestDiffs22);
+	diffsTmpTest(swedishTestDiffs22);
 }
 
 var testSwedish21 = function() {
-	diffsTemplateTest(swedishTestDiffs21);
+	diffsTmpTest(swedishTestDiffs21);
 }
 
 var testSwedish20 = function() {
-	diffsTemplateTest(swedishTestDiffs20);
+	diffsTmpTest(swedishTestDiffs20);
 }
 
 var testSwedish19 = function() {
-	diffsTemplateTest(swedishTestDiffs19);
+	diffsTmpTest(swedishTestDiffs19);
 }
 
 var testSwedish18 = function() {
-	diffsTemplateTest(swedishTestDiffs18);
+	diffsTmpTest(swedishTestDiffs18);
 }
 
 var testSwedish17 = function() {
-	diffsTemplateTest(swedishTestDiffs17);
+	diffsTmpTest(swedishTestDiffs17);
 }
 
 var testSwedish16 = function() {
-	diffsTemplateTest(swedishTestDiffs16);
+	diffsTmpTest(swedishTestDiffs16);
 }
 
 var testSwedish15 = function() {
-	diffsTemplateTest(swedishTestDiffs15);
+	diffsTmpTest(swedishTestDiffs15);
 }
 
 var testSwedish14 = function() {
-	diffsTemplateTest(swedishTestDiffs14);
+	diffsTmpTest(swedishTestDiffs14);
 }
 
 var testSwedish13 = function() {
-	diffsTemplateTest(swedishTestDiffs13);
+	diffsTmpTest(swedishTestDiffs13);
 }
 
 var testSwedish12 = function() {
-	diffsTemplateTest(swedishTestDiffs12);
+	diffsTmpTest(swedishTestDiffs12);
 }
 
 var testSwedish11 = function() {
-	diffsTemplateTest(swedishTestDiffs11);
+	diffsTmpTest(swedishTestDiffs11);
 }
 
 var testSwedish10 = function() {
-	diffsTemplateTest(swedishTestDiffs10);
+	diffsTmpTest(swedishTestDiffs10);
 }
 
 var testSwedish9 = function() {
-	diffsTemplateTest(swedishTestDiffs9);
+	diffsTmpTest(swedishTestDiffs9);
 }
 
 var testSwedish8 = function() {
-	diffsTemplateTest(swedishTestDiffs8);
+	diffsTmpTest(swedishTestDiffs8);
 }
 
 var testSwedish7 = function() {
-	diffsTemplateTest(swedishTestDiffs7);
+	diffsTmpTest(swedishTestDiffs7);
 }
 
 var testSwedish6 = function() {
-	diffsTemplateTest(swedishTestDiffs6);
+	diffsTmpTest(swedishTestDiffs6);
 }
 
 var testSwedish5 = function() {
-	diffsTemplateTest(swedishTestDiffs5);
+	diffsTmpTest(swedishTestDiffs5);
 }
 
 var testSwedish4 = function() {
-	diffsTemplateTest(swedishTestDiffs4);
+	diffsTmpTest(swedishTestDiffs4);
 }
 
 var testSwedish3 = function() {
-	diffsTemplateTest(swedishTestDiffs3);
+	diffsTmpTest(swedishTestDiffs3);
 }
 
 var testSwedish2 = function() {
-	diffsTemplateTest(swedishTestDiffs2);
+	diffsTmpTest(swedishTestDiffs2);
 }
 
 var testSwedish1 = function() {
-	diffsTemplateTest(swedishTestDiffs1);
+	diffsTmpTest(swedishTestDiffs1);
 }
 
 var testSwedish0 = function() {
-	diffsTemplateTest(swedishTestDiffs0);
+	diffsTmpTest(swedishTestDiffs0);
 }

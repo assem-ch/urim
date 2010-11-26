@@ -48,7 +48,7 @@ public class StemmerTestBuilder {
 				gBuffer.append("\n");
 
 				gBuffer.append("\n");
-				gBuffer.append("function diffsTemplateTest(testDiffs) {\n");
+				gBuffer.append("function diffsTmpTest(testDiffs) {\n");
 				gBuffer.append("\tvar buffer, fails = 0, total = 0;\n");
 				gBuffer.append("\tfor (var sVoc in testDiffs) {\n");
 				gBuffer.append("\t\ttotal++;\n");
@@ -59,17 +59,18 @@ public class StemmerTestBuilder {
 				gBuffer.append("\t\t\tif (buffer) {\n");
 				gBuffer.append("\t\t\t\tbuffer += \"; \";\n");
 				gBuffer.append("\t\t\t\tbuffer += sVoc + \" --> \" + base + \" | \" + stem;\n");
-				gBuffer.append("\t\t} else\n");
+				gBuffer.append("\t\t\t} else {\n");
 				gBuffer.append("\t\t\t\tbuffer = sVoc + \" --> \" + base + \" | \" + stem;\n");
+				gBuffer.append("\t\t\t}\n");
 				gBuffer.append("\t\t}\n");
 				gBuffer.append("\t}\n");
 				gBuffer.append("\tassertUndefined(\"Total:\" + total + \", fails: \" + fails, buffer);\n");
-					gBuffer.append("}\n");
+				gBuffer.append("}\n");
 
 				for (int i = gCount; i >= 0; i--) {
 					gBuffer.append("\n");
 					gBuffer.append("var test" + algoritmToHuman(algoritm) + i + " = function() {\n");
-					gBuffer.append("\tdiffsTemplateTest(" + algoritm + "TestDiffs" + i + ");\n");
+					gBuffer.append("\tdiffsTmpTest(" + algoritm + "TestDiffs" + i + ");\n");
 					gBuffer.append("}\n");
 				}
 

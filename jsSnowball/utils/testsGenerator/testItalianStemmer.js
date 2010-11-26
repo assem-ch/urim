@@ -35955,7 +35955,7 @@ var italianTestDiffs141 = {
 	"\u00f2connor" : "\u00f2connor"
 };
 
-function diffsTemplateTest(testDiffs) {
+function diffsTmpTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
 	for (var sVoc in testDiffs) {
 		total++;
@@ -35966,577 +35966,578 @@ function diffsTemplateTest(testDiffs) {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
+			} else {
 				buffer = sVoc + " --> " + base + " | " + stem;
+			}
 		}
 	}
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
 var testItalian141 = function() {
-	diffsTemplateTest(italianTestDiffs141);
+	diffsTmpTest(italianTestDiffs141);
 }
 
 var testItalian140 = function() {
-	diffsTemplateTest(italianTestDiffs140);
+	diffsTmpTest(italianTestDiffs140);
 }
 
 var testItalian139 = function() {
-	diffsTemplateTest(italianTestDiffs139);
+	diffsTmpTest(italianTestDiffs139);
 }
 
 var testItalian138 = function() {
-	diffsTemplateTest(italianTestDiffs138);
+	diffsTmpTest(italianTestDiffs138);
 }
 
 var testItalian137 = function() {
-	diffsTemplateTest(italianTestDiffs137);
+	diffsTmpTest(italianTestDiffs137);
 }
 
 var testItalian136 = function() {
-	diffsTemplateTest(italianTestDiffs136);
+	diffsTmpTest(italianTestDiffs136);
 }
 
 var testItalian135 = function() {
-	diffsTemplateTest(italianTestDiffs135);
+	diffsTmpTest(italianTestDiffs135);
 }
 
 var testItalian134 = function() {
-	diffsTemplateTest(italianTestDiffs134);
+	diffsTmpTest(italianTestDiffs134);
 }
 
 var testItalian133 = function() {
-	diffsTemplateTest(italianTestDiffs133);
+	diffsTmpTest(italianTestDiffs133);
 }
 
 var testItalian132 = function() {
-	diffsTemplateTest(italianTestDiffs132);
+	diffsTmpTest(italianTestDiffs132);
 }
 
 var testItalian131 = function() {
-	diffsTemplateTest(italianTestDiffs131);
+	diffsTmpTest(italianTestDiffs131);
 }
 
 var testItalian130 = function() {
-	diffsTemplateTest(italianTestDiffs130);
+	diffsTmpTest(italianTestDiffs130);
 }
 
 var testItalian129 = function() {
-	diffsTemplateTest(italianTestDiffs129);
+	diffsTmpTest(italianTestDiffs129);
 }
 
 var testItalian128 = function() {
-	diffsTemplateTest(italianTestDiffs128);
+	diffsTmpTest(italianTestDiffs128);
 }
 
 var testItalian127 = function() {
-	diffsTemplateTest(italianTestDiffs127);
+	diffsTmpTest(italianTestDiffs127);
 }
 
 var testItalian126 = function() {
-	diffsTemplateTest(italianTestDiffs126);
+	diffsTmpTest(italianTestDiffs126);
 }
 
 var testItalian125 = function() {
-	diffsTemplateTest(italianTestDiffs125);
+	diffsTmpTest(italianTestDiffs125);
 }
 
 var testItalian124 = function() {
-	diffsTemplateTest(italianTestDiffs124);
+	diffsTmpTest(italianTestDiffs124);
 }
 
 var testItalian123 = function() {
-	diffsTemplateTest(italianTestDiffs123);
+	diffsTmpTest(italianTestDiffs123);
 }
 
 var testItalian122 = function() {
-	diffsTemplateTest(italianTestDiffs122);
+	diffsTmpTest(italianTestDiffs122);
 }
 
 var testItalian121 = function() {
-	diffsTemplateTest(italianTestDiffs121);
+	diffsTmpTest(italianTestDiffs121);
 }
 
 var testItalian120 = function() {
-	diffsTemplateTest(italianTestDiffs120);
+	diffsTmpTest(italianTestDiffs120);
 }
 
 var testItalian119 = function() {
-	diffsTemplateTest(italianTestDiffs119);
+	diffsTmpTest(italianTestDiffs119);
 }
 
 var testItalian118 = function() {
-	diffsTemplateTest(italianTestDiffs118);
+	diffsTmpTest(italianTestDiffs118);
 }
 
 var testItalian117 = function() {
-	diffsTemplateTest(italianTestDiffs117);
+	diffsTmpTest(italianTestDiffs117);
 }
 
 var testItalian116 = function() {
-	diffsTemplateTest(italianTestDiffs116);
+	diffsTmpTest(italianTestDiffs116);
 }
 
 var testItalian115 = function() {
-	diffsTemplateTest(italianTestDiffs115);
+	diffsTmpTest(italianTestDiffs115);
 }
 
 var testItalian114 = function() {
-	diffsTemplateTest(italianTestDiffs114);
+	diffsTmpTest(italianTestDiffs114);
 }
 
 var testItalian113 = function() {
-	diffsTemplateTest(italianTestDiffs113);
+	diffsTmpTest(italianTestDiffs113);
 }
 
 var testItalian112 = function() {
-	diffsTemplateTest(italianTestDiffs112);
+	diffsTmpTest(italianTestDiffs112);
 }
 
 var testItalian111 = function() {
-	diffsTemplateTest(italianTestDiffs111);
+	diffsTmpTest(italianTestDiffs111);
 }
 
 var testItalian110 = function() {
-	diffsTemplateTest(italianTestDiffs110);
+	diffsTmpTest(italianTestDiffs110);
 }
 
 var testItalian109 = function() {
-	diffsTemplateTest(italianTestDiffs109);
+	diffsTmpTest(italianTestDiffs109);
 }
 
 var testItalian108 = function() {
-	diffsTemplateTest(italianTestDiffs108);
+	diffsTmpTest(italianTestDiffs108);
 }
 
 var testItalian107 = function() {
-	diffsTemplateTest(italianTestDiffs107);
+	diffsTmpTest(italianTestDiffs107);
 }
 
 var testItalian106 = function() {
-	diffsTemplateTest(italianTestDiffs106);
+	diffsTmpTest(italianTestDiffs106);
 }
 
 var testItalian105 = function() {
-	diffsTemplateTest(italianTestDiffs105);
+	diffsTmpTest(italianTestDiffs105);
 }
 
 var testItalian104 = function() {
-	diffsTemplateTest(italianTestDiffs104);
+	diffsTmpTest(italianTestDiffs104);
 }
 
 var testItalian103 = function() {
-	diffsTemplateTest(italianTestDiffs103);
+	diffsTmpTest(italianTestDiffs103);
 }
 
 var testItalian102 = function() {
-	diffsTemplateTest(italianTestDiffs102);
+	diffsTmpTest(italianTestDiffs102);
 }
 
 var testItalian101 = function() {
-	diffsTemplateTest(italianTestDiffs101);
+	diffsTmpTest(italianTestDiffs101);
 }
 
 var testItalian100 = function() {
-	diffsTemplateTest(italianTestDiffs100);
+	diffsTmpTest(italianTestDiffs100);
 }
 
 var testItalian99 = function() {
-	diffsTemplateTest(italianTestDiffs99);
+	diffsTmpTest(italianTestDiffs99);
 }
 
 var testItalian98 = function() {
-	diffsTemplateTest(italianTestDiffs98);
+	diffsTmpTest(italianTestDiffs98);
 }
 
 var testItalian97 = function() {
-	diffsTemplateTest(italianTestDiffs97);
+	diffsTmpTest(italianTestDiffs97);
 }
 
 var testItalian96 = function() {
-	diffsTemplateTest(italianTestDiffs96);
+	diffsTmpTest(italianTestDiffs96);
 }
 
 var testItalian95 = function() {
-	diffsTemplateTest(italianTestDiffs95);
+	diffsTmpTest(italianTestDiffs95);
 }
 
 var testItalian94 = function() {
-	diffsTemplateTest(italianTestDiffs94);
+	diffsTmpTest(italianTestDiffs94);
 }
 
 var testItalian93 = function() {
-	diffsTemplateTest(italianTestDiffs93);
+	diffsTmpTest(italianTestDiffs93);
 }
 
 var testItalian92 = function() {
-	diffsTemplateTest(italianTestDiffs92);
+	diffsTmpTest(italianTestDiffs92);
 }
 
 var testItalian91 = function() {
-	diffsTemplateTest(italianTestDiffs91);
+	diffsTmpTest(italianTestDiffs91);
 }
 
 var testItalian90 = function() {
-	diffsTemplateTest(italianTestDiffs90);
+	diffsTmpTest(italianTestDiffs90);
 }
 
 var testItalian89 = function() {
-	diffsTemplateTest(italianTestDiffs89);
+	diffsTmpTest(italianTestDiffs89);
 }
 
 var testItalian88 = function() {
-	diffsTemplateTest(italianTestDiffs88);
+	diffsTmpTest(italianTestDiffs88);
 }
 
 var testItalian87 = function() {
-	diffsTemplateTest(italianTestDiffs87);
+	diffsTmpTest(italianTestDiffs87);
 }
 
 var testItalian86 = function() {
-	diffsTemplateTest(italianTestDiffs86);
+	diffsTmpTest(italianTestDiffs86);
 }
 
 var testItalian85 = function() {
-	diffsTemplateTest(italianTestDiffs85);
+	diffsTmpTest(italianTestDiffs85);
 }
 
 var testItalian84 = function() {
-	diffsTemplateTest(italianTestDiffs84);
+	diffsTmpTest(italianTestDiffs84);
 }
 
 var testItalian83 = function() {
-	diffsTemplateTest(italianTestDiffs83);
+	diffsTmpTest(italianTestDiffs83);
 }
 
 var testItalian82 = function() {
-	diffsTemplateTest(italianTestDiffs82);
+	diffsTmpTest(italianTestDiffs82);
 }
 
 var testItalian81 = function() {
-	diffsTemplateTest(italianTestDiffs81);
+	diffsTmpTest(italianTestDiffs81);
 }
 
 var testItalian80 = function() {
-	diffsTemplateTest(italianTestDiffs80);
+	diffsTmpTest(italianTestDiffs80);
 }
 
 var testItalian79 = function() {
-	diffsTemplateTest(italianTestDiffs79);
+	diffsTmpTest(italianTestDiffs79);
 }
 
 var testItalian78 = function() {
-	diffsTemplateTest(italianTestDiffs78);
+	diffsTmpTest(italianTestDiffs78);
 }
 
 var testItalian77 = function() {
-	diffsTemplateTest(italianTestDiffs77);
+	diffsTmpTest(italianTestDiffs77);
 }
 
 var testItalian76 = function() {
-	diffsTemplateTest(italianTestDiffs76);
+	diffsTmpTest(italianTestDiffs76);
 }
 
 var testItalian75 = function() {
-	diffsTemplateTest(italianTestDiffs75);
+	diffsTmpTest(italianTestDiffs75);
 }
 
 var testItalian74 = function() {
-	diffsTemplateTest(italianTestDiffs74);
+	diffsTmpTest(italianTestDiffs74);
 }
 
 var testItalian73 = function() {
-	diffsTemplateTest(italianTestDiffs73);
+	diffsTmpTest(italianTestDiffs73);
 }
 
 var testItalian72 = function() {
-	diffsTemplateTest(italianTestDiffs72);
+	diffsTmpTest(italianTestDiffs72);
 }
 
 var testItalian71 = function() {
-	diffsTemplateTest(italianTestDiffs71);
+	diffsTmpTest(italianTestDiffs71);
 }
 
 var testItalian70 = function() {
-	diffsTemplateTest(italianTestDiffs70);
+	diffsTmpTest(italianTestDiffs70);
 }
 
 var testItalian69 = function() {
-	diffsTemplateTest(italianTestDiffs69);
+	diffsTmpTest(italianTestDiffs69);
 }
 
 var testItalian68 = function() {
-	diffsTemplateTest(italianTestDiffs68);
+	diffsTmpTest(italianTestDiffs68);
 }
 
 var testItalian67 = function() {
-	diffsTemplateTest(italianTestDiffs67);
+	diffsTmpTest(italianTestDiffs67);
 }
 
 var testItalian66 = function() {
-	diffsTemplateTest(italianTestDiffs66);
+	diffsTmpTest(italianTestDiffs66);
 }
 
 var testItalian65 = function() {
-	diffsTemplateTest(italianTestDiffs65);
+	diffsTmpTest(italianTestDiffs65);
 }
 
 var testItalian64 = function() {
-	diffsTemplateTest(italianTestDiffs64);
+	diffsTmpTest(italianTestDiffs64);
 }
 
 var testItalian63 = function() {
-	diffsTemplateTest(italianTestDiffs63);
+	diffsTmpTest(italianTestDiffs63);
 }
 
 var testItalian62 = function() {
-	diffsTemplateTest(italianTestDiffs62);
+	diffsTmpTest(italianTestDiffs62);
 }
 
 var testItalian61 = function() {
-	diffsTemplateTest(italianTestDiffs61);
+	diffsTmpTest(italianTestDiffs61);
 }
 
 var testItalian60 = function() {
-	diffsTemplateTest(italianTestDiffs60);
+	diffsTmpTest(italianTestDiffs60);
 }
 
 var testItalian59 = function() {
-	diffsTemplateTest(italianTestDiffs59);
+	diffsTmpTest(italianTestDiffs59);
 }
 
 var testItalian58 = function() {
-	diffsTemplateTest(italianTestDiffs58);
+	diffsTmpTest(italianTestDiffs58);
 }
 
 var testItalian57 = function() {
-	diffsTemplateTest(italianTestDiffs57);
+	diffsTmpTest(italianTestDiffs57);
 }
 
 var testItalian56 = function() {
-	diffsTemplateTest(italianTestDiffs56);
+	diffsTmpTest(italianTestDiffs56);
 }
 
 var testItalian55 = function() {
-	diffsTemplateTest(italianTestDiffs55);
+	diffsTmpTest(italianTestDiffs55);
 }
 
 var testItalian54 = function() {
-	diffsTemplateTest(italianTestDiffs54);
+	diffsTmpTest(italianTestDiffs54);
 }
 
 var testItalian53 = function() {
-	diffsTemplateTest(italianTestDiffs53);
+	diffsTmpTest(italianTestDiffs53);
 }
 
 var testItalian52 = function() {
-	diffsTemplateTest(italianTestDiffs52);
+	diffsTmpTest(italianTestDiffs52);
 }
 
 var testItalian51 = function() {
-	diffsTemplateTest(italianTestDiffs51);
+	diffsTmpTest(italianTestDiffs51);
 }
 
 var testItalian50 = function() {
-	diffsTemplateTest(italianTestDiffs50);
+	diffsTmpTest(italianTestDiffs50);
 }
 
 var testItalian49 = function() {
-	diffsTemplateTest(italianTestDiffs49);
+	diffsTmpTest(italianTestDiffs49);
 }
 
 var testItalian48 = function() {
-	diffsTemplateTest(italianTestDiffs48);
+	diffsTmpTest(italianTestDiffs48);
 }
 
 var testItalian47 = function() {
-	diffsTemplateTest(italianTestDiffs47);
+	diffsTmpTest(italianTestDiffs47);
 }
 
 var testItalian46 = function() {
-	diffsTemplateTest(italianTestDiffs46);
+	diffsTmpTest(italianTestDiffs46);
 }
 
 var testItalian45 = function() {
-	diffsTemplateTest(italianTestDiffs45);
+	diffsTmpTest(italianTestDiffs45);
 }
 
 var testItalian44 = function() {
-	diffsTemplateTest(italianTestDiffs44);
+	diffsTmpTest(italianTestDiffs44);
 }
 
 var testItalian43 = function() {
-	diffsTemplateTest(italianTestDiffs43);
+	diffsTmpTest(italianTestDiffs43);
 }
 
 var testItalian42 = function() {
-	diffsTemplateTest(italianTestDiffs42);
+	diffsTmpTest(italianTestDiffs42);
 }
 
 var testItalian41 = function() {
-	diffsTemplateTest(italianTestDiffs41);
+	diffsTmpTest(italianTestDiffs41);
 }
 
 var testItalian40 = function() {
-	diffsTemplateTest(italianTestDiffs40);
+	diffsTmpTest(italianTestDiffs40);
 }
 
 var testItalian39 = function() {
-	diffsTemplateTest(italianTestDiffs39);
+	diffsTmpTest(italianTestDiffs39);
 }
 
 var testItalian38 = function() {
-	diffsTemplateTest(italianTestDiffs38);
+	diffsTmpTest(italianTestDiffs38);
 }
 
 var testItalian37 = function() {
-	diffsTemplateTest(italianTestDiffs37);
+	diffsTmpTest(italianTestDiffs37);
 }
 
 var testItalian36 = function() {
-	diffsTemplateTest(italianTestDiffs36);
+	diffsTmpTest(italianTestDiffs36);
 }
 
 var testItalian35 = function() {
-	diffsTemplateTest(italianTestDiffs35);
+	diffsTmpTest(italianTestDiffs35);
 }
 
 var testItalian34 = function() {
-	diffsTemplateTest(italianTestDiffs34);
+	diffsTmpTest(italianTestDiffs34);
 }
 
 var testItalian33 = function() {
-	diffsTemplateTest(italianTestDiffs33);
+	diffsTmpTest(italianTestDiffs33);
 }
 
 var testItalian32 = function() {
-	diffsTemplateTest(italianTestDiffs32);
+	diffsTmpTest(italianTestDiffs32);
 }
 
 var testItalian31 = function() {
-	diffsTemplateTest(italianTestDiffs31);
+	diffsTmpTest(italianTestDiffs31);
 }
 
 var testItalian30 = function() {
-	diffsTemplateTest(italianTestDiffs30);
+	diffsTmpTest(italianTestDiffs30);
 }
 
 var testItalian29 = function() {
-	diffsTemplateTest(italianTestDiffs29);
+	diffsTmpTest(italianTestDiffs29);
 }
 
 var testItalian28 = function() {
-	diffsTemplateTest(italianTestDiffs28);
+	diffsTmpTest(italianTestDiffs28);
 }
 
 var testItalian27 = function() {
-	diffsTemplateTest(italianTestDiffs27);
+	diffsTmpTest(italianTestDiffs27);
 }
 
 var testItalian26 = function() {
-	diffsTemplateTest(italianTestDiffs26);
+	diffsTmpTest(italianTestDiffs26);
 }
 
 var testItalian25 = function() {
-	diffsTemplateTest(italianTestDiffs25);
+	diffsTmpTest(italianTestDiffs25);
 }
 
 var testItalian24 = function() {
-	diffsTemplateTest(italianTestDiffs24);
+	diffsTmpTest(italianTestDiffs24);
 }
 
 var testItalian23 = function() {
-	diffsTemplateTest(italianTestDiffs23);
+	diffsTmpTest(italianTestDiffs23);
 }
 
 var testItalian22 = function() {
-	diffsTemplateTest(italianTestDiffs22);
+	diffsTmpTest(italianTestDiffs22);
 }
 
 var testItalian21 = function() {
-	diffsTemplateTest(italianTestDiffs21);
+	diffsTmpTest(italianTestDiffs21);
 }
 
 var testItalian20 = function() {
-	diffsTemplateTest(italianTestDiffs20);
+	diffsTmpTest(italianTestDiffs20);
 }
 
 var testItalian19 = function() {
-	diffsTemplateTest(italianTestDiffs19);
+	diffsTmpTest(italianTestDiffs19);
 }
 
 var testItalian18 = function() {
-	diffsTemplateTest(italianTestDiffs18);
+	diffsTmpTest(italianTestDiffs18);
 }
 
 var testItalian17 = function() {
-	diffsTemplateTest(italianTestDiffs17);
+	diffsTmpTest(italianTestDiffs17);
 }
 
 var testItalian16 = function() {
-	diffsTemplateTest(italianTestDiffs16);
+	diffsTmpTest(italianTestDiffs16);
 }
 
 var testItalian15 = function() {
-	diffsTemplateTest(italianTestDiffs15);
+	diffsTmpTest(italianTestDiffs15);
 }
 
 var testItalian14 = function() {
-	diffsTemplateTest(italianTestDiffs14);
+	diffsTmpTest(italianTestDiffs14);
 }
 
 var testItalian13 = function() {
-	diffsTemplateTest(italianTestDiffs13);
+	diffsTmpTest(italianTestDiffs13);
 }
 
 var testItalian12 = function() {
-	diffsTemplateTest(italianTestDiffs12);
+	diffsTmpTest(italianTestDiffs12);
 }
 
 var testItalian11 = function() {
-	diffsTemplateTest(italianTestDiffs11);
+	diffsTmpTest(italianTestDiffs11);
 }
 
 var testItalian10 = function() {
-	diffsTemplateTest(italianTestDiffs10);
+	diffsTmpTest(italianTestDiffs10);
 }
 
 var testItalian9 = function() {
-	diffsTemplateTest(italianTestDiffs9);
+	diffsTmpTest(italianTestDiffs9);
 }
 
 var testItalian8 = function() {
-	diffsTemplateTest(italianTestDiffs8);
+	diffsTmpTest(italianTestDiffs8);
 }
 
 var testItalian7 = function() {
-	diffsTemplateTest(italianTestDiffs7);
+	diffsTmpTest(italianTestDiffs7);
 }
 
 var testItalian6 = function() {
-	diffsTemplateTest(italianTestDiffs6);
+	diffsTmpTest(italianTestDiffs6);
 }
 
 var testItalian5 = function() {
-	diffsTemplateTest(italianTestDiffs5);
+	diffsTmpTest(italianTestDiffs5);
 }
 
 var testItalian4 = function() {
-	diffsTemplateTest(italianTestDiffs4);
+	diffsTmpTest(italianTestDiffs4);
 }
 
 var testItalian3 = function() {
-	diffsTemplateTest(italianTestDiffs3);
+	diffsTmpTest(italianTestDiffs3);
 }
 
 var testItalian2 = function() {
-	diffsTemplateTest(italianTestDiffs2);
+	diffsTmpTest(italianTestDiffs2);
 }
 
 var testItalian1 = function() {
-	diffsTemplateTest(italianTestDiffs1);
+	diffsTmpTest(italianTestDiffs1);
 }
 
 var testItalian0 = function() {
-	diffsTemplateTest(italianTestDiffs0);
+	diffsTmpTest(italianTestDiffs0);
 }

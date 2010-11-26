@@ -40140,7 +40140,7 @@ var hungarianTestDiffs158 = {
 	"\u00fbv\u00e9szett\u00f6rt\u00e9netnek" : "\u00fbv\u00e9szett\u00f6rt\u00e9net"
 };
 
-function diffsTemplateTest(testDiffs) {
+function diffsTmpTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
 	for (var sVoc in testDiffs) {
 		total++;
@@ -40151,645 +40151,646 @@ function diffsTemplateTest(testDiffs) {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
+			} else {
 				buffer = sVoc + " --> " + base + " | " + stem;
+			}
 		}
 	}
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
 var testHungarian158 = function() {
-	diffsTemplateTest(hungarianTestDiffs158);
+	diffsTmpTest(hungarianTestDiffs158);
 }
 
 var testHungarian157 = function() {
-	diffsTemplateTest(hungarianTestDiffs157);
+	diffsTmpTest(hungarianTestDiffs157);
 }
 
 var testHungarian156 = function() {
-	diffsTemplateTest(hungarianTestDiffs156);
+	diffsTmpTest(hungarianTestDiffs156);
 }
 
 var testHungarian155 = function() {
-	diffsTemplateTest(hungarianTestDiffs155);
+	diffsTmpTest(hungarianTestDiffs155);
 }
 
 var testHungarian154 = function() {
-	diffsTemplateTest(hungarianTestDiffs154);
+	diffsTmpTest(hungarianTestDiffs154);
 }
 
 var testHungarian153 = function() {
-	diffsTemplateTest(hungarianTestDiffs153);
+	diffsTmpTest(hungarianTestDiffs153);
 }
 
 var testHungarian152 = function() {
-	diffsTemplateTest(hungarianTestDiffs152);
+	diffsTmpTest(hungarianTestDiffs152);
 }
 
 var testHungarian151 = function() {
-	diffsTemplateTest(hungarianTestDiffs151);
+	diffsTmpTest(hungarianTestDiffs151);
 }
 
 var testHungarian150 = function() {
-	diffsTemplateTest(hungarianTestDiffs150);
+	diffsTmpTest(hungarianTestDiffs150);
 }
 
 var testHungarian149 = function() {
-	diffsTemplateTest(hungarianTestDiffs149);
+	diffsTmpTest(hungarianTestDiffs149);
 }
 
 var testHungarian148 = function() {
-	diffsTemplateTest(hungarianTestDiffs148);
+	diffsTmpTest(hungarianTestDiffs148);
 }
 
 var testHungarian147 = function() {
-	diffsTemplateTest(hungarianTestDiffs147);
+	diffsTmpTest(hungarianTestDiffs147);
 }
 
 var testHungarian146 = function() {
-	diffsTemplateTest(hungarianTestDiffs146);
+	diffsTmpTest(hungarianTestDiffs146);
 }
 
 var testHungarian145 = function() {
-	diffsTemplateTest(hungarianTestDiffs145);
+	diffsTmpTest(hungarianTestDiffs145);
 }
 
 var testHungarian144 = function() {
-	diffsTemplateTest(hungarianTestDiffs144);
+	diffsTmpTest(hungarianTestDiffs144);
 }
 
 var testHungarian143 = function() {
-	diffsTemplateTest(hungarianTestDiffs143);
+	diffsTmpTest(hungarianTestDiffs143);
 }
 
 var testHungarian142 = function() {
-	diffsTemplateTest(hungarianTestDiffs142);
+	diffsTmpTest(hungarianTestDiffs142);
 }
 
 var testHungarian141 = function() {
-	diffsTemplateTest(hungarianTestDiffs141);
+	diffsTmpTest(hungarianTestDiffs141);
 }
 
 var testHungarian140 = function() {
-	diffsTemplateTest(hungarianTestDiffs140);
+	diffsTmpTest(hungarianTestDiffs140);
 }
 
 var testHungarian139 = function() {
-	diffsTemplateTest(hungarianTestDiffs139);
+	diffsTmpTest(hungarianTestDiffs139);
 }
 
 var testHungarian138 = function() {
-	diffsTemplateTest(hungarianTestDiffs138);
+	diffsTmpTest(hungarianTestDiffs138);
 }
 
 var testHungarian137 = function() {
-	diffsTemplateTest(hungarianTestDiffs137);
+	diffsTmpTest(hungarianTestDiffs137);
 }
 
 var testHungarian136 = function() {
-	diffsTemplateTest(hungarianTestDiffs136);
+	diffsTmpTest(hungarianTestDiffs136);
 }
 
 var testHungarian135 = function() {
-	diffsTemplateTest(hungarianTestDiffs135);
+	diffsTmpTest(hungarianTestDiffs135);
 }
 
 var testHungarian134 = function() {
-	diffsTemplateTest(hungarianTestDiffs134);
+	diffsTmpTest(hungarianTestDiffs134);
 }
 
 var testHungarian133 = function() {
-	diffsTemplateTest(hungarianTestDiffs133);
+	diffsTmpTest(hungarianTestDiffs133);
 }
 
 var testHungarian132 = function() {
-	diffsTemplateTest(hungarianTestDiffs132);
+	diffsTmpTest(hungarianTestDiffs132);
 }
 
 var testHungarian131 = function() {
-	diffsTemplateTest(hungarianTestDiffs131);
+	diffsTmpTest(hungarianTestDiffs131);
 }
 
 var testHungarian130 = function() {
-	diffsTemplateTest(hungarianTestDiffs130);
+	diffsTmpTest(hungarianTestDiffs130);
 }
 
 var testHungarian129 = function() {
-	diffsTemplateTest(hungarianTestDiffs129);
+	diffsTmpTest(hungarianTestDiffs129);
 }
 
 var testHungarian128 = function() {
-	diffsTemplateTest(hungarianTestDiffs128);
+	diffsTmpTest(hungarianTestDiffs128);
 }
 
 var testHungarian127 = function() {
-	diffsTemplateTest(hungarianTestDiffs127);
+	diffsTmpTest(hungarianTestDiffs127);
 }
 
 var testHungarian126 = function() {
-	diffsTemplateTest(hungarianTestDiffs126);
+	diffsTmpTest(hungarianTestDiffs126);
 }
 
 var testHungarian125 = function() {
-	diffsTemplateTest(hungarianTestDiffs125);
+	diffsTmpTest(hungarianTestDiffs125);
 }
 
 var testHungarian124 = function() {
-	diffsTemplateTest(hungarianTestDiffs124);
+	diffsTmpTest(hungarianTestDiffs124);
 }
 
 var testHungarian123 = function() {
-	diffsTemplateTest(hungarianTestDiffs123);
+	diffsTmpTest(hungarianTestDiffs123);
 }
 
 var testHungarian122 = function() {
-	diffsTemplateTest(hungarianTestDiffs122);
+	diffsTmpTest(hungarianTestDiffs122);
 }
 
 var testHungarian121 = function() {
-	diffsTemplateTest(hungarianTestDiffs121);
+	diffsTmpTest(hungarianTestDiffs121);
 }
 
 var testHungarian120 = function() {
-	diffsTemplateTest(hungarianTestDiffs120);
+	diffsTmpTest(hungarianTestDiffs120);
 }
 
 var testHungarian119 = function() {
-	diffsTemplateTest(hungarianTestDiffs119);
+	diffsTmpTest(hungarianTestDiffs119);
 }
 
 var testHungarian118 = function() {
-	diffsTemplateTest(hungarianTestDiffs118);
+	diffsTmpTest(hungarianTestDiffs118);
 }
 
 var testHungarian117 = function() {
-	diffsTemplateTest(hungarianTestDiffs117);
+	diffsTmpTest(hungarianTestDiffs117);
 }
 
 var testHungarian116 = function() {
-	diffsTemplateTest(hungarianTestDiffs116);
+	diffsTmpTest(hungarianTestDiffs116);
 }
 
 var testHungarian115 = function() {
-	diffsTemplateTest(hungarianTestDiffs115);
+	diffsTmpTest(hungarianTestDiffs115);
 }
 
 var testHungarian114 = function() {
-	diffsTemplateTest(hungarianTestDiffs114);
+	diffsTmpTest(hungarianTestDiffs114);
 }
 
 var testHungarian113 = function() {
-	diffsTemplateTest(hungarianTestDiffs113);
+	diffsTmpTest(hungarianTestDiffs113);
 }
 
 var testHungarian112 = function() {
-	diffsTemplateTest(hungarianTestDiffs112);
+	diffsTmpTest(hungarianTestDiffs112);
 }
 
 var testHungarian111 = function() {
-	diffsTemplateTest(hungarianTestDiffs111);
+	diffsTmpTest(hungarianTestDiffs111);
 }
 
 var testHungarian110 = function() {
-	diffsTemplateTest(hungarianTestDiffs110);
+	diffsTmpTest(hungarianTestDiffs110);
 }
 
 var testHungarian109 = function() {
-	diffsTemplateTest(hungarianTestDiffs109);
+	diffsTmpTest(hungarianTestDiffs109);
 }
 
 var testHungarian108 = function() {
-	diffsTemplateTest(hungarianTestDiffs108);
+	diffsTmpTest(hungarianTestDiffs108);
 }
 
 var testHungarian107 = function() {
-	diffsTemplateTest(hungarianTestDiffs107);
+	diffsTmpTest(hungarianTestDiffs107);
 }
 
 var testHungarian106 = function() {
-	diffsTemplateTest(hungarianTestDiffs106);
+	diffsTmpTest(hungarianTestDiffs106);
 }
 
 var testHungarian105 = function() {
-	diffsTemplateTest(hungarianTestDiffs105);
+	diffsTmpTest(hungarianTestDiffs105);
 }
 
 var testHungarian104 = function() {
-	diffsTemplateTest(hungarianTestDiffs104);
+	diffsTmpTest(hungarianTestDiffs104);
 }
 
 var testHungarian103 = function() {
-	diffsTemplateTest(hungarianTestDiffs103);
+	diffsTmpTest(hungarianTestDiffs103);
 }
 
 var testHungarian102 = function() {
-	diffsTemplateTest(hungarianTestDiffs102);
+	diffsTmpTest(hungarianTestDiffs102);
 }
 
 var testHungarian101 = function() {
-	diffsTemplateTest(hungarianTestDiffs101);
+	diffsTmpTest(hungarianTestDiffs101);
 }
 
 var testHungarian100 = function() {
-	diffsTemplateTest(hungarianTestDiffs100);
+	diffsTmpTest(hungarianTestDiffs100);
 }
 
 var testHungarian99 = function() {
-	diffsTemplateTest(hungarianTestDiffs99);
+	diffsTmpTest(hungarianTestDiffs99);
 }
 
 var testHungarian98 = function() {
-	diffsTemplateTest(hungarianTestDiffs98);
+	diffsTmpTest(hungarianTestDiffs98);
 }
 
 var testHungarian97 = function() {
-	diffsTemplateTest(hungarianTestDiffs97);
+	diffsTmpTest(hungarianTestDiffs97);
 }
 
 var testHungarian96 = function() {
-	diffsTemplateTest(hungarianTestDiffs96);
+	diffsTmpTest(hungarianTestDiffs96);
 }
 
 var testHungarian95 = function() {
-	diffsTemplateTest(hungarianTestDiffs95);
+	diffsTmpTest(hungarianTestDiffs95);
 }
 
 var testHungarian94 = function() {
-	diffsTemplateTest(hungarianTestDiffs94);
+	diffsTmpTest(hungarianTestDiffs94);
 }
 
 var testHungarian93 = function() {
-	diffsTemplateTest(hungarianTestDiffs93);
+	diffsTmpTest(hungarianTestDiffs93);
 }
 
 var testHungarian92 = function() {
-	diffsTemplateTest(hungarianTestDiffs92);
+	diffsTmpTest(hungarianTestDiffs92);
 }
 
 var testHungarian91 = function() {
-	diffsTemplateTest(hungarianTestDiffs91);
+	diffsTmpTest(hungarianTestDiffs91);
 }
 
 var testHungarian90 = function() {
-	diffsTemplateTest(hungarianTestDiffs90);
+	diffsTmpTest(hungarianTestDiffs90);
 }
 
 var testHungarian89 = function() {
-	diffsTemplateTest(hungarianTestDiffs89);
+	diffsTmpTest(hungarianTestDiffs89);
 }
 
 var testHungarian88 = function() {
-	diffsTemplateTest(hungarianTestDiffs88);
+	diffsTmpTest(hungarianTestDiffs88);
 }
 
 var testHungarian87 = function() {
-	diffsTemplateTest(hungarianTestDiffs87);
+	diffsTmpTest(hungarianTestDiffs87);
 }
 
 var testHungarian86 = function() {
-	diffsTemplateTest(hungarianTestDiffs86);
+	diffsTmpTest(hungarianTestDiffs86);
 }
 
 var testHungarian85 = function() {
-	diffsTemplateTest(hungarianTestDiffs85);
+	diffsTmpTest(hungarianTestDiffs85);
 }
 
 var testHungarian84 = function() {
-	diffsTemplateTest(hungarianTestDiffs84);
+	diffsTmpTest(hungarianTestDiffs84);
 }
 
 var testHungarian83 = function() {
-	diffsTemplateTest(hungarianTestDiffs83);
+	diffsTmpTest(hungarianTestDiffs83);
 }
 
 var testHungarian82 = function() {
-	diffsTemplateTest(hungarianTestDiffs82);
+	diffsTmpTest(hungarianTestDiffs82);
 }
 
 var testHungarian81 = function() {
-	diffsTemplateTest(hungarianTestDiffs81);
+	diffsTmpTest(hungarianTestDiffs81);
 }
 
 var testHungarian80 = function() {
-	diffsTemplateTest(hungarianTestDiffs80);
+	diffsTmpTest(hungarianTestDiffs80);
 }
 
 var testHungarian79 = function() {
-	diffsTemplateTest(hungarianTestDiffs79);
+	diffsTmpTest(hungarianTestDiffs79);
 }
 
 var testHungarian78 = function() {
-	diffsTemplateTest(hungarianTestDiffs78);
+	diffsTmpTest(hungarianTestDiffs78);
 }
 
 var testHungarian77 = function() {
-	diffsTemplateTest(hungarianTestDiffs77);
+	diffsTmpTest(hungarianTestDiffs77);
 }
 
 var testHungarian76 = function() {
-	diffsTemplateTest(hungarianTestDiffs76);
+	diffsTmpTest(hungarianTestDiffs76);
 }
 
 var testHungarian75 = function() {
-	diffsTemplateTest(hungarianTestDiffs75);
+	diffsTmpTest(hungarianTestDiffs75);
 }
 
 var testHungarian74 = function() {
-	diffsTemplateTest(hungarianTestDiffs74);
+	diffsTmpTest(hungarianTestDiffs74);
 }
 
 var testHungarian73 = function() {
-	diffsTemplateTest(hungarianTestDiffs73);
+	diffsTmpTest(hungarianTestDiffs73);
 }
 
 var testHungarian72 = function() {
-	diffsTemplateTest(hungarianTestDiffs72);
+	diffsTmpTest(hungarianTestDiffs72);
 }
 
 var testHungarian71 = function() {
-	diffsTemplateTest(hungarianTestDiffs71);
+	diffsTmpTest(hungarianTestDiffs71);
 }
 
 var testHungarian70 = function() {
-	diffsTemplateTest(hungarianTestDiffs70);
+	diffsTmpTest(hungarianTestDiffs70);
 }
 
 var testHungarian69 = function() {
-	diffsTemplateTest(hungarianTestDiffs69);
+	diffsTmpTest(hungarianTestDiffs69);
 }
 
 var testHungarian68 = function() {
-	diffsTemplateTest(hungarianTestDiffs68);
+	diffsTmpTest(hungarianTestDiffs68);
 }
 
 var testHungarian67 = function() {
-	diffsTemplateTest(hungarianTestDiffs67);
+	diffsTmpTest(hungarianTestDiffs67);
 }
 
 var testHungarian66 = function() {
-	diffsTemplateTest(hungarianTestDiffs66);
+	diffsTmpTest(hungarianTestDiffs66);
 }
 
 var testHungarian65 = function() {
-	diffsTemplateTest(hungarianTestDiffs65);
+	diffsTmpTest(hungarianTestDiffs65);
 }
 
 var testHungarian64 = function() {
-	diffsTemplateTest(hungarianTestDiffs64);
+	diffsTmpTest(hungarianTestDiffs64);
 }
 
 var testHungarian63 = function() {
-	diffsTemplateTest(hungarianTestDiffs63);
+	diffsTmpTest(hungarianTestDiffs63);
 }
 
 var testHungarian62 = function() {
-	diffsTemplateTest(hungarianTestDiffs62);
+	diffsTmpTest(hungarianTestDiffs62);
 }
 
 var testHungarian61 = function() {
-	diffsTemplateTest(hungarianTestDiffs61);
+	diffsTmpTest(hungarianTestDiffs61);
 }
 
 var testHungarian60 = function() {
-	diffsTemplateTest(hungarianTestDiffs60);
+	diffsTmpTest(hungarianTestDiffs60);
 }
 
 var testHungarian59 = function() {
-	diffsTemplateTest(hungarianTestDiffs59);
+	diffsTmpTest(hungarianTestDiffs59);
 }
 
 var testHungarian58 = function() {
-	diffsTemplateTest(hungarianTestDiffs58);
+	diffsTmpTest(hungarianTestDiffs58);
 }
 
 var testHungarian57 = function() {
-	diffsTemplateTest(hungarianTestDiffs57);
+	diffsTmpTest(hungarianTestDiffs57);
 }
 
 var testHungarian56 = function() {
-	diffsTemplateTest(hungarianTestDiffs56);
+	diffsTmpTest(hungarianTestDiffs56);
 }
 
 var testHungarian55 = function() {
-	diffsTemplateTest(hungarianTestDiffs55);
+	diffsTmpTest(hungarianTestDiffs55);
 }
 
 var testHungarian54 = function() {
-	diffsTemplateTest(hungarianTestDiffs54);
+	diffsTmpTest(hungarianTestDiffs54);
 }
 
 var testHungarian53 = function() {
-	diffsTemplateTest(hungarianTestDiffs53);
+	diffsTmpTest(hungarianTestDiffs53);
 }
 
 var testHungarian52 = function() {
-	diffsTemplateTest(hungarianTestDiffs52);
+	diffsTmpTest(hungarianTestDiffs52);
 }
 
 var testHungarian51 = function() {
-	diffsTemplateTest(hungarianTestDiffs51);
+	diffsTmpTest(hungarianTestDiffs51);
 }
 
 var testHungarian50 = function() {
-	diffsTemplateTest(hungarianTestDiffs50);
+	diffsTmpTest(hungarianTestDiffs50);
 }
 
 var testHungarian49 = function() {
-	diffsTemplateTest(hungarianTestDiffs49);
+	diffsTmpTest(hungarianTestDiffs49);
 }
 
 var testHungarian48 = function() {
-	diffsTemplateTest(hungarianTestDiffs48);
+	diffsTmpTest(hungarianTestDiffs48);
 }
 
 var testHungarian47 = function() {
-	diffsTemplateTest(hungarianTestDiffs47);
+	diffsTmpTest(hungarianTestDiffs47);
 }
 
 var testHungarian46 = function() {
-	diffsTemplateTest(hungarianTestDiffs46);
+	diffsTmpTest(hungarianTestDiffs46);
 }
 
 var testHungarian45 = function() {
-	diffsTemplateTest(hungarianTestDiffs45);
+	diffsTmpTest(hungarianTestDiffs45);
 }
 
 var testHungarian44 = function() {
-	diffsTemplateTest(hungarianTestDiffs44);
+	diffsTmpTest(hungarianTestDiffs44);
 }
 
 var testHungarian43 = function() {
-	diffsTemplateTest(hungarianTestDiffs43);
+	diffsTmpTest(hungarianTestDiffs43);
 }
 
 var testHungarian42 = function() {
-	diffsTemplateTest(hungarianTestDiffs42);
+	diffsTmpTest(hungarianTestDiffs42);
 }
 
 var testHungarian41 = function() {
-	diffsTemplateTest(hungarianTestDiffs41);
+	diffsTmpTest(hungarianTestDiffs41);
 }
 
 var testHungarian40 = function() {
-	diffsTemplateTest(hungarianTestDiffs40);
+	diffsTmpTest(hungarianTestDiffs40);
 }
 
 var testHungarian39 = function() {
-	diffsTemplateTest(hungarianTestDiffs39);
+	diffsTmpTest(hungarianTestDiffs39);
 }
 
 var testHungarian38 = function() {
-	diffsTemplateTest(hungarianTestDiffs38);
+	diffsTmpTest(hungarianTestDiffs38);
 }
 
 var testHungarian37 = function() {
-	diffsTemplateTest(hungarianTestDiffs37);
+	diffsTmpTest(hungarianTestDiffs37);
 }
 
 var testHungarian36 = function() {
-	diffsTemplateTest(hungarianTestDiffs36);
+	diffsTmpTest(hungarianTestDiffs36);
 }
 
 var testHungarian35 = function() {
-	diffsTemplateTest(hungarianTestDiffs35);
+	diffsTmpTest(hungarianTestDiffs35);
 }
 
 var testHungarian34 = function() {
-	diffsTemplateTest(hungarianTestDiffs34);
+	diffsTmpTest(hungarianTestDiffs34);
 }
 
 var testHungarian33 = function() {
-	diffsTemplateTest(hungarianTestDiffs33);
+	diffsTmpTest(hungarianTestDiffs33);
 }
 
 var testHungarian32 = function() {
-	diffsTemplateTest(hungarianTestDiffs32);
+	diffsTmpTest(hungarianTestDiffs32);
 }
 
 var testHungarian31 = function() {
-	diffsTemplateTest(hungarianTestDiffs31);
+	diffsTmpTest(hungarianTestDiffs31);
 }
 
 var testHungarian30 = function() {
-	diffsTemplateTest(hungarianTestDiffs30);
+	diffsTmpTest(hungarianTestDiffs30);
 }
 
 var testHungarian29 = function() {
-	diffsTemplateTest(hungarianTestDiffs29);
+	diffsTmpTest(hungarianTestDiffs29);
 }
 
 var testHungarian28 = function() {
-	diffsTemplateTest(hungarianTestDiffs28);
+	diffsTmpTest(hungarianTestDiffs28);
 }
 
 var testHungarian27 = function() {
-	diffsTemplateTest(hungarianTestDiffs27);
+	diffsTmpTest(hungarianTestDiffs27);
 }
 
 var testHungarian26 = function() {
-	diffsTemplateTest(hungarianTestDiffs26);
+	diffsTmpTest(hungarianTestDiffs26);
 }
 
 var testHungarian25 = function() {
-	diffsTemplateTest(hungarianTestDiffs25);
+	diffsTmpTest(hungarianTestDiffs25);
 }
 
 var testHungarian24 = function() {
-	diffsTemplateTest(hungarianTestDiffs24);
+	diffsTmpTest(hungarianTestDiffs24);
 }
 
 var testHungarian23 = function() {
-	diffsTemplateTest(hungarianTestDiffs23);
+	diffsTmpTest(hungarianTestDiffs23);
 }
 
 var testHungarian22 = function() {
-	diffsTemplateTest(hungarianTestDiffs22);
+	diffsTmpTest(hungarianTestDiffs22);
 }
 
 var testHungarian21 = function() {
-	diffsTemplateTest(hungarianTestDiffs21);
+	diffsTmpTest(hungarianTestDiffs21);
 }
 
 var testHungarian20 = function() {
-	diffsTemplateTest(hungarianTestDiffs20);
+	diffsTmpTest(hungarianTestDiffs20);
 }
 
 var testHungarian19 = function() {
-	diffsTemplateTest(hungarianTestDiffs19);
+	diffsTmpTest(hungarianTestDiffs19);
 }
 
 var testHungarian18 = function() {
-	diffsTemplateTest(hungarianTestDiffs18);
+	diffsTmpTest(hungarianTestDiffs18);
 }
 
 var testHungarian17 = function() {
-	diffsTemplateTest(hungarianTestDiffs17);
+	diffsTmpTest(hungarianTestDiffs17);
 }
 
 var testHungarian16 = function() {
-	diffsTemplateTest(hungarianTestDiffs16);
+	diffsTmpTest(hungarianTestDiffs16);
 }
 
 var testHungarian15 = function() {
-	diffsTemplateTest(hungarianTestDiffs15);
+	diffsTmpTest(hungarianTestDiffs15);
 }
 
 var testHungarian14 = function() {
-	diffsTemplateTest(hungarianTestDiffs14);
+	diffsTmpTest(hungarianTestDiffs14);
 }
 
 var testHungarian13 = function() {
-	diffsTemplateTest(hungarianTestDiffs13);
+	diffsTmpTest(hungarianTestDiffs13);
 }
 
 var testHungarian12 = function() {
-	diffsTemplateTest(hungarianTestDiffs12);
+	diffsTmpTest(hungarianTestDiffs12);
 }
 
 var testHungarian11 = function() {
-	diffsTemplateTest(hungarianTestDiffs11);
+	diffsTmpTest(hungarianTestDiffs11);
 }
 
 var testHungarian10 = function() {
-	diffsTemplateTest(hungarianTestDiffs10);
+	diffsTmpTest(hungarianTestDiffs10);
 }
 
 var testHungarian9 = function() {
-	diffsTemplateTest(hungarianTestDiffs9);
+	diffsTmpTest(hungarianTestDiffs9);
 }
 
 var testHungarian8 = function() {
-	diffsTemplateTest(hungarianTestDiffs8);
+	diffsTmpTest(hungarianTestDiffs8);
 }
 
 var testHungarian7 = function() {
-	diffsTemplateTest(hungarianTestDiffs7);
+	diffsTmpTest(hungarianTestDiffs7);
 }
 
 var testHungarian6 = function() {
-	diffsTemplateTest(hungarianTestDiffs6);
+	diffsTmpTest(hungarianTestDiffs6);
 }
 
 var testHungarian5 = function() {
-	diffsTemplateTest(hungarianTestDiffs5);
+	diffsTmpTest(hungarianTestDiffs5);
 }
 
 var testHungarian4 = function() {
-	diffsTemplateTest(hungarianTestDiffs4);
+	diffsTmpTest(hungarianTestDiffs4);
 }
 
 var testHungarian3 = function() {
-	diffsTemplateTest(hungarianTestDiffs3);
+	diffsTmpTest(hungarianTestDiffs3);
 }
 
 var testHungarian2 = function() {
-	diffsTemplateTest(hungarianTestDiffs2);
+	diffsTmpTest(hungarianTestDiffs2);
 }
 
 var testHungarian1 = function() {
-	diffsTemplateTest(hungarianTestDiffs1);
+	diffsTmpTest(hungarianTestDiffs1);
 }
 
 var testHungarian0 = function() {
-	diffsTemplateTest(hungarianTestDiffs0);
+	diffsTmpTest(hungarianTestDiffs0);
 }

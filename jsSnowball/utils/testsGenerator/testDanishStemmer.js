@@ -30435,7 +30435,7 @@ var danishTestDiffs120 = {
 	"\u00f8vrigt" : "\u00f8vr"
 };
 
-function diffsTemplateTest(testDiffs) {
+function diffsTmpTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
 	for (var sVoc in testDiffs) {
 		total++;
@@ -30446,493 +30446,494 @@ function diffsTemplateTest(testDiffs) {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
+			} else {
 				buffer = sVoc + " --> " + base + " | " + stem;
+			}
 		}
 	}
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
 var testDanish120 = function() {
-	diffsTemplateTest(danishTestDiffs120);
+	diffsTmpTest(danishTestDiffs120);
 }
 
 var testDanish119 = function() {
-	diffsTemplateTest(danishTestDiffs119);
+	diffsTmpTest(danishTestDiffs119);
 }
 
 var testDanish118 = function() {
-	diffsTemplateTest(danishTestDiffs118);
+	diffsTmpTest(danishTestDiffs118);
 }
 
 var testDanish117 = function() {
-	diffsTemplateTest(danishTestDiffs117);
+	diffsTmpTest(danishTestDiffs117);
 }
 
 var testDanish116 = function() {
-	diffsTemplateTest(danishTestDiffs116);
+	diffsTmpTest(danishTestDiffs116);
 }
 
 var testDanish115 = function() {
-	diffsTemplateTest(danishTestDiffs115);
+	diffsTmpTest(danishTestDiffs115);
 }
 
 var testDanish114 = function() {
-	diffsTemplateTest(danishTestDiffs114);
+	diffsTmpTest(danishTestDiffs114);
 }
 
 var testDanish113 = function() {
-	diffsTemplateTest(danishTestDiffs113);
+	diffsTmpTest(danishTestDiffs113);
 }
 
 var testDanish112 = function() {
-	diffsTemplateTest(danishTestDiffs112);
+	diffsTmpTest(danishTestDiffs112);
 }
 
 var testDanish111 = function() {
-	diffsTemplateTest(danishTestDiffs111);
+	diffsTmpTest(danishTestDiffs111);
 }
 
 var testDanish110 = function() {
-	diffsTemplateTest(danishTestDiffs110);
+	diffsTmpTest(danishTestDiffs110);
 }
 
 var testDanish109 = function() {
-	diffsTemplateTest(danishTestDiffs109);
+	diffsTmpTest(danishTestDiffs109);
 }
 
 var testDanish108 = function() {
-	diffsTemplateTest(danishTestDiffs108);
+	diffsTmpTest(danishTestDiffs108);
 }
 
 var testDanish107 = function() {
-	diffsTemplateTest(danishTestDiffs107);
+	diffsTmpTest(danishTestDiffs107);
 }
 
 var testDanish106 = function() {
-	diffsTemplateTest(danishTestDiffs106);
+	diffsTmpTest(danishTestDiffs106);
 }
 
 var testDanish105 = function() {
-	diffsTemplateTest(danishTestDiffs105);
+	diffsTmpTest(danishTestDiffs105);
 }
 
 var testDanish104 = function() {
-	diffsTemplateTest(danishTestDiffs104);
+	diffsTmpTest(danishTestDiffs104);
 }
 
 var testDanish103 = function() {
-	diffsTemplateTest(danishTestDiffs103);
+	diffsTmpTest(danishTestDiffs103);
 }
 
 var testDanish102 = function() {
-	diffsTemplateTest(danishTestDiffs102);
+	diffsTmpTest(danishTestDiffs102);
 }
 
 var testDanish101 = function() {
-	diffsTemplateTest(danishTestDiffs101);
+	diffsTmpTest(danishTestDiffs101);
 }
 
 var testDanish100 = function() {
-	diffsTemplateTest(danishTestDiffs100);
+	diffsTmpTest(danishTestDiffs100);
 }
 
 var testDanish99 = function() {
-	diffsTemplateTest(danishTestDiffs99);
+	diffsTmpTest(danishTestDiffs99);
 }
 
 var testDanish98 = function() {
-	diffsTemplateTest(danishTestDiffs98);
+	diffsTmpTest(danishTestDiffs98);
 }
 
 var testDanish97 = function() {
-	diffsTemplateTest(danishTestDiffs97);
+	diffsTmpTest(danishTestDiffs97);
 }
 
 var testDanish96 = function() {
-	diffsTemplateTest(danishTestDiffs96);
+	diffsTmpTest(danishTestDiffs96);
 }
 
 var testDanish95 = function() {
-	diffsTemplateTest(danishTestDiffs95);
+	diffsTmpTest(danishTestDiffs95);
 }
 
 var testDanish94 = function() {
-	diffsTemplateTest(danishTestDiffs94);
+	diffsTmpTest(danishTestDiffs94);
 }
 
 var testDanish93 = function() {
-	diffsTemplateTest(danishTestDiffs93);
+	diffsTmpTest(danishTestDiffs93);
 }
 
 var testDanish92 = function() {
-	diffsTemplateTest(danishTestDiffs92);
+	diffsTmpTest(danishTestDiffs92);
 }
 
 var testDanish91 = function() {
-	diffsTemplateTest(danishTestDiffs91);
+	diffsTmpTest(danishTestDiffs91);
 }
 
 var testDanish90 = function() {
-	diffsTemplateTest(danishTestDiffs90);
+	diffsTmpTest(danishTestDiffs90);
 }
 
 var testDanish89 = function() {
-	diffsTemplateTest(danishTestDiffs89);
+	diffsTmpTest(danishTestDiffs89);
 }
 
 var testDanish88 = function() {
-	diffsTemplateTest(danishTestDiffs88);
+	diffsTmpTest(danishTestDiffs88);
 }
 
 var testDanish87 = function() {
-	diffsTemplateTest(danishTestDiffs87);
+	diffsTmpTest(danishTestDiffs87);
 }
 
 var testDanish86 = function() {
-	diffsTemplateTest(danishTestDiffs86);
+	diffsTmpTest(danishTestDiffs86);
 }
 
 var testDanish85 = function() {
-	diffsTemplateTest(danishTestDiffs85);
+	diffsTmpTest(danishTestDiffs85);
 }
 
 var testDanish84 = function() {
-	diffsTemplateTest(danishTestDiffs84);
+	diffsTmpTest(danishTestDiffs84);
 }
 
 var testDanish83 = function() {
-	diffsTemplateTest(danishTestDiffs83);
+	diffsTmpTest(danishTestDiffs83);
 }
 
 var testDanish82 = function() {
-	diffsTemplateTest(danishTestDiffs82);
+	diffsTmpTest(danishTestDiffs82);
 }
 
 var testDanish81 = function() {
-	diffsTemplateTest(danishTestDiffs81);
+	diffsTmpTest(danishTestDiffs81);
 }
 
 var testDanish80 = function() {
-	diffsTemplateTest(danishTestDiffs80);
+	diffsTmpTest(danishTestDiffs80);
 }
 
 var testDanish79 = function() {
-	diffsTemplateTest(danishTestDiffs79);
+	diffsTmpTest(danishTestDiffs79);
 }
 
 var testDanish78 = function() {
-	diffsTemplateTest(danishTestDiffs78);
+	diffsTmpTest(danishTestDiffs78);
 }
 
 var testDanish77 = function() {
-	diffsTemplateTest(danishTestDiffs77);
+	diffsTmpTest(danishTestDiffs77);
 }
 
 var testDanish76 = function() {
-	diffsTemplateTest(danishTestDiffs76);
+	diffsTmpTest(danishTestDiffs76);
 }
 
 var testDanish75 = function() {
-	diffsTemplateTest(danishTestDiffs75);
+	diffsTmpTest(danishTestDiffs75);
 }
 
 var testDanish74 = function() {
-	diffsTemplateTest(danishTestDiffs74);
+	diffsTmpTest(danishTestDiffs74);
 }
 
 var testDanish73 = function() {
-	diffsTemplateTest(danishTestDiffs73);
+	diffsTmpTest(danishTestDiffs73);
 }
 
 var testDanish72 = function() {
-	diffsTemplateTest(danishTestDiffs72);
+	diffsTmpTest(danishTestDiffs72);
 }
 
 var testDanish71 = function() {
-	diffsTemplateTest(danishTestDiffs71);
+	diffsTmpTest(danishTestDiffs71);
 }
 
 var testDanish70 = function() {
-	diffsTemplateTest(danishTestDiffs70);
+	diffsTmpTest(danishTestDiffs70);
 }
 
 var testDanish69 = function() {
-	diffsTemplateTest(danishTestDiffs69);
+	diffsTmpTest(danishTestDiffs69);
 }
 
 var testDanish68 = function() {
-	diffsTemplateTest(danishTestDiffs68);
+	diffsTmpTest(danishTestDiffs68);
 }
 
 var testDanish67 = function() {
-	diffsTemplateTest(danishTestDiffs67);
+	diffsTmpTest(danishTestDiffs67);
 }
 
 var testDanish66 = function() {
-	diffsTemplateTest(danishTestDiffs66);
+	diffsTmpTest(danishTestDiffs66);
 }
 
 var testDanish65 = function() {
-	diffsTemplateTest(danishTestDiffs65);
+	diffsTmpTest(danishTestDiffs65);
 }
 
 var testDanish64 = function() {
-	diffsTemplateTest(danishTestDiffs64);
+	diffsTmpTest(danishTestDiffs64);
 }
 
 var testDanish63 = function() {
-	diffsTemplateTest(danishTestDiffs63);
+	diffsTmpTest(danishTestDiffs63);
 }
 
 var testDanish62 = function() {
-	diffsTemplateTest(danishTestDiffs62);
+	diffsTmpTest(danishTestDiffs62);
 }
 
 var testDanish61 = function() {
-	diffsTemplateTest(danishTestDiffs61);
+	diffsTmpTest(danishTestDiffs61);
 }
 
 var testDanish60 = function() {
-	diffsTemplateTest(danishTestDiffs60);
+	diffsTmpTest(danishTestDiffs60);
 }
 
 var testDanish59 = function() {
-	diffsTemplateTest(danishTestDiffs59);
+	diffsTmpTest(danishTestDiffs59);
 }
 
 var testDanish58 = function() {
-	diffsTemplateTest(danishTestDiffs58);
+	diffsTmpTest(danishTestDiffs58);
 }
 
 var testDanish57 = function() {
-	diffsTemplateTest(danishTestDiffs57);
+	diffsTmpTest(danishTestDiffs57);
 }
 
 var testDanish56 = function() {
-	diffsTemplateTest(danishTestDiffs56);
+	diffsTmpTest(danishTestDiffs56);
 }
 
 var testDanish55 = function() {
-	diffsTemplateTest(danishTestDiffs55);
+	diffsTmpTest(danishTestDiffs55);
 }
 
 var testDanish54 = function() {
-	diffsTemplateTest(danishTestDiffs54);
+	diffsTmpTest(danishTestDiffs54);
 }
 
 var testDanish53 = function() {
-	diffsTemplateTest(danishTestDiffs53);
+	diffsTmpTest(danishTestDiffs53);
 }
 
 var testDanish52 = function() {
-	diffsTemplateTest(danishTestDiffs52);
+	diffsTmpTest(danishTestDiffs52);
 }
 
 var testDanish51 = function() {
-	diffsTemplateTest(danishTestDiffs51);
+	diffsTmpTest(danishTestDiffs51);
 }
 
 var testDanish50 = function() {
-	diffsTemplateTest(danishTestDiffs50);
+	diffsTmpTest(danishTestDiffs50);
 }
 
 var testDanish49 = function() {
-	diffsTemplateTest(danishTestDiffs49);
+	diffsTmpTest(danishTestDiffs49);
 }
 
 var testDanish48 = function() {
-	diffsTemplateTest(danishTestDiffs48);
+	diffsTmpTest(danishTestDiffs48);
 }
 
 var testDanish47 = function() {
-	diffsTemplateTest(danishTestDiffs47);
+	diffsTmpTest(danishTestDiffs47);
 }
 
 var testDanish46 = function() {
-	diffsTemplateTest(danishTestDiffs46);
+	diffsTmpTest(danishTestDiffs46);
 }
 
 var testDanish45 = function() {
-	diffsTemplateTest(danishTestDiffs45);
+	diffsTmpTest(danishTestDiffs45);
 }
 
 var testDanish44 = function() {
-	diffsTemplateTest(danishTestDiffs44);
+	diffsTmpTest(danishTestDiffs44);
 }
 
 var testDanish43 = function() {
-	diffsTemplateTest(danishTestDiffs43);
+	diffsTmpTest(danishTestDiffs43);
 }
 
 var testDanish42 = function() {
-	diffsTemplateTest(danishTestDiffs42);
+	diffsTmpTest(danishTestDiffs42);
 }
 
 var testDanish41 = function() {
-	diffsTemplateTest(danishTestDiffs41);
+	diffsTmpTest(danishTestDiffs41);
 }
 
 var testDanish40 = function() {
-	diffsTemplateTest(danishTestDiffs40);
+	diffsTmpTest(danishTestDiffs40);
 }
 
 var testDanish39 = function() {
-	diffsTemplateTest(danishTestDiffs39);
+	diffsTmpTest(danishTestDiffs39);
 }
 
 var testDanish38 = function() {
-	diffsTemplateTest(danishTestDiffs38);
+	diffsTmpTest(danishTestDiffs38);
 }
 
 var testDanish37 = function() {
-	diffsTemplateTest(danishTestDiffs37);
+	diffsTmpTest(danishTestDiffs37);
 }
 
 var testDanish36 = function() {
-	diffsTemplateTest(danishTestDiffs36);
+	diffsTmpTest(danishTestDiffs36);
 }
 
 var testDanish35 = function() {
-	diffsTemplateTest(danishTestDiffs35);
+	diffsTmpTest(danishTestDiffs35);
 }
 
 var testDanish34 = function() {
-	diffsTemplateTest(danishTestDiffs34);
+	diffsTmpTest(danishTestDiffs34);
 }
 
 var testDanish33 = function() {
-	diffsTemplateTest(danishTestDiffs33);
+	diffsTmpTest(danishTestDiffs33);
 }
 
 var testDanish32 = function() {
-	diffsTemplateTest(danishTestDiffs32);
+	diffsTmpTest(danishTestDiffs32);
 }
 
 var testDanish31 = function() {
-	diffsTemplateTest(danishTestDiffs31);
+	diffsTmpTest(danishTestDiffs31);
 }
 
 var testDanish30 = function() {
-	diffsTemplateTest(danishTestDiffs30);
+	diffsTmpTest(danishTestDiffs30);
 }
 
 var testDanish29 = function() {
-	diffsTemplateTest(danishTestDiffs29);
+	diffsTmpTest(danishTestDiffs29);
 }
 
 var testDanish28 = function() {
-	diffsTemplateTest(danishTestDiffs28);
+	diffsTmpTest(danishTestDiffs28);
 }
 
 var testDanish27 = function() {
-	diffsTemplateTest(danishTestDiffs27);
+	diffsTmpTest(danishTestDiffs27);
 }
 
 var testDanish26 = function() {
-	diffsTemplateTest(danishTestDiffs26);
+	diffsTmpTest(danishTestDiffs26);
 }
 
 var testDanish25 = function() {
-	diffsTemplateTest(danishTestDiffs25);
+	diffsTmpTest(danishTestDiffs25);
 }
 
 var testDanish24 = function() {
-	diffsTemplateTest(danishTestDiffs24);
+	diffsTmpTest(danishTestDiffs24);
 }
 
 var testDanish23 = function() {
-	diffsTemplateTest(danishTestDiffs23);
+	diffsTmpTest(danishTestDiffs23);
 }
 
 var testDanish22 = function() {
-	diffsTemplateTest(danishTestDiffs22);
+	diffsTmpTest(danishTestDiffs22);
 }
 
 var testDanish21 = function() {
-	diffsTemplateTest(danishTestDiffs21);
+	diffsTmpTest(danishTestDiffs21);
 }
 
 var testDanish20 = function() {
-	diffsTemplateTest(danishTestDiffs20);
+	diffsTmpTest(danishTestDiffs20);
 }
 
 var testDanish19 = function() {
-	diffsTemplateTest(danishTestDiffs19);
+	diffsTmpTest(danishTestDiffs19);
 }
 
 var testDanish18 = function() {
-	diffsTemplateTest(danishTestDiffs18);
+	diffsTmpTest(danishTestDiffs18);
 }
 
 var testDanish17 = function() {
-	diffsTemplateTest(danishTestDiffs17);
+	diffsTmpTest(danishTestDiffs17);
 }
 
 var testDanish16 = function() {
-	diffsTemplateTest(danishTestDiffs16);
+	diffsTmpTest(danishTestDiffs16);
 }
 
 var testDanish15 = function() {
-	diffsTemplateTest(danishTestDiffs15);
+	diffsTmpTest(danishTestDiffs15);
 }
 
 var testDanish14 = function() {
-	diffsTemplateTest(danishTestDiffs14);
+	diffsTmpTest(danishTestDiffs14);
 }
 
 var testDanish13 = function() {
-	diffsTemplateTest(danishTestDiffs13);
+	diffsTmpTest(danishTestDiffs13);
 }
 
 var testDanish12 = function() {
-	diffsTemplateTest(danishTestDiffs12);
+	diffsTmpTest(danishTestDiffs12);
 }
 
 var testDanish11 = function() {
-	diffsTemplateTest(danishTestDiffs11);
+	diffsTmpTest(danishTestDiffs11);
 }
 
 var testDanish10 = function() {
-	diffsTemplateTest(danishTestDiffs10);
+	diffsTmpTest(danishTestDiffs10);
 }
 
 var testDanish9 = function() {
-	diffsTemplateTest(danishTestDiffs9);
+	diffsTmpTest(danishTestDiffs9);
 }
 
 var testDanish8 = function() {
-	diffsTemplateTest(danishTestDiffs8);
+	diffsTmpTest(danishTestDiffs8);
 }
 
 var testDanish7 = function() {
-	diffsTemplateTest(danishTestDiffs7);
+	diffsTmpTest(danishTestDiffs7);
 }
 
 var testDanish6 = function() {
-	diffsTemplateTest(danishTestDiffs6);
+	diffsTmpTest(danishTestDiffs6);
 }
 
 var testDanish5 = function() {
-	diffsTemplateTest(danishTestDiffs5);
+	diffsTmpTest(danishTestDiffs5);
 }
 
 var testDanish4 = function() {
-	diffsTemplateTest(danishTestDiffs4);
+	diffsTmpTest(danishTestDiffs4);
 }
 
 var testDanish3 = function() {
-	diffsTemplateTest(danishTestDiffs3);
+	diffsTmpTest(danishTestDiffs3);
 }
 
 var testDanish2 = function() {
-	diffsTemplateTest(danishTestDiffs2);
+	diffsTmpTest(danishTestDiffs2);
 }
 
 var testDanish1 = function() {
-	diffsTemplateTest(danishTestDiffs1);
+	diffsTmpTest(danishTestDiffs1);
 }
 
 var testDanish0 = function() {
-	diffsTemplateTest(danishTestDiffs0);
+	diffsTmpTest(danishTestDiffs0);
 }

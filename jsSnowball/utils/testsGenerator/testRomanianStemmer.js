@@ -30190,7 +30190,7 @@ var romanianTestDiffs119 = {
 	"\u0163\u0103r\u0103nizare" : "\u0163\u0103r\u0103niz"
 };
 
-function diffsTemplateTest(testDiffs) {
+function diffsTmpTest(testDiffs) {
 	var buffer, fails = 0, total = 0;
 	for (var sVoc in testDiffs) {
 		total++;
@@ -30201,489 +30201,490 @@ function diffsTemplateTest(testDiffs) {
 			if (buffer) {
 				buffer += "; ";
 				buffer += sVoc + " --> " + base + " | " + stem;
-		} else
+			} else {
 				buffer = sVoc + " --> " + base + " | " + stem;
+			}
 		}
 	}
 	assertUndefined("Total:" + total + ", fails: " + fails, buffer);
 }
 
 var testRomanian119 = function() {
-	diffsTemplateTest(romanianTestDiffs119);
+	diffsTmpTest(romanianTestDiffs119);
 }
 
 var testRomanian118 = function() {
-	diffsTemplateTest(romanianTestDiffs118);
+	diffsTmpTest(romanianTestDiffs118);
 }
 
 var testRomanian117 = function() {
-	diffsTemplateTest(romanianTestDiffs117);
+	diffsTmpTest(romanianTestDiffs117);
 }
 
 var testRomanian116 = function() {
-	diffsTemplateTest(romanianTestDiffs116);
+	diffsTmpTest(romanianTestDiffs116);
 }
 
 var testRomanian115 = function() {
-	diffsTemplateTest(romanianTestDiffs115);
+	diffsTmpTest(romanianTestDiffs115);
 }
 
 var testRomanian114 = function() {
-	diffsTemplateTest(romanianTestDiffs114);
+	diffsTmpTest(romanianTestDiffs114);
 }
 
 var testRomanian113 = function() {
-	diffsTemplateTest(romanianTestDiffs113);
+	diffsTmpTest(romanianTestDiffs113);
 }
 
 var testRomanian112 = function() {
-	diffsTemplateTest(romanianTestDiffs112);
+	diffsTmpTest(romanianTestDiffs112);
 }
 
 var testRomanian111 = function() {
-	diffsTemplateTest(romanianTestDiffs111);
+	diffsTmpTest(romanianTestDiffs111);
 }
 
 var testRomanian110 = function() {
-	diffsTemplateTest(romanianTestDiffs110);
+	diffsTmpTest(romanianTestDiffs110);
 }
 
 var testRomanian109 = function() {
-	diffsTemplateTest(romanianTestDiffs109);
+	diffsTmpTest(romanianTestDiffs109);
 }
 
 var testRomanian108 = function() {
-	diffsTemplateTest(romanianTestDiffs108);
+	diffsTmpTest(romanianTestDiffs108);
 }
 
 var testRomanian107 = function() {
-	diffsTemplateTest(romanianTestDiffs107);
+	diffsTmpTest(romanianTestDiffs107);
 }
 
 var testRomanian106 = function() {
-	diffsTemplateTest(romanianTestDiffs106);
+	diffsTmpTest(romanianTestDiffs106);
 }
 
 var testRomanian105 = function() {
-	diffsTemplateTest(romanianTestDiffs105);
+	diffsTmpTest(romanianTestDiffs105);
 }
 
 var testRomanian104 = function() {
-	diffsTemplateTest(romanianTestDiffs104);
+	diffsTmpTest(romanianTestDiffs104);
 }
 
 var testRomanian103 = function() {
-	diffsTemplateTest(romanianTestDiffs103);
+	diffsTmpTest(romanianTestDiffs103);
 }
 
 var testRomanian102 = function() {
-	diffsTemplateTest(romanianTestDiffs102);
+	diffsTmpTest(romanianTestDiffs102);
 }
 
 var testRomanian101 = function() {
-	diffsTemplateTest(romanianTestDiffs101);
+	diffsTmpTest(romanianTestDiffs101);
 }
 
 var testRomanian100 = function() {
-	diffsTemplateTest(romanianTestDiffs100);
+	diffsTmpTest(romanianTestDiffs100);
 }
 
 var testRomanian99 = function() {
-	diffsTemplateTest(romanianTestDiffs99);
+	diffsTmpTest(romanianTestDiffs99);
 }
 
 var testRomanian98 = function() {
-	diffsTemplateTest(romanianTestDiffs98);
+	diffsTmpTest(romanianTestDiffs98);
 }
 
 var testRomanian97 = function() {
-	diffsTemplateTest(romanianTestDiffs97);
+	diffsTmpTest(romanianTestDiffs97);
 }
 
 var testRomanian96 = function() {
-	diffsTemplateTest(romanianTestDiffs96);
+	diffsTmpTest(romanianTestDiffs96);
 }
 
 var testRomanian95 = function() {
-	diffsTemplateTest(romanianTestDiffs95);
+	diffsTmpTest(romanianTestDiffs95);
 }
 
 var testRomanian94 = function() {
-	diffsTemplateTest(romanianTestDiffs94);
+	diffsTmpTest(romanianTestDiffs94);
 }
 
 var testRomanian93 = function() {
-	diffsTemplateTest(romanianTestDiffs93);
+	diffsTmpTest(romanianTestDiffs93);
 }
 
 var testRomanian92 = function() {
-	diffsTemplateTest(romanianTestDiffs92);
+	diffsTmpTest(romanianTestDiffs92);
 }
 
 var testRomanian91 = function() {
-	diffsTemplateTest(romanianTestDiffs91);
+	diffsTmpTest(romanianTestDiffs91);
 }
 
 var testRomanian90 = function() {
-	diffsTemplateTest(romanianTestDiffs90);
+	diffsTmpTest(romanianTestDiffs90);
 }
 
 var testRomanian89 = function() {
-	diffsTemplateTest(romanianTestDiffs89);
+	diffsTmpTest(romanianTestDiffs89);
 }
 
 var testRomanian88 = function() {
-	diffsTemplateTest(romanianTestDiffs88);
+	diffsTmpTest(romanianTestDiffs88);
 }
 
 var testRomanian87 = function() {
-	diffsTemplateTest(romanianTestDiffs87);
+	diffsTmpTest(romanianTestDiffs87);
 }
 
 var testRomanian86 = function() {
-	diffsTemplateTest(romanianTestDiffs86);
+	diffsTmpTest(romanianTestDiffs86);
 }
 
 var testRomanian85 = function() {
-	diffsTemplateTest(romanianTestDiffs85);
+	diffsTmpTest(romanianTestDiffs85);
 }
 
 var testRomanian84 = function() {
-	diffsTemplateTest(romanianTestDiffs84);
+	diffsTmpTest(romanianTestDiffs84);
 }
 
 var testRomanian83 = function() {
-	diffsTemplateTest(romanianTestDiffs83);
+	diffsTmpTest(romanianTestDiffs83);
 }
 
 var testRomanian82 = function() {
-	diffsTemplateTest(romanianTestDiffs82);
+	diffsTmpTest(romanianTestDiffs82);
 }
 
 var testRomanian81 = function() {
-	diffsTemplateTest(romanianTestDiffs81);
+	diffsTmpTest(romanianTestDiffs81);
 }
 
 var testRomanian80 = function() {
-	diffsTemplateTest(romanianTestDiffs80);
+	diffsTmpTest(romanianTestDiffs80);
 }
 
 var testRomanian79 = function() {
-	diffsTemplateTest(romanianTestDiffs79);
+	diffsTmpTest(romanianTestDiffs79);
 }
 
 var testRomanian78 = function() {
-	diffsTemplateTest(romanianTestDiffs78);
+	diffsTmpTest(romanianTestDiffs78);
 }
 
 var testRomanian77 = function() {
-	diffsTemplateTest(romanianTestDiffs77);
+	diffsTmpTest(romanianTestDiffs77);
 }
 
 var testRomanian76 = function() {
-	diffsTemplateTest(romanianTestDiffs76);
+	diffsTmpTest(romanianTestDiffs76);
 }
 
 var testRomanian75 = function() {
-	diffsTemplateTest(romanianTestDiffs75);
+	diffsTmpTest(romanianTestDiffs75);
 }
 
 var testRomanian74 = function() {
-	diffsTemplateTest(romanianTestDiffs74);
+	diffsTmpTest(romanianTestDiffs74);
 }
 
 var testRomanian73 = function() {
-	diffsTemplateTest(romanianTestDiffs73);
+	diffsTmpTest(romanianTestDiffs73);
 }
 
 var testRomanian72 = function() {
-	diffsTemplateTest(romanianTestDiffs72);
+	diffsTmpTest(romanianTestDiffs72);
 }
 
 var testRomanian71 = function() {
-	diffsTemplateTest(romanianTestDiffs71);
+	diffsTmpTest(romanianTestDiffs71);
 }
 
 var testRomanian70 = function() {
-	diffsTemplateTest(romanianTestDiffs70);
+	diffsTmpTest(romanianTestDiffs70);
 }
 
 var testRomanian69 = function() {
-	diffsTemplateTest(romanianTestDiffs69);
+	diffsTmpTest(romanianTestDiffs69);
 }
 
 var testRomanian68 = function() {
-	diffsTemplateTest(romanianTestDiffs68);
+	diffsTmpTest(romanianTestDiffs68);
 }
 
 var testRomanian67 = function() {
-	diffsTemplateTest(romanianTestDiffs67);
+	diffsTmpTest(romanianTestDiffs67);
 }
 
 var testRomanian66 = function() {
-	diffsTemplateTest(romanianTestDiffs66);
+	diffsTmpTest(romanianTestDiffs66);
 }
 
 var testRomanian65 = function() {
-	diffsTemplateTest(romanianTestDiffs65);
+	diffsTmpTest(romanianTestDiffs65);
 }
 
 var testRomanian64 = function() {
-	diffsTemplateTest(romanianTestDiffs64);
+	diffsTmpTest(romanianTestDiffs64);
 }
 
 var testRomanian63 = function() {
-	diffsTemplateTest(romanianTestDiffs63);
+	diffsTmpTest(romanianTestDiffs63);
 }
 
 var testRomanian62 = function() {
-	diffsTemplateTest(romanianTestDiffs62);
+	diffsTmpTest(romanianTestDiffs62);
 }
 
 var testRomanian61 = function() {
-	diffsTemplateTest(romanianTestDiffs61);
+	diffsTmpTest(romanianTestDiffs61);
 }
 
 var testRomanian60 = function() {
-	diffsTemplateTest(romanianTestDiffs60);
+	diffsTmpTest(romanianTestDiffs60);
 }
 
 var testRomanian59 = function() {
-	diffsTemplateTest(romanianTestDiffs59);
+	diffsTmpTest(romanianTestDiffs59);
 }
 
 var testRomanian58 = function() {
-	diffsTemplateTest(romanianTestDiffs58);
+	diffsTmpTest(romanianTestDiffs58);
 }
 
 var testRomanian57 = function() {
-	diffsTemplateTest(romanianTestDiffs57);
+	diffsTmpTest(romanianTestDiffs57);
 }
 
 var testRomanian56 = function() {
-	diffsTemplateTest(romanianTestDiffs56);
+	diffsTmpTest(romanianTestDiffs56);
 }
 
 var testRomanian55 = function() {
-	diffsTemplateTest(romanianTestDiffs55);
+	diffsTmpTest(romanianTestDiffs55);
 }
 
 var testRomanian54 = function() {
-	diffsTemplateTest(romanianTestDiffs54);
+	diffsTmpTest(romanianTestDiffs54);
 }
 
 var testRomanian53 = function() {
-	diffsTemplateTest(romanianTestDiffs53);
+	diffsTmpTest(romanianTestDiffs53);
 }
 
 var testRomanian52 = function() {
-	diffsTemplateTest(romanianTestDiffs52);
+	diffsTmpTest(romanianTestDiffs52);
 }
 
 var testRomanian51 = function() {
-	diffsTemplateTest(romanianTestDiffs51);
+	diffsTmpTest(romanianTestDiffs51);
 }
 
 var testRomanian50 = function() {
-	diffsTemplateTest(romanianTestDiffs50);
+	diffsTmpTest(romanianTestDiffs50);
 }
 
 var testRomanian49 = function() {
-	diffsTemplateTest(romanianTestDiffs49);
+	diffsTmpTest(romanianTestDiffs49);
 }
 
 var testRomanian48 = function() {
-	diffsTemplateTest(romanianTestDiffs48);
+	diffsTmpTest(romanianTestDiffs48);
 }
 
 var testRomanian47 = function() {
-	diffsTemplateTest(romanianTestDiffs47);
+	diffsTmpTest(romanianTestDiffs47);
 }
 
 var testRomanian46 = function() {
-	diffsTemplateTest(romanianTestDiffs46);
+	diffsTmpTest(romanianTestDiffs46);
 }
 
 var testRomanian45 = function() {
-	diffsTemplateTest(romanianTestDiffs45);
+	diffsTmpTest(romanianTestDiffs45);
 }
 
 var testRomanian44 = function() {
-	diffsTemplateTest(romanianTestDiffs44);
+	diffsTmpTest(romanianTestDiffs44);
 }
 
 var testRomanian43 = function() {
-	diffsTemplateTest(romanianTestDiffs43);
+	diffsTmpTest(romanianTestDiffs43);
 }
 
 var testRomanian42 = function() {
-	diffsTemplateTest(romanianTestDiffs42);
+	diffsTmpTest(romanianTestDiffs42);
 }
 
 var testRomanian41 = function() {
-	diffsTemplateTest(romanianTestDiffs41);
+	diffsTmpTest(romanianTestDiffs41);
 }
 
 var testRomanian40 = function() {
-	diffsTemplateTest(romanianTestDiffs40);
+	diffsTmpTest(romanianTestDiffs40);
 }
 
 var testRomanian39 = function() {
-	diffsTemplateTest(romanianTestDiffs39);
+	diffsTmpTest(romanianTestDiffs39);
 }
 
 var testRomanian38 = function() {
-	diffsTemplateTest(romanianTestDiffs38);
+	diffsTmpTest(romanianTestDiffs38);
 }
 
 var testRomanian37 = function() {
-	diffsTemplateTest(romanianTestDiffs37);
+	diffsTmpTest(romanianTestDiffs37);
 }
 
 var testRomanian36 = function() {
-	diffsTemplateTest(romanianTestDiffs36);
+	diffsTmpTest(romanianTestDiffs36);
 }
 
 var testRomanian35 = function() {
-	diffsTemplateTest(romanianTestDiffs35);
+	diffsTmpTest(romanianTestDiffs35);
 }
 
 var testRomanian34 = function() {
-	diffsTemplateTest(romanianTestDiffs34);
+	diffsTmpTest(romanianTestDiffs34);
 }
 
 var testRomanian33 = function() {
-	diffsTemplateTest(romanianTestDiffs33);
+	diffsTmpTest(romanianTestDiffs33);
 }
 
 var testRomanian32 = function() {
-	diffsTemplateTest(romanianTestDiffs32);
+	diffsTmpTest(romanianTestDiffs32);
 }
 
 var testRomanian31 = function() {
-	diffsTemplateTest(romanianTestDiffs31);
+	diffsTmpTest(romanianTestDiffs31);
 }
 
 var testRomanian30 = function() {
-	diffsTemplateTest(romanianTestDiffs30);
+	diffsTmpTest(romanianTestDiffs30);
 }
 
 var testRomanian29 = function() {
-	diffsTemplateTest(romanianTestDiffs29);
+	diffsTmpTest(romanianTestDiffs29);
 }
 
 var testRomanian28 = function() {
-	diffsTemplateTest(romanianTestDiffs28);
+	diffsTmpTest(romanianTestDiffs28);
 }
 
 var testRomanian27 = function() {
-	diffsTemplateTest(romanianTestDiffs27);
+	diffsTmpTest(romanianTestDiffs27);
 }
 
 var testRomanian26 = function() {
-	diffsTemplateTest(romanianTestDiffs26);
+	diffsTmpTest(romanianTestDiffs26);
 }
 
 var testRomanian25 = function() {
-	diffsTemplateTest(romanianTestDiffs25);
+	diffsTmpTest(romanianTestDiffs25);
 }
 
 var testRomanian24 = function() {
-	diffsTemplateTest(romanianTestDiffs24);
+	diffsTmpTest(romanianTestDiffs24);
 }
 
 var testRomanian23 = function() {
-	diffsTemplateTest(romanianTestDiffs23);
+	diffsTmpTest(romanianTestDiffs23);
 }
 
 var testRomanian22 = function() {
-	diffsTemplateTest(romanianTestDiffs22);
+	diffsTmpTest(romanianTestDiffs22);
 }
 
 var testRomanian21 = function() {
-	diffsTemplateTest(romanianTestDiffs21);
+	diffsTmpTest(romanianTestDiffs21);
 }
 
 var testRomanian20 = function() {
-	diffsTemplateTest(romanianTestDiffs20);
+	diffsTmpTest(romanianTestDiffs20);
 }
 
 var testRomanian19 = function() {
-	diffsTemplateTest(romanianTestDiffs19);
+	diffsTmpTest(romanianTestDiffs19);
 }
 
 var testRomanian18 = function() {
-	diffsTemplateTest(romanianTestDiffs18);
+	diffsTmpTest(romanianTestDiffs18);
 }
 
 var testRomanian17 = function() {
-	diffsTemplateTest(romanianTestDiffs17);
+	diffsTmpTest(romanianTestDiffs17);
 }
 
 var testRomanian16 = function() {
-	diffsTemplateTest(romanianTestDiffs16);
+	diffsTmpTest(romanianTestDiffs16);
 }
 
 var testRomanian15 = function() {
-	diffsTemplateTest(romanianTestDiffs15);
+	diffsTmpTest(romanianTestDiffs15);
 }
 
 var testRomanian14 = function() {
-	diffsTemplateTest(romanianTestDiffs14);
+	diffsTmpTest(romanianTestDiffs14);
 }
 
 var testRomanian13 = function() {
-	diffsTemplateTest(romanianTestDiffs13);
+	diffsTmpTest(romanianTestDiffs13);
 }
 
 var testRomanian12 = function() {
-	diffsTemplateTest(romanianTestDiffs12);
+	diffsTmpTest(romanianTestDiffs12);
 }
 
 var testRomanian11 = function() {
-	diffsTemplateTest(romanianTestDiffs11);
+	diffsTmpTest(romanianTestDiffs11);
 }
 
 var testRomanian10 = function() {
-	diffsTemplateTest(romanianTestDiffs10);
+	diffsTmpTest(romanianTestDiffs10);
 }
 
 var testRomanian9 = function() {
-	diffsTemplateTest(romanianTestDiffs9);
+	diffsTmpTest(romanianTestDiffs9);
 }
 
 var testRomanian8 = function() {
-	diffsTemplateTest(romanianTestDiffs8);
+	diffsTmpTest(romanianTestDiffs8);
 }
 
 var testRomanian7 = function() {
-	diffsTemplateTest(romanianTestDiffs7);
+	diffsTmpTest(romanianTestDiffs7);
 }
 
 var testRomanian6 = function() {
-	diffsTemplateTest(romanianTestDiffs6);
+	diffsTmpTest(romanianTestDiffs6);
 }
 
 var testRomanian5 = function() {
-	diffsTemplateTest(romanianTestDiffs5);
+	diffsTmpTest(romanianTestDiffs5);
 }
 
 var testRomanian4 = function() {
-	diffsTemplateTest(romanianTestDiffs4);
+	diffsTmpTest(romanianTestDiffs4);
 }
 
 var testRomanian3 = function() {
-	diffsTemplateTest(romanianTestDiffs3);
+	diffsTmpTest(romanianTestDiffs3);
 }
 
 var testRomanian2 = function() {
-	diffsTemplateTest(romanianTestDiffs2);
+	diffsTmpTest(romanianTestDiffs2);
 }
 
 var testRomanian1 = function() {
-	diffsTemplateTest(romanianTestDiffs1);
+	diffsTmpTest(romanianTestDiffs1);
 }
 
 var testRomanian0 = function() {
-	diffsTemplateTest(romanianTestDiffs0);
+	diffsTmpTest(romanianTestDiffs0);
 }

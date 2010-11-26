@@ -3,4 +3,4 @@
 3. If using Firefox 3.*, go "about:config" and set "Security.fileuri.strict_origin_policy" to false.
 
 jsUnitTestManager.js edited:
-	JsUnitTestManager.TESTPAGE_WAIT_SEC, JsUnitTestManager.SETUPPAGE_TIMEOUT 10 -> 300 sec.
+	JsUnitTestManager.TESTPAGE_WAIT_SEC, JsUnitTestManager.SETUPPAGE_TIMEOUT 10 -> 480 sec.
