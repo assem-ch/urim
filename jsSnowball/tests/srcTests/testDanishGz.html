@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script language="JavaScript" src="../jsunit/app/jsUnitCore.js"></script>
+    <script language="JavaScript" src="../../stemmer/src/Among.js"></script>
+    <script language="JavaScript" src="../../stemmer/src/SnowballProgram.js"></script>
+    <script language="JavaScript" src="../../stemmer/src/ext/DanishStemmer.js"></script>
+    <script language="JavaScript" src="../../utils/testsGenerator/testDanishStemmer.js.gz"></script>
+    <script type="text/javascript">
+      var stemmer = (function() {
+        var testStemmer = new DanishStemmer();
+        return function(word) {
+	  testStemmer.setCurrent(word);
+          testStemmer.stem();
+          return testStemmer.getCurrent();
+	}
+    })();
+    </script>
+  </head>
+  <body>
+    This is a Snowball Test Page for Danish.
+  </body>
+</html>
