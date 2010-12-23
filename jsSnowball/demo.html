@@ -1,21 +1,21 @@
+<!doctype html>
 <html>
   <head>
-    <script language="JavaScript" src="stemmer/lib/Snowball.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Online Snowball stemmers demo</title>
+    <script src="stemmer/lib/Snowball.js" type="text/javascript"></script>
     <script type="text/javascript">
-
       var Stem = function(lng) {
         var testStemmer = new Snowball(lng);
         return function(word) {
-	  testStemmer.setCurrent(word);
+          testStemmer.setCurrent(word);
           testStemmer.stem();
           return testStemmer.getCurrent();
-	}
+        }
       };
-
       function println(lng, word){
         document.getElementById("result").innerHTML = "<b>" + new Stem(lng)(word) + "</b>";
       }
-
     </script>
   </head>
   <body>
