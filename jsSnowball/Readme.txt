@@ -4,10 +4,61 @@ jsSnowball is a JavaScript port of http://snowball.tartarus.org/ stemmers,
 To make porting from Java sources easier each stemmer could be validated by Regex:
 	[^\.]((limit_backward)|(limit)|(cursor)|(bra)|(ket)|(setCurrent)|(getCurrent)|(in_grouping)|(in_grouping_b)|(out_grouping)|(out_grouping_b)|(in_range)|(in_range_b)|(out_range)|(out_range_b)|(eq_s)|(eq_s_b)|(find_among)|(find_among_b)|(replace_s)|(slice_check)|(slice_from)|(slice_del)|(insert)|(slice_to)|(eq_v_b))
 
-All *.js files were compressed with http://jscompress.com/
-Snowball.min.js library was compressed with http://refresh-sf.com/yui/
+All *.js files in src directory were compressed with http://jscompress.com/
+Snowball.min.js library was compressed with Google Closure Compiler:
+	java -jar compiler.jar --js Snowball.js --js_output_file Snowball.min.js
 
 Changes:
+	0.3:
+	To decrease Snowball.js library size:
+	Among constructor validation removed.
+	in_grouping : function		->	i_g : function (1 match)
+	this.in_grouping 		->	this.i_g (0 mathes)
+	sbp.in_grouping			->	sbp.i_g (48 mathes)
+	in_grouping_b : function	->	i_g_b : function (1 match)
+	this.in_grouping_b 		->	this.i_g_b (0 mathes)
+	sbp.in_grouping_b		->	sbp.i_g_b (24 mathes)
+	out_grouping : function		->	o_g : function (1 match)
+	this.out_grouping 		->	this.o_g (0 mathes)
+	sbp.out_grouping		->	sbp.o_g (28 mathes)	
+	out_grouping_b : function	->	o_g_b : function (1 match)
+	this.out_grouping_b 		->	this.o_g_b (0 mathes)
+	sbp.out_grouping_b		->	sbp.o_g_b (20 mathes)
+	eq_s : function			->	e_s : function (1 match)
+	this.eq_s 			->	this.e_s (0 mathes)
+	sbp.eq_s			->	sbp.e_s (15 mathes)
+	eq_s_b : function		->	e_s_b : function (1 match)
+	this.eq_s_b 			->	this.e_s_b (1 mathes)
+	sbp.eq_s_b			->	sbp.e_s_b (95 mathes)
+	find_among : function		->	f_a : function (1 match)
+	this.find_among 		->	this.f_a (0 mathes)
+	sbp.find_among			->	sbp.f_a (14 mathes)
+	find_among_b : function		->	f_a_b : function (1 match)
+	this.find_among_b 		->	this.f_a_b (0 mathes)
+	sbp.find_among_b		->	sbp.f_a_b (108 mathes)
+	replace_s : function		->	r_s : function (1 match)
+	this.replace_s	 		->	this.r_s (2 mathes)
+	sbp.replace_s			->	sbp.r_s (0 mathes)
+	slice_check : function		->	s_c : function (1 match)
+	this.slice_check	 	->	this.s_c (2 mathes)
+	sbp.slice_check			->	sbp.s_c (0 mathes)
+	slice_from : function		->	s_f : function (1 match)
+	this.slice_from	 		->	this.s_f (1 mathes)
+	sbp.slice_from			->	sbp.s_f (153 mathes)
+	slice_del : function		->	s_d : function (1 match)
+	this.slice_del	 		->	this.s_d (0 mathes)
+	sbp.slice_del			->	sbp.s_d (204 mathes)
+	insert : function		->	i_ : function (1 match)
+	this.insert	 		->	this.i_ (0 mathes)
+	sbp.insert			->	sbp.i_ (3 mathes)
+	slice_to : function		->	s_t : function (1 match)
+	this.slice_to	 		->	this.s_t (0 mathes)
+	sbp.slice_to			->	sbp.s_t (2 mathes)
+	eq_v_b : function		->	e_v_b : function (1 match)
+	this.eq_v_b	 		->	this.e_v_b (0 mathes)
+	sbp.eq_v_b			->	sbp.e_v_b (2 mathes)
+	in_range, in_range_b, out_range, out_range_b removed
+
 	0.2:
 	Refactoring - all code with loop labels replaced by more readable equivalent,
 	unused variables (v_1, v_2 ... v_n) removed from all functions, 
