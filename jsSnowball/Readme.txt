@@ -12,6 +12,12 @@ Changes:
         in_range, in_range_b, out_range, out_range_b functions removed from sbp(never used).
 	To decrease Snowball.js library size:
 	Among constructor validation removed.
+	setCurrent : function		->	s_c : function (1 match)
+	this.setCurrent  		->	this.s_c (0 mathes)	(SnowballProgram only)
+	sbp.setCurrent			->	sbp.s_c (15 mathes)
+	getCurrent : function		->	g_c : function (1 match)
+	this.getCurrent  		->	this.g_c (0 mathes)	(SnowballProgram only)
+	sbp.getCurrent			->	sbp.g_c (15 mathes)
 	in_grouping : function		->	i_g : function (1 match)
 	this.in_grouping 		->	this.i_g (0 mathes)
 	sbp.in_grouping			->	sbp.i_g (48 mathes)
@@ -39,9 +45,9 @@ Changes:
 	replace_s : function		->	r_s : function (1 match)
 	this.replace_s	 		->	this.r_s (2 mathes)
 	sbp.replace_s			->	sbp.r_s (0 mathes)
-	slice_check : function		->	s_c : function (1 match)
-	this.slice_check	 	->	this.s_c (2 mathes)
-	sbp.slice_check			->	sbp.s_c (0 mathes)
+	slice_check : function		->	s_ch : function (1 match)
+	this.slice_check	 	->	this.s_ch (2 mathes)
+	sbp.slice_check			->	sbp.s_ch (0 mathes)
 	slice_from : function		->	s_f : function (1 match)
 	this.slice_from	 		->	this.s_f (1 mathes)
 	sbp.slice_from			->	sbp.s_f (153 mathes)

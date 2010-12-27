@@ -29,7 +29,7 @@ function Snowball(lng) {
 			l : 0,
 			c : 0,
 			lb : 0,
-			setCurrent : function(word) {
+			s_c : function(word) {
 				current = word;
 				this.c = 0;
 				this.l = word.length;
@@ -37,7 +37,7 @@ function Snowball(lng) {
 				this.b = this.c;
 				this.k = this.l;
 			},
-			getCurrent : function() {
+			g_c : function() {
 				var result = current;
 				current = null;
 				return result;
@@ -218,13 +218,13 @@ function Snowball(lng) {
 					this.c = c_bra;
 				return adjustment;
 			},
-			s_c : function() {
+			s_ch : function() {
 				if (this.b < 0 || this.b > this.k || this.k > this.l
 						|| this.l > current.length)
 					throw ("faulty slice operation");
 			},
 			s_f : function(s) {
-				this.s_c();
+				this.s_ch();
 				this.r_s(this.b, this.k, s);
 			},
 			s_d : function() {
@@ -238,7 +238,7 @@ function Snowball(lng) {
 					this.k += adjustment;
 			},
 			s_t : function() {
-				this.s_c();
+				this.s_ch();
 				return current.substring(this.b, this.k);
 			},
 			e_v_b : function(s) {
@@ -272,10 +272,10 @@ function Snowball(lng) {
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 128], g_s_ending = [
 					239, 254, 42, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16], I_x, I_p1, S_ch, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_mark_regions() {
 				var v_1, c = sbp.c + 3;
@@ -428,10 +428,10 @@ function Snowball(lng) {
 					128], g_v_j = [17, 67, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 					0, 0, 128], I_p2, I_p1, B_e_found, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_prelude() {
 				var a_v, v_1 = sbp.c, v_2, v_3;
@@ -778,10 +778,10 @@ function Snowball(lng) {
 					55, 141, 2], B_Y_found, I_p2, I_p1, habr = [r_Step_1b,
 					r_Step_1c, r_Step_2, r_Step_3, r_Step_4, r_Step_5], sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_prelude() {
 				var v_1 = sbp.c, v_2;
@@ -1268,10 +1268,10 @@ function Snowball(lng) {
 					17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32], g_particle_end = [
 					17, 97, 24, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32], B_ending_removed, S_x, I_p2, I_p1, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_mark_regions() {
 				I_p1 = sbp.l;
@@ -1688,10 +1688,10 @@ function Snowball(lng) {
 					0, 0, 0, 0, 0, 0, 0, 0, 128, 130, 103, 8, 5], g_keep_with_s = [
 					1, 65, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128], I_p2, I_p1, I_pV, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function habr1(c1, c2, v_1) {
 				if (sbp.e_s(1, c1)) {
@@ -2186,10 +2186,10 @@ function Snowball(lng) {
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32, 8], g_s_ending = [117,
 					30, 5], g_st_ending = [117, 30, 4], I_x, I_p2, I_p1, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function habr1(c1, c2, v_1) {
 				if (sbp.e_s(1, c1)) {
@@ -2529,10 +2529,10 @@ function Snowball(lng) {
 					17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17,
 					52, 14], I_p1, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_mark_regions() {
 				var v_1 = sbp.c, v_2;
@@ -2957,10 +2957,10 @@ function Snowball(lng) {
 					17, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 128, 8,
 					2], g_CG = [17], I_p2, I_p1, I_pV, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function habr1(c1, c2, v_1) {
 				if (sbp.e_s(1, c1)) {
@@ -3349,10 +3349,10 @@ function Snowball(lng) {
 					17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0,
 					128], g_s_ending = [119, 125, 149, 1], I_x, I_p1, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_mark_regions() {
 				var v_1, c = sbp.c + 3;
@@ -3572,10 +3572,10 @@ function Snowball(lng) {
 					new Among("\u00EA", -1, 1)], g_v = [17, 65, 16, 0, 0, 0, 0,
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 19, 12, 2], I_p2, I_p1, I_pV, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_prelude() {
 				var a_v;
@@ -4046,10 +4046,10 @@ function Snowball(lng) {
 					new Among("\u0103", -1, 1)], g_v = [17, 65, 16, 0, 0, 0, 0,
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 32, 0, 0, 4], B_standard_suffix_removed, I_p2, I_p1, I_pV, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function habr1(c1, c2) {
 				if (sbp.e_s(1, c1)) {
@@ -4476,10 +4476,10 @@ function Snowball(lng) {
 					new Among("\u0435\u0439\u0448", -1, 1),
 					new Among("\u044C", -1, 3)], g_v = [33, 65, 8, 232], I_p2, I_pV, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function habr3() {
 				while (!sbp.i_g(g_v, 1072, 1103)) {
@@ -4749,10 +4749,10 @@ function Snowball(lng) {
 					new Among("\u00F3", -1, 1)], g_v = [17, 65, 16, 0, 0, 0, 0,
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 10], I_p2, I_p1, I_pV, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function habr1() {
 				if (sbp.o_g(g_v, 97, 252)) {
@@ -5126,10 +5126,10 @@ function Snowball(lng) {
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 32], g_s_ending = [
 					119, 127, 149], I_x, I_p1, sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function r_mark_regions() {
 				var v_1, c = sbp.c + 3;
@@ -5321,10 +5321,10 @@ function Snowball(lng) {
 					["o", g_vowel5, 111, 117], ["\u00F6", g_vowel6, 246, 252],
 					["u", g_vowel5, 111, 117]], sbp = new SnowballProgram();
 			this.setCurrent = function(word) {
-				sbp.setCurrent(word);
+				sbp.s_c(word);
 			};
 			this.getCurrent = function() {
-				return sbp.getCurrent();
+				return sbp.g_c();
 			};
 			function habr1(g_v, n1, n2) {
 				while (true) {
