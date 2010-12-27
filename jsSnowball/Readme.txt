@@ -4,12 +4,12 @@ jsSnowball is a JavaScript port of http://snowball.tartarus.org/ stemmers,
 To make porting from Java sources easier each stemmer could be validated by Regex:
 	[^\.]((limit_backward)|(limit)|(cursor)|(bra)|(ket)|(setCurrent)|(getCurrent)|(in_grouping)|(in_grouping_b)|(out_grouping)|(out_grouping_b)|(in_range)|(in_range_b)|(out_range)|(out_range_b)|(eq_s)|(eq_s_b)|(find_among)|(find_among_b)|(replace_s)|(slice_check)|(slice_from)|(slice_del)|(insert)|(slice_to)|(eq_v_b))
 
-All *.js files in src directory were compressed with http://jscompress.com/
-Snowball.min.js library was compressed with Google Closure Compiler:
+Snowball.min.js library was compressed by Google Closure Compiler:
 	java -jar compiler.jar --js Snowball.js --js_output_file Snowball.min.js
 
 Changes:
 	0.3:
+        in_range, in_range_b, out_range, out_range_b functions removed from sbp(never used).
 	To decrease Snowball.js library size:
 	Among constructor validation removed.
 	in_grouping : function		->	i_g : function (1 match)
@@ -57,7 +57,6 @@ Changes:
 	eq_v_b : function		->	e_v_b : function (1 match)
 	this.eq_v_b	 		->	this.e_v_b (0 mathes)
 	sbp.eq_v_b			->	sbp.e_v_b (2 mathes)
-	in_range, in_range_b, out_range, out_range_b removed
 
 	0.2:
 	Refactoring - all code with loop labels replaced by more readable equivalent,
