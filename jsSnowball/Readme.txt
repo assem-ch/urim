@@ -95,7 +95,7 @@ Changes:
 	-------------------------------------------------------------------------------------------
 
 	0.1:
-	First version. Almost Peer-to-Peer Java code with minimum changes. 
+	First version. Porting from Java code with minimum changes. 
 	Reflection for Finnish stemmer is replaced by using callback function as function parameter.
 	JsUnit 2.2 TestRunner(Pentium III 667 MHz, 384 Mb RAM) results:
 	Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10
